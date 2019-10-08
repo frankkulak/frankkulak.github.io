@@ -1,6 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
 /* COLORS */
 
@@ -12,20 +12,12 @@
 	background-color: #FFFFFF;
 }
 
-.light-gray {
-	color: #A1A1A1;
-}
-
-.light-gray-bkg {
-	background-color: #A1A1A1;
-}
-
 .dark-gray {
-	color: #303030;
+	color: #323232;
 }
 
 .dark-gray-bkg {
-	background-color: #303030;
+	background-color: #323232;
 }
 
 .black {
@@ -37,25 +29,33 @@
 }
 
 .main-color {
-	color: #A9D3E3;
+	color: rgb(145, 200, 225);
 }
 
 .main-color-bkg {
-	background-color: #A9D3E3;
+	background-color: rgb(145, 200, 225);
 }
 
-.accent-color {
-	color: #6468BF; /* NOTE : hard coded in a:hover */
+.dark-accent-color {
+	color: rgb(100, 95, 215); /* NOTE : hard coded in a:hover */
 }
 
-.accent-color-bkg {
-	background-color: #6468BF; /* NOTE : hard coded in a:hover */
+.dark-accent-color-bkg {
+	background-color: rgb(100, 95, 215); /* NOTE : hard coded in a:hover */
+}
+
+.light-accent-color {
+	color: rgb(195, 200, 255); 
+}
+
+.light-accent-color-bkg {
+	background-color: rgb(195, 200, 255);
 }
 
 /* WHOLE PAGE */
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 /* HEADER */
@@ -63,9 +63,11 @@ body {
 .header {
 	width: 100%;
 	height: auto;
-	/* position: fixed;
-	left: 0;
-	top: 0; */
+}
+
+h2.header-text {
+	font-size: 24px;
+	white-space: nowrap;
 }
 
 img.header-logo {
@@ -78,6 +80,7 @@ ul.nav-bar {
 	font-size: 16px;
   margin: 0px;
 	padding: 0px;
+	white-space: nowrap;
 }
 
 li.nav-item {
@@ -85,8 +88,13 @@ li.nav-item {
 	margin-right: 30px;
 }
 
+a.nav-item {
+  display: inline;
+  color: inherit;
+}
+
 li.active {
-	border-bottom: 2px solid currentColor;
+	border-bottom: 1px solid currentColor;
 }
 
 li.nav-item-social {
@@ -130,11 +138,11 @@ img.social-icon {
 }
 
 a, a:focus {
-	color: inherit;
-	text-decoration: none;
+  color: rgb(100, 95, 215);
+  text-decoration: none;
 }
 
 a:hover {
-	color: #6468BF;
-	text-decoration: none;
+	color: rgb(100, 95, 215);
+  text-decoration: none;
 }
