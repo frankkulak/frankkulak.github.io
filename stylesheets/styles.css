@@ -85,21 +85,10 @@ ul.nav-bar {
 
 li.nav-item {
 	display: inline;
-	margin-right: 30px;
 }
 
-a.nav-item {
-  display: inline;
-  color: inherit;
-}
-
-li.active {
-	border-bottom: 1px solid currentColor;
-}
-
-li.nav-item-social {
+li.social-link {
 	display: inline;
-	margin-left: 20px;
 }
 
 img.social-icon {
@@ -107,15 +96,9 @@ img.social-icon {
 	width: auto;
 }
 
-/* FOOTER */
-
-.footer {
-	width: 100%;
-	height: auto;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	font-size: 12px;
+img.social-icon-sm {
+	height: 16px;
+	width: auto;
 }
 
 /* CONTENT */
@@ -139,10 +122,10 @@ img.social-icon {
 
 a, a:focus {
   color: rgb(100, 95, 215);
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-	color: rgb(100, 95, 215);
-  text-decoration: none;
+	color: rgb(145, 200, 225);
+	text-decoration: none;
 }
