@@ -1,3 +1,5 @@
 # frankkulak.github.io
 
-This site is under construction.
+This is the repository for my official website.
+
+It is currently under construction, so please check back later!
