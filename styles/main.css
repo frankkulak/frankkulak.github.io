@@ -33,19 +33,19 @@
 }
 
 .main-color-bkg {
-	background-color: rgb(145, 200, 225);
+	background-color: rgb(145, 200, 225); /* NOTE : hard coded in a:hover */
 }
 
 .dark-accent-color {
-	color: rgb(100, 95, 215); /* NOTE : hard coded in a:hover */
+	color: rgb(100, 95, 215); /* NOTE : hard coded in a, a:focus */
 }
 
 .dark-accent-color-bkg {
-	background-color: rgb(100, 95, 215); /* NOTE : hard coded in a:hover */
+	background-color: rgb(100, 95, 215);
 }
 
 .light-accent-color {
-	color: rgb(195, 200, 255); 
+	color: rgb(195, 200, 255);
 }
 
 .light-accent-color-bkg {
