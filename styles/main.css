@@ -12,6 +12,14 @@
 	background-color: #FFFFFF;
 }
 
+.light-gray {
+	color: #F0F3F7;
+}
+
+.light-gray-bkg {
+	background-color: #F0F3F7;
+}
+
 .dark-gray {
 	color: #323232;
 }
@@ -101,11 +109,40 @@ img.social-icon-sm {
 	width: auto;
 }
 
+/* SIDE CARD */
+
+img.profile-pic {
+	width: 128px;
+	height: auto;
+}
+
+h4.side-card-text {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h5.side-card-text {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h6.side-card-text {
+	font-size: 12px;
+}
+
+p.side-card-text {
+	font-size: 12px;
+}
+
 /* CONTENT */
 
 /* TODO : impl as needed */
 
 /* GENERIC */
+
+.mw-50 {
+	max-width: 50%;
+}
 
 .fill-width {
 	width: 100%;
