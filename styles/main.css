@@ -149,10 +149,6 @@ h2.section-subheader {
 	font-size: 14px;
 }
 
-.bold {
-	font-weight: bold;
-}
-
 button.accordian-btn, button.accordian-btn:focus {
 	font-size: 18px;
 	color: #323232;
@@ -203,4 +199,8 @@ a, a:focus {
 a:hover {
 	color: rgb(145, 200, 225);
 	text-decoration: none;
+}
+
+h6 {
+	font-weight: bold;
 }
