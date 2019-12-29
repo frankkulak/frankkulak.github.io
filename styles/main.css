@@ -145,17 +145,12 @@ h2.section-subheader {
 	font-size: 24px;
 }
 
-h6.section-details {
+.section-details {
 	font-size: 14px;
+}
+
+.bold {
 	font-weight: bold;
-}
-
-p.section-details {
-	font-size: 14px;
-}
-
-em.section-details {
-	font-size: 14px;
 }
 
 button.accordian-btn, button.accordian-btn:focus {
