@@ -149,13 +149,13 @@ h2.section-subheader {
 	font-size: 14px;
 }
 
-button.accordian-btn, button.accordian-btn:focus {
+button.accordion-btn, button.accordion-btn:focus {
 	font-size: 18px;
 	color: #323232;
 	text-decoration: none;
 }
 
-button.accordian-btn:hover {
+button.accordion-btn:hover {
 	color: rgb(145, 200, 225);
 	text-decoration: none;
 }
