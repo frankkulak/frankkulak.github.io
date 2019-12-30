@@ -166,8 +166,20 @@ button.accordian-btn:hover {
 	max-width: 50%;
 }
 
+.mw-70 {
+	max-width: 70%;
+}
+
 .mw-100 {
 	max-width: 100%;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.minw-50 {
+	min-width: 50%;
 }
 
 .w-90 {
@@ -201,6 +213,6 @@ a:hover {
 	text-decoration: none;
 }
 
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
