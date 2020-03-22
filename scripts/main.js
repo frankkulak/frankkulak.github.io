@@ -9,7 +9,7 @@ function setExperienceDurations() {
   // part-time work
   document.getElementById('expdur-tutoring').innerHTML = employmentDuration(new Date(2019, 0), new Date()); // Jan. 2019 - Present
   document.getElementById('expdur-sherwood').innerHTML = employmentDuration(new Date(2018, 5), new Date(2019, 6)); // June 2018 - July 2019
-  document.getElementById('expdur-sfs').innerHTML = employmentDuration(new Date(2017, 8), new Date()); // Sept. 2017 - Present
+  document.getElementById('expdur-sfs').innerHTML = employmentDuration(new Date(2017, 8), new Date(2020, 3)); // Sept. 2017 - Mar. 2020
   document.getElementById('expdur-barnes').innerHTML = employmentDuration(new Date(2017, 5), new Date(2017, 7)); // June - Aug. 2017
   // volunteer work
   document.getElementById('expdur-berentlab').innerHTML = employmentDuration(new Date(2018, 0), new Date(2018, 11)); // Jan. - Dec. 2018
