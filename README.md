@@ -7,3 +7,12 @@ The purpose of this website is to provide a comprehensive history of my academic
 I test this website in as many browsers and operating systems as I can (Chrome, Firefox, and Safari; macOS and iOS) before publishing any changes, but if you encounter any issues, please let me know what the issue is, as well as the browser and OS you were on. Thanks!
 
 This site is still under construction and is updated frequently, so be sure to check back later!
+
+## To do
+
+To fix
+- Collapse all open accordion cards when a new one is opened
+- Scroll to the top of an accordion card when it is opened
+
+To add
+- Add a 'Projects' page that has a section for each project

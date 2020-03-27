@@ -2,606 +2,690 @@
 <html lang="en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155317753-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-155317753-1');
-	</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155317753-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	<title>Frank Kulak</title>
-	<link rel="icon" href="./images/logo-dark.png">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        gtag('js', new Date());
+        gtag('config', 'UA-155317753-1');
+    </script>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
-	<!-- Other styling -->
-	<link rel="stylesheet" href="styles/main.css">
+    <title>Frank Kulak</title>
+    <link rel="icon" href="./images/logo-dark.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Other styling -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/accordion.css">
 </head>
 
 <body>
-	<!-- Navigation bar -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="">
-			<img src="./images/logo-light.png" width="30" height="30" class="d-inline-block align-top" alt="">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-	
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item mr-3 active">
-					<a class="nav-link disabled" href="">About</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Projects
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<!--
-						<a class="dropdown-item" href="projects.html">All projects</a>
-						<div class="dropdown-divider"></div>
-						-->
-						<div class="dropdown-header">Java</div>
-						<a class="dropdown-item" href="https://github.com/frankkulak/blockdude-java" target="_blank">Block Dude</a>
-						<a class="dropdown-item" href="https://github.com/frankkulak/blocky-java" target="_blank">Blocky</a>
-						<div class="dropdown-divider"></div>
-						<div class="dropdown-header">Web Development</div>
-						<a class="dropdown-item" href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">frankkulak.com</a>
-					</div>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<ul class="nav-bar my-auto">
-					<li class="social-link"><a href="mailto:kulak.f@husky.neu.edu"><img class="social-icon-sm" src="./images/socials/email-icon.png"/></a></li>
-					<li class="social-link ml-3"><a href="https://www.linkedin.com/in/frank-kulak/" target="_blank"><img class="social-icon" src="./images/socials/linkedin-icon.png"/></a></li>
-					<li class="social-link ml-3"><a href="https://github.com/frankkulak" target="_blank"><img class="social-icon" src="./images/socials/github-icon.png"/></a></li>
-				</ul>
-			</form>
-		</div>
-	</nav>
+<!-- Navigation bar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">
+        <img src="./images/logo-light.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-	<!-- Content -->
-	<div class="pt-4 px-1">
-		<div class="container-fluid dark-gray white-bkg">
-			<div class="row justify-content-center">
-				<div class="col-10 col-sm-8 col-md-4 col-lg-3">
-					<!-- Side card -->
-					<div class="light-gray-bkg rounded p-3 mb-4 text-center">
-						<img class="profile-pic mb-3" src="./images/profile-pic.png"/>
-						<h4 class="side-card-text">Frank Kulak</h4>
-						<p class="side-card-text">Candidate for B.S. in Computer Science and Linguistics (exp. May 2021)</p>
-						<p class="side-card-text">Northeastern University<br>Boston, MA</p>
-						<hr>
-						<h5 class="side-card-text">Contact</h5>
-						<p class="side-card-text">Feel free to reach out if you would like a copy of my resume, or if you would like to chat - I look forward to hearing from you!</p>
-						<p class="side-card-text">
-							<a href="mailto:kulak.f@husky.neu.edu">kulak.f@husky.neu.edu</a>
-							<br>
-							<a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">LinkedIn</a> • <a href="https://github.com/frankkulak" target="_blank">GitHub</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-12 col-md-8 col-lg-9">
-					<!-- Main content -->
- 					<!-- Education -->
-					<h1 class="section-header">Education</h1>
-					<div id="educationAccordion" class="my-4">
-						<div class="card">
-							<div class="card-header" id="northeasternHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#northeasternCollapse" aria-expanded="true" aria-controls="northeasternCollapse">
-										Northeastern University
-									</button>
-								</h5>
-							</div>
-							<div id="northeasternCollapse" class="collapse" aria-labelledby="northeasternHeading" data-parent="#educationAccordion">
-								<div class="card-body section-details">
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Boston, MA</h6>
-										<h6 class="text-right fill-width">Sept. 2017 - Present</h6>
-									</div>
-									<p>Khoury College of Computer Sciences<br><em>Candidate for Bachelor of Science in Computer Science and Linguistics, Minor in Psychology (exp. May 2021)</em></p>
-									<hr>
-									<div class="d-flex flex-row fill-width mb-3">
-										<div class="text-left w-50">Courses</div>
-										<div class="text-right w-50">GPA: 3.75/4.0</div>
-									</div>
-									<strong>Computer Science</strong>
-									<ul>
-										<li>Software Development (CS 4500)*</li>
-										<li>Programming Languages (CS 4400)*</li>
-										<li>Natural Language Processing (CS 4120)*</li>
-										<li>Theory of Computation (CS 3800)</li>
-										<li>Object-Oriented Design (CS 3500)</li>
-										<li>Algorithms &amp; Data (CS 3000)</li>
-										<li>Fundamentals of Computer Science II (CS 2510)</li>
-										<li>Fundamentals of Computer Science I (CS 2500)</li>
-										<li>Discrete Structures (CS 1800)</li>
-									</ul>
-								 <strong>Linguistics</strong>
-									<ul>
-										<li>Seminar: Evolutionary Linguistics (LING 4654)*</li>
-										<li>Morphology (LING 3424)</li>
-										<li>Phonology (LING 3422)</li>
-										<li>Language &amp; Culture (LING 3412)</li>
-										<li>Linguistic Analysis (LING 2350)</li>
-										<li>Introduction to Linguistics (LING 1150)</li>
-									</ul>
-									<strong>Psychology</strong>
-									<ul>
-										<li>Psychology of Language (PSYC 3464)</li>
-										<li>Personality (PSYC 3400)</li>
-										<li>Statistics for Psychological Research (PSYC 2320)</li>
-									</ul>
-									<strong>Other</strong>
-									<ul>
-										<li>Technology &amp; Human Values (PHIL 1145)</li>
-										<li>First Year Writing (ENGW 1111)</li>
-									</ul>
-									<hr>
-									* = In Progress<br>Final grades &amp; transcript available upon request.
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="uhartHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#uhartCollapse" aria-expanded="false" aria-controls="uhartCollapse">
-										University of Hartford
-									</button>
-								</h5>
-							</div>
-							<div id="uhartCollapse" class="collapse" aria-labelledby="uhartHeading" data-parent="#educationAccordion">
-								<div class="card-body section-details">
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">West Hartford, CT</h6>
-										<h6 class="text-right fill-width">Sept. 2014 - May 2017</h6>
-									</div>
-									<em>Dual-Enrollment High School Program; No Degree</em>
-									<hr>
-									<div class="d-flex flex-row fill-width mb-3">
-										<div class="text-left w-50">Courses</div>
-										<div class="text-right w-50">GPA: 3.90/4.0</div>
-									</div>
-									<strong>Computer Science</strong>
-									<ul>
-										<li>Fundamentals of Computing II (CS 115)</li>
-										<li>Fundamentals of Computing I (CS 114)</li>
-										<li>Programming Foundations (CS 111)</li>
-									</ul>
-									<strong>Mathematics</strong>
-									<ul>
-										<li>Linear Algebra &amp; Matrix Theory (M 220)</li>
-										<li>Calculus II (M 145)</li>
-										<li>Calculus I (M 144)</li>
-										<li>Precalculus with Trigonometry (M 140)</li>
-									</ul>
-									<strong>Other</strong>
-									<ul>
-										<li>Calculus-Based Physics II (PHY 113)</li>
-										<li>Calculus-Based Physics I (PHY 112)</li>
-										<li>Introduction to Creative Writing (ENG 225W)</li>
-										<li>Introduction to Literature (ENG 140)</li>
-										<li>Introduction to Psychology (PSY 105)</li>
-									</ul>
-									<hr>
-									Final grades &amp; transcript available upon request.
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="uhsseHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#uhsseCollapse" aria-expanded="false" aria-controls="uhsseCollapse">
-										University High School of Science and Engineering
-									</button>
-								</h5>
-							</div>
-							<div id="uhsseCollapse" class="collapse" aria-labelledby="uhsseHeading" data-parent="#educationAccordion">
-								<div class="card-body section-details">
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Hartford, CT</h6>
-										<h6 class="text-right fill-width">Aug. 2013 - June 2017</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<em class="text-left w-50">High School Diploma</em>
-										<div class="text-right w-50">GPA: 3.78/4.0</div>
-									</div>
-									<hr>
-									Courses, final grades, &amp; transcript available upon request.
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Experience -->
-					<h1 class="section-header">Experience</h1>
-					<div id="experienceAccordion" class="my-4">
-						<div class="card">
-							<div class="card-header" id="internshipsHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#internshipsCollapse" aria-expanded="true" aria-controls="internshipsCollapse">
-										Co-ops &amp; internships
-									</button>
-								</h5>
-							</div>
-							<div id="internshipsCollapse" class="collapse" aria-labelledby="internshipsHeading" data-parent="#experienceAccordion">
-								<div class="card-body section-details">
-									<!-- TJX -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">IT Engineer Co-op</h6>
-										<h6 class="text-right fill-width">July - Dec. 2019</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">The TJX Companies<br>Framingham, MA</div>
-										<div id="expdur-tjx" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Developed user interface for T.J.Maxx and HomeGoods cross-platform mobile applications’ digital rewards update using Xamarin.Forms and HTML, CSS, and JavaScript</li>
-										<li>Collaborated with other developers using Agile to deliver critical features and bug fixes</li>
-										<li>Utilized release-branching strategy to manage project versions with Git, GitHub, and SourceTree</li>
-										<li>Maintained existing codebase using MVVM architecture</li>
-									</ul>
-									<hr>
-									<!-- MAH -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Intern</h6>
-										<h6 class="text-right fill-width">July - Aug. 2016</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Mobile Apps for Hartford<br>Hartford, CT</div>
-										<div id="expdur-mah" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Collaborated with other interns to develop Android application for CREC school system using MIT App Inventor 2</li>
-										<li>Met with client from CREC schools on weekly basis to set expectations and ensure quality of application</li>
-										<li>Published mobile application on the Google Play store</li>
-										<li>Attended weekly presentations on topics such as software development, cyber security, and robotics</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="otherHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#otherCollapse" aria-expanded="false" aria-controls="otherCollapse">
-										Part-time work
-									</button>
-								</h5>
-							</div>
-							<div id="otherCollapse" class="collapse" aria-labelledby="otherHeading" data-parent="#experienceAccordion">
-								<div class="card-body section-details">
-									<!-- Tutoring -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Peer Tutor</h6>
-										<h6 class="text-right fill-width">Jan. 2019 - Present</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Peer Tutoring Center<br>Northeastern University<br>Boston, MA</div>
-										<div id="expdur-tutoring" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Tutor students of linguistics and psychology courses in one-on-one sessions</li>
-										<li>Conduct review sessions of up to 50 students for exam preparation</li>
-										<li>Act as mentor and provide guidance for improving study habits</li>
-									</ul>
-									<hr>
-									<!-- Sherwood -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Cashier</h6>
-										<h6 class="text-right fill-width">June 2018 - July 2019</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Sherwood Cleaners<br>Plainville, CT</div>
-										<div id="expdur-sherwood" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Resolved questions and complaints to increase customer satisfaction</li>
-										<li>Operated cash drawer and monitored transactions to ensure accuracy of cash flow</li>
-										<li>Recorded and retrieved customer orders</li>
-										<li>Pressed, ironed, and prepared up to 300 shirts daily</li>
-									</ul>
-									<hr>
-									<!-- SFS -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Office Assistant</h6>
-										<h6 class="text-right fill-width">Sept. 2017 - Mar. 2020</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Student Financial Services<br>Northeastern University<br>Boston, MA</div>
-										<div id="expdur-sfs" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Respond to up to 15 caller inquiries per hour regarding financial aid</li>
-										<li>Consult financial aid counselors to understand and resolve caller inquiries</li>
-										<li>Perform data entry of scholarships to achieve consistency between physical and digital documentation</li>
-									</ul>
-									<hr>
-									<!-- Barnes -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Maintenance Worker</h6>
-										<h6 class="text-right fill-width">June - Aug. 2017</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Associated Spring<br>Bristol, CT</div>
-										<div id="expdur-barnes" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-header" id="volunteerHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#volunteerCollapse" aria-expanded="false" aria-controls="volunteerCollapse">
-										Volunteer work
-									</button>
-								</h5>
-							</div>
-							<div id="volunteerCollapse" class="collapse" aria-labelledby="volunteerHeading" data-parent="#experienceAccordion">
-								<div class="card-body section-details">
-									<!-- Berent's Lab -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Research Assistant</h6>
-										<h6 class="text-right fill-width">Jan. - Dec. 2018</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Phonology and Reading Lab<br>Northeastern University<br>Boston, MA</div>
-										<div id="expdur-berentlab" class="text-right text-nowrap ml-3">(DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Prepared approximately 200 video samples using iMovie for use in experiment of ASL phonology</li>
-										<li>Discovered and remedied problem regarding experimental control variables</li>
-										<li>Proposed and initiated extension of ASL phonology experiment</li>
-									</ul>
-									<hr>
-									<!-- LGR -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Coach</h6>
-										<h6 class="text-right fill-width">Oct. - Nov. 2017</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Let's Get Ready<br>Malden, MA</div>
-										<div id="expdur-lgr" class="text-right text-nowrap ml-3">(DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Tutored high school students for SAT verbal section</li>
-										<li>Provided advice and answers regarding college application process</li>
-									</ul>
-									<hr>
-									<!-- TAing Mobile CSP -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Teaching Assistant</h6>
-										<h6 class="text-right fill-width">Aug. 2016 - June 2017</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">University High School<br>Hartford, CT</div>
-										<div id="expdur-mobilecsp" class="text-right text-nowrap ml-3">(DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Assisted and tutored students of Mobile CSP App Development during and out of class time</li>
-										<li>Cooperated with teacher to increase efficiency and effectiveness of course material</li>
-										<li>Contributed to curriculum by designing final project with goal of teaching more advanced concepts of MIT App Inventor 2</li>
-										<li>Evaluated and provided feedback for quizzes and projects</li>
-									</ul>
-									<hr>
-									<!-- Tutoring HS -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Peer Tutor</h6>
-										<h6 class="text-right fill-width">Sept. 2014 - June 2017</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">University High School<br>Hartford, CT</div>
-										<div id="expdur-nhstutor" class="text-right text-nowrap ml-3">(DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Tutored students of math, physics, and computer science in one-to-one sessions</li>
-										<li>Offered walk-in office hours for students seeking immediate tutoring</li>
-									</ul>
-									<hr>
-									<!-- Discovery Challenger -->
-									<div class="d-flex flex-row fill-width">
-										<h6 class="text-left text-nowrap mr-3">Volunteer</h6>
-										<h6 class="text-right fill-width">Oct. 2011 - Dec. 2016</h6>
-									</div>
-									<div class="d-flex flex-row fill-width">
-										<div class="text-left fill-width">Discovery Challenger Basketball<br>Bristol, CT</div>
-										<div id="expdur-dischal" class="text-right text-nowrap ml-3">(DURATION)</div>
-									</div>
-									<ul class="mt-3">
-										<li>Assisted children and adults with special needs learn the fundamentals of basketball and working as a team</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Technical Skills -->
-					<h1 class="section-header">Technical Skills</h1>
-					<div id="skillsAccordion" class="my-4">
-						<!-- Languages, frameworks, & IDEs -->
-						<div class="card">
-							<div class="card-header" id="langsHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#langsCollapse" aria-expanded="true" aria-controls="langsCollapse">
-										Languages, frameworks, &amp; IDEs
-									</button>
-								</h5>
-							</div>
-							<div id="langsCollapse" class="collapse" aria-labelledby="langsHeading" data-parent="#skillsAccordion">
-								<div class="card-body section-details">
-									<!-- Java -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">Java</h6>
-										<div class="text-right fill-width">Proficient</div>
-									</div>
-									Education
-									<ul>
-										<li>Northeastern University (2 courses)</li>
-										<li>University of Hartford (2 courses)</li>
-									</ul>
-									Projects
-									<ul>
-										<li><a href="https://github.com/frankkulak/blockdude-java" target="_blank">Block Dude</a></li>
-										<li><a href="https://github.com/frankkulak/blocky-java" target="_blank">Blocky</a></li>
-									</ul>
-									Libraries &amp; frameworks
-									<ul>
-										<li>Java Swing</li>
-										<li>JUnit</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>IntelliJ IDEA</li>
-										<li>Eclipse</li>
-									</ul>
-									<hr>
-									<!-- Xamarin -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">C# &amp; XAML</h6>
-										<div class="text-right fill-width">Proficient</div>
-									</div>
-									Experience
-									<ul>
-										<li>IT Engineer Co-op at TJX (6 months)</li>
-									</ul>
-									Projects
-									<ul>
-										<li>Available upon request</li>
-									</ul>
-									Libraries &amp; frameworks
-									<ul>
-										<li>Xamarin.Forms</li>
-										<li>.NET</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>Visual Studio</li>
-									</ul>
-									<hr>
-									<!-- Swift -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">Swift</h6>
-										<div class="text-right fill-width">Comfortable</div>
-									</div>
-									Projects
-									<ul>
-										<li>Available upon request</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>Xcode</li>
-									</ul>
-									<hr>
-									<!-- Web Dev -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">HTML, CSS, &amp; JavaScript</h6>
-										<div class="text-right fill-width">Comfortable</div>
-									</div>
-									Experience
-									<ul>
-										<li>IT Engineer Co-op at TJX (6 months)</li>
-									</ul>
-									Projects
-									<ul>
-										<li><a href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">frankkulak.com</a></li>
-									</ul>
-									Libraries &amp; frameworks
-									<ul>
-										<li>Bootstrap CSS</li>
-										<li>jQuery</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>Visual Studio Code</li>
-										<li>Sublime</li>
-									</ul>
-									<hr>
-									<!-- Python -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">Python</h6>
-										<div class="text-right fill-width">Comfortable</div>
-									</div>
-									Education
-									<ul>
-										<li>Northeastern University (1 course)</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>PyCharm</li>
-									</ul>
-									<hr>
-									<!-- C -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">C/C++</h6>
-										<div class="text-right fill-width">Familiar</div>
-									</div>
-									Education
-									<ul>
-										<li>Northeastern University (1 course)</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>Visual Studio Code</li>
-									</ul>
-									<hr>
-									<!-- Racket -->
-									<div class="d-flex flex-row fill-width mb-2">
-										<h6 class="text-left text-nowrap mr-3">Racket</h6>
-										<div class="text-right fill-width">Familiar</div>
-									</div>
-									Education
-									<ul>
-										<li>Northeastern University (2 courses)</li>
-									</ul>
-									Projects
-									<ul>
-										<li>Available upon request</li>
-									</ul>
-									IDEs
-									<ul>
-										<li>DrRacket</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- Other -->
-						<div class="card">
-							<div class="card-header" id="otherSkillsHeading">
-								<h5 class="mb-0">
-									<button class="btn btn-link accordion-btn collapsed" data-toggle="collapse" data-target="#otherSkillsCollapse" aria-expanded="false" aria-controls="otherSkillsCollapse">
-										Other technical skills
-									</button>
-								</h5>
-							</div>
-							<div id="otherSkillsCollapse" class="collapse" aria-labelledby="otherSkillsHeading" data-parent="#skillsAccordion">
-								<div class="card-body section-details">
-									<h6>Source control</h6>
-									<ul>
-										<li>Git</li>
-										<li>GitHub</li>
-										<li>GitHub Desktop</li>
-										<li>SourceTree</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item mr-3 active">
+                <a class="nav-link disabled" href="">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-header">Java</div>
+                    <a class="dropdown-item" href="https://github.com/frankkulak/blockdude-java" target="_blank">Block
+                        Dude</a>
+                    <a class="dropdown-item" href="https://github.com/frankkulak/blocky-java" target="_blank">Blocky</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">Web Development</div>
+                    <a class="dropdown-item" href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">frankkulak.com</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <ul class="nav-bar my-auto">
+                <li class="social-link"><a href="mailto:kulak.f@husky.neu.edu"><img class="social-icon-sm"
+                                                                                    src="./images/socials/email-icon.png"/></a>
+                </li>
+                <li class="social-link ml-3"><a href="https://www.linkedin.com/in/frank-kulak/" target="_blank"><img
+                        class="social-icon" src="./images/socials/linkedin-icon.png"/></a></li>
+                <li class="social-link ml-3"><a href="https://github.com/frankkulak" target="_blank"><img
+                        class="social-icon" src="./images/socials/github-icon.png"/></a></li>
+            </ul>
+        </form>
+    </div>
+</nav>
 
-	<!-- External scripts (do not change order) -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="scripts/main.js"></script>
+<!-- Content -->
+<div class="pt-4 px-1">
+    <div class="container-fluid dark-gray white-bkg">
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-8 col-md-4 col-lg-3">
+                <!-- Side card -->
+                <div class="cool-light-gray-bkg rounded p-3 mb-4 text-center">
+                    <img class="profile-pic mb-3" src="./images/profile-pic.png"/>
+                    <h4 class="side-card-text">Frank Kulak</h4>
+                    <p class="side-card-text">Candidate for B.S. in Computer Science and Linguistics (exp. May 2021)</p>
+                    <p class="side-card-text">Northeastern University<br>Boston, MA</p>
+                    <hr>
+                    <h5 class="side-card-text">Contact</h5>
+                    <p class="side-card-text">Feel free to reach out if you would like a copy of my resume, or if you
+                        would like to chat - I look forward to hearing from you!</p>
+                    <p class="side-card-text">
+                        <a href="mailto:kulak.f@husky.neu.edu">kulak.f@husky.neu.edu</a>
+                        <br>
+                        <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">LinkedIn</a> • <a
+                            href="https://github.com/frankkulak" target="_blank">GitHub</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+                <!-- Main content -->
+                <!-- Education -->
+                <h1 class="section-header">Education</h1>
+                <div id="educationAccordion" class="myaccordion my-4">
+                    <div class="card">
+                        <div class="card-header" id="northeasternHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#northeasternCollapse" aria-expanded="true"
+                                        aria-controls="northeasternCollapse">
+                                    Northeastern University
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="northeasternCollapse" class="collapse" aria-labelledby="northeasternHeading"
+                             data-parent="#educationAccordion">
+                            <div class="card-body section-details">
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Boston, MA</h6>
+                                    <h6 class="text-right fill-width">Sept. 2017 - Present</h6>
+                                </div>
+                                <p>Khoury College of Computer Sciences<br><em>Candidate for Bachelor of Science in
+                                    Computer Science and Linguistics, Minor in Psychology (exp. May 2021)</em></p>
+                                <hr>
+                                <div class="d-flex flex-row fill-width mb-3">
+                                    <div class="text-left w-50">Courses</div>
+                                    <div class="text-right w-50">GPA: 3.75/4.0</div>
+                                </div>
+                                <strong>Computer Science</strong>
+                                <ul>
+                                    <li>Software Development (CS 4500)*</li>
+                                    <li>Programming Languages (CS 4400)*</li>
+                                    <li>Natural Language Processing (CS 4120)*</li>
+                                    <li>Theory of Computation (CS 3800)</li>
+                                    <li>Object-Oriented Design (CS 3500)</li>
+                                    <li>Algorithms &amp; Data (CS 3000)</li>
+                                    <li>Fundamentals of Computer Science II (CS 2510)</li>
+                                    <li>Fundamentals of Computer Science I (CS 2500)</li>
+                                    <li>Discrete Structures (CS 1800)</li>
+                                </ul>
+                                <strong>Linguistics</strong>
+                                <ul>
+                                    <li>Seminar: Evolutionary Linguistics (LING 4654)*</li>
+                                    <li>Morphology (LING 3424)</li>
+                                    <li>Phonology (LING 3422)</li>
+                                    <li>Language &amp; Culture (LING 3412)</li>
+                                    <li>Linguistic Analysis (LING 2350)</li>
+                                    <li>Introduction to Linguistics (LING 1150)</li>
+                                </ul>
+                                <strong>Psychology</strong>
+                                <ul>
+                                    <li>Psychology of Language (PSYC 3464)</li>
+                                    <li>Personality (PSYC 3400)</li>
+                                    <li>Statistics for Psychological Research (PSYC 2320)</li>
+                                </ul>
+                                <strong>Other</strong>
+                                <ul>
+                                    <li>Technology &amp; Human Values (PHIL 1145)</li>
+                                    <li>First Year Writing (ENGW 1111)</li>
+                                </ul>
+                                <hr>
+                                * = In Progress<br>Final grades &amp; transcript available upon request.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="uhartHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#uhartCollapse" aria-expanded="false"
+                                        aria-controls="uhartCollapse">
+                                    University of Hartford
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="uhartCollapse" class="collapse" aria-labelledby="uhartHeading"
+                             data-parent="#educationAccordion">
+                            <div class="card-body section-details">
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">West Hartford, CT</h6>
+                                    <h6 class="text-right fill-width">Sept. 2014 - May 2017</h6>
+                                </div>
+                                <em>Dual-Enrollment High School Program; No Degree</em>
+                                <hr>
+                                <div class="d-flex flex-row fill-width mb-3">
+                                    <div class="text-left w-50">Courses</div>
+                                    <div class="text-right w-50">GPA: 3.90/4.0</div>
+                                </div>
+                                <strong>Computer Science</strong>
+                                <ul>
+                                    <li>Fundamentals of Computing II (CS 115)</li>
+                                    <li>Fundamentals of Computing I (CS 114)</li>
+                                    <li>Programming Foundations (CS 111)</li>
+                                </ul>
+                                <strong>Mathematics</strong>
+                                <ul>
+                                    <li>Linear Algebra &amp; Matrix Theory (M 220)</li>
+                                    <li>Calculus II (M 145)</li>
+                                    <li>Calculus I (M 144)</li>
+                                    <li>Precalculus with Trigonometry (M 140)</li>
+                                </ul>
+                                <strong>Other</strong>
+                                <ul>
+                                    <li>Calculus-Based Physics II (PHY 113)</li>
+                                    <li>Calculus-Based Physics I (PHY 112)</li>
+                                    <li>Introduction to Creative Writing (ENG 225W)</li>
+                                    <li>Introduction to Literature (ENG 140)</li>
+                                    <li>Introduction to Psychology (PSY 105)</li>
+                                </ul>
+                                <hr>
+                                Final grades &amp; transcript available upon request.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="uhsseHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#uhsseCollapse" aria-expanded="false"
+                                        aria-controls="uhsseCollapse">
+                                    University High School of Science and Engineering
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="uhsseCollapse" class="collapse" aria-labelledby="uhsseHeading"
+                             data-parent="#educationAccordion">
+                            <div class="card-body section-details">
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Hartford, CT</h6>
+                                    <h6 class="text-right fill-width">Aug. 2013 - June 2017</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <em class="text-left w-50">High School Diploma</em>
+                                    <div class="text-right w-50">GPA: 3.78/4.0</div>
+                                </div>
+                                <hr>
+                                Courses, final grades, &amp; transcript available upon request.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience -->
+                <h1 class="section-header">Experience</h1>
+                <div id="experienceAccordion" class="myaccordion my-4">
+                    <div class="card">
+                        <div class="card-header" id="internshipsHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#internshipsCollapse" aria-expanded="true"
+                                        aria-controls="internshipsCollapse">
+                                    Co-ops &amp; internships
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="internshipsCollapse" class="collapse" aria-labelledby="internshipsHeading"
+                             data-parent="#experienceAccordion">
+                            <div class="card-body section-details">
+                                <!-- TJX -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">IT Engineer Co-op</h6>
+                                    <h6 class="text-right fill-width">July - Dec. 2019</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">The TJX Companies<br>Framingham, MA</div>
+                                    <div id="expdur-tjx" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Developed user interface for T.J.Maxx and HomeGoods cross-platform mobile
+                                        applications’ digital rewards update using Xamarin.Forms and HTML, CSS, and
+                                        JavaScript
+                                    </li>
+                                    <li>Collaborated with other developers using Agile to deliver critical features and
+                                        bug fixes
+                                    </li>
+                                    <li>Utilized release-branching strategy to manage project versions with Git, GitHub,
+                                        and SourceTree
+                                    </li>
+                                    <li>Maintained existing codebase using MVVM architecture</li>
+                                </ul>
+                                <hr>
+                                <!-- MAH -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Intern</h6>
+                                    <h6 class="text-right fill-width">July - Aug. 2016</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Mobile Apps for Hartford<br>Hartford, CT</div>
+                                    <div id="expdur-mah" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Collaborated with other interns to develop Android application for CREC school
+                                        system using MIT App Inventor 2
+                                    </li>
+                                    <li>Met with client from CREC schools on weekly basis to set expectations and ensure
+                                        quality of application
+                                    </li>
+                                    <li>Published mobile application on the Google Play store</li>
+                                    <li>Attended weekly presentations on topics such as software development, cyber
+                                        security, and robotics
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="otherHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#otherCollapse" aria-expanded="false"
+                                        aria-controls="otherCollapse">
+                                    Part-time work
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="otherCollapse" class="collapse" aria-labelledby="otherHeading"
+                             data-parent="#experienceAccordion">
+                            <div class="card-body section-details">
+                                <!-- Tutoring -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Peer Tutor</h6>
+                                    <h6 class="text-right fill-width">Jan. 2019 - Present</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Peer Tutoring Center<br>Northeastern
+                                        University<br>Boston, MA
+                                    </div>
+                                    <div id="expdur-tutoring" class="text-right text-nowrap ml-3">(EMPLOYMENT
+                                        DURATION)
+                                    </div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Tutor students of linguistics and psychology courses in one-on-one sessions</li>
+                                    <li>Conduct review sessions of up to 50 students for exam preparation</li>
+                                    <li>Act as mentor and provide guidance for improving study habits</li>
+                                </ul>
+                                <hr>
+                                <!-- Sherwood -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Cashier</h6>
+                                    <h6 class="text-right fill-width">June 2018 - July 2019</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Sherwood Cleaners<br>Plainville, CT</div>
+                                    <div id="expdur-sherwood" class="text-right text-nowrap ml-3">(EMPLOYMENT
+                                        DURATION)
+                                    </div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Resolved questions and complaints to increase customer satisfaction</li>
+                                    <li>Operated cash drawer and monitored transactions to ensure accuracy of cash
+                                        flow
+                                    </li>
+                                    <li>Recorded and retrieved customer orders</li>
+                                    <li>Pressed, ironed, and prepared up to 300 shirts daily</li>
+                                </ul>
+                                <hr>
+                                <!-- SFS -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Office Assistant</h6>
+                                    <h6 class="text-right fill-width">Sept. 2017 - Mar. 2020</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Student Financial Services<br>Northeastern
+                                        University<br>Boston, MA
+                                    </div>
+                                    <div id="expdur-sfs" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Respond to up to 15 caller inquiries per hour regarding financial aid</li>
+                                    <li>Consult financial aid counselors to understand and resolve caller inquiries</li>
+                                    <li>Perform data entry of scholarships to achieve consistency between physical and
+                                        digital documentation
+                                    </li>
+                                </ul>
+                                <hr>
+                                <!-- Barnes -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Maintenance Worker</h6>
+                                    <h6 class="text-right fill-width">June - Aug. 2017</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Associated Spring<br>Bristol, CT</div>
+                                    <div id="expdur-barnes" class="text-right text-nowrap ml-3">(EMPLOYMENT DURATION)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="volunteerHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#volunteerCollapse" aria-expanded="false"
+                                        aria-controls="volunteerCollapse">
+                                    Volunteer work
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="volunteerCollapse" class="collapse" aria-labelledby="volunteerHeading"
+                             data-parent="#experienceAccordion">
+                            <div class="card-body section-details">
+                                <!-- Berent's Lab -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Research Assistant</h6>
+                                    <h6 class="text-right fill-width">Jan. - Dec. 2018</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Phonology and Reading Lab<br>Northeastern
+                                        University<br>Boston, MA
+                                    </div>
+                                    <div id="expdur-berentlab" class="text-right text-nowrap ml-3">(DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Prepared approximately 200 video samples using iMovie for use in experiment of
+                                        ASL phonology
+                                    </li>
+                                    <li>Discovered and remedied problem regarding experimental control variables</li>
+                                    <li>Proposed and initiated extension of ASL phonology experiment</li>
+                                </ul>
+                                <hr>
+                                <!-- LGR -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Coach</h6>
+                                    <h6 class="text-right fill-width">Oct. - Nov. 2017</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Let's Get Ready<br>Malden, MA</div>
+                                    <div id="expdur-lgr" class="text-right text-nowrap ml-3">(DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Tutored high school students for SAT verbal section</li>
+                                    <li>Provided advice and answers regarding college application process</li>
+                                </ul>
+                                <hr>
+                                <!-- TAing Mobile CSP -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Teaching Assistant</h6>
+                                    <h6 class="text-right fill-width">Aug. 2016 - June 2017</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">University High School<br>Hartford, CT</div>
+                                    <div id="expdur-mobilecsp" class="text-right text-nowrap ml-3">(DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Assisted and tutored students of Mobile CSP App Development during and out of
+                                        class time
+                                    </li>
+                                    <li>Cooperated with teacher to increase efficiency and effectiveness of course
+                                        material
+                                    </li>
+                                    <li>Contributed to curriculum by designing final project with goal of teaching more
+                                        advanced concepts of MIT App Inventor 2
+                                    </li>
+                                    <li>Evaluated and provided feedback for quizzes and projects</li>
+                                </ul>
+                                <hr>
+                                <!-- Tutoring HS -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Peer Tutor</h6>
+                                    <h6 class="text-right fill-width">Sept. 2014 - June 2017</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">University High School<br>Hartford, CT</div>
+                                    <div id="expdur-nhstutor" class="text-right text-nowrap ml-3">(DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Tutored students of math, physics, and computer science in one-to-one sessions
+                                    </li>
+                                    <li>Offered walk-in office hours for students seeking immediate tutoring</li>
+                                </ul>
+                                <hr>
+                                <!-- Discovery Challenger -->
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-3">Volunteer</h6>
+                                    <h6 class="text-right fill-width">Oct. 2011 - Dec. 2016</h6>
+                                </div>
+                                <div class="d-flex flex-row fill-width">
+                                    <div class="text-left fill-width">Discovery Challenger Basketball<br>Bristol, CT
+                                    </div>
+                                    <div id="expdur-dischal" class="text-right text-nowrap ml-3">(DURATION)</div>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Assisted children and adults with special needs learn the fundamentals of
+                                        basketball and working as a team
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Technical Skills -->
+                <h1 class="section-header">Technical Skills</h1>
+                <div id="skillsAccordion" class="myaccordion my-4">
+                    <!-- Languages, frameworks, & IDEs -->
+                    <div class="card">
+                        <div class="card-header" id="langsHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#langsCollapse" aria-expanded="true" aria-controls="langsCollapse">
+                                    Languages, frameworks, &amp; IDEs
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="langsCollapse" class="collapse" aria-labelledby="langsHeading"
+                             data-parent="#skillsAccordion">
+                            <div class="card-body section-details">
+                                <!-- Java -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">Java</h6>
+                                    <div class="text-right fill-width">Proficient</div>
+                                </div>
+                                Education
+                                <ul>
+                                    <li>Northeastern University (2 courses)</li>
+                                    <li>University of Hartford (2 courses)</li>
+                                </ul>
+                                Projects
+                                <ul>
+                                    <li><a href="https://github.com/frankkulak/blockdude-java" target="_blank">Block
+                                        Dude</a></li>
+                                    <li><a href="https://github.com/frankkulak/blocky-java" target="_blank">Blocky</a>
+                                    </li>
+                                </ul>
+                                Libraries &amp; frameworks
+                                <ul>
+                                    <li>Java Swing</li>
+                                    <li>JUnit</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>IntelliJ IDEA</li>
+                                    <li>Eclipse</li>
+                                </ul>
+                                <hr>
+                                <!-- Xamarin -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">C# &amp; XAML</h6>
+                                    <div class="text-right fill-width">Proficient</div>
+                                </div>
+                                Experience
+                                <ul>
+                                    <li>IT Engineer Co-op at TJX (6 months)</li>
+                                </ul>
+                                Projects
+                                <ul>
+                                    <li>Available upon request</li>
+                                </ul>
+                                Libraries &amp; frameworks
+                                <ul>
+                                    <li>Xamarin.Forms</li>
+                                    <li>.NET</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>Visual Studio</li>
+                                </ul>
+                                <hr>
+                                <!-- Swift -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">Swift</h6>
+                                    <div class="text-right fill-width">Comfortable</div>
+                                </div>
+                                Projects
+                                <ul>
+                                    <li>Available upon request</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>Xcode</li>
+                                </ul>
+                                <hr>
+                                <!-- Web Dev -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">HTML, CSS, &amp; JavaScript</h6>
+                                    <div class="text-right fill-width">Comfortable</div>
+                                </div>
+                                Experience
+                                <ul>
+                                    <li>IT Engineer Co-op at TJX (6 months)</li>
+                                </ul>
+                                Projects
+                                <ul>
+                                    <li><a href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">frankkulak.com</a>
+                                    </li>
+                                </ul>
+                                Libraries &amp; frameworks
+                                <ul>
+                                    <li>Bootstrap CSS</li>
+                                    <li>jQuery</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>Visual Studio Code</li>
+                                    <li>Sublime</li>
+                                </ul>
+                                <hr>
+                                <!-- Python -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">Python</h6>
+                                    <div class="text-right fill-width">Comfortable</div>
+                                </div>
+                                Education
+                                <ul>
+                                    <li>Northeastern University (1 course)</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>PyCharm</li>
+                                </ul>
+                                <hr>
+                                <!-- C -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">C/C++</h6>
+                                    <div class="text-right fill-width">Familiar</div>
+                                </div>
+                                Education
+                                <ul>
+                                    <li>Northeastern University (1 course)</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>Visual Studio Code</li>
+                                </ul>
+                                <hr>
+                                <!-- Racket -->
+                                <div class="d-flex flex-row fill-width mb-2">
+                                    <h6 class="text-left text-nowrap mr-3">Racket</h6>
+                                    <div class="text-right fill-width">Familiar</div>
+                                </div>
+                                Education
+                                <ul>
+                                    <li>Northeastern University (2 courses)</li>
+                                </ul>
+                                Projects
+                                <ul>
+                                    <li>Available upon request</li>
+                                </ul>
+                                IDEs
+                                <ul>
+                                    <li>DrRacket</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Other -->
+                    <div class="card">
+                        <div class="card-header" id="otherSkillsHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
+                                        data-target="#otherSkillsCollapse" aria-expanded="false"
+                                        aria-controls="otherSkillsCollapse">
+                                    Other technical skills
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="otherSkillsCollapse" class="collapse" aria-labelledby="otherSkillsHeading"
+                             data-parent="#skillsAccordion">
+                            <div class="card-body section-details">
+                                <h6>Source control</h6>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                    <li>GitHub Desktop</li>
+                                    <li>SourceTree</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- External scripts (do not change order) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
 </body>
 
 </html>
