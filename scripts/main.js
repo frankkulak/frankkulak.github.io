@@ -51,9 +51,11 @@ function employmentDuration(startDate, endDate) {
 
 setView();
 
-$('.collapse').on('shown.bs.collapse', function () {
-    let cardHeader = $(this).closest('.collapse');
+$('.card').on('shown.bs.collapse', function () {
+    let card = $(this).closest('.card');
+    let navbarOffset = $('#navbar').height() * 1.5;
+    console.log(navbarOffset);
     $('html,body').animate({
-        scrollTop: cardHeader.offset().top - 130
+        scrollTop: card.offset().top - navbarOffset
     }, 500);
-})
+});
