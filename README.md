@@ -12,7 +12,6 @@ This site is still under construction and is updated frequently, so be sure to c
 
 To fix
 - Scroll to the top of an accordion card when it is opened
-- Make whole accordion card clickable
 - Unhighlight button text after it is clicked on mobile
 
 To add
