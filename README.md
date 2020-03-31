@@ -12,6 +12,7 @@ This site is still under construction and is updated frequently, so be sure to c
 
 To fix
 - Scroll to the top of an accordion card when it is opened
+- Make whole accordion card clickable
 
 To add
 - Add a 'Projects' page that has a section for each project

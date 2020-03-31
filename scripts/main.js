@@ -37,12 +37,12 @@ function monthsBetween(startDate, endDate) {
 
 function employmentDuration(startDate, endDate) {
   let years = yearsBetween(startDate, endDate);
-  let yearAbbr = years == 1 ? 'yr' : 'yrs';
+  let yearAbbr = years === 1 ? 'yr' : 'yrs';
   let months = monthsBetween(startDate, endDate);
-  let monthAbbr = months == 1 ? 'mo' : 'mos';
-  if (years == 0) {
+  let monthAbbr = months === 1 ? 'mo' : 'mos';
+  if (years === 0) {
     return `${months} ${monthAbbr}`;
-  } else if (months == 0) {
+  } else if (months === 0) {
     return `${years} ${yearAbbr}`;
   } else {
     return `${years} ${yearAbbr} ${months} ${monthAbbr}`;
