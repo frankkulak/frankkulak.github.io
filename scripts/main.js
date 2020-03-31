@@ -50,3 +50,10 @@ function employmentDuration(startDate, endDate) {
 }
 
 setView();
+
+$('.collapse').on('shown.bs.collapse', function () {
+    let cardHeader = $(this).closest('.collapse');
+    $('html,body').animate({
+        scrollTop: cardHeader.offset().top - 130
+    }, 500);
+})
