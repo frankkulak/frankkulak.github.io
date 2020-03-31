@@ -35,7 +35,7 @@
 <!-- Navigation bar -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="">
-        <img src="./images/logo-light.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/logo-light.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,24 +54,37 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-header">Java</div>
-                    <a class="dropdown-item" href="https://github.com/frankkulak/blockdude-java" target="_blank">Block
-                        Dude</a>
-                    <a class="dropdown-item" href="https://github.com/frankkulak/blocky-java" target="_blank">Blocky</a>
+                    <a class="dropdown-item" href="https://github.com/frankkulak/blockdude-java" target="_blank">
+                        Block Dude
+                    </a>
+                    <a class="dropdown-item" href="https://github.com/frankkulak/blocky-java" target="_blank">
+                        Blocky
+                    </a>
                     <div class="dropdown-divider"></div>
                     <div class="dropdown-header">Web Development</div>
-                    <a class="dropdown-item" href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">frankkulak.com</a>
+                    <a class="dropdown-item" href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">
+                        frankkulak.com
+                    </a>
                 </div>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <ul class="nav-bar my-auto">
-                <li class="social-link"><a href="mailto:kulak.f@husky.neu.edu"><img class="social-icon-sm"
-                                                                                    src="./images/socials/email-icon.png"/></a>
+                <li class="social-link">
+                    <a href="mailto:kulak.f@husky.neu.edu">
+                        <img class="social-icon-sm" src="./images/socials/email-icon.png" alt="Email"/>
+                    </a>
                 </li>
-                <li class="social-link ml-3"><a href="https://www.linkedin.com/in/frank-kulak/" target="_blank"><img
-                        class="social-icon" src="./images/socials/linkedin-icon.png"/></a></li>
-                <li class="social-link ml-3"><a href="https://github.com/frankkulak" target="_blank"><img
-                        class="social-icon" src="./images/socials/github-icon.png"/></a></li>
+                <li class="social-link ml-3">
+                    <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">
+                        <img class="social-icon" src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
+                    </a>
+                </li>
+                <li class="social-link ml-3">
+                    <a href="https://github.com/frankkulak" target="_blank">
+                        <img class="social-icon" src="./images/socials/github-icon.png" alt="GitHub"/>
+                    </a>
+                </li>
             </ul>
         </form>
     </div>
@@ -84,7 +97,7 @@
             <div class="col-10 col-sm-8 col-md-4 col-lg-3">
                 <!-- Side card -->
                 <div class="cool-light-gray-bkg rounded p-3 mb-4 text-center">
-                    <img class="profile-pic mb-3" src="./images/profile-pic.png"/>
+                    <img class="profile-pic mb-3" src="./images/profile-pic.png" alt="Profile Photo"/>
                     <h4 class="side-card-text">Frank Kulak</h4>
                     <p class="side-card-text">Candidate for B.S. in Computer Science and Linguistics (exp. May 2021)</p>
                     <p class="side-card-text">Northeastern University<br>Boston, MA</p>
@@ -106,11 +119,10 @@
                     <!-- Education -->
                     <h1 class="section-header mb-4">Education</h1>
                     <div class="card">
-                        <div class="card-header" id="northeasternHeading">
+                        <div class="card-header" id="northeasternHeading" data-toggle="collapse" aria-expanded="false"
+                             data-target="#northeasternCollapse" aria-controls="northeasternCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#northeasternCollapse" aria-expanded="true"
-                                        aria-controls="northeasternCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     Northeastern University
                                 </button>
                             </h5>
@@ -167,11 +179,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="uhartHeading">
+                        <div class="card-header" id="uhartHeading" data-toggle="collapse" data-target="#uhartCollapse"
+                             aria-expanded="false" aria-controls="uhartCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#uhartCollapse" aria-expanded="false"
-                                        aria-controls="uhartCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     University of Hartford
                                 </button>
                             </h5>
@@ -216,11 +227,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="uhsseHeading">
+                        <div class="card-header" id="uhsseHeading" data-toggle="collapse" data-target="#uhsseCollapse"
+                             aria-expanded="false" aria-controls="uhsseCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#uhsseCollapse" aria-expanded="false"
-                                        aria-controls="uhsseCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     University High School of Science and Engineering
                                 </button>
                             </h5>
@@ -244,11 +254,10 @@
                     <!-- Experience -->
                     <h1 class="section-header my-4">Experience</h1>
                     <div class="card">
-                        <div class="card-header" id="internshipsHeading">
+                        <div class="card-header" id="internshipsHeading" data-toggle="collapse" aria-expanded="true"
+                             data-target="#internshipsCollapse" aria-controls="internshipsCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#internshipsCollapse" aria-expanded="true"
-                                        aria-controls="internshipsCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     Co-ops &amp; internships
                                 </button>
                             </h5>
@@ -303,11 +312,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="otherHeading">
+                        <div class="card-header" id="otherHeading" data-toggle="collapse" data-target="#otherCollapse"
+                             aria-expanded="false" aria-controls="otherCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#otherCollapse" aria-expanded="false"
-                                        aria-controls="otherCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     Part-time work
                                 </button>
                             </h5>
@@ -387,11 +395,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="volunteerHeading">
+                        <div class="card-header" id="volunteerHeading" data-toggle="collapse" aria-expanded="false"
+                             data-target="#volunteerCollapse" aria-controls="volunteerCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#volunteerCollapse" aria-expanded="false"
-                                        aria-controls="volunteerCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     Volunteer work
                                 </button>
                             </h5>
@@ -491,10 +498,10 @@
                     <h1 class="section-header my-4">Technical Skills</h1>
                     <!-- Languages, frameworks, & IDEs -->
                     <div class="card">
-                        <div class="card-header" id="langsHeading">
+                        <div class="card-header" id="langsHeading" data-toggle="collapse" data-target="#langsCollapse"
+                             aria-expanded="true" aria-controls="langsCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#langsCollapse" aria-expanded="true" aria-controls="langsCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     Languages, frameworks, &amp; IDEs
                                 </button>
                             </h5>
@@ -575,7 +582,10 @@
                                 </ul>
                                 Projects
                                 <ul>
-                                    <li><a href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">frankkulak.com</a>
+                                    <li>
+                                        <a href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">
+                                            frankkulak.com
+                                        </a>
                                     </li>
                                 </ul>
                                 Libraries &amp; frameworks
@@ -636,11 +646,10 @@
                     </div>
                     <!-- Other -->
                     <div class="card">
-                        <div class="card-header" id="otherSkillsHeading">
+                        <div class="card-header" id="otherSkillsHeading" data-toggle="collapse" aria-expanded="false"
+                             data-target="#otherSkillsCollapse" aria-controls="otherSkillsCollapse">
                             <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left" data-toggle="collapse"
-                                        data-target="#otherSkillsCollapse" aria-expanded="false"
-                                        aria-controls="otherSkillsCollapse">
+                                <button class="btn btn-link accordion-btn collapsed text-left">
                                     Other technical skills
                                 </button>
                             </h5>
@@ -665,9 +674,7 @@
 </div>
 
 <!-- External scripts (do not change order) -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
