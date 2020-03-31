@@ -11,7 +11,6 @@ This site is still under construction and is updated frequently, so be sure to c
 ## To do
 
 To fix
-- Collapse all open accordion cards when a new one is opened
 - Scroll to the top of an accordion card when it is opened
 
 To add
