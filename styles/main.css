@@ -5,214 +5,213 @@
 /* COLORS */
 
 .white {
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .white-bkg {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .cool-light-gray {
-	color: #F0F3F7;
+    color: #F0F3F7;
 }
 
 .cool-light-gray-bkg {
-	background-color: #F0F3F7;
+    background-color: #F0F3F7;
 }
 
 .dark-gray {
-	color: #323232;
+    color: #323232;
 }
 
 .dark-gray-bkg {
-	background-color: #323232;
+    background-color: #323232;
 }
 
 .black {
-	color: #000000;
+    color: #000000;
 }
 
 .black-bkg {
-	background-color: #000000;
+    background-color: #000000;
 }
 
 .main-color {
-	color: rgb(145, 200, 225);
+    color: rgb(145, 200, 225);
 }
 
 .main-color-bkg {
-	background-color: rgb(145, 200, 225); /* NOTE : hard coded in a:hover */
+    background-color: rgb(145, 200, 225); /* NOTE : hard coded in a:hover */
 }
 
 .dark-accent-color {
-	color: rgb(100, 95, 215); /* NOTE : hard coded in a, a:focus */
+    color: rgb(100, 95, 215); /* NOTE : hard coded in a, a:focus */
 }
 
 .dark-accent-color-bkg {
-	background-color: rgb(100, 95, 215);
+    background-color: rgb(100, 95, 215);
 }
 
 .light-accent-color {
-	color: rgb(195, 200, 255);
+    color: rgb(195, 200, 255);
 }
 
 .light-accent-color-bkg {
-	background-color: rgb(195, 200, 255);
+    background-color: rgb(195, 200, 255);
 }
 
 /* WHOLE PAGE */
 
 body {
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 0.25px;
+    font-family: 'Lato', sans-serif;
 }
 
 /* HEADER */
 
 .header {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 h2.header-text {
-	font-size: 24px;
-	white-space: nowrap;
+    font-size: 24px;
+    white-space: nowrap;
 }
 
 img.header-logo {
-	width: auto;
-	height: 50px;
+    width: auto;
+    height: 50px;
 }
 
 ul.nav-bar {
-	list-style-type: none;
-	font-size: 16px;
-  margin: 0px;
-	padding: 0px;
-	white-space: nowrap;
+    list-style-type: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
 }
 
 li.nav-item {
-	display: inline;
+    display: inline;
 }
 
 li.social-link {
-	display: inline;
+    display: inline;
 }
 
 img.social-icon {
-	height: 20px;
-	width: auto;
+    height: 20px;
+    width: auto;
 }
 
 img.social-icon-sm {
-	height: 16px;
-	width: auto;
+    height: 16px;
+    width: auto;
 }
 
 /* SIDE CARD */
 
 img.profile-pic {
-	width: 128px;
-	height: auto;
+    width: 128px;
+    height: auto;
 }
 
 h4.side-card-text {
-	font-size: 18px;
-	font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 h5.side-card-text {
-	font-size: 16px;
-	font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 h6.side-card-text {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 p.side-card-text {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 /* CONTENT */
 
 h1.section-header {
-	font-size: 32px;
+    font-size: 32px;
 }
 
 h2.section-subheader {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 .section-details {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 button.accordion-btn, button.accordion-btn:focus {
-	font-size: 18px;
-	color: #323232;
-	text-decoration: none;
+    font-size: 18px;
+    color: #323232;
+    text-decoration: none;
 }
 
 button.accordion-btn:hover {
-	color: rgb(145, 200, 225);
-	text-decoration: none;
+    color: rgb(145, 200, 225);
+    text-decoration: none;
 }
 
 /* GENERIC */
 
 .mw-50 {
-	max-width: 50%;
+    max-width: 50%;
 }
 
 .mw-70 {
-	max-width: 70%;
+    max-width: 70%;
 }
 
 .mw-100 {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .w-70 {
-	width: 70%;
+    width: 70%;
 }
 
 .minw-50 {
-	min-width: 50%;
+    min-width: 50%;
 }
 
 .w-90 {
-	width: 90%;
+    width: 90%;
 }
 
 .w-10 {
-	width: 10%;
+    width: 10%;
 }
 
 .fill-width {
-	width: 100%;
+    width: 100%;
 }
 
 .fill-height {
-	height: 100%;
+    height: 100%;
 }
 
 .fill-parent {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 a, a:focus {
-  color: rgb(100, 95, 215);
-	text-decoration: none;
+    color: rgb(100, 95, 215);
+    text-decoration: none;
 }
 
 a:hover {
-	color: rgb(145, 200, 225);
-	text-decoration: none;
+    color: rgb(145, 200, 225);
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
+    font-weight: bold;
 }
