@@ -159,6 +159,16 @@ button.accordion-btn:hover {
     text-decoration: none;
 }
 
+table.lang-details td {
+    padding-bottom: 15px;
+}
+
+table.lang-details td.category {
+    font-style: italic;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
 /* GENERIC */
 
 .mw-50 {

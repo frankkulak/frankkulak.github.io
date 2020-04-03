@@ -12,7 +12,7 @@ This site is still under construction and is updated frequently, so be sure to c
 
 To fix
 - Make accordion card transitions smoother
-- Unhighlight button text after it is clicked on mobile
+- Display courses in up to 2 or 3 columns, and make it responsive to screen size
 
 To add
 - Add a 'Projects' page that has a section for each project
