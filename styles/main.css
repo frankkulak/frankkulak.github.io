@@ -167,6 +167,7 @@ table.lang-details td.category {
     font-style: italic;
     padding-right: 15px;
     vertical-align: top;
+    min-width: 95px;
 }
 
 /* GENERIC */
