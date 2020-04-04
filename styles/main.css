@@ -159,14 +159,14 @@ button.accordion-btn:hover {
     text-decoration: none;
 }
 
-table.lang-details td {
+table.card-table td {
     padding-bottom: 15px;
+    vertical-align: top;
 }
 
-table.lang-details td.category {
+table.card-table td.category {
     font-style: italic;
-    padding-right: 15px;
-    vertical-align: top;
+    padding-right: 10px;
     min-width: 95px;
 }
 
