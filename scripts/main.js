@@ -1,45 +1,71 @@
-function setView() {
-    setExperienceDurations();
-}
-
-function setExperienceDurations() {
-    // co-ops & internships
-    document.getElementById('expdur-tjx').innerHTML = employmentDuration(new Date(2019, 6), new Date(2019, 11)); // July - Dec. 2019
-    document.getElementById('expdur-mah').innerHTML = employmentDuration(new Date(2016, 6), new Date(2016, 7)); // July - Aug. 2016
+// Object of experiences and their start/end dates
+// IMPORTANT: Months are off by 1 (Jan = 0, Feb = 1, etc.)
+const experiences = {
+    // co-ops and internships
+    'expdur-tjx': {
+        'start': new Date(2019, 6), // Jul 2019
+        'end': new Date(2019, 11) // Dec 2019
+    },
+    'expdur-mah': {
+        'start': new Date(2016, 6), // Jul 2016
+        'end': new Date(2016, 7) // Aug 2016
+    },
     // part-time work
-    document.getElementById('expdur-tutoring').innerHTML = employmentDuration(new Date(2019, 0), new Date()); // Jan. 2019 - Present
-    document.getElementById('expdur-sherwood').innerHTML = employmentDuration(new Date(2018, 5), new Date(2019, 6)); // June 2018 - July 2019
-    document.getElementById('expdur-sfs').innerHTML = employmentDuration(new Date(2017, 8), new Date(2020, 3)); // Sept. 2017 - Mar. 2020
-    document.getElementById('expdur-barnes').innerHTML = employmentDuration(new Date(2017, 5), new Date(2017, 7)); // June - Aug. 2017
+    'expdur-tutoring': {
+        'start': new Date(2019, 0), // Jan 2019
+        'end': new Date() // Present
+    },
+    'expdur-sherwood': {
+        'start': new Date(2018, 5), // Jun 2018
+        'end': new Date(2019, 6) // Jul 2019
+    },
+    'expdur-sfs': {
+        'start': new Date(2017, 8), // Sep 2017
+        'end': new Date(2020, 2) // Mar 2020
+    },
+    'expdur-barnes': {
+        'start': new Date(2017, 5), // Jun 2017
+        'end': new Date(2017, 7) // Aug 2017
+    },
     // volunteer work
-    document.getElementById('expdur-berentlab').innerHTML = employmentDuration(new Date(2018, 0), new Date(2018, 11)); // Jan. - Dec. 2018
-    document.getElementById('expdur-lgr').innerHTML = employmentDuration(new Date(2017, 9), new Date(2017, 10)); // Oct. - Nov. 2017
-    document.getElementById('expdur-mobilecsp').innerHTML = employmentDuration(new Date(2016, 7), new Date(2017, 5)); // Aug. 2016 - June. 2017
-    document.getElementById('expdur-nhstutor').innerHTML = employmentDuration(new Date(2014, 8), new Date(2017, 5)); // Sept. 2014 - June 2017
-    document.getElementById('expdur-dischal').innerHTML = employmentDuration(new Date(2011, 9), new Date(2016, 11)); // Oct. 2011 - Dec. 2016
-}
+    'expdur-berentlab': {
+        'start': new Date(2018, 0), // Jan 2018
+        'end': new Date(2018, 11) // Dec 2018
+    },
+    'expdur-lgr': {
+        'start': new Date(2017, 9), // Oct 2017
+        'end': new Date(2017, 10) // Nov 2017
+    },
+    'expdur-mobilecsp': {
+        'start': new Date(2016, 7), // Aug 2016
+        'end': new Date(2017, 10) // Jun 2017
+    },
+    'expdur-nhstutor': {
+        'start': new Date(2014, 8), // Sep 2014
+        'end': new Date(2017, 5) // Jun 2017
+    },
+    'expdur-dischal': {
+        'start': new Date(2011, 9), // Oct 2011
+        'end': new Date(2016, 11) // Dec 2016
+    },
+};
 
-function yearsBetween(startDate, endDate) {
+// Returns a formatted string for the duration between two dates.
+const experienceDuration = (startDate, endDate) => {
+    // find number of full years between the dates
     let years = endDate.getFullYear() - startDate.getFullYear();
-    if (startDate.getMonth() > endDate.getMonth()) {
-        return years - 1;
-    } else {
-        return years;
-    }
-}
+    if (startDate.getMonth() > endDate.getMonth()) years--;
 
-function monthsBetween(startDate, endDate) {
-    // intentionally not adding (years * 12) because I need to use years and months in employmentDuration()
+    // find number of full months between the dates (includes start and end month, and excludes full years in-between)
     let months = (endDate.getMonth() - startDate.getMonth());
     if (months < 0) months = 12 + months;
-    return months + 1;
-}
+    months++;
 
-function employmentDuration(startDate, endDate) {
-    let years = yearsBetween(startDate, endDate);
-    let yearAbbr = years === 1 ? 'yr' : 'yrs';
-    let months = monthsBetween(startDate, endDate);
-    let monthAbbr = months === 1 ? 'mo' : 'mos';
+    // determine abbreviations to use for years and months
+    const yearAbbr = years === 1 ? 'yr' : 'yrs';
+    const monthAbbr = months === 1 ? 'mo' : 'mos';
+
+    // format & return output string
     if (years === 0) {
         return `${months} ${monthAbbr}`;
     } else if (months === 0) {
@@ -47,10 +73,15 @@ function employmentDuration(startDate, endDate) {
     } else {
         return `${years} ${yearAbbr} ${months} ${monthAbbr}`;
     }
-}
+};
 
-setView();
+// Sets the inner HTML of each experience duration to the calculated experience duration.
+Object.keys(experiences).forEach(id => {
+    const { start, end } = experiences[id];
+    document.getElementById(id).innerHTML = experienceDuration(start, end);
+});
 
+// Automatically scrolls to the top of a card when it is opened.
 $('.card').on('shown.bs.collapse', function () {
     let card = $(this).closest('.card');
     let navbarOffset = $('#navbar').height() * 1.5;
