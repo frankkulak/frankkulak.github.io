@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+// ----------------------------------------
+// variables
+
+// colors
+$white: #FFFFFF;
+$light-gray: #F0F3F7;
+$dark-gray: #323232;
+$black: #000000;
+$link-color: rgb(100, 95, 215);
+$link-hover-color: rgb(145, 200, 225);
+
+// font sizes
+$plain-font-size: 14px;
+$nav-bar-font-size: 16px;
+
+// ----------------------------------------
+// styles
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: $plain-font-size;
+  background-color: $white;
+  color: $dark-gray;
+}
+
+nav {
+  font-size: $nav-bar-font-size;
+
+  .logo {
+    height: 35px;
+    width: auto;
+  }
+
+  .socials {
+    img {
+      height: 22px;
+      width: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+
+    li {
+      display: inline;
+    }
+  }
+}
+
+.side-card {
+  background-color: $light-gray;
+  text-align: center;
+
+  img {
+    width: 128px;
+    height: auto;
+  }
+}
+
+.content-accordion {
+  margin: 50px auto;
+
+  .section-header {
+    font-weight: normal;
+  }
+
+  .card, .card:last-child .card-header {
+    border: none;
+    margin-bottom: 5px;
+  }
+
+  .card-header {
+    border-bottom-color: $white;
+    background-color: $light-gray;
+  }
+
+  .fa-stack {
+    font-size: 18px;
+  }
+
+  .accordion-btn, .accordion-btn:focus {
+    font-size: 18px;
+    color: $dark-gray;
+    text-decoration: none;
+  }
+
+  .accordion-btn:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+
+  table td {
+    padding-bottom: 15px;
+    vertical-align: top;
+  }
+
+  table td.category {
+    font-style: italic;
+    padding-right: 10px;
+    min-width: 95px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+a, a:focus {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link-hover-color;
+  text-decoration: none;
+}
+
+// ----------------------------------------
+// helper classes
+
+.fill-width {
+  width: 100%;
+}

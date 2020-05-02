@@ -28,14 +28,13 @@
 
     <!-- Other styling -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/accordion.css">
 </head>
 
 <body>
-<!-- Navigation bar -->
+<!-- Nav bar -->
 <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="">
-        <img src="./images/logo-light.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        <img src="./images/logo-light.png" class="d-inline-block align-top logo" alt="Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,10 +43,10 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-3 active">
+            <li class="mr-3 active">
                 <a class="nav-link disabled" href="">About</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Projects
@@ -68,21 +67,16 @@
                 </div>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <ul class="nav-bar my-auto">
-                <li class="social-link">
-                    <a href="mailto:kulak.f@northeastern.edu">
-                        <img class="social-icon-sm" src="./images/socials/email-icon.png" alt="Email"/>
-                    </a>
-                </li>
-                <li class="social-link ml-3">
+        <form class="form-inline my-2 my-lg-0 socials">
+            <ul class="my-auto">
+                <li class="mr-2">
                     <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">
-                        <img class="social-icon" src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
+                        <img src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
                     </a>
                 </li>
-                <li class="social-link ml-3">
+                <li>
                     <a href="https://github.com/frankkulak" target="_blank">
-                        <img class="social-icon" src="./images/socials/github-icon.png" alt="GitHub"/>
+                        <img src="./images/socials/github-icon.png" alt="GitHub"/>
                     </a>
                 </li>
             </ul>
@@ -92,39 +86,40 @@
 
 <!-- Content -->
 <div class="pt-4 px-1">
-    <div class="container-fluid dark-gray white-bkg">
+    <div class="container-fluid">
         <div class="row justify-content-center">
+            <!-- Side card -->
             <div class="col-10 col-sm-8 col-md-4 col-lg-3">
-                <!-- Side card -->
-                <div class="cool-light-gray-bkg rounded p-3 mb-4 text-center">
-                    <img class="profile-pic mb-3" src="./images/profile-pic.png" alt="Profile Photo"/>
-                    <h4 class="side-card-text">Frank Kulak</h4>
-                    <p class="side-card-text">Candidate for B.S. in Computer Science and Linguistics (exp. May 2021)</p>
-                    <p class="side-card-text">Northeastern University<br>Boston, MA</p>
+                <div class="side-card rounded p-3 mb-4">
+                    <div>
+                        <img class="mb-3" src="./images/profile-pic.png" alt="Profile Photo"/>
+                        <h3>Frank Kulak</h3>
+                        <p>Candidate for B.S. in Computer Science and Linguistics (exp. May 2021)</p>
+                        <p>Northeastern University<br>Boston, MA</p>
+                    </div>
                     <hr>
-                    <h5 class="side-card-text">Objective</h5>
-                    <p class="side-card-text">Due to the current global situation, I am pursuing remote internship or
-                        co-op opportunities in software development for July-December 2020. I am mainly interested in mobile
-                        applications and web development, but am open to other positions as well.</p>
+                    <div>
+                        <h5>Objective</h5>
+                        <p>I am currently pursuing remote internship or co-op opportunities in software development for
+                            July-December 2020. I am mainly interested in mobile applications and web development, but
+                            am open to other positions as well.</p>
+                    </div>
                     <hr>
-                    <h5 class="side-card-text">Contact</h5>
-                    <p class="side-card-text">Feel free to reach out if you would like a copy of my resume, or if you
-                        would like to chat - I look forward to hearing from you!</p>
-                    <p class="side-card-text">
+                    <div>
                         <a href="mailto:me@frankkulak.com">me@frankkulak.com</a>
                         <br>
                         <a href="mailto:kulak.f@northeastern.edu">kulak.f@northeastern.edu</a>
                         <br>
                         <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">LinkedIn</a> • <a
                             href="https://github.com/frankkulak" target="_blank">GitHub</a>
-                    </p>
+                    </div>
                 </div>
             </div>
+            <!-- Main content -->
             <div class="col-12 col-md-8 col-lg-9">
-                <!-- Main content -->
-                <div id="myaccordion" class="myaccordion mt-2">
+                <div id="myaccordion" class="content-accordion mt-2">
                     <!-- Education -->
-                    <h1 class="section-header mb-4">Education</h1>
+                    <h3 class="section-header mb-4">Education</h3>
                     <div class="card">
                         <div class="card-header" id="northeasternHeading" data-toggle="collapse" aria-expanded="false"
                              data-target="#northeasternCollapse" aria-controls="northeasternCollapse">
@@ -148,7 +143,7 @@
                                     <strong class="text-left w-50">Courses</strong>
                                     <div class="text-right w-50">GPA: 3.78/4.0</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Computer Science</td>
                                         <td>Software Development (CS 4500),
@@ -215,7 +210,7 @@
                                     <strong class="text-left w-50">Courses</strong>
                                     <div class="text-right w-50">GPA: 3.90/4.0</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Computer Science</td>
                                         <td>Fundamentals of Computing II (CS 115),
@@ -272,7 +267,7 @@
                         </div>
                     </div>
                     <!-- Experience -->
-                    <h1 class="section-header my-4">Experience</h1>
+                    <h3 class="section-header my-4">Experience</h3>
                     <div class="card">
                         <div class="card-header" id="internshipsHeading" data-toggle="collapse" aria-expanded="true"
                              data-target="#internshipsCollapse" aria-controls="internshipsCollapse">
@@ -503,7 +498,7 @@
                         </div>
                     </div>
                     <!-- Technical Skills -->
-                    <h1 class="section-header my-4">Technical skills</h1>
+                    <h3 class="section-header my-4">Technical skills</h3>
                     <!-- Languages -->
                     <div class="card">
                         <div class="card-header" id="langsHeading" data-toggle="collapse" data-target="#langsCollapse"
@@ -522,7 +517,7 @@
                                     <h6 class="text-left text-nowrap mr-3">Java</h6>
                                     <div class="text-right fill-width">Proficient</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Education</td>
                                         <td>Northeastern University (CS 2510, 3500),
@@ -547,7 +542,7 @@
                                     <h6 class="text-left text-nowrap mr-3">C# &amp; XAML</h6>
                                     <div class="text-right fill-width">Comfortable</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Experience</td>
                                         <td>IT Engineer Co-op at TJX (6 months)</td>
@@ -567,7 +562,7 @@
                                     <h6 class="text-left text-nowrap mr-3">HTML, CSS, &amp; JavaScript</h6>
                                     <div class="text-right fill-width">Comfortable</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Experience</td>
                                         <td>IT Engineer Co-op at TJX (6 months)</td>
@@ -592,7 +587,7 @@
                                     <h6 class="text-left text-nowrap mr-3">Python</h6>
                                     <div class="text-right fill-width">Comfortable</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Education</td>
                                         <td>Northeastern University (CS 4120)</td>
@@ -608,7 +603,7 @@
                                     <h6 class="text-left text-nowrap mr-3">Swift</h6>
                                     <div class="text-right fill-width">Comfortable</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Education</td>
                                         <td><a href="https://www.udemy.com/course/ios11-app-development-bootcamp/"
@@ -625,7 +620,7 @@
                                     <h6 class="text-left text-nowrap mr-3">Racket</h6>
                                     <div class="text-right fill-width">Familiar</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Education</td>
                                         <td>Northeastern University (CS 2500, 4400)</td>
@@ -641,7 +636,7 @@
                                     <h6 class="text-left text-nowrap mr-3">C/C++</h6>
                                     <div class="text-right fill-width">Familiar</div>
                                 </div>
-                                <table class="card-table">
+                                <table>
                                     <tr>
                                         <td class="category">Education</td>
                                         <td>Northeastern University (CS 4500)</td>
