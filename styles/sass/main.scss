@@ -173,23 +173,11 @@ nav {
     cursor: pointer;
   }
 
-  /*
-  To use images:
-  https://stackoverflow.com/questions/30663562/use-images-like-checkboxes/30663705
-   */
-
-  //label img {
-  //  height: 30px;
-  //  width: auto;
-  //}
-
   label::before {
-    //background-image: url('../images/theme-switch-light.png');
     content: '\1F319';
   }
 
   :checked + label::before {
-    //background-image: url('../images/theme-switch-dark.png');
     content: '\1F324';
   }
 }

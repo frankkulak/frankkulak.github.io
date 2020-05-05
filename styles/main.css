@@ -117,10 +117,6 @@ nav ul.socials li {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  /*
-  To use images:
-  https://stackoverflow.com/questions/30663562/use-images-like-checkboxes/30663705
-   */
 }
 .theme-selector input {
   display: none;
