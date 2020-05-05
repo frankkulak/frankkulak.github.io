@@ -86,6 +86,7 @@ nav ul.socials li {
 .content-accordion .card-header {
   border: none;
   background-color: var(--bg-card);
+  cursor: pointer;
 }
 .content-accordion .fa-stack {
   font-size: 18px;
@@ -132,6 +133,7 @@ nav ul.socials li {
   background-color: var(--color-button);
   border-radius: 20px;
   opacity: 0.85;
+  cursor: pointer;
 }
 .theme-selector label::before {
   content: "🌙";
