@@ -1,8 +1,8 @@
 // --------------------------------------------------------------------------------
 // Experience duration
 
-// Experience IDs and their start/end dates
-// IMPORTANT: Months are off by 1 (Jan = 0, Feb = 1, etc.)
+// Experience IDs and their start/end dates.
+// NOTE: Months are off by 1 (Jan = 0, Feb = 1, etc.)
 const experiences = {
     // co-ops and internships
     'tjx': {
@@ -41,7 +41,7 @@ const experiences = {
     },
     'csp': {
         'start': new Date(2016, 7), // Aug 2016
-        'end': new Date(2017, 10) // Jun 2017
+        'end': new Date(2017, 5) // Jun 2017
     },
     'hstutor': {
         'start': new Date(2014, 8), // Sep 2014
@@ -50,7 +50,7 @@ const experiences = {
     'dc': {
         'start': new Date(2011, 9), // Oct 2011
         'end': new Date(2016, 11) // Dec 2016
-    },
+    }
 };
 
 // Returns a formatted string for the span between two dates (e.g. "Jan. 2019 - Dec. 2019").
@@ -102,6 +102,7 @@ Object.keys(experiences).forEach(id => {
 // --------------------------------------------------------------------------------
 // Auto-scrolling
 
+// Automatically scrolls to the top of a card when clicked.
 $('.card').on('shown.bs.collapse', function () {
     let card = $(this).closest('.card');
     let navbarOffset = $('#navbar').height() * 1.5;
@@ -114,13 +115,16 @@ $('.card').on('shown.bs.collapse', function () {
 // --------------------------------------------------------------------------------
 // Dark mode
 
+// Key to use for reading/writing theme preference to local storage.
 const themeKey = 'fk-theme';
 
+// Sets the theme.
 const setTheme = theme => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem(themeKey, theme);
 };
 
+// Sets the theme when the check box is toggled.
 const themeCheckbox = $('input[name=theme]');
 themeCheckbox.change(function() {
     if($(this).is(':checked')) {
@@ -130,6 +134,7 @@ themeCheckbox.change(function() {
     }
 });
 
+// Check stored theme and load if it exists.
 const storedTheme = localStorage.getItem(themeKey);
 if (storedTheme !== null) {
     themeCheckbox.prop("checked", storedTheme === 'dark');
