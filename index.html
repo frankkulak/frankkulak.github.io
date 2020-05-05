@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,43 +32,44 @@
 
 <body>
 <!-- Nav bar -->
-<nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="">
-        <img src="./images/logo-light.png" class="d-inline-block align-top logo" alt="Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="mr-3 active">
-                <a class="nav-link disabled" href="">About</a>
-            </li>
-            <li class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <div class="dropdown-header">Java</div>
-                    <a class="dropdown-item" href="https://github.com/frankkulak/blockdude-java" target="_blank">
-                        Block Dude
+<div class="nav-bg sticky-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <a class="navbar-brand" href="">
+            <img src="./images/logo-light.png" class="d-inline-block align-top logo" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="mr-3 active">
+                    <a class="nav-link disabled" href="">About</a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Projects
                     </a>
-                    <a class="dropdown-item" href="https://github.com/frankkulak/blocky-java" target="_blank">
-                        Blocky
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <div class="dropdown-header">Web Development</div>
-                    <a class="dropdown-item" href="https://github.com/frankkulak/frankkulak.github.io" target="_blank">
-                        frankkulak.com
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 socials">
-            <ul class="my-auto">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-header">Java</div>
+                        <a class="dropdown-item" href="https://github.com/frankkulak/blockdude-java" target="_blank">
+                            Block Dude
+                        </a>
+                        <a class="dropdown-item" href="https://github.com/frankkulak/blocky-java" target="_blank">
+                            Blocky
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">Web Development</div>
+                        <a class="dropdown-item" href="https://github.com/frankkulak/frankkulak.github.io"
+                           target="_blank">
+                            frankkulak.com
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="my-2 my-lg-0 socials">
                 <li class="mr-2">
                     <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">
                         <img src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
@@ -80,9 +81,9 @@
                     </a>
                 </li>
             </ul>
-        </form>
-    </div>
-</nav>
+        </div>
+    </nav>
+</div>
 
 <!-- Content -->
 <div class="pt-4 px-1">
@@ -129,6 +130,7 @@
                                 </button>
                             </h5>
                         </div>
+                        <!-- Northeastern -->
                         <div id="northeasternCollapse" class="collapse" aria-labelledby="northeasternHeading"
                              data-parent="#myaccordion">
                             <div class="card-body section-details">
@@ -188,6 +190,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- UHart -->
                     <div class="card">
                         <div class="card-header" id="uhartHeading" data-toggle="collapse" data-target="#uhartCollapse"
                              aria-expanded="false" aria-controls="uhartCollapse">
@@ -204,7 +207,7 @@
                                     <h5 class="text-left text-nowrap mr-3">West Hartford, CT</h5>
                                     <h5 class="text-right fill-width">Sept. 2014 - May 2017</h5>
                                 </div>
-                                <em>Dual-Enrollment Program; No Degree</em>
+                                <em>High School Dual-Enrollment Program; No Degree</em>
                                 <hr>
                                 <div class="d-flex flex-row fill-width mb-3">
                                     <strong class="text-left w-50">Courses</strong>
@@ -238,31 +241,6 @@
                                 </table>
                                 <hr>
                                 Final grades &amp; transcript available upon request.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="uhsseHeading" data-toggle="collapse" data-target="#uhsseCollapse"
-                             aria-expanded="false" aria-controls="uhsseCollapse">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link accordion-btn collapsed text-left">
-                                    University High School of Science and Engineering
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="uhsseCollapse" class="collapse" aria-labelledby="uhsseHeading"
-                             data-parent="#myaccordion">
-                            <div class="card-body section-details">
-                                <div class="d-flex flex-row fill-width">
-                                    <h5 class="text-left text-nowrap mr-3">Hartford, CT</h5>
-                                    <h5 class="text-right fill-width">Aug. 2013 - June 2017</h5>
-                                </div>
-                                <div class="d-flex flex-row fill-width">
-                                    <em class="text-left w-50">High School Diploma</em>
-                                    <div class="text-right w-50">GPA: 3.78/4.0</div>
-                                </div>
-                                <hr>
-                                Courses, final grades, &amp; transcript available upon request.
                             </div>
                         </div>
                     </div>

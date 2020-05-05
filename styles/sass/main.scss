@@ -5,16 +5,44 @@
 // variables
 
 // colors
-$white: #FFFFFF;
-$light-gray: #F0F3F7;
-$dark-gray: #323232;
-$black: #000000;
-$link-color: rgb(100, 95, 215);
-$link-hover-color: rgb(145, 200, 225);
+$white: rgb(255, 255, 255);
+$light-gray: rgb(237, 237, 237);
+$light-cool-gray: rgb(240, 243, 250);
+$cool-gray: rgb(72, 83, 95);
+$dark-gray: rgb(47, 47, 47);
+$dark-cool-gray: rgb(57, 60, 67);
+$purple: rgb(100, 95, 215);
+$pink: rgb(255, 195, 255);
+$blue: rgb(145, 200, 225);
 
 // font sizes
 $plain-font-size: 14px;
 $nav-bar-font-size: 16px;
+
+// ----------------------------------------
+// themes
+
+html {
+  --bg: #{$white};
+  --bg-nav: #{$dark-gray};
+  --bg-card: #{$light-cool-gray};
+  --color-text: #{$dark-gray};
+  --color-nav-text: #{$white};
+  --color-hr: #{$light-gray};
+  --color-link: #{$purple};
+  --color-hover: #{$blue};
+}
+
+html[data-theme='dark'] {
+  --bg: #{$dark-gray};
+  --bg-nav: #{$dark-cool-gray};
+  --bg-card: #{$dark-cool-gray};
+  --color-text: #{$light-cool-gray};
+  --color-nav-text: #{$white};
+  --color-hr: #{$cool-gray};
+  --color-link: #{$pink};
+  --color-hover: #{$blue};
+}
 
 // ----------------------------------------
 // styles
@@ -22,8 +50,12 @@ $nav-bar-font-size: 16px;
 body {
   font-family: 'Lato', sans-serif;
   font-size: $plain-font-size;
-  background-color: $white;
-  color: $dark-gray;
+  background-color: var(--bg);
+  color: var(--color-text);
+}
+
+.nav-bg {
+  background-color: var(--bg-nav);
 }
 
 nav {
@@ -34,17 +66,23 @@ nav {
     width: auto;
   }
 
-  .socials {
+  a {
+    color: var(--color-nav-text);
+  }
+
+  button {
+    background-color: var(--color-nav-text);
+  }
+
+  ul.socials {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+
     img {
       height: 22px;
       width: auto;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      white-space: nowrap;
     }
 
     li {
@@ -54,7 +92,7 @@ nav {
 }
 
 .side-card {
-  background-color: $light-gray;
+  background-color: var(--bg-card);
   text-align: center;
 
   img {
@@ -70,14 +108,15 @@ nav {
     font-weight: normal;
   }
 
-  .card, .card:last-child .card-header {
+  .card {
     border: none;
+    background-color: var(--bg);
     margin-bottom: 5px;
   }
 
   .card-header {
-    border-bottom-color: $white;
-    background-color: $light-gray;
+    border: none;
+    background-color: var(--bg-card);
   }
 
   .fa-stack {
@@ -86,12 +125,12 @@ nav {
 
   .accordion-btn, .accordion-btn:focus {
     font-size: 18px;
-    color: $dark-gray;
+    color: var(--color-text);
     text-decoration: none;
   }
 
   .accordion-btn:hover {
-    color: $link-hover-color;
+    color: var(--color-hover);
     text-decoration: none;
   }
 
@@ -141,13 +180,17 @@ h6 {
 }
 
 a, a:focus {
-  color: $link-color;
+  color: var(--color-link);
   text-decoration: none;
 }
 
 a:hover {
-  color: $link-hover-color;
+  color: var(--color-hover);
   text-decoration: none;
+}
+
+hr {
+  background-color: var(--color-hr);
 }
 
 // ----------------------------------------
