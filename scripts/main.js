@@ -102,7 +102,6 @@ Object.keys(experiences).forEach(id => {
 // --------------------------------------------------------------------------------
 // Auto-scrolling
 
-// Automatically scrolls to the top of a card when it is opened.
 $('.card').on('shown.bs.collapse', function () {
     let card = $(this).closest('.card');
     let navbarOffset = $('#navbar').height() * 1.5;
@@ -111,3 +110,28 @@ $('.card').on('shown.bs.collapse', function () {
         scrollTop: card.offset().top - navbarOffset
     }, 500);
 });
+
+// --------------------------------------------------------------------------------
+// Dark mode
+
+const themeKey = 'fk-theme';
+
+const setTheme = theme => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(themeKey, theme);
+};
+
+const themeCheckbox = $('input[name=theme]');
+themeCheckbox.change(function() {
+    if($(this).is(':checked')) {
+        setTheme('dark');
+    } else {
+        setTheme('light');
+    }
+});
+
+const storedTheme = localStorage.getItem(themeKey);
+if (storedTheme !== null) {
+    themeCheckbox.prop("checked", storedTheme === 'dark');
+    setTheme(storedTheme);
+}

@@ -31,6 +31,7 @@ html {
   --color-hr: #{$light-gray};
   --color-link: #{$purple};
   --color-hover: #{$blue};
+  --color-button: #{$dark-gray};
 }
 
 html[data-theme='dark'] {
@@ -42,6 +43,7 @@ html[data-theme='dark'] {
   --color-hr: #{$cool-gray};
   --color-link: #{$pink};
   --color-hover: #{$blue};
+  --color-button: #{white};
 }
 
 // ----------------------------------------
@@ -147,6 +149,46 @@ nav {
     font-style: italic;
     padding-right: 10px;
     min-width: 95px;
+  }
+}
+
+.theme-selector {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    font-size: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+    background-color: var(--color-button);
+    border-radius: 20px;
+    opacity: 0.85;
+  }
+
+  /*
+  To use images:
+  https://stackoverflow.com/questions/30663562/use-images-like-checkboxes/30663705
+   */
+
+  //label img {
+  //  height: 30px;
+  //  width: auto;
+  //}
+
+  label::before {
+    //background-image: url('../images/theme-switch-light.png');
+    content: '\1F319';
+  }
+
+  :checked + label::before {
+    //background-image: url('../images/theme-switch-dark.png');
+    content: '\1F324';
   }
 }
 
