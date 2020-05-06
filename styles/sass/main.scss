@@ -15,9 +15,10 @@ $purple: rgb(100, 95, 215);
 $pink: rgb(255, 195, 255);
 $blue: rgb(145, 200, 225);
 
-// font sizes
+// other
 $plain-font-size: 14px;
 $nav-bar-font-size: 16px;
+$card-corner-radius: 5px;
 
 // ----------------------------------------
 // themes
@@ -26,24 +27,26 @@ html {
   --bg: #{$white};
   --bg-nav: #{$dark-gray};
   --bg-card: #{$light-cool-gray};
+  --bg-button: #{$dark-gray};
   --color-text: #{$dark-gray};
   --color-nav-text: #{$white};
   --color-hr: #{$light-gray};
   --color-link: #{$purple};
   --color-hover: #{$blue};
-  --color-button: #{$dark-gray};
+  --color-button-text: #{$light-gray};
 }
 
 html[data-theme='dark'] {
   --bg: #{$dark-gray};
   --bg-nav: #{$dark-cool-gray};
   --bg-card: #{$dark-cool-gray};
+  --bg-button: #{white};
   --color-text: #{$light-cool-gray};
   --color-nav-text: #{$white};
   --color-hr: #{$cool-gray};
   --color-link: #{$pink};
   --color-hover: #{$blue};
-  --color-button: #{white};
+  --color-button-text: #{$dark-gray};
 }
 
 // ----------------------------------------
@@ -96,6 +99,7 @@ nav {
 .side-card {
   background-color: var(--bg-card);
   text-align: center;
+  border-radius: $card-corner-radius;
 
   img {
     width: 128px;
@@ -153,6 +157,40 @@ nav {
   }
 }
 
+.projects-content {
+  .section-header {
+    font-weight: normal;
+  }
+
+  .project-card {
+    background-color: var(--bg-card);
+    border-radius: $card-corner-radius;
+    padding: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+    .status {
+      font-weight: normal;
+
+      br {
+        display: block;
+        content: '';
+        margin-top: 5px;
+      }
+    }
+
+    a, a:focus {
+      border-color: var(--bg-button);
+      color: var(--bg-button);
+    }
+
+    a:hover {
+      background-color: var(--bg-button);
+      color: var(--color-button-text);
+    }
+  }
+}
+
 .theme-selector {
   position: fixed;
   right: 20px;
@@ -167,7 +205,7 @@ nav {
     padding-left: 6px;
     padding-right: 6px;
     display: block;
-    background-color: var(--color-button);
+    background-color: var(--bg-button);
     border-radius: 20px;
     opacity: 0.85;
     cursor: pointer;

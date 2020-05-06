@@ -5,24 +5,26 @@ html {
   --bg: white;
   --bg-nav: #2f2f2f;
   --bg-card: #f0f3fa;
+  --bg-button: #2f2f2f;
   --color-text: #2f2f2f;
   --color-nav-text: white;
   --color-hr: #ededed;
   --color-link: #645fd7;
   --color-hover: #91c8e1;
-  --color-button: #2f2f2f;
+  --color-button-text: #ededed;
 }
 
 html[data-theme=dark] {
   --bg: #2f2f2f;
   --bg-nav: #393c43;
   --bg-card: #393c43;
+  --bg-button: white;
   --color-text: #f0f3fa;
   --color-nav-text: white;
   --color-hr: #48535f;
   --color-link: #ffc3ff;
   --color-hover: #91c8e1;
-  --color-button: white;
+  --color-button-text: #2f2f2f;
 }
 
 body {
@@ -66,6 +68,7 @@ nav ul.socials li {
 .side-card {
   background-color: var(--bg-card);
   text-align: center;
+  border-radius: 5px;
 }
 .side-card img {
   width: 128px;
@@ -113,6 +116,33 @@ nav ul.socials li {
   min-width: 95px;
 }
 
+.projects-content .section-header {
+  font-weight: normal;
+}
+.projects-content .project-card {
+  background-color: var(--bg-card);
+  border-radius: 5px;
+  padding: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.projects-content .project-card .status {
+  font-weight: normal;
+}
+.projects-content .project-card .status br {
+  display: block;
+  content: "";
+  margin-top: 5px;
+}
+.projects-content .project-card a, .projects-content .project-card a:focus {
+  border-color: var(--bg-button);
+  color: var(--bg-button);
+}
+.projects-content .project-card a:hover {
+  background-color: var(--bg-button);
+  color: var(--color-button-text);
+}
+
 .theme-selector {
   position: fixed;
   right: 20px;
@@ -126,7 +156,7 @@ nav ul.socials li {
   padding-left: 6px;
   padding-right: 6px;
   display: block;
-  background-color: var(--color-button);
+  background-color: var(--bg-button);
   border-radius: 20px;
   opacity: 0.85;
   cursor: pointer;
