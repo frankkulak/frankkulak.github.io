@@ -1,6 +1,3 @@
-// --------------------------------------------------------------------------------
-// Experience duration
-
 // Experience IDs and their start/end dates.
 // NOTE: Months are off by 1 (Jan = 0, Feb = 1, etc.)
 const experiences = {
@@ -98,45 +95,3 @@ Object.keys(experiences).forEach(id => {
     document.getElementById(`expspn-${id}`).innerHTML = experienceSpan(start, end);
     document.getElementById(`expdur-${id}`).innerHTML = experienceDuration(start, end);
 });
-
-// --------------------------------------------------------------------------------
-// Auto-scrolling
-
-// Automatically scrolls to the top of a card when clicked.
-$('.card').on('shown.bs.collapse', function () {
-    let card = $(this).closest('.card');
-    let navbarOffset = $('#navbar').height() * 1.5;
-    console.log(navbarOffset);
-    $('html,body').animate({
-        scrollTop: card.offset().top - navbarOffset
-    }, 500);
-});
-
-// --------------------------------------------------------------------------------
-// Dark mode
-
-// Key to use for reading/writing theme preference to local storage.
-const themeKey = 'fk-theme';
-
-// Sets the theme.
-const setTheme = theme => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(themeKey, theme);
-};
-
-// Sets the theme when the check box is toggled.
-const themeCheckbox = $('input[name=theme]');
-themeCheckbox.change(function() {
-    if($(this).is(':checked')) {
-        setTheme('dark');
-    } else {
-        setTheme('light');
-    }
-});
-
-// Check stored theme and load if it exists.
-const storedTheme = localStorage.getItem(themeKey);
-if (storedTheme !== null) {
-    themeCheckbox.prop("checked", storedTheme === 'dark');
-    setTheme(storedTheme);
-}
