@@ -129,16 +129,11 @@ nav ul.socials li {
 .projects-content .project-card .status {
   font-weight: normal;
 }
-.projects-content .project-card .status br {
-  display: block;
-  content: "";
-  margin-top: 5px;
-}
-.projects-content .project-card a, .projects-content .project-card a:focus {
+.projects-content .project-card a.btn, .projects-content .project-card a.btn:focus {
   border-color: var(--bg-button);
   color: var(--bg-button);
 }
-.projects-content .project-card a:hover {
+.projects-content .project-card a.btn:hover {
   background-color: var(--bg-button);
   color: var(--color-button-text);
 }

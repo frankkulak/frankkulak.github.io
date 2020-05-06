@@ -171,20 +171,14 @@ nav {
 
     .status {
       font-weight: normal;
-
-      br {
-        display: block;
-        content: '';
-        margin-top: 5px;
-      }
     }
 
-    a, a:focus {
+    a.btn, a.btn:focus {
       border-color: var(--bg-button);
       color: var(--bg-button);
     }
 
-    a:hover {
+    a.btn:hover {
       background-color: var(--bg-button);
       color: var(--color-button-text);
     }
