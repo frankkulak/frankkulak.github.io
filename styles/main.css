@@ -128,15 +128,13 @@ nav ul.socials li {
 .projects-content .project-card .status {
   font-weight: normal;
 }
-.projects-content .project-card a.btn, .projects-content .project-card a.btn:focus {
+.projects-content .project-card a.btn, .projects-content .project-card a.btn:focus, .touch-mode .projects-content .project-card a.btn:hover {
   border-color: var(--bg-button);
   color: var(--bg-button);
 }
-@media (hover: hover) and (pointer: fine) {
-  .projects-content .project-card a.btn:hover {
-    background-color: var(--bg-button);
-    color: var(--color-button-text);
-  }
+.mouse-mode .projects-content .project-card a.btn:hover {
+  background-color: var(--bg-button);
+  color: var(--color-button-text);
 }
 
 .theme-selector {
@@ -147,7 +145,7 @@ nav ul.socials li {
 .theme-selector input {
   display: none;
 }
-.theme-selector label, .theme-selector label:focus {
+.theme-selector label, .theme-selector label:focus, .touch-mode .theme-selector label:hover {
   font-size: 24px;
   padding-left: 6px;
   padding-right: 6px;
@@ -160,11 +158,9 @@ nav ul.socials li {
   opacity: 0.65;
   cursor: pointer;
 }
-@media (hover: hover) and (pointer: fine) {
-  .theme-selector label:hover {
-    background-color: var(--bg-button);
-    opacity: 1;
-  }
+.mouse-mode .theme-selector label:hover {
+  background-color: var(--bg-button);
+  opacity: 1;
 }
 .theme-selector label::before {
   content: "🌙";
@@ -202,17 +198,16 @@ h6 {
   font-size: 14px;
 }
 
-a, a:focus {
+a, a:focus, .touch-mode a:hover {
   color: var(--color-link);
   text-decoration: none;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  a:hover {
-    color: var(--color-hover);
-    text-decoration: none;
-  }
+.mouse-mode a:hover {
+  color: var(--color-hover);
+  text-decoration: none;
 }
+
 hr {
   background-color: var(--color-hr);
 }
