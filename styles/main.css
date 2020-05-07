@@ -100,7 +100,6 @@ nav ul.socials li {
   text-decoration: none;
 }
 .content-accordion .accordion-btn:hover {
-  color: var(--color-hover);
   text-decoration: none;
 }
 .content-accordion li + li {
@@ -133,9 +132,11 @@ nav ul.socials li {
   border-color: var(--bg-button);
   color: var(--bg-button);
 }
-.projects-content .project-card a.btn:hover {
-  background-color: var(--bg-button);
-  color: var(--color-button-text);
+@media (hover: hover) and (pointer: fine) {
+  .projects-content .project-card a.btn:hover {
+    background-color: var(--bg-button);
+    color: var(--color-button-text);
+  }
 }
 
 .theme-selector {
@@ -159,9 +160,11 @@ nav ul.socials li {
   opacity: 0.65;
   cursor: pointer;
 }
-.theme-selector label:hover {
-  background-color: var(--bg-button);
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .theme-selector label:hover {
+    background-color: var(--bg-button);
+    opacity: 1;
+  }
 }
 .theme-selector label::before {
   content: "🌙";
@@ -204,11 +207,12 @@ a, a:focus {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-hover);
-  text-decoration: none;
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--color-hover);
+    text-decoration: none;
+  }
 }
-
 hr {
   background-color: var(--color-hr);
 }

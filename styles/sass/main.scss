@@ -137,7 +137,6 @@ nav {
   }
 
   .accordion-btn:hover {
-    color: var(--color-hover);
     text-decoration: none;
   }
 
@@ -178,9 +177,11 @@ nav {
       color: var(--bg-button);
     }
 
-    a.btn:hover {
-      background-color: var(--bg-button);
-      color: var(--color-button-text);
+    @media (hover: hover) and (pointer: fine) {
+      a.btn:hover {
+        background-color: var(--bg-button);
+        color: var(--color-button-text);
+      }
     }
   }
 }
@@ -208,10 +209,17 @@ nav {
     cursor: pointer;
   }
 
-  label:hover {
-    background-color: var(--bg-button);
-    opacity: 1;
+  @media (hover: hover) and (pointer: fine) {
+    label:hover {
+      background-color: var(--bg-button);
+      opacity: 1;
+    }
   }
+
+  //.click-effect {
+  //  background-color: var(--bg-button);
+  //  opacity: 1;
+  //}
 
   label::before {
     content: '\1F319';
@@ -256,9 +264,11 @@ a, a:focus {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-hover);
-  text-decoration: none;
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--color-hover);
+    text-decoration: none;
+  }
 }
 
 hr {

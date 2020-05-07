@@ -7,6 +7,20 @@ const setTheme = theme => {
     localStorage.setItem(themeKey, theme);
 };
 
+// const addTapEffect = id => {
+//     const themeSwitchLabel = $(`#${id}`);
+//     themeSwitchLabel.on('touchstart', function() {
+//         console.log('touchstart');
+//         themeSwitchLabel.addClass('click-effect');
+//         setTimeout(() => {
+//             console.log('timeout over');
+//             themeSwitchLabel.removeClass('click-effect');
+//         }, 50);
+//     });
+// };
+//
+// addTapEffect('theme-lbl');
+
 // Sets the theme when the check box is toggled.
 const themeCheckbox = $('input[name=theme]');
 themeCheckbox.change(function() {
