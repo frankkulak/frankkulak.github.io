@@ -5,7 +5,6 @@
 // variables
 
 // colors
-$white: rgb(255, 255, 255);
 $light-gray: rgb(237, 237, 237);
 $light-cool-gray: rgb(240, 243, 250);
 $cool-gray: rgb(72, 83, 95);
@@ -24,12 +23,12 @@ $card-corner-radius: 5px;
 // themes
 
 html {
-  --bg: #{$white};
+  --bg: #{white};
   --bg-nav: #{$dark-gray};
   --bg-card: #{$light-cool-gray};
   --bg-button: #{$dark-gray};
   --color-text: #{$dark-gray};
-  --color-nav-text: #{$white};
+  --color-nav-text: #{white};
   --color-hr: #{$light-gray};
   --color-link: #{$purple};
   --color-hover: #{$blue};
@@ -42,7 +41,7 @@ html[data-theme='dark'] {
   --bg-card: #{$dark-cool-gray};
   --bg-button: #{white};
   --color-text: #{$light-cool-gray};
-  --color-nav-text: #{$white};
+  --color-nav-text: #{white};
   --color-hr: #{$cool-gray};
   --color-link: #{$pink};
   --color-hover: #{$blue};

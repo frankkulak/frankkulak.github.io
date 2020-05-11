@@ -27,22 +27,17 @@ const updateBody = () => {
 let timeoutID = undefined;
 let recentTouch = false;
 document.addEventListener('touchstart', () => {
-    console.log('touchstart noticed');
     if (timeoutID !== undefined) clearTimeout(timeoutID);
     recentTouch = true;
     setMode(touchMode);
-    console.log(`mode: ${mode}`);
 });
 
 document.addEventListener('touchend', () => {
-    console.log('touchend noticed');
     timeoutID = setTimeout(() => {
         recentTouch = false;
     }, 100);
 });
 
 document.addEventListener('mouseover', () => {
-    console.log('mouseover noticed');
     if (!recentTouch) setMode(mouseMode);
-    console.log(`mode: ${mode}`);
 });
