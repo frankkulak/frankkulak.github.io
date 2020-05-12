@@ -20,3 +20,19 @@ const progressString = `${percentComplete}%`;
 const progressBar = $('#progress-bar');
 progressBar.width(progressString);
 progressBar.html(progressString);
+
+// populating quote bar
+const getRandomElement = arr => arr[Math.floor(Math.random() * arr.length)];
+const settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://type.fit/api/quotes",
+    "method": "GET"
+};
+
+$.ajax(settings).done(function (resp) {
+    const data = JSON.parse(resp);
+    let {text, author} = getRandomElement(data);
+    if (author == null) author = "Unknown";
+    $('#quote').html(`<em>"${text}"</em><p>- ${author}</p>`);
+});
