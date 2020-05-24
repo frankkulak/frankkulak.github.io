@@ -6,10 +6,12 @@
 // colors
 $blue: rgb(90, 182, 252, 1);
 $trans-blue: rgb(90, 182, 252, 0.3); // FIXME : needed?
+$dark-blue: rgb(0, 78, 144, 1);
 $purple: rgb(134, 54, 230, 1);
+$pink: rgb(255, 129, 250, 1);
 $cool-dark-gray: rgb(40, 47, 55, 1);
 $lighter-cool-dark-gray: rgb(32, 38, 48, 1);
-$dark-blue: rgb(29, 36, 46, 1);
+$dark-navy: rgb(29, 36, 46, 1);
 $gray-32: rgb(32, 32, 32, 1);
 $gray-60: rgb(60, 60, 60, 1);
 $gray-130: rgb(130, 130, 130, 1);
@@ -41,15 +43,14 @@ html {
   --skill-bar-empty: #{$trans-blue};
   --project-button: #{$gray-60};
   --link: #{$blue};
-  --link-hover: #{$purple};
+  --link-hover: #{$pink};
 }
 
 html[data-theme='dark'] {
-  --bg: #{$dark-blue};
+  --bg: #{$dark-navy};
   --home-text: #{white};
   --home-button: #{white};
-  //--head-foot-bg: #{$cool-dark-gray};
-  --head-foot-bg: #{$gray-32};
+  --head-foot-bg: #{$dark-blue};
   --head-foot-text: #{white};
   --head-foot-hover: #{$blue};
   --header: #{white};
@@ -61,7 +62,7 @@ html[data-theme='dark'] {
   --skill-bar-empty: #{$trans-blue};
   --project-button: #{white};
   --link: #{$blue};
-  --link-hover: #{$purple};
+  --link-hover: #{$pink};
 }
 
 // ----------------------------------------
@@ -79,7 +80,6 @@ html[data-theme='dark'] {
 
 %banded-section {
   @extend %section;
-
   background-color: var(--band-bg);
 }
 
@@ -94,12 +94,49 @@ body {
   color: var(--text);
 }
 
+.navbar-default {
+  background-color: var(--head-foot-bg);
+  border-bottom: 2px solid var(--head-foot-hover);
+
+  .navbar-nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .navbar-nav > li {
+    margin-left: 20px;
+    display: inline-block;
+
+    &.active > a {
+      color: var(--head-foot-hover);
+      font-weight: bold;
+    }
+
+    & > a, a:focus {
+      color: var(--head-foot-text);
+    }
+
+    .touch-mode & > a:hover {
+      color: var(--head-foot-text);
+    }
+
+    .mouse-mode & > a:hover {
+      color: var(--head-foot-hover);
+    }
+  }
+}
+
 .section-home {
   @extend %section;
   @extend %gradient;
 
-  // FIXME : center content
-  // FIXME : fill vertically
+  padding: $section-padding;
 
   h1 {
     font-weight: normal;

@@ -9,8 +9,8 @@ const setTheme = theme => {
 
 // Sets the theme when the check box is toggled.
 const themeCheckbox = $('input[name=theme]');
-themeCheckbox.change(function() {
-    if($(this).is(':checked')) {
+themeCheckbox.change(function () {
+    if ($(this).is(':checked')) {
         setTheme('dark');
     } else {
         setTheme('light');

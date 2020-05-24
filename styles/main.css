@@ -16,14 +16,14 @@ html {
   --skill-bar-empty: rgba(90, 182, 252, 0.3);
   --project-button: #3c3c3c;
   --link: #5ab6fc;
-  --link-hover: #8636e6;
+  --link-hover: #ff81fa;
 }
 
 html[data-theme=dark] {
   --bg: #1d242e;
   --home-text: white;
   --home-button: white;
-  --head-foot-bg: #202020;
+  --head-foot-bg: #004e90;
   --head-foot-text: white;
   --head-foot-hover: #5ab6fc;
   --header: white;
@@ -35,7 +35,7 @@ html[data-theme=dark] {
   --skill-bar-empty: rgba(90, 182, 252, 0.3);
   --project-button: white;
   --link: #5ab6fc;
-  --link-hover: #8636e6;
+  --link-hover: #ff81fa;
 }
 
 .section-home {
@@ -60,6 +60,40 @@ body {
   color: var(--text);
 }
 
+.navbar-default {
+  background-color: var(--head-foot-bg);
+  border-bottom: 2px solid var(--head-foot-hover);
+}
+.navbar-default .navbar-nav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+}
+.navbar-default .navbar-nav::-webkit-scrollbar {
+  display: none;
+}
+.navbar-default .navbar-nav > li {
+  margin-left: 20px;
+  display: inline-block;
+}
+.navbar-default .navbar-nav > li.active > a {
+  color: var(--head-foot-hover);
+  font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li a:focus {
+  color: var(--head-foot-text);
+}
+.touch-mode .navbar-default .navbar-nav > li > a:hover {
+  color: var(--head-foot-text);
+}
+.mouse-mode .navbar-default .navbar-nav > li > a:hover {
+  color: var(--head-foot-hover);
+}
+
+.section-home {
+  padding: 50px;
+}
 .section-home h1 {
   font-weight: normal;
   text-shadow: -2px 2px 3px rgba(32, 32, 32, 0.1);
