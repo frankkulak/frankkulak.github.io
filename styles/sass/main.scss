@@ -1,104 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap');
 
 // ----------------------------------------
 // variables
 
 // colors
-$light-gray: rgb(237, 237, 237);
-$light-cool-gray: rgb(240, 243, 250);
-$cool-gray: rgb(72, 83, 95);
-$dark-gray: rgb(47, 47, 47);
-$dark-cool-gray: rgb(57, 60, 67);
-$purple: rgb(100, 95, 215);
-$pink: rgb(255, 195, 255);
-$blue: rgb(145, 200, 225);
+$blue: rgb(90, 182, 252, 1);
+$trans-blue: rgb(90, 182, 252, 0.3); // FIXME : needed?
+$purple: rgb(134, 54, 230, 1);
+$cool-dark-gray: rgb(40, 47, 55, 1);
+$lighter-cool-dark-gray: rgb(32, 38, 48, 1);
+$dark-blue: rgb(29, 36, 46, 1);
+$gray-32: rgb(32, 32, 32, 1);
+$gray-60: rgb(60, 60, 60, 1);
+$gray-130: rgb(130, 130, 130, 1);
+$gray-200: rgb(200, 200, 200, 1);
+$gray-247: rgb(247, 247, 247, 1);
 
 // other
-$plain-font-size: 14px;
-$nav-bar-font-size: 16px;
-$card-corner-radius: 5px;
+$font-size: 16px;
+$font-size-sm: 14px;
+$corner-radius: 5px;
+$section-padding: 50px;
 
 // ----------------------------------------
 // themes
 
 html {
   --bg: #{white};
-  --bg-nav: #{$dark-gray};
-  --bg-card: #{$light-cool-gray};
-  --bg-button: #{$dark-gray};
-  --color-text: #{$dark-gray};
-  --color-nav-text: #{white};
-  --color-hr: #{$light-gray};
-  --color-link: #{$purple};
-  --color-hover: #{$blue};
-  --color-button-text: #{$light-gray};
+  --home-text: #{white};
+  --home-button: #{white};
+  --head-foot-bg: #{$gray-60};
+  --head-foot-text: #{white};
+  --head-foot-hover: #{$blue};
+  --header: #{$gray-60};
+  --text: #{$gray-130};
+  --hr: #{$blue};
+  --band-bg: #{$gray-247};
+  --button: #{$blue};
+  --skill-bar-full: #{$blue};
+  --skill-bar-empty: #{$trans-blue};
+  --project-button: #{$gray-60};
+  --link: #{$blue};
+  --link-hover: #{$purple};
 }
 
 html[data-theme='dark'] {
-  --bg: #{$dark-gray};
-  --bg-nav: #{$dark-cool-gray};
-  --bg-card: #{$dark-cool-gray};
-  --bg-button: #{white};
-  --color-text: #{$light-cool-gray};
-  --color-nav-text: #{white};
-  --color-hr: #{$cool-gray};
-  --color-link: #{$pink};
-  --color-hover: #{$blue};
-  --color-button-text: #{$dark-gray};
+  --bg: #{$dark-blue};
+  --home-text: #{white};
+  --home-button: #{white};
+  //--head-foot-bg: #{$cool-dark-gray};
+  --head-foot-bg: #{$gray-32};
+  --head-foot-text: #{white};
+  --head-foot-hover: #{$blue};
+  --header: #{white};
+  --text: #{$gray-200};
+  --hr: #{$blue};
+  --band-bg: #{$lighter-cool-dark-gray};
+  --button: #{$blue};
+  --skill-bar-full: #{$blue};
+  --skill-bar-empty: #{$trans-blue};
+  --project-button: #{white};
+  --link: #{$blue};
+  --link-hover: #{$purple};
+}
+
+// ----------------------------------------
+// inheritable classes
+
+%gradient {
+  background: $purple;
+  background: linear-gradient(45deg, $purple 0%, $blue 100%);
+}
+
+%section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+%banded-section {
+  @extend %section;
+
+  background-color: var(--band-bg);
 }
 
 // ----------------------------------------
 // styles
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: $plain-font-size;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: $font-size;
   background-color: var(--bg);
-  color: var(--color-text);
+  color: var(--text);
 }
 
-.nav-bg {
-  background-color: var(--bg-nav);
-}
+.section-home {
+  @extend %section;
+  @extend %gradient;
 
-nav {
-  font-size: $nav-bar-font-size;
+  // FIXME : center content
+  // FIXME : fill vertically
 
-  .logo {
-    height: 35px;
-    width: auto;
-  }
-
-  a {
-    color: var(--color-nav-text);
-  }
-
-  button {
-    background-color: var(--color-nav-text);
-  }
-
-  ul.socials {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-
-    img {
-      height: 22px;
-      width: auto;
-    }
-
-    li {
-      display: inline;
-    }
+  h1 {
+    font-weight: normal;
+    text-shadow: -2px 2px 3px rgb(32, 32, 32, 0.1);
+    color: var(--home-text);
   }
 }
 
-.side-card {
-  background-color: var(--bg-card);
-  text-align: center;
-  border-radius: $card-corner-radius;
+.section-about {
+  @extend %section;
 
   img {
     width: 128px;
@@ -106,81 +117,85 @@ nav {
   }
 }
 
-.content-accordion {
-  margin: 50px auto;
+.section-education {
+  @extend %banded-section;
+}
 
-  .section-header {
-    font-weight: normal;
+.section-experience {
+  @extend %section;
+}
+
+.section-skills {
+  @extend %banded-section;
+}
+
+.section-projects {
+  @extend %section;
+}
+
+.section-contact {
+  padding-top: $section-padding;
+
+  background-color: var(--head-foot-bg);
+  color: var(--head-foot-text);
+
+  h1 {
+    color: var(--head-foot-text);
   }
 
-  .card {
-    border: none;
-    background-color: var(--bg);
-    margin-bottom: 5px;
-  }
-
-  .card-header {
-    border: none;
-    background-color: var(--bg-card);
-    cursor: pointer;
-  }
-
-  .fa-stack {
-    font-size: 18px;
-  }
-
-  .accordion-btn, .accordion-btn:focus {
-    font-size: 18px;
-    color: var(--color-text);
-    text-decoration: none;
-  }
-
-  .accordion-btn:hover {
-    text-decoration: none;
-  }
-
-  li + li {
-    margin-top: 10px;
-  }
-
-  table td {
-    padding-bottom: 15px;
-    vertical-align: top;
-  }
-
-  table td.category {
-    font-style: italic;
-    padding-right: 10px;
-    min-width: 95px;
+  .copyright {
+    margin-top: $section-padding;
+    font-size: $font-size-sm;
   }
 }
 
-.projects-content {
-  .section-header {
-    font-weight: normal;
+.section-header {
+  margin-bottom: $section-padding;
+
+  hr {
+    margin-top: 5px;
+    max-width: 50px;
+    background-color: var(--hr);
   }
+}
 
-  .project-card {
-    background-color: var(--bg-card);
-    border-radius: $card-corner-radius;
-    padding: 18px;
-    margin-top: 18px;
-    margin-bottom: 18px;
+h1 {
+  font-size: 36px;
+}
 
-    .status {
-      font-weight: normal;
-    }
+h2 {
+  font-size: 24px;
+}
 
-    a.btn, a.btn:focus, .touch-mode & a.btn:hover {
-      border-color: var(--bg-button);
-      color: var(--bg-button);
-    }
+h3 {
+  font-size: 22px;
+}
 
-    .mouse-mode & a.btn:hover {
-      background-color: var(--bg-button);
-      color: var(--color-button-text);
-    }
-  }
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--header);
+}
+
+a, a:focus, .touch-mode a:hover {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.mouse-mode a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
 }
 
 .theme-selector {
@@ -218,54 +233,4 @@ nav {
   :checked + label::before {
     content: '\1F324';
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-h5 {
-  font-size: 16px;
-}
-
-h6 {
-  font-size: 14px;
-}
-
-a, a:focus, .touch-mode a:hover {
-  color: var(--color-link);
-  text-decoration: none;
-}
-
-.mouse-mode a:hover {
-  color: var(--color-hover);
-  text-decoration: none;
-}
-
-hr {
-  background-color: var(--color-hr);
-}
-
-// ----------------------------------------
-// helper classes
-
-.fill-width {
-  width: 100%;
 }
