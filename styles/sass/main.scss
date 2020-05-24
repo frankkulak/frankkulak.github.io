@@ -95,6 +95,9 @@ body {
 }
 
 .navbar-default {
+  $fade-size: 20%;
+  $margin-size: 20px;
+
   background-color: var(--head-foot-bg);
   border-bottom: 2px solid var(--head-foot-hover);
 
@@ -110,7 +113,7 @@ body {
   }
 
   .navbar-nav > li {
-    margin-left: 20px;
+    margin-left: $margin-size;
     display: inline-block;
 
     &.active > a {
@@ -129,6 +132,22 @@ body {
     .mouse-mode & > a:hover {
       color: var(--head-foot-hover);
     }
+
+    .fade-spacer {
+      // FIXME : this is hacky
+      width: $margin-size * 3;
+      height: $font-size;
+    }
+  }
+
+  .navbar-fade {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    background: transparent;
+    background: linear-gradient(90deg, rgb(255, 255, 255, 0) 0%, var(--head-foot-bg) 100%);
+    width: $fade-size;
+    height: $font-size * 2;
   }
 }
 

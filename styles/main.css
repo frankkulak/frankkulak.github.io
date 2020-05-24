@@ -90,6 +90,19 @@ body {
 .mouse-mode .navbar-default .navbar-nav > li > a:hover {
   color: var(--head-foot-hover);
 }
+.navbar-default .navbar-nav > li .fade-spacer {
+  width: 60px;
+  height: 16px;
+}
+.navbar-default .navbar-fade {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  background: transparent;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--head-foot-bg) 100%);
+  width: 20%;
+  height: 32px;
+}
 
 .section-home {
   padding: 50px;
