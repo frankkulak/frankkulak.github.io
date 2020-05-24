@@ -21,8 +21,10 @@ $gray-247: rgb(247, 247, 247, 1);
 // other
 $font-size: 16px;
 $font-size-sm: 14px;
-$corner-radius: 5px;
-$section-padding: 50px;
+$button-radius: 10px;
+$project-card-radius: 20px;
+$padding-lg: 50px;
+$padding-sm: 20px;
 
 // ----------------------------------------
 // themes
@@ -39,11 +41,14 @@ html {
   --hr: #{$blue};
   --band-bg: #{$gray-247};
   --button: #{$blue};
+  --button-hover-text: #{white};
   --skill-bar-full: #{$blue};
   --skill-bar-empty: #{$trans-blue};
   --project-button: #{$gray-60};
+  --project-card-bg: #{white};
   --link: #{$blue};
   --link-hover: #{$pink};
+  --toggle-bg: #{$gray-130};
 }
 
 html[data-theme='dark'] {
@@ -58,11 +63,14 @@ html[data-theme='dark'] {
   --hr: #{$blue};
   --band-bg: #{$lighter-cool-dark-gray};
   --button: #{$blue};
+  --button-hover-text: #{white};
   --skill-bar-full: #{$blue};
   --skill-bar-empty: #{$trans-blue};
   --project-button: #{white};
+  --project-card-bg: #{$dark-navy};
   --link: #{$blue};
   --link-hover: #{$pink};
+  --toggle-bg: #{$gray-200};
 }
 
 // ----------------------------------------
@@ -74,8 +82,8 @@ html[data-theme='dark'] {
 }
 
 %section {
-  padding-top: $section-padding;
-  padding-bottom: $section-padding;
+  padding-top: $padding-lg;
+  padding-bottom: $padding-lg;
 }
 
 %banded-section {
@@ -96,7 +104,6 @@ body {
 
 .navbar-default {
   $fade-size: 20%;
-  $margin-size: 20px;
 
   background-color: var(--head-foot-bg);
   border-bottom: 2px solid var(--head-foot-hover);
@@ -113,7 +120,7 @@ body {
   }
 
   .navbar-nav > li {
-    margin-left: $margin-size;
+    margin-left: $padding-sm;
     display: inline-block;
 
     &.active > a {
@@ -135,7 +142,7 @@ body {
 
     .fade-spacer {
       // FIXME : this is hacky
-      width: $margin-size * 3;
+      width: $padding-sm * 3;
       height: $font-size;
     }
   }
@@ -155,7 +162,7 @@ body {
   @extend %section;
   @extend %gradient;
 
-  padding: $section-padding;
+  padding: $padding-lg;
 
   h1 {
     font-weight: normal;
@@ -187,10 +194,47 @@ body {
 
 .section-projects {
   @extend %section;
+
+  .project-buttons {
+    margin-bottom: $padding-lg;
+  }
+
+  .project-cards {
+    a.btn {
+      margin-right: 0;
+    }
+
+    a.btn, a.btn:focus, .touch-mode & a.btn:hover {
+      color: var(--project-button);
+      border-color: var(--project-button);
+    }
+
+    .mouse-mode & a.btn:hover {
+      background-color: var(--project-button);
+      color: var(--project-card-bg);
+    }
+  }
+
+  .project-card-outline {
+    @extend %gradient;
+    border-radius: $project-card-radius + 2;
+    padding: 2px;
+    margin: $padding-sm / 2;
+  }
+
+  .project-card {
+    background-color: var(--project-card-bg);
+    border-radius: $project-card-radius;
+    padding: $padding-sm;
+
+    .timespan {
+      color: var(--header);
+    }
+  }
 }
 
 .section-contact {
-  padding: $section-padding;
+  padding: $padding-lg $padding-lg $padding-sm $padding-lg;
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
 
@@ -202,7 +246,8 @@ body {
     width: auto;
 
     td.icon {
-      padding: $font-size;
+      padding-left: $font-size;
+      padding-right: $font-size;
     }
   }
 
@@ -212,7 +257,7 @@ body {
   }
 
   p.socials, .copyright {
-    margin-top: $section-padding;
+    margin-top: $padding-lg;
   }
 
   .social-icon {
@@ -226,7 +271,7 @@ body {
 }
 
 .section-header {
-  margin-bottom: $section-padding;
+  margin-bottom: $padding-lg;
 
   hr {
     margin-top: 5px;
@@ -275,6 +320,37 @@ a, a:focus, .touch-mode a:hover {
   text-decoration: none;
 }
 
+.btn, .btn:focus, .touch-mode .btn:hover {
+  border-radius: $button-radius;
+  min-height: 40px;
+  min-width: 64px;
+  margin-left: $padding-sm / 2;
+  margin-right: $padding-sm / 2;
+}
+
+.mouse-mode .btn:hover {
+  cursor: pointer;
+}
+
+div.btn, div.btn:focus, .touch-mode div.btn:hover {
+  color: var(--button);
+  border-color: var(--button);
+}
+
+.mouse-mode div.btn:hover, div.btn.selected {
+  @extend %gradient;
+  color: var(--button-hover-text);
+  border-style: hidden;
+}
+
+div.btn.selected {
+  pointer-events: none;
+}
+
+.touch-mode div.btn.selected {
+  color: var(--button-hover-text);
+}
+
 .theme-selector {
   position: fixed;
   right: 20px;
@@ -291,15 +367,15 @@ a, a:focus, .touch-mode a:hover {
     display: block;
     border: solid;
     border-width: thin;
-    border-color: var(--bg-button);
+    border-color: var(--toggle-bg);
     border-radius: 20px;
-    background-color: var(--bg);
+    background: transparent;
     opacity: 0.65;
     cursor: pointer;
   }
 
   .mouse-mode & label:hover {
-    background-color: var(--bg-button);
+    background-color: var(--toggle-bg);
     opacity: 1;
   }
 
@@ -310,4 +386,8 @@ a, a:focus, .touch-mode a:hover {
   :checked + label::before {
     content: '\1F324';
   }
+}
+
+.fill-width {
+  width: 100%;
 }

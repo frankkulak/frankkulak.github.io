@@ -12,11 +12,14 @@ html {
   --hr: #5ab6fc;
   --band-bg: #f7f7f7;
   --button: #5ab6fc;
+  --button-hover-text: white;
   --skill-bar-full: #5ab6fc;
   --skill-bar-empty: rgba(90, 182, 252, 0.3);
   --project-button: #3c3c3c;
+  --project-card-bg: white;
   --link: #5ab6fc;
   --link-hover: #ff81fa;
+  --toggle-bg: #828282;
 }
 
 html[data-theme=dark] {
@@ -31,14 +34,17 @@ html[data-theme=dark] {
   --hr: #5ab6fc;
   --band-bg: #202630;
   --button: #5ab6fc;
+  --button-hover-text: white;
   --skill-bar-full: #5ab6fc;
   --skill-bar-empty: rgba(90, 182, 252, 0.3);
   --project-button: white;
+  --project-card-bg: #1d242e;
   --link: #5ab6fc;
   --link-hover: #ff81fa;
+  --toggle-bg: #c8c8c8;
 }
 
-.section-home {
+.mouse-mode div.btn:hover, div.btn.selected, .section-projects .project-card-outline, .section-home {
   background: #8636e6;
   background: linear-gradient(45deg, #8636e6 0%, #5ab6fc 100%);
 }
@@ -118,8 +124,36 @@ body {
   height: auto;
 }
 
+.section-projects .project-buttons {
+  margin-bottom: 50px;
+}
+.section-projects .project-cards a.btn {
+  margin-right: 0;
+}
+.section-projects .project-cards a.btn, .section-projects .project-cards a.btn:focus, .touch-mode .section-projects .project-cards a.btn:hover {
+  color: var(--project-button);
+  border-color: var(--project-button);
+}
+.mouse-mode .section-projects .project-cards a.btn:hover {
+  background-color: var(--project-button);
+  color: var(--project-card-bg);
+}
+.section-projects .project-card-outline {
+  border-radius: 22px;
+  padding: 2px;
+  margin: 10px;
+}
+.section-projects .project-card {
+  background-color: var(--project-card-bg);
+  border-radius: 20px;
+  padding: 20px;
+}
+.section-projects .project-card .timespan {
+  color: var(--header);
+}
+
 .section-contact {
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
 }
@@ -130,7 +164,8 @@ body {
   width: auto;
 }
 .section-contact table td.icon {
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .section-contact .email-icon {
   height: 16px;
@@ -196,6 +231,36 @@ a, a:focus, .touch-mode a:hover {
   text-decoration: none;
 }
 
+.btn, .btn:focus, .touch-mode .btn:hover {
+  border-radius: 10px;
+  min-height: 40px;
+  min-width: 64px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mouse-mode .btn:hover {
+  cursor: pointer;
+}
+
+div.btn, div.btn:focus, .touch-mode div.btn:hover {
+  color: var(--button);
+  border-color: var(--button);
+}
+
+.mouse-mode div.btn:hover, div.btn.selected {
+  color: var(--button-hover-text);
+  border-style: hidden;
+}
+
+div.btn.selected {
+  pointer-events: none;
+}
+
+.touch-mode div.btn.selected {
+  color: var(--button-hover-text);
+}
+
 .theme-selector {
   position: fixed;
   right: 20px;
@@ -211,14 +276,14 @@ a, a:focus, .touch-mode a:hover {
   display: block;
   border: solid;
   border-width: thin;
-  border-color: var(--bg-button);
+  border-color: var(--toggle-bg);
   border-radius: 20px;
-  background-color: var(--bg);
+  background: transparent;
   opacity: 0.65;
   cursor: pointer;
 }
 .mouse-mode .theme-selector label:hover {
-  background-color: var(--bg-button);
+  background-color: var(--toggle-bg);
   opacity: 1;
 }
 .theme-selector label::before {
@@ -226,6 +291,10 @@ a, a:focus, .touch-mode a:hover {
 }
 .theme-selector :checked + label::before {
   content: "🌤";
+}
+
+.fill-width {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

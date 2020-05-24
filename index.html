@@ -126,10 +126,81 @@
         <h1>projects</h1>
         <hr>
     </div>
-    <div class="container-fluid">
+    <!-- buttons -->
+    <div class="container-fluid project-buttons">
         <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 dark-bg">
-                content
+            <div id="projects-web-button" class="btn mr-3" onclick="onProjectButtonClicked('web');">web</div>
+            <div id="projects-java-button" class="btn" onclick="onProjectButtonClicked('java');">java</div>
+        </div>
+    </div>
+    <!-- project cards -->
+    <!-- web -->
+    <div id="web-projects" style="display: none;">
+        <div class="container-fluid project-cards">
+            <div class="row justify-content-center">
+                <!-- website -->
+                <div class="col-10 col-sm-8 col-md-6 col-lg-5">
+                    <div class="project-card-outline">
+                        <div class="project-card text-left">
+                            <div class="d-flex flex-row fill-width">
+                                <h6 class="text-left text-nowrap mr-2">frankkulak.com</h6>
+                                <p class="timespan text-right fill-width">Oct. 2019 - Present</p>
+                            </div>
+                            <p>This is the website you are currently viewing! It provides a summary of my education,
+                                experience, and projects. I built it from the ground up with HTML, CSS, and JavaScript
+                                utilizing Bootstrap and jQuery. I actively maintain this website and update it
+                                often.</p>
+                            <div class="d-flex flex-row fill-width justify-content-end">
+                                <a class="btn text-nowrap" href="https://github.com/frankkulak/frankkulak.github.io"
+                                   target="_blank">view on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- java -->
+    <div id="java-projects" style="display: none;">
+        <div class="container-fluid project-cards">
+            <div class="row justify-content-center">
+                <!-- block dude -->
+                <div class="col-10 col-sm-8 col-md-6 col-lg-5">
+                    <div class="project-card-outline">
+                        <div class="project-card text-left">
+                            <div class="d-flex flex-row fill-width">
+                                <h6 class="text-left text-nowrap mr-2">Block Dude</h6>
+                                <p class="timespan text-right fill-width">Apr. - Dec. 2019</p>
+                            </div>
+                            <p>Block Dude is a game originally created for the TI-84 calculator. It involves a character
+                                that picks blocks up and puts them down in order to reach the exit door. This project is
+                                a simplistic re-creation of it in Java, and it was done for my own practive with the MVC
+                                design pattern.</p>
+                            <div class="d-flex flex-row fill-width justify-content-end">
+                                <a class="btn text-nowrap" href="https://github.com/frankkulak/blockdude-java"
+                                   target="_blank">view on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- blocky -->
+                <div class="col-10 col-sm-8 col-md-6 col-lg-5">
+                    <div class="project-card-outline">
+                        <div class="project-card text-left">
+                            <div class="d-flex flex-row fill-width">
+                                <h6 class="text-left text-nowrap mr-2">Blocky</h6>
+                                <p class="timespan text-right fill-width">Apr. - May 2019</p>
+                            </div>
+                            <p>Blocky is an original puzzle game in which the player swipes a block through obstacles to
+                                escape the board. This implementation is written in Java and utilizes the Swing library
+                                for an engaging user interface.</p>
+                            <div class="d-flex flex-row fill-width justify-content-end">
+                                <a class="btn text-nowrap" href="https://github.com/frankkulak/blocky-java"
+                                   target="_blank">view on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -188,6 +259,7 @@
 <!--<script src="./scripts/auto-scroll.js"></script>-->
 <script src="./scripts/theme.js"></script>
 <script src="./scripts/hover.js"></script>
+<script src="./scripts/projects.js"></script>
 </body>
 
 </html>
