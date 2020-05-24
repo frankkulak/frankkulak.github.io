@@ -149,7 +149,7 @@ body {
   padding: 20px;
 }
 .section-projects .project-card .timespan {
-  color: var(--header);
+  font-weight: normal;
 }
 
 .section-contact {
