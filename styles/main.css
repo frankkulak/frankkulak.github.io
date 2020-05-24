@@ -119,15 +119,31 @@ body {
 }
 
 .section-contact {
-  padding-top: 50px;
+  padding: 50px;
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
 }
 .section-contact h1 {
   color: var(--head-foot-text);
 }
-.section-contact .copyright {
+.section-contact table {
+  width: auto;
+}
+.section-contact table td.icon {
+  padding: 16px;
+}
+.section-contact .email-icon {
+  height: 16px;
+  width: auto;
+}
+.section-contact p.socials, .section-contact .copyright {
   margin-top: 50px;
+}
+.section-contact .social-icon {
+  height: 32px;
+  width: auto;
+}
+.section-contact .copyright {
   font-size: 14px;
 }
 
@@ -137,6 +153,7 @@ body {
 .section-header hr {
   margin-top: 5px;
   max-width: 50px;
+  height: 1px;
   background-color: var(--hr);
 }
 

@@ -47,9 +47,8 @@
         <li><a class="nav-link" href="">skills</a></li>
         <li><a class="nav-link" href="">projects</a></li>
         <li><a class="nav-link" href="">contact</a></li>
-        <!-- FIXME : fade-spacer is hacky -->
         <li>
-            <div class="fade-spacer"></div>
+            <div class="fade-spacer"></div> <!-- FIXME : hacky -->
         </li>
     </ul>
     <div class="navbar-fade"></div>
@@ -142,14 +141,30 @@
         <h1>contact</h1>
         <hr>
     </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 dark-bg">
-                <p>Looking to chat? Want a copy of my resume? Feel free to email me!</p>
-                <a href="mailto:me@frankkulak.com">me@frankkulak.com</a>
-                <p class="copyright">Frank Kulak © 2020</p>
-            </div>
-        </div>
+    <div class="mx-auto justify-content-center">
+        <p>Looking to chat? Want a copy of my resume? Feel free to email me!</p>
+        <table class="mx-auto">
+            <tr>
+                <td class="icon"><img class="email-icon" src="./images/socials/email-icon.png" alt="email"/></td>
+                <td><a href="mailto:me@frankkulak.com">me@frankkulak.com</a></td>
+            </tr>
+        </table>
+        <p class="socials">Connect with me on LinkedIn or follow me on GitHub.</p>
+        <table class="mx-auto">
+            <tr>
+                <td class="icon">
+                    <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">
+                        <img class="social-icon" src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
+                    </a>
+                </td>
+                <td class="icon">
+                    <a href="https://github.com/frankkulak" target="_blank">
+                        <img class="social-icon" src="./images/socials/github-icon.png" alt="GitHub"/>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <p class="copyright">Frank Kulak &copy; 2020</p>
     </div>
 </div>
 
