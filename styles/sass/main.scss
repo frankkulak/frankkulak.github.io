@@ -5,7 +5,6 @@
 
 // colors
 $blue: rgb(90, 182, 252, 1);
-$trans-blue: rgb(90, 182, 252, 0.3); // FIXME : needed?
 $dark-blue: rgb(0, 78, 144, 1);
 $purple: rgb(134, 54, 230, 1);
 $pink: rgb(255, 129, 250, 1);
@@ -25,6 +24,9 @@ $button-radius: 10px;
 $project-card-radius: 20px;
 $padding-lg: 50px;
 $padding-sm: 20px;
+$min-button-height: 40px;
+$min-button-width: 128px;
+$max-hr-width: 50px;
 
 // ----------------------------------------
 // themes
@@ -42,8 +44,7 @@ html {
   --band-bg: #{$gray-247};
   --button: #{$blue};
   --button-hover-text: #{white};
-  --skill-bar-full: #{$blue};
-  --skill-bar-empty: #{$trans-blue};
+  --skill-bar: #{$blue};
   --project-button: #{$gray-60};
   --project-card-bg: #{white};
   --link: #{$blue};
@@ -64,8 +65,7 @@ html[data-theme='dark'] {
   --band-bg: #{$lighter-cool-dark-gray};
   --button: #{$blue};
   --button-hover-text: #{white};
-  --skill-bar-full: #{$blue};
-  --skill-bar-empty: #{$trans-blue};
+  --skill-bar: #{$blue};
   --project-button: #{white};
   --project-card-bg: #{$dark-navy};
   --link: #{$blue};
@@ -190,6 +190,57 @@ body {
 
 .section-skills {
   @extend %banded-section;
+
+  #skills-content {
+    %category {
+      color: var(--skill-bar);
+      margin-bottom: $padding-lg / 2;
+    }
+
+    .first-category {
+      @extend %category;
+    }
+
+    .category {
+      @extend %category;
+      margin-top: $padding-lg;
+    }
+
+    p {
+      margin-top: $padding-sm / 2;
+      margin-bottom: $padding-sm;
+    }
+
+    td.rating {
+      width: 50%;
+    }
+
+    .skill-bar {
+      justify-content: flex-end;
+      width: 100%;
+
+      .skill-cell {
+        width: 15%;
+        min-height: $font-size * 1.5;
+        background-color: var(--skill-bar);
+        margin-right: 2px;
+        opacity: 0.3;
+      }
+
+      .first {
+        border-radius: $button-radius 0 0 $button-radius;
+      }
+
+      .last {
+        margin-right: 0;
+        border-radius: 0 $button-radius $button-radius 0;
+      }
+
+      .full {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .section-projects {
@@ -275,7 +326,7 @@ body {
 
   hr {
     margin-top: 5px;
-    max-width: 50px;
+    max-width: $max-hr-width;
     height: 1px;
     background-color: var(--hr);
   }
@@ -322,8 +373,8 @@ a, a:focus, .touch-mode a:hover {
 
 .btn, .btn:focus, .touch-mode .btn:hover {
   border-radius: $button-radius;
-  min-height: 40px;
-  min-width: 64px;
+  min-height: $min-button-height;
+  min-width: $min-button-width;
   margin-left: $padding-sm / 2;
   margin-right: $padding-sm / 2;
 }

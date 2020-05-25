@@ -13,8 +13,7 @@ html {
   --band-bg: #f7f7f7;
   --button: #5ab6fc;
   --button-hover-text: white;
-  --skill-bar-full: #5ab6fc;
-  --skill-bar-empty: rgba(90, 182, 252, 0.3);
+  --skill-bar: #5ab6fc;
   --project-button: #3c3c3c;
   --project-card-bg: white;
   --link: #5ab6fc;
@@ -35,8 +34,7 @@ html[data-theme=dark] {
   --band-bg: #202630;
   --button: #5ab6fc;
   --button-hover-text: white;
-  --skill-bar-full: #5ab6fc;
-  --skill-bar-empty: rgba(90, 182, 252, 0.3);
+  --skill-bar: #5ab6fc;
   --project-button: white;
   --project-card-bg: #1d242e;
   --link: #5ab6fc;
@@ -122,6 +120,42 @@ body {
 .section-about img {
   width: 128px;
   height: auto;
+}
+
+.section-skills #skills-content .category, .section-skills #skills-content .first-category {
+  color: var(--skill-bar);
+  margin-bottom: 25px;
+}
+.section-skills #skills-content .category {
+  margin-top: 50px;
+}
+.section-skills #skills-content p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.section-skills #skills-content td.rating {
+  width: 50%;
+}
+.section-skills #skills-content .skill-bar {
+  justify-content: flex-end;
+  width: 100%;
+}
+.section-skills #skills-content .skill-bar .skill-cell {
+  width: 15%;
+  min-height: 24px;
+  background-color: var(--skill-bar);
+  margin-right: 2px;
+  opacity: 0.3;
+}
+.section-skills #skills-content .skill-bar .first {
+  border-radius: 10px 0 0 10px;
+}
+.section-skills #skills-content .skill-bar .last {
+  margin-right: 0;
+  border-radius: 0 10px 10px 0;
+}
+.section-skills #skills-content .skill-bar .full {
+  opacity: 1;
 }
 
 .section-projects .project-buttons {
@@ -234,7 +268,7 @@ a, a:focus, .touch-mode a:hover {
 .btn, .btn:focus, .touch-mode .btn:hover {
   border-radius: 10px;
   min-height: 40px;
-  min-width: 64px;
+  min-width: 128px;
   margin-left: 10px;
   margin-right: 10px;
 }
