@@ -57,6 +57,11 @@ const skills = [
                 'description': 'C, C++, CLion, Visual Studio Code',
                 'rating': 1
             },
+            {
+                'title': 'Git',
+                'description': 'Git, GitHub, GitHub Desktop',
+                'rating': 4
+            },
         ]
     }
 ];
