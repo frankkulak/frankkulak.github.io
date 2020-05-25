@@ -18,6 +18,7 @@ $gray-200: rgb(200, 200, 200, 1);
 $gray-247: rgb(247, 247, 247, 1);
 
 // other
+$font-family: 'Muli', sans-serif;
 $font-size: 16px;
 $font-size-sm: 14px;
 $button-radius: 10px;
@@ -45,7 +46,7 @@ html {
   --button: #{$blue};
   --button-hover-text: #{white};
   --skill-bar: #{$blue};
-  --project-button: #{$gray-60};
+  --project-button: #{$dark-blue};
   --project-card-bg: #{white};
   --link: #{$dark-blue};
   --link-hover: #{$purple};
@@ -66,7 +67,7 @@ html[data-theme='dark'] {
   --button: #{$blue};
   --button-hover-text: #{white};
   --skill-bar: #{$blue};
-  --project-button: #{white};
+  --project-button: #{$blue};
   --project-card-bg: #{$dark-navy};
   --link: #{$blue};
   --link-hover: #{$pink};
@@ -95,7 +96,7 @@ html[data-theme='dark'] {
 // styles
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: $font-family;
   font-weight: 300;
   font-size: $font-size;
   background-color: var(--bg);
@@ -160,7 +161,7 @@ body {
   }
 }
 
-.section-home {
+#home {
   @extend %section;
   @extend %gradient;
 
@@ -173,7 +174,7 @@ body {
   }
 }
 
-.section-about {
+#about {
   @extend %section;
 
   img {
@@ -182,15 +183,15 @@ body {
   }
 }
 
-.section-education {
+#education {
   @extend %banded-section;
 }
 
-.section-experience {
+#experience {
   @extend %section;
 }
 
-.section-skills {
+#skills {
   @extend %banded-section;
 
   #skills-content {
@@ -245,7 +246,7 @@ body {
   }
 }
 
-.section-projects {
+#projects {
   @extend %section;
 
   .project-buttons {
@@ -286,7 +287,7 @@ body {
   }
 }
 
-.section-contact {
+#contact {
   padding: $padding-lg $padding-lg $padding-sm $padding-lg;
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
@@ -326,7 +327,7 @@ body {
 .section-header {
   margin-bottom: $padding-lg;
 
-  .section-contact & hr {
+  #contact & hr {
     background-color: var(--head-foot-hover);
   }
 

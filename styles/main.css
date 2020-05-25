@@ -14,7 +14,7 @@ html {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --project-button: #3c3c3c;
+  --project-button: #004e90;
   --project-card-bg: white;
   --link: #004e90;
   --link-hover: #8636e6;
@@ -35,24 +35,24 @@ html[data-theme=dark] {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --project-button: white;
+  --project-button: #5ab6fc;
   --project-card-bg: #1d242e;
   --link: #5ab6fc;
   --link-hover: #ff81fa;
   --toggle-bg: #5ab6fc;
 }
 
-.mouse-mode div.btn:hover, div.btn.selected, .section-projects .project-card-outline, .section-home {
+.mouse-mode div.btn:hover, div.btn.selected, #projects .project-card-outline, #home {
   background-color: var(--head-foot-bg);
   background-image: linear-gradient(45deg, #8636e6 0%, #5ab6fc 100%);
 }
 
-.section-projects, .section-experience, .section-about, .section-home, .section-skills, .section-education {
+#projects, #experience, #about, #home, #skills, #education {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.section-skills, .section-education {
+#skills, #education {
   background-color: var(--band-bg);
 }
 
@@ -109,118 +109,118 @@ body {
   height: 32px;
 }
 
-.section-home {
+#home {
   padding: 50px;
 }
-.section-home h1 {
+#home h1 {
   font-weight: normal;
   text-shadow: -2px 2px 3px rgba(32, 32, 32, 0.1);
   color: var(--home-text);
 }
 
-.section-about img {
+#about img {
   width: 128px;
   height: auto;
 }
 
-.section-skills #skills-content .category, .section-skills #skills-content .first-category {
+#skills #skills-content .category, #skills #skills-content .first-category {
   color: var(--skill-bar);
   margin-bottom: 25px;
 }
-.section-skills #skills-content .category {
+#skills #skills-content .category {
   margin-top: 50px;
 }
-.section-skills #skills-content p {
+#skills #skills-content p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.section-skills #skills-content td.rating {
+#skills #skills-content td.rating {
   width: 50%;
 }
-.section-skills #skills-content .skill-bar {
+#skills #skills-content .skill-bar {
   justify-content: flex-end;
   width: 100%;
 }
-.section-skills #skills-content .skill-bar .skill-cell {
+#skills #skills-content .skill-bar .skill-cell {
   width: 15%;
   min-height: 24px;
   background-color: var(--skill-bar);
   margin-right: 2px;
   opacity: 0.3;
 }
-.section-skills #skills-content .skill-bar .first {
+#skills #skills-content .skill-bar .first {
   border-radius: 10px 0 0 10px;
 }
-.section-skills #skills-content .skill-bar .last {
+#skills #skills-content .skill-bar .last {
   margin-right: 0;
   border-radius: 0 10px 10px 0;
 }
-.section-skills #skills-content .skill-bar .full {
+#skills #skills-content .skill-bar .full {
   opacity: 1;
 }
 
-.section-projects .project-buttons {
+#projects .project-buttons {
   margin-bottom: 50px;
 }
-.section-projects .project-cards a.btn {
+#projects .project-cards a.btn {
   margin-right: 0;
 }
-.section-projects .project-cards a.btn, .section-projects .project-cards a.btn:focus, .touch-mode .section-projects .project-cards a.btn:hover {
+#projects .project-cards a.btn, #projects .project-cards a.btn:focus, .touch-mode #projects .project-cards a.btn:hover {
   color: var(--project-button);
   border-color: var(--project-button);
 }
-.mouse-mode .section-projects .project-cards a.btn:hover {
+.mouse-mode #projects .project-cards a.btn:hover {
   background-color: var(--project-button);
   color: var(--project-card-bg);
 }
-.section-projects .project-card-outline {
+#projects .project-card-outline {
   border-radius: 22px;
   padding: 2px;
   margin: 10px;
 }
-.section-projects .project-card {
+#projects .project-card {
   background-color: var(--project-card-bg);
   border-radius: 20px;
   padding: 20px;
 }
-.section-projects .project-card .timespan {
+#projects .project-card .timespan {
   font-weight: normal;
 }
 
-.section-contact {
+#contact {
   padding: 50px 50px 20px 50px;
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
 }
-.section-contact h1 {
+#contact h1 {
   color: var(--head-foot-text);
 }
-.section-contact table {
+#contact table {
   width: auto;
 }
-.section-contact table td.icon {
+#contact table td.icon {
   padding-left: 16px;
   padding-right: 16px;
 }
-.section-contact .email-icon {
+#contact .email-icon {
   height: 16px;
   width: auto;
 }
-.section-contact p.socials, .section-contact .copyright {
+#contact p.socials, #contact .copyright {
   margin-top: 50px;
 }
-.section-contact .social-icon {
+#contact .social-icon {
   height: 32px;
   width: auto;
 }
-.section-contact .copyright {
+#contact .copyright {
   font-size: 14px;
 }
 
 .section-header {
   margin-bottom: 50px;
 }
-.section-contact .section-header hr {
+#contact .section-header hr {
   background-color: var(--head-foot-hover);
 }
 .section-header hr {
