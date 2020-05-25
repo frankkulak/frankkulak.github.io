@@ -30,23 +30,23 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="text-center">
+<body class="text-center" data-spy="scroll" data-target="#navbar" data-offset="40">
 
 <!-- Home -->
-<div class="section-home">
+<div id="home" class="section-home">
     <h1>Hello, my name is <strong>Frank Kulak</strong>.<br>I'm a software developer.</h1>
 </div>
 
 <!-- Navbar -->
 <nav id="navbar" class="navbar navbar-expand navbar-default sticky-top">
     <ul class="navbar-nav">
-        <li class="active"><a class="nav-link" href="">home</a></li>
-        <li><a class="nav-link" href="">about</a></li>
-        <li><a class="nav-link" href="">education</a></li>
-        <li><a class="nav-link" href="">experience</a></li>
-        <li><a class="nav-link" href="">skills</a></li>
-        <li><a class="nav-link" href="">projects</a></li>
-        <li><a class="nav-link" href="">contact</a></li>
+        <li><a class="nav-link" href="#home">home</a></li>
+        <li><a class="nav-link" href="#about">about</a></li>
+        <li><a class="nav-link" href="#education">education</a></li>
+        <li><a class="nav-link" href="#experience">experience</a></li>
+        <li><a class="nav-link" href="#skills">skills</a></li>
+        <li><a class="nav-link" href="#projects">projects</a></li>
+        <li><a class="nav-link" href="#contact">contact</a></li>
         <li>
             <div class="fade-spacer"></div> <!-- FIXME : hacky -->
         </li>
@@ -55,7 +55,7 @@
 </nav>
 
 <!-- About -->
-<div class="section-about">
+<div id="about" class="section-about">
     <div class="section-header">
         <h1>about</h1>
         <hr>
@@ -76,7 +76,7 @@
 </div>
 
 <!-- Education -->
-<div class="section-education">
+<div id="education" class="section-education">
     <div class="section-header">
         <h1>education</h1>
         <hr>
@@ -91,7 +91,7 @@
 </div>
 
 <!-- Experience -->
-<div class="section-experience">
+<div id="experience" class="section-experience">
     <div class="section-header">
         <h1>experience</h1>
         <hr>
@@ -106,7 +106,7 @@
 </div>
 
 <!-- Skills -->
-<div class="section-skills">
+<div id="skills" class="section-skills">
     <div class="section-header">
         <h1>skills</h1>
         <hr>
@@ -121,7 +121,7 @@
 </div>
 
 <!-- Projects -->
-<div class="section-projects">
+<div id="projects" class="section-projects">
     <div class="section-header">
         <h1>projects</h1>
         <hr>
@@ -207,7 +207,7 @@
 </div>
 
 <!-- Contact -->
-<div class="section-contact">
+<div id="contact" class="section-contact">
     <div class="section-header">
         <h1>contact</h1>
         <hr>
@@ -256,7 +256,7 @@
 
 <!-- Local scripts -->
 <!--<script src="./scripts/experience.js"></script>-->
-<!--<script src="./scripts/auto-scroll.js"></script>-->
+<script src="./scripts/scroll.js"></script>
 <script src="./scripts/theme.js"></script>
 <script src="./scripts/hover.js"></script>
 <script src="./scripts/projects.js"></script>

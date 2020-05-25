@@ -9,12 +9,12 @@ const skills = [
             },
             {
                 'title': 'CSS',
-                'description': 'CSS3, Sass, Bootstrap, WebStorm, Visual Studio Code',
+                'description': 'CSS3, Sass, Bootstrap',
                 'rating': 3
             },
             {
                 'title': 'JavaScript',
-                'description': 'ES6, jQuery, WebStorm, Visual Studio Code',
+                'description': 'ES6, jQuery',
                 'rating': 3
             },
         ]
@@ -39,7 +39,7 @@ const skills = [
         'skills': [
             {
                 'title': 'Java',
-                'description': 'Java, Swing, JUnit, IntelliJ IDEA',
+                'description': 'Java, Swing, JUnit, IntelliJ IDEA, Eclipse',
                 'rating': 4
             },
             {

@@ -100,6 +100,7 @@ body {
   font-size: $font-size;
   background-color: var(--bg);
   color: var(--text);
+  position: relative;
 }
 
 .navbar-default {
@@ -123,21 +124,21 @@ body {
     margin-left: $padding-sm;
     display: inline-block;
 
-    &.active > a {
+    .active, .touch-mode & > a:hover.active {
       color: var(--head-foot-hover);
       font-weight: bold;
     }
 
-    & > a, a:focus {
-      color: var(--head-foot-text);
-    }
-
-    .touch-mode & > a:hover {
+    & > a {
       color: var(--head-foot-text);
     }
 
     .mouse-mode & > a:hover {
       color: var(--head-foot-hover);
+    }
+
+    .touch-mode & > a:hover {
+      color: var(--head-foot-text);
     }
 
     .fade-spacer {
