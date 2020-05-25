@@ -4,11 +4,11 @@ html {
   --bg: white;
   --home-text: white;
   --home-button: white;
-  --head-foot-bg: #3c3c3c;
+  --head-foot-bg: #5ab6fc;
   --head-foot-text: white;
-  --head-foot-hover: #5ab6fc;
+  --head-foot-hover: #004e90;
   --header: #3c3c3c;
-  --text: #828282;
+  --text: #878787;
   --hr: #5ab6fc;
   --band-bg: #f7f7f7;
   --button: #5ab6fc;
@@ -16,9 +16,9 @@ html {
   --skill-bar: #5ab6fc;
   --project-button: #3c3c3c;
   --project-card-bg: white;
-  --link: #5ab6fc;
-  --link-hover: #ff81fa;
-  --toggle-bg: #828282;
+  --link: #004e90;
+  --link-hover: #8636e6;
+  --toggle-bg: #004e90;
 }
 
 html[data-theme=dark] {
@@ -39,12 +39,12 @@ html[data-theme=dark] {
   --project-card-bg: #1d242e;
   --link: #5ab6fc;
   --link-hover: #ff81fa;
-  --toggle-bg: #c8c8c8;
+  --toggle-bg: #5ab6fc;
 }
 
 .mouse-mode div.btn:hover, div.btn.selected, .section-projects .project-card-outline, .section-home {
-  background: #8636e6;
-  background: linear-gradient(45deg, #8636e6 0%, #5ab6fc 100%);
+  background-color: var(--head-foot-bg);
+  background-image: linear-gradient(45deg, #8636e6 0%, #5ab6fc 100%);
 }
 
 .section-projects, .section-experience, .section-about, .section-home, .section-skills, .section-education {
@@ -67,7 +67,7 @@ body {
 
 .navbar-default {
   background-color: var(--head-foot-bg);
-  border-bottom: 2px solid var(--head-foot-hover);
+  border-bottom: 1px solid var(--head-foot-hover);
 }
 .navbar-default .navbar-nav {
   overflow-x: scroll;
@@ -219,6 +219,9 @@ body {
 
 .section-header {
   margin-bottom: 50px;
+}
+.section-contact .section-header hr {
+  background-color: var(--head-foot-hover);
 }
 .section-header hr {
   margin-top: 5px;

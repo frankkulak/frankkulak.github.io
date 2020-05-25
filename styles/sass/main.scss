@@ -8,12 +8,12 @@ $blue: rgb(90, 182, 252, 1);
 $dark-blue: rgb(0, 78, 144, 1);
 $purple: rgb(134, 54, 230, 1);
 $pink: rgb(255, 129, 250, 1);
-$cool-dark-gray: rgb(40, 47, 55, 1);
+$cool-dark-gray: rgb(42, 49, 57, 1);
 $lighter-cool-dark-gray: rgb(32, 38, 48, 1);
 $dark-navy: rgb(29, 36, 46, 1);
 $gray-32: rgb(32, 32, 32, 1);
 $gray-60: rgb(60, 60, 60, 1);
-$gray-130: rgb(130, 130, 130, 1);
+$gray-135: rgb(135, 135, 135, 1);
 $gray-200: rgb(200, 200, 200, 1);
 $gray-247: rgb(247, 247, 247, 1);
 
@@ -35,11 +35,11 @@ html {
   --bg: #{white};
   --home-text: #{white};
   --home-button: #{white};
-  --head-foot-bg: #{$gray-60};
+  --head-foot-bg: #{$blue};
   --head-foot-text: #{white};
-  --head-foot-hover: #{$blue};
+  --head-foot-hover: #{$dark-blue};
   --header: #{$gray-60};
-  --text: #{$gray-130};
+  --text: #{$gray-135};
   --hr: #{$blue};
   --band-bg: #{$gray-247};
   --button: #{$blue};
@@ -47,9 +47,9 @@ html {
   --skill-bar: #{$blue};
   --project-button: #{$gray-60};
   --project-card-bg: #{white};
-  --link: #{$blue};
-  --link-hover: #{$pink};
-  --toggle-bg: #{$gray-130};
+  --link: #{$dark-blue};
+  --link-hover: #{$purple};
+  --toggle-bg: #{$dark-blue};
 }
 
 html[data-theme='dark'] {
@@ -70,15 +70,15 @@ html[data-theme='dark'] {
   --project-card-bg: #{$dark-navy};
   --link: #{$blue};
   --link-hover: #{$pink};
-  --toggle-bg: #{$gray-200};
+  --toggle-bg: #{$blue};
 }
 
 // ----------------------------------------
 // inheritable classes
 
 %gradient {
-  background: $purple;
-  background: linear-gradient(45deg, $purple 0%, $blue 100%);
+  background-color: var(--head-foot-bg);
+  background-image: linear-gradient(45deg, $purple 0%, $blue 100%);
 }
 
 %section {
@@ -107,13 +107,14 @@ body {
   $fade-size: 20%;
 
   background-color: var(--head-foot-bg);
-  border-bottom: 2px solid var(--head-foot-hover);
+  border-bottom: 1px solid var(--head-foot-hover);
 
   .navbar-nav {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     -ms-overflow-style: none;
+    //overflow: -moz-scrollbars-none;
 
     &::-webkit-scrollbar {
       display: none;
@@ -167,7 +168,7 @@ body {
 
   h1 {
     font-weight: normal;
-    text-shadow: -2px 2px 3px rgb(32, 32, 32, 0.1);
+    text-shadow: -2px 2px 3px rgb(32, 32, 32, 0.1); // FIXME hardcoded color
     color: var(--home-text);
   }
 }
@@ -324,6 +325,10 @@ body {
 
 .section-header {
   margin-bottom: $padding-lg;
+
+  .section-contact & hr {
+    background-color: var(--head-foot-hover);
+  }
 
   hr {
     margin-top: 5px;
