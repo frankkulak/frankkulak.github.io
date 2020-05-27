@@ -1,3 +1,46 @@
 #experience {
   @extend %content-section;
+
+  .company-display {
+    margin-top: $padding-sm;
+    text-align: left;
+
+    table {
+      width: 100%;
+
+      td {
+        vertical-align: top;
+
+        &.company, &.title {
+          text-align: left;
+          padding-right: 20px;
+        }
+
+        &.title {
+          white-space: nowrap;
+        }
+
+        &.location, &.date {
+          white-space: initial;
+          width: auto;
+          max-width: 50%;
+          text-align: right;
+        }
+
+        &.location {
+          h5 {
+            font-weight: normal;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      span.nowrap {
+        white-space: nowrap;
+      }
+    }
+
+
+    // todo
+  }
 }

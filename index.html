@@ -95,7 +95,7 @@
     </div>
 </div>
 
-<!-- Experience -->
+<!-- experience -->
 <div id="experience">
     <div class="section-header">
         <h1>experience</h1>
@@ -104,7 +104,9 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-8">
-                content
+                <div id="experience-content">
+                    <experience-contents v-bind:jobs="jobs"></experience-contents>
+                </div>
             </div>
         </div>
     </div>
@@ -264,7 +266,7 @@
         crossorigin="anonymous"></script>
 
 <!-- Local scripts -->
-<!--<script src="./scripts/experience.js"></script>-->
+<script src="./scripts/experience.js"></script>
 <script src="./scripts/theme.js"></script>
 <script src="./scripts/skills.js"></script>
 <script src="./scripts/education.js"></script>

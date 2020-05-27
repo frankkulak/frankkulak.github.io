@@ -263,6 +263,37 @@ div.btn.selected {
   min-width: 95px;
 }
 
+#experience .company-display {
+  margin-top: 20px;
+  text-align: left;
+}
+#experience .company-display table {
+  width: 100%;
+}
+#experience .company-display table td {
+  vertical-align: top;
+}
+#experience .company-display table td.company, #experience .company-display table td.title {
+  text-align: left;
+  padding-right: 20px;
+}
+#experience .company-display table td.title {
+  white-space: nowrap;
+}
+#experience .company-display table td.location, #experience .company-display table td.date {
+  white-space: initial;
+  width: auto;
+  max-width: 50%;
+  text-align: right;
+}
+#experience .company-display table td.location h5 {
+  font-weight: normal;
+  white-space: nowrap;
+}
+#experience .company-display table span.nowrap {
+  white-space: nowrap;
+}
+
 #home h1 {
   font-weight: normal;
   text-shadow: -2px 2px 3px rgba(32, 32, 32, 0.1);
