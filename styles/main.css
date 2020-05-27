@@ -42,25 +42,16 @@ html[data-theme=dark] {
   --toggle-bg: #5ab6fc;
 }
 
-#projects, #home, #experience, #about, #skills, #education {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#skills, #education {
-  background-color: var(--band-bg);
-}
-
 #projects .project-card-outline, #home, .mouse-mode div.btn:hover, div.btn.selected {
   background-color: var(--bg);
   background-image: linear-gradient(45deg, #8636e6 0%, #5ab6fc 100%);
 }
 
-.navbar-default, #contact {
+.navbar-default, section.head-foot {
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
 }
-.navbar-default h1, #contact h1 {
+.navbar-default h1, section.head-foot h1 {
   color: var(--head-foot-text);
 }
 
@@ -105,6 +96,13 @@ body {
   position: relative;
 }
 
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.banded {
+  background-color: var(--band-bg);
+}
 hr {
   background-color: var(--hr);
   height: 1px;
@@ -197,7 +195,7 @@ div.btn.selected {
 }
 
 #contact {
-  padding: 50px 50px 20px;
+  padding: 50px 50px 50px 20px;
 }
 #contact hr {
   background-color: var(--head-foot-hover);

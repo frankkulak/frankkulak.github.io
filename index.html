@@ -36,9 +36,9 @@
 <body class="text-center" data-spy="scroll" data-target="#navbar" data-offset="40">
 
 <!-- Home -->
-<div id="home">
+<section id="home">
     <h1>Hello, my name is <strong>Frank Kulak</strong>.<br>I'm a software developer.</h1>
-</div>
+</section>
 
 <!-- Navbar -->
 <nav id="navbar" class="navbar navbar-expand navbar-default sticky-top">
@@ -57,12 +57,10 @@
     <div class="navbar-fade"></div>
 </nav>
 
-<!-- About -->
-<div id="about">
-    <div class="section-header">
-        <h1>about</h1>
-        <hr>
-    </div>
+<div id="app">
+<!-- about -->
+<section id="about">
+    <section-header title="about"></section-header>
     <div class="container-fluid">
         <div class="row justify-content-center align-content-center">
             <div class="col-10 col-md-5 col-lg-4">
@@ -76,63 +74,48 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- education -->
-<div id="education">
-    <div class="section-header">
-        <h1>education</h1>
-        <hr>
-    </div>
+<section id="education" class="banded">
+    <section-header title="education"></section-header>
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-8">
-                <div id="education-content"> <!-- fixme replace with component -->
-                    <education-contents v-bind:schools="schools"></education-contents>
-                </div>
+                <education-content></education-content>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- experience -->
-<div id="experience">
-    <div class="section-header">
-        <h1>experience</h1>
-        <hr>
-    </div>
+<section id="experience">
+    <section-header title="experience"></section-header>
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-8">
-                <div id="experience-content">
-                    <experience-contents v-bind:jobs="jobs"></experience-contents>
-                </div>
+                <experience-content></experience-content>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Skills -->
-<div id="skills">
-    <div class="section-header">
-        <h1>skills</h1>
-        <hr>
-    </div>
+<!-- skills -->
+<section id="skills" class="banded">
+    <section-header title="skills"></section-header>
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-8">
                 <div id="skills-content" class="text-left"></div>
+<!--                <skills-content></skills-content>-->
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Projects -->
-<div id="projects">
-    <div class="section-header">
-        <h1>projects</h1>
-        <hr>
-    </div>
+<!-- projects -->
+<section id="projects">
+    <section-header title="projects"></section-header>
     <!-- buttons -->
     <div class="container-fluid project-buttons">
         <div class="row justify-content-center">
@@ -211,14 +194,11 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Contact -->
-<div id="contact">
-    <div class="section-header">
-        <h1>contact</h1>
-        <hr>
-    </div>
+<!-- contact -->
+<section id="contact" class="head-foot">
+    <section-header title="contact"></section-header>
     <div class="mx-auto justify-content-center">
         <p>Looking to chat? Want a copy of my resume? Feel free to email me!</p>
         <table class="mx-auto">
@@ -244,17 +224,15 @@
         </table>
         <p class="copyright">Frank Kulak &copy; 2020</p>
     </div>
-</div>
+</section>
 
-<!-- Theme selector -->
+
+<!-- theme toggle -->
 <div class="theme-selector">
     <input type="checkbox" id="theme-switch" name="theme"/>
     <label for="theme-switch"></label>
 </div>
-
-<script>
-
-</script>
+</div>
 
 <!-- External scripts (do not change order) -->
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script> <!-- fixme : make sure this is prod -->
@@ -266,13 +244,30 @@
         crossorigin="anonymous"></script>
 
 <!-- Local scripts -->
+<script src="./scripts/data.js"></script>
+
+<script src="./scripts/vue-components.js"></script>
+
 <script src="./scripts/experience.js"></script>
-<script src="./scripts/theme.js"></script>
+
 <script src="./scripts/skills.js"></script>
 <script src="./scripts/education.js"></script>
 <script src="./scripts/scroll.js"></script>
 <script src="./scripts/hover.js"></script>
 <script src="./scripts/projects.js"></script>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            // todo
+        }
+    });
+</script>
+
+<script src="./scripts/theme.js"></script> <!-- must come after vue instance is created -->
+
+<!--<script type="module" src="./scripts/main.js"></script>-->
 
 </body>
 

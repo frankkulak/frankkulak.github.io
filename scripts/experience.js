@@ -1,115 +1,3 @@
-const month = index => index - 1; // just to make dates more readable / reduce error
-const experienceData = [
-    {
-        code: 'tjx',
-        company: 'The TJX Companies',
-        location: 'Framingham, MA',
-        relevant: true,
-        positions: [
-            {
-                title: 'IT Engineer Co-op',
-                description: [
-                    'Developed front end for T.J.Maxx and HomeGoods mobile applications using Xamarin.Forms and HTML, CSS, and JavaScript',
-                    'Collaborated with other developers using Agile to deliver critical features and bug fixes',
-                    'Utilized release-branching strategy to manage project versions with Git, GitHub, and SourceTree',
-                    'Maintained existing codebase built with MVVM architecture'
-                ],
-                start: new Date(2019, month(7)), // Jul 2019
-                end: new Date(2019, month(12)), // Dec 2019
-                seasonal: false
-            }
-        ]
-    },
-    {
-        code: 'nu',
-        company: 'Northeastern University',
-        location: 'Boston, MA',
-        relevant: false,
-        positions: [
-            {
-                title: 'Peer Tutor',
-                description: [
-                    'placeholder',
-                    'placeholder'
-                    // todo
-                ],
-                start: new Date(2019, month(1)), // Jan 2019
-                end: new Date(), // Present
-                seasonal: true
-            },
-            {
-                title: 'Office Assistant',
-                description: [
-                    'placeholder',
-                    'placeholder'
-                    // todo
-                ],
-                start: new Date(2017, month(9)), // Sep 2017
-                end: new Date(2020, month(3)), // Mar 2020
-                seasonal: true
-            }
-        ]
-    },
-    {
-        code: 'sherwood',
-        company: 'Sherwood Cleaners',
-        location: 'Plainville, CT',
-        relevant: false,
-        positions: [
-            {
-                title: 'Cashier',
-                description: [
-                    'placeholder',
-                    'placeholder'
-                    // todo
-                ],
-                start: new Date(2018, month(6)), // Jun 2018
-                end: new Date(2019, month(7)), // Jul 2019
-                seasonal: true
-            }
-        ]
-    },
-    {
-        code: 'barnes',
-        company: 'Associate Spring',
-        location: 'Bristol, CT',
-        relevant: false,
-        positions: [
-            {
-                title: 'Maintenance Worker',
-                description: [
-                    'placeholder',
-                    'placeholder'
-                    // todo
-                ],
-                start: new Date(2017, month(6)), // Jun 2017
-                end: new Date(2017, month(8)), // Aug 2017
-                seasonal: false
-            }
-        ]
-    },
-    {
-        code: 'mah',
-        company: 'Mobile Apps for Hartford',
-        location: 'Hartford, CT',
-        relevant: true,
-        positions: [
-            {
-                title: 'Intern',
-                description: [
-                    'Collaborated with other interns to develop Android application for CREC school system using MIT App Inventor 2',
-                    'Met with client from CREC schools on weekly basis to set expectations and ensure high quality of application',
-                    'Published mobile application on the Google Play store',
-                    'Attended weekly presentations on topics such as software development, cyber security, and robotics'
-                ],
-                start: new Date(2016, month(7)), // Jul 2016
-                end: new Date(2016, month(8)), // Aug 2016
-                seasonal: false
-            }
-        ]
-    },
-];
-
 // Returns a formatted string for the span between two dates (e.g. "Jan. 2019 - Dec. 2019").
 const formatDateSpanAsHTML = (start, end) => {
     const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
@@ -123,10 +11,10 @@ const formatDateSpanAsHTML = (start, end) => {
 };
 
 const showAllButtonText = {'show': 'show all jobs', 'hide': 'hide irrelevant jobs'};
-Vue.component('experience-contents', {
-    props: ['jobs'],
+Vue.component('experience-content', {
     data: function () {
         return {
+            jobs: Data.experience,
             showAll: false,
             buttonText: showAllButtonText.show
         }
@@ -167,11 +55,4 @@ Vue.component('company-display', {
 </td></tr>
 </table>
 </div>`
-});
-
-const experienceApp = new Vue({
-    el: '#experience-content',
-    data: {
-        jobs: experienceData
-    }
 });

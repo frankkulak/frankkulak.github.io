@@ -1,71 +1,3 @@
-const skills = [
-    {
-        title: 'web development',
-        skills: [
-            {
-                title: 'HTML',
-                description: 'HTML, WebStorm, Visual Studio Code',
-                rating: 3
-            },
-            {
-                title: 'CSS',
-                description: 'CSS, Sass, Bootstrap',
-                rating: 3
-            },
-            {
-                title: 'JavaScript',
-                description: 'ES6, jQuery, Vue.js, Node.js',
-                rating: 3
-            },
-        ]
-    },
-    {
-        title: 'app development',
-        skills: [
-            {
-                title: 'Xamarin.Forms',
-                description: 'C#, Xamarin.Forms, .NET, Visual Studio',
-                rating: 4
-            },
-            {
-                title: 'Native iOS',
-                description: 'Swift, Xcode',
-                rating: 2
-            },
-        ]
-    },
-    {
-        title: 'other',
-        skills: [
-            {
-                title: 'Java',
-                description: 'Java, Swing, JUnit, IntelliJ IDEA, Eclipse',
-                rating: 4
-            },
-            {
-                title: 'Python',
-                description: 'Python, SpaCy, Scikit-Learn, Pandas, PyCharm',
-                rating: 3
-            },
-            {
-                title: 'Racket',
-                description: 'Racket, DrRacket',
-                rating: 2
-            },
-            {
-                title: 'C/C++',
-                description: 'C, C++, CLion, Visual Studio Code',
-                rating: 1
-            },
-            {
-                title: 'Git',
-                description: 'Git, GitHub, GitHub Desktop',
-                rating: 4
-            },
-        ]
-    }
-];
-
 function generateSkillBar(rating) {
     const totalCells = 5;
     const generateCell = index => {
@@ -90,7 +22,7 @@ function generateSkillSummary(skill) {
 
 let skillsContent = '';
 let classIndex = 0;
-skills.forEach(category => {
+Data.skills.forEach(category => {
     const classToUse = classIndex === 0 ? 'first-category' : 'category';
     skillsContent += `<div><h5 class="${classToUse}">${category.title}</h5>`;
     category.skills.forEach(skill => {
@@ -101,3 +33,18 @@ skills.forEach(category => {
 });
 
 $('#skills-content').html(skillsContent);
+
+// import Vue from 'vue';
+//
+// Vue.component('skills-content', {
+//     template: `<div class="text-left">skills</div>`,
+// });
+//
+// Vue.component('', {
+//
+// });
+//
+// Vue.component('', {
+//
+// });
+

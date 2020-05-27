@@ -1,12 +1,3 @@
-%content-section {
-  @include py($padding: $padding-lg);
-}
-
-%banded-section {
-  @extend %content-section;
-  background-color: var(--band-bg);
-}
-
 %default-gradient {
   @include gradient($purple, $blue, var(--bg));
 }

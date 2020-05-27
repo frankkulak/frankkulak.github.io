@@ -3,6 +3,18 @@ body {
   position: relative;
 }
 
+section {
+  @include py($padding: $padding-lg);
+
+  &.banded {
+    background-color: var(--band-bg);
+  }
+
+  &.head-foot {
+    @extend %head-foot;
+  }
+}
+
 hr {
   background-color: var(--hr);
   height: 1px;
