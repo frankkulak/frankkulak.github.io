@@ -260,6 +260,19 @@ div.btn.selected {
   padding-right: 10px;
   min-width: 95px;
 }
+#education ul.course-list {
+  display: inline;
+  list-style: none;
+}
+#education ul.course-list li {
+  display: inline;
+}
+#education ul.course-list li:after {
+  content: ", ";
+}
+#education ul.course-list li:last-child:after {
+  content: "";
+}
 
 #experience .company-display {
   margin-top: 20px;
@@ -373,40 +386,48 @@ div.btn.selected {
   margin-right: 10px;
 }
 
-#skills #skills-content .category, #skills #skills-content .first-category {
-  color: var(--skill-bar);
-  margin-bottom: 25px;
+#skills .skills-content {
+  text-align: left;
+  width: 100%;
 }
-#skills #skills-content .category {
-  margin-top: 50px;
+#skills table {
+  width: 100%;
 }
-#skills #skills-content p {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-#skills #skills-content td.rating {
+#skills table td.rating {
   width: 50%;
 }
-#skills #skills-content .skill-bar {
+#skills .skill-bar {
   justify-content: flex-end;
   width: 100%;
 }
-#skills #skills-content .skill-bar .skill-cell {
+#skills .skill-bar .skill-cell {
   width: 15%;
   min-height: 24px;
   background-color: var(--skill-bar);
   margin-right: 2px;
   opacity: 0.3;
 }
-#skills #skills-content .skill-bar .first {
+#skills .skill-bar .skill-cell:first-child {
   border-radius: 10px 0 0 10px;
 }
-#skills #skills-content .skill-bar .last {
+#skills .skill-bar .skill-cell:last-child {
   margin-right: 0;
   border-radius: 0 10px 10px 0;
 }
-#skills #skills-content .skill-bar .full {
+#skills .skill-bar .full {
   opacity: 1;
+}
+#skills .category-view h5.category-title {
+  color: var(--skill-bar);
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+#skills .category-view:first-child h5.category-title {
+  margin-top: 0;
+}
+#skills p {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

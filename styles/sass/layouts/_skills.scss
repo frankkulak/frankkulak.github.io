@@ -1,52 +1,57 @@
 #skills {
-  #skills-content {
-    %category {
-      color: var(--skill-bar);
-      margin-bottom: $padding-lg / 2;
-    }
+  .skills-content {
+    text-align: left;
+    width: 100%;
+  }
 
-    .first-category {
-      @extend %category;
-    }
-
-    .category {
-      @extend %category;
-      margin-top: $padding-lg;
-    }
-
-    p {
-      margin-top: $padding-sm / 2;
-      margin-bottom: $padding-sm;
-    }
+  table {
+    width: 100%;
 
     td.rating {
       width: 50%;
     }
+  }
 
-    .skill-bar {
-      justify-content: flex-end;
-      width: 100%;
+  .skill-bar {
+    justify-content: flex-end;
+    width: 100%;
 
-      .skill-cell {
-        width: 15%;
-        min-height: 16px * 1.5; // fixme hard coded font size
-        background-color: var(--skill-bar);
-        margin-right: 2px;
-        opacity: 0.3;
-      }
+    .skill-cell {
+      width: 15%;
+      min-height: 16px * 1.5; // fixme hard coded font size
+      background-color: var(--skill-bar);
+      margin-right: 2px;
+      opacity: 0.3;
 
-      .first {
+      &:first-child {
         border-radius: $button-radius 0 0 $button-radius;
       }
 
-      .last {
+      &:last-child {
         margin-right: 0;
         border-radius: 0 $button-radius $button-radius 0;
       }
-
-      .full {
-        opacity: 1;
-      }
     }
+
+    .full {
+      opacity: 1;
+    }
+  }
+
+  .category-view {
+    h5.category-title {
+      color: var(--skill-bar);
+      margin-bottom: $padding-lg / 2;
+      margin-top: $padding-lg;
+    }
+
+    &:first-child h5.category-title {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin-top: $padding-sm / 2;
+    margin-bottom: $padding-sm;
   }
 }

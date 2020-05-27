@@ -47,4 +47,21 @@
     padding-right: 10px;
     min-width: 95px;
   }
+
+  ul.course-list {
+    display: inline;
+    list-style: none;
+
+    li {
+      display: inline;
+    }
+
+    li:after {
+      content: ", ";
+    }
+
+    li:last-child:after {
+      content: "";
+    }
+  }
 }

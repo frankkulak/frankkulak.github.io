@@ -1,50 +1,54 @@
-function generateSkillBar(rating) {
-    const totalCells = 5;
-    const generateCell = index => {
-        const ordering = index === 0 ? 'first' : index === totalCells - 1 ? 'last' : '';
-        const fill = rating > index ? 'full' : '';
-        return `<div class="skill-cell ${ordering} ${fill}"></div>`;
-    };
-
-    let output = '<div class="row skill-bar mx-auto">';
-    for (let i = 0; i < totalCells; i++) output += generateCell(i);
-    output += '</div>';
-    return output;
-}
-
-function generateSkillSummary(skill) {
-    const title = `<h5 class="my-auto">${skill.title}</h5>`;
-    const skillBar = generateSkillBar(skill.rating);
-    const description = `<p>${skill.description}</p>`;
-    const table = `<table class="fill-width"><tr><td>${title}</td><td class="rating">${skillBar}</td></tr></table>`;
-    return `<div>${table + description}</div>`;
-}
-
-let skillsContent = '';
-let classIndex = 0;
-Data.skills.forEach(category => {
-    const classToUse = classIndex === 0 ? 'first-category' : 'category';
-    skillsContent += `<div><h5 class="${classToUse}">${category.title}</h5>`;
-    category.skills.forEach(skill => {
-        skillsContent += generateSkillSummary(skill);
-    });
-    skillsContent += '</div>';
-    classIndex++;
+Vue.component('skills-content', {
+    data: function () {
+        return {
+            skills: Data.skills
+        }
+    },
+    template: `
+        <div class="skills-content">
+            <skills-category v-for="category in skills"
+                             v-bind:category="category"
+                             v-bind:key="category.title"></skills-category>
+        </div>`
 });
 
-$('#skills-content').html(skillsContent);
+Vue.component('skills-category', {
+    props: ['category'],
+    template: `
+        <div class="category-view">
+            <h5 class="category-title">{{ category.title }}</h5>
+            <skill-display v-for="skill in category.skills"
+                           v-bind:skill="skill"
+                           v-bind:key="skill.title"></skill-display>
+        </div>`
+});
 
-// import Vue from 'vue';
-//
-// Vue.component('skills-content', {
-//     template: `<div class="text-left">skills</div>`,
-// });
-//
-// Vue.component('', {
-//
-// });
-//
-// Vue.component('', {
-//
-// });
-
+Vue.component('skill-display', {
+    props: ['skill'],
+    methods: {
+        ratingClass: function (n) {
+            return n <= this.$props.skill.rating ? 'full' : '';
+        }
+    },
+    template: `
+        <table>
+            <tr>
+                <td>
+                    <h5>{{skill.title}}</h5>
+                </td>
+                <td class="rating">
+                    <div class="row skill-bar mx-auto">
+                        <div v-for="n in 5"
+                             class="skill-cell"
+                             :class="ratingClass(n)"
+                             v-bind:key="n"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>{{skill.description}}</p>
+                </td>
+            </tr>
+        </table>`
+});

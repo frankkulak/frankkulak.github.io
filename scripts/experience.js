@@ -26,10 +26,12 @@ Vue.component('experience-content', {
             console.log('toggle pressed');
         }
     },
-    template: `<div>
-<company-display v-for="job in jobs" v-bind:job="job" v-bind:key="job.code" v-bind:showAll="showAll"></company-display>
-<div class="btn" @click="toggleRelevance">{{ buttonText }}</div>
-</div>`
+    template: `
+        <div>
+            <company-display v-for="job in jobs" v-bind:job="job" v-bind:key="job.code"
+                             v-bind:showAll="showAll"></company-display>
+            <div class="btn" @click="toggleRelevance">{{ buttonText }}</div>
+        </div>`
 });
 
 Vue.component('company-display', {
@@ -42,17 +44,28 @@ Vue.component('company-display', {
             return this.$props.showAll || this.$props.job.relevant;
         }
     },
-    template: `<div v-show="show()" class="company-display">
-<table><tr><td class="company"><h5>{{ job.company }}</h5></td><td class="location"><h5>{{ job.location }}</h5></td></tr></table>
-<table v-for="position in job.positions">
-<tr><td class="title"><p>{{ position.title }}</p></td><td class="date"><p v-html="dateSpanHTML(position)"></p></td></tr>
-<tr><td colspan="2">
-<ul>
-<li v-for="bullet in position.description">
-{{ bullet }}
-</li>
-</ul>
-</td></tr>
-</table>
-</div>`
+    template: `
+        <div v-show="show()" class="company-display">
+            <table>
+                <tr>
+                    <td class="company"><h5>{{ job.company }}</h5></td>
+                    <td class="location"><h5>{{ job.location }}</h5></td>
+                </tr>
+            </table>
+            <table v-for="position in job.positions">
+                <tr>
+                    <td class="title"><p>{{ position.title }}</p></td>
+                    <td class="date"><p v-html="dateSpanHTML(position)"></p></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li v-for="bullet in position.description">
+                                {{ bullet }}
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>`
 });
