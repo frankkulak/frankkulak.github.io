@@ -4,17 +4,17 @@ const skills = [
         'skills': [
             {
                 'title': 'HTML',
-                'description': 'HTML5, WebStorm, Visual Studio Code',
+                'description': 'HTML, WebStorm, Visual Studio Code',
                 'rating': 3
             },
             {
                 'title': 'CSS',
-                'description': 'CSS3, Sass, Bootstrap',
+                'description': 'CSS, Sass, Bootstrap',
                 'rating': 3
             },
             {
                 'title': 'JavaScript',
-                'description': 'ES6, jQuery',
+                'description': 'ES6, jQuery, Vue.js, Node.js',
                 'rating': 3
             },
         ]

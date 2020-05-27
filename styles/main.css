@@ -224,6 +224,45 @@ div.btn.selected {
   font-size: 14px;
 }
 
+#education .school-header {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 25px;
+}
+#education .school-header span.location {
+  font-weight: normal;
+  white-space: nowrap;
+}
+#education .school-header span.grad-date {
+  white-space: nowrap;
+}
+#education .btn-col {
+  padding: 0;
+  direction: rtl;
+  margin-bottom: 20px;
+}
+#education .details-enter-active, #education .details-leave-active {
+  transition: all 0.5s;
+}
+#education .details-enter, #education .details-leave-to {
+  opacity: 0;
+  height: 0;
+}
+#education .details {
+  width: 100%;
+  text-align: left;
+}
+#education table td {
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+#education table td.category {
+  font-style: italic;
+  padding-right: 10px;
+  min-width: 95px;
+}
+
 #home h1 {
   font-weight: normal;
   text-shadow: -2px 2px 3px rgba(32, 32, 32, 0.1);

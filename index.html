@@ -26,7 +26,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Other styling -->
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!-- fixme : get prod version -->
+
+    <!-- styling -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -62,7 +65,7 @@
     </div>
     <div class="container-fluid">
         <div class="row justify-content-center align-content-center">
-            <div class="col-8 col-md-5 col-lg-4">
+            <div class="col-10 col-md-5 col-lg-4">
                 <img class="mb-3" src="./images/profile-pic.png" alt="Profile Photo"/>
                 <h3>Frank Kulak</h3>
             </div>
@@ -75,7 +78,7 @@
     </div>
 </div>
 
-<!-- Education -->
+<!-- education -->
 <div id="education">
     <div class="section-header">
         <h1>education</h1>
@@ -83,8 +86,10 @@
     </div>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 dark-bg">
-                content
+            <div class="col-10 col-lg-8">
+                <div id="education-content"> <!-- fixme replace with component -->
+                    <education-contents v-bind:schools="schools"></education-contents>
+                </div>
             </div>
         </div>
     </div>
@@ -98,7 +103,7 @@
     </div>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 dark-bg">
+            <div class="col-10 col-lg-8">
                 content
             </div>
         </div>
@@ -245,11 +250,15 @@
     <label for="theme-switch"></label>
 </div>
 
+<script>
+
+</script>
+
 <!-- External scripts (do not change order) -->
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script> <!-- fixme : make sure this is prod -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"-->
+<!--        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"-->
+<!--        crossorigin="anonymous"></script>-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
@@ -258,6 +267,7 @@
 <!--<script src="./scripts/experience.js"></script>-->
 <script src="./scripts/theme.js"></script>
 <script src="./scripts/skills.js"></script>
+<script src="./scripts/education.js"></script>
 <script src="./scripts/scroll.js"></script>
 <script src="./scripts/hover.js"></script>
 <script src="./scripts/projects.js"></script>

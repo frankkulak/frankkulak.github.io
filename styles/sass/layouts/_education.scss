@@ -1,24 +1,52 @@
 #education {
   @extend %banded-section;
-  //width: auto;
 
-  //.school-header {
-  //  text-align: left;
-  //
-  //  span.location {
-  //    font-weight: normal;
-  //    white-space: nowrap;
-  //  }
-  //
-  //  span.grad-date {
-  //    white-space: nowrap;
-  //  }
-  //}
-  //
-  //.btn-col {
-  //  //display: flex;
-  //  //justify-content: flex-end;
-  //  padding: 0;
-  //  direction: rtl;
-  //}
+  .school-header {
+    text-align: left;
+    margin-bottom: $padding-sm;
+    padding: {
+      left: 0;
+      right: 25px;
+    };
+
+    span.location {
+      font-weight: normal;
+      white-space: nowrap;
+    }
+
+    span.grad-date {
+      white-space: nowrap;
+    }
+  }
+
+  .btn-col {
+    padding: 0;
+    direction: rtl;
+    margin-bottom: $padding-sm;
+  }
+
+  .details-enter-active, .details-leave-active {
+    transition: all .5s;
+  }
+
+  .details-enter, .details-leave-to {
+    opacity: 0;
+    height: 0;
+  }
+
+  .details {
+    width: 100%;
+    text-align: left;
+  }
+
+  table td {
+    padding-bottom: 15px;
+    vertical-align: top;
+  }
+
+  table td.category {
+    font-style: italic;
+    padding-right: 10px;
+    min-width: 95px;
+  }
 }
