@@ -1,0 +1,44 @@
+#projects {
+  @extend %content-section;
+
+  .project-buttons {
+    margin-bottom: $padding-lg;
+  }
+
+  .project-cards {
+    a.btn {
+      margin-right: 0;
+    }
+
+    a.btn, a.btn:focus, .touch-mode & a.btn:hover {
+      color: var(--project-button);
+      border-color: var(--project-button);
+    }
+
+    .mouse-mode & a.btn:hover {
+      background-color: var(--project-button);
+      color: var(--project-card-bg);
+    }
+  }
+
+  .project-card-outline {
+    @extend %default-gradient;
+    border-radius: $project-card-radius + 2;
+    padding: 2px;
+    margin: $padding-sm / 2;
+  }
+
+  .project-card {
+    background-color: var(--project-card-bg);
+    border-radius: $project-card-radius;
+    padding: $padding-sm;
+
+    .timespan {
+      font-weight: normal;
+    }
+  }
+
+  .btn {
+    @include mx($margin: $padding-sm / 2);
+  }
+}

@@ -1,0 +1,9 @@
+#about {
+  @extend %content-section;
+
+  img {
+    min-width: 45%;
+    max-width: 196px;
+    height: auto;
+  }
+}

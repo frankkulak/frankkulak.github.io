@@ -1,0 +1,21 @@
+%content-section {
+  @include py($padding: $padding-lg);
+}
+
+%banded-section {
+  @extend %content-section;
+  background-color: var(--band-bg);
+}
+
+%default-gradient {
+  @include gradient($purple, $blue, var(--bg));
+}
+
+%head-foot {
+  background-color: var(--head-foot-bg);
+  color: var(--head-foot-text);
+
+  h1 {
+    color: var(--head-foot-text);
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  background-color: var(--bg);
+  position: relative;
+}
+
+hr {
+  background-color: var(--hr);
+  height: 1px;
+}
+
+a, a:focus, a:hover {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.mouse-mode a:hover {
+  color: var(--link-hover);
+}
+
+.fill-width { // fixme get rid of this
+  width: 100%;
+}

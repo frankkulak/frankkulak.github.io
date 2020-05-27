@@ -1,0 +1,54 @@
+#skills {
+  @extend %banded-section;
+
+  #skills-content {
+    %category {
+      color: var(--skill-bar);
+      margin-bottom: $padding-lg / 2;
+    }
+
+    .first-category {
+      @extend %category;
+    }
+
+    .category {
+      @extend %category;
+      margin-top: $padding-lg;
+    }
+
+    p {
+      margin-top: $padding-sm / 2;
+      margin-bottom: $padding-sm;
+    }
+
+    td.rating {
+      width: 50%;
+    }
+
+    .skill-bar {
+      justify-content: flex-end;
+      width: 100%;
+
+      .skill-cell {
+        width: 15%;
+        min-height: 16px * 1.5; // fixme hard coded font size
+        background-color: var(--skill-bar);
+        margin-right: 2px;
+        opacity: 0.3;
+      }
+
+      .first {
+        border-radius: $button-radius 0 0 $button-radius;
+      }
+
+      .last {
+        margin-right: 0;
+        border-radius: 0 $button-radius $button-radius 0;
+      }
+
+      .full {
+        opacity: 1;
+      }
+    }
+  }
+}

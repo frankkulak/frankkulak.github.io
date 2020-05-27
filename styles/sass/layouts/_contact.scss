@@ -1,0 +1,36 @@
+#contact {
+  @extend %head-foot;
+  padding: $padding-lg $padding-lg $padding-sm;
+
+  $social-icon-height: 28px;
+
+  hr {
+    background-color: var(--head-foot-hover);
+  }
+
+  table {
+    width: auto;
+
+    td.icon {
+      @include px($padding: $padding-xs);
+    }
+  }
+
+  .email-icon {
+    height: $social-icon-height / 2;
+    width: auto;
+  }
+
+  .social-icon {
+    height: $social-icon-height;
+    width: auto;
+  }
+
+  .socials, .copyright {
+    margin-top: $padding-lg;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}

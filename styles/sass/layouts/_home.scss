@@ -1,0 +1,10 @@
+#home {
+  @extend %content-section;
+  @extend %default-gradient;
+
+  h1 {
+    font-weight: normal;
+    text-shadow: -2px 2px 3px rgb(32, 32, 32, 0.1); // FIXME hardcoded color
+    color: var(--home-text);
+  }
+}

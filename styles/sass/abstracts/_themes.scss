@@ -1,0 +1,41 @@
+html {
+  --bg: #{white};
+  --home-text: #{white};
+  --home-button: #{white};
+  --head-foot-bg: #{$blue};
+  --head-foot-text: #{white};
+  --head-foot-hover: #{$dark-blue};
+  --header: #{$gray-60};
+  --text: #{$gray-135};
+  --hr: #{$blue};
+  --band-bg: #{$gray-247};
+  --button: #{$blue};
+  --button-hover-text: #{white};
+  --skill-bar: #{$blue};
+  --project-button: #{$dark-blue};
+  --project-card-bg: #{white};
+  --link: #{$dark-blue};
+  --link-hover: #{$purple};
+  --toggle-bg: #{$dark-blue};
+}
+
+html[data-theme='dark'] {
+  --bg: #{$dark-navy};
+  --home-text: #{white};
+  --home-button: #{white};
+  --head-foot-bg: #{$dark-blue};
+  --head-foot-text: #{white};
+  --head-foot-hover: #{$blue};
+  --header: #{white};
+  --text: #{$gray-200};
+  --hr: #{$blue};
+  --band-bg: #{$lighter-cool-dark-gray};
+  --button: #{$blue};
+  --button-hover-text: #{white};
+  --skill-bar: #{$blue};
+  --project-button: #{$blue};
+  --project-card-bg: #{$dark-navy};
+  --link: #{$blue};
+  --link-hover: #{$pink};
+  --toggle-bg: #{$blue};
+}

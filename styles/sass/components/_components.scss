@@ -1,0 +1,76 @@
+.section-header {
+  margin-bottom: $padding-lg;
+
+  hr {
+    margin-top: 5px;
+    max-width: 50px;
+  }
+}
+
+// fixme refactor all of the hovering nonsense. it works but it's ugly
+
+.btn, .btn:focus, .btn:hover {
+  border-radius: $button-radius;
+  min-height: $min-button-height;
+  min-width: $min-button-width;
+}
+
+.mouse-mode .btn:hover {
+  cursor: pointer;
+}
+
+div.btn, div.btn:focus, div.btn:hover {
+  color: var(--button);
+  border-color: var(--button);
+}
+
+.mouse-mode div.btn:hover, div.btn.selected {
+  @extend %default-gradient;
+  color: var(--button-hover-text);
+  border-style: hidden;
+}
+
+div.btn.selected {
+  pointer-events: none;
+
+  .touch-mode & {
+    color: var(--button-hover-text);
+  }
+}
+
+.theme-selector {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  input {
+    display: none;
+  }
+
+  label, label:focus, .touch-mode & label:hover {
+    font-size: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+    border: solid;
+    border-width: thin;
+    border-color: var(--toggle-bg);
+    border-radius: 20px;
+    background: transparent;
+    opacity: 0.65;
+    cursor: pointer;
+  }
+
+  .mouse-mode & label:hover {
+    background-color: var(--toggle-bg);
+    opacity: 1;
+  }
+
+  label::before {
+    content: '\1F319';
+  }
+
+  :checked + label::before {
+    content: '\1F324';
+  }
+}
