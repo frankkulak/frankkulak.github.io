@@ -1,66 +1,66 @@
 const skills = [
     {
-        'title': 'web development',
-        'skills': [
+        title: 'web development',
+        skills: [
             {
-                'title': 'HTML',
-                'description': 'HTML, WebStorm, Visual Studio Code',
-                'rating': 3
+                title: 'HTML',
+                description: 'HTML, WebStorm, Visual Studio Code',
+                rating: 3
             },
             {
-                'title': 'CSS',
-                'description': 'CSS, Sass, Bootstrap',
-                'rating': 3
+                title: 'CSS',
+                description: 'CSS, Sass, Bootstrap',
+                rating: 3
             },
             {
-                'title': 'JavaScript',
-                'description': 'ES6, jQuery, Vue.js, Node.js',
-                'rating': 3
-            },
-        ]
-    },
-    {
-        'title': 'app development',
-        'skills': [
-            {
-                'title': 'Xamarin.Forms',
-                'description': 'C#, Xamarin.Forms, .NET, Visual Studio',
-                'rating': 4
-            },
-            {
-                'title': 'Native iOS',
-                'description': 'Swift, Xcode',
-                'rating': 2
+                title: 'JavaScript',
+                description: 'ES6, jQuery, Vue.js, Node.js',
+                rating: 3
             },
         ]
     },
     {
-        'title': 'other',
-        'skills': [
+        title: 'app development',
+        skills: [
             {
-                'title': 'Java',
-                'description': 'Java, Swing, JUnit, IntelliJ IDEA, Eclipse',
-                'rating': 4
+                title: 'Xamarin.Forms',
+                description: 'C#, Xamarin.Forms, .NET, Visual Studio',
+                rating: 4
             },
             {
-                'title': 'Python',
-                'description': 'Python, SpaCy, Scikit-Learn, Pandas, PyCharm',
-                'rating': 3
+                title: 'Native iOS',
+                description: 'Swift, Xcode',
+                rating: 2
+            },
+        ]
+    },
+    {
+        title: 'other',
+        skills: [
+            {
+                title: 'Java',
+                description: 'Java, Swing, JUnit, IntelliJ IDEA, Eclipse',
+                rating: 4
             },
             {
-                'title': 'Racket',
-                'description': 'Racket, DrRacket',
-                'rating': 2
+                title: 'Python',
+                description: 'Python, SpaCy, Scikit-Learn, Pandas, PyCharm',
+                rating: 3
             },
             {
-                'title': 'C/C++',
-                'description': 'C, C++, CLion, Visual Studio Code',
-                'rating': 1
+                title: 'Racket',
+                description: 'Racket, DrRacket',
+                rating: 2
             },
             {
-                'title': 'Git',
-                'description': 'Git, GitHub, GitHub Desktop',
-                'rating': 4
+                title: 'C/C++',
+                description: 'C, C++, CLion, Visual Studio Code',
+                rating: 1
+            },
+            {
+                title: 'Git',
+                description: 'Git, GitHub, GitHub Desktop',
+                rating: 4
             },
         ]
     }

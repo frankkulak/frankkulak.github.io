@@ -1,139 +1,139 @@
 const schoolData = [
     {
-        'code': 'nu',
-        'name': 'Northeastern University',
-        'location': 'Boston, MA',
-        'degree': 'B.S. in Computer Science and Linguistics, minor in Psychology',
-        'graduation': 'exp. May 2021',
-        'gpa': '3.78',
-        'honors': [
+        code: 'nu',
+        name: 'Northeastern University',
+        location: 'Boston, MA',
+        degree: 'B.S. in Computer Science and Linguistics, minor in Psychology',
+        graduation: 'exp. May 2021',
+        gpa: '3.78',
+        honors: [
             "Dean's list",
             'Nomination for publication in <em>Northeastern University Working Papers in Linguistics</em> journal'
         ],
-        'subjects': [
+        subjects: [
             {
-                'name': 'computer science',
-                'courses': [
+                name: 'computer science',
+                courses: [
                     {
-                        'code': 'CS',
-                        'number': '4500',
-                        'title': 'Software Development'
+                        code: 'CS',
+                        number: '4500',
+                        title: 'Software Development'
                     },
                     {
-                        'code': 'CS',
-                        'number': '4400',
-                        'title': 'Programming Languages'
+                        code: 'CS',
+                        number: '4400',
+                        title: 'Programming Languages'
                     },
                     {
-                        'code': 'CS',
-                        'number': '4120',
-                        'title': 'Natural Language Processing'
+                        code: 'CS',
+                        number: '4120',
+                        title: 'Natural Language Processing'
                     },
                     {
-                        'code': 'CS',
-                        'number': '3800',
-                        'title': 'Theory of Computation'
+                        code: 'CS',
+                        number: '3800',
+                        title: 'Theory of Computation'
                     },
                     {
-                        'code': 'CS',
-                        'number': '3500',
-                        'title': 'Object-Oriented Design'
+                        code: 'CS',
+                        number: '3500',
+                        title: 'Object-Oriented Design'
                     },
                     {
-                        'code': 'CS',
-                        'number': '3000',
-                        'title': 'Algorithms & Data'
+                        code: 'CS',
+                        number: '3000',
+                        title: 'Algorithms & Data'
                     },
                     {
-                        'code': 'CS',
-                        'number': '2510',
-                        'title': 'Fundamentals of Computer Science II'
+                        code: 'CS',
+                        number: '2510',
+                        title: 'Fundamentals of Computer Science II'
                     },
                     {
-                        'code': 'CS',
-                        'number': '2500',
-                        'title': 'Fundamentals of Computer Science I'
+                        code: 'CS',
+                        number: '2500',
+                        title: 'Fundamentals of Computer Science I'
                     },
                     {
-                        'code': 'CS',
-                        'number': '1800',
-                        'title': 'Discrete Structures'
+                        code: 'CS',
+                        number: '1800',
+                        title: 'Discrete Structures'
                     }
                 ]
             },
             {
-                'name': 'linguistics',
-                'courses': [
+                name: 'linguistics',
+                courses: [
                     {
-                        'code': 'LING',
-                        'number': '4654',
-                        'title': 'Seminar: Evolutionary Linguistics'
+                        code: 'LING',
+                        number: '4654',
+                        title: 'Seminar: Evolutionary Linguistics'
                     },
                     {
-                        'code': 'LING',
-                        'number': '3424',
-                        'title': 'Morphology'
+                        code: 'LING',
+                        number: '3424',
+                        title: 'Morphology'
                     },
                     {
-                        'code': 'LING',
-                        'number': '3422',
-                        'title': 'Phonology'
+                        code: 'LING',
+                        number: '3422',
+                        title: 'Phonology'
                     },
                     {
-                        'code': 'LING',
-                        'number': '3412',
-                        'title': 'Language & Culture'
+                        code: 'LING',
+                        number: '3412',
+                        title: 'Language & Culture'
                     },
                     {
-                        'code': 'LING',
-                        'number': '2350',
-                        'title': 'Linguistic Analysis'
+                        code: 'LING',
+                        number: '2350',
+                        title: 'Linguistic Analysis'
                     },
                     {
-                        'code': 'LING',
-                        'number': '1150',
-                        'title': 'Introduction to Linguistics'
+                        code: 'LING',
+                        number: '1150',
+                        title: 'Introduction to Linguistics'
                     }
                 ]
             },
             {
-                'name': 'psychology',
-                'courses': [
+                name: 'psychology',
+                courses: [
                     {
-                        'code': 'PSYC',
-                        'number': '3464',
-                        'title': 'Psychology of Language'
+                        code: 'PSYC',
+                        number: '3464',
+                        title: 'Psychology of Language'
                     },
                     {
-                        'code': 'PSYC',
-                        'number': '3400',
-                        'title': 'Personality'
+                        code: 'PSYC',
+                        number: '3400',
+                        title: 'Personality'
                     },
                     {
-                        'code': 'PSYC',
-                        'number': '2320',
-                        'title': 'Statistics for Psychological Research'
+                        code: 'PSYC',
+                        number: '2320',
+                        title: 'Statistics for Psychological Research'
                     }
                 ]
             },
             {
-                'name': 'other',
-                'courses': [
+                name: 'other',
+                courses: [
                     {
-                        'code': 'ENGW',
-                        'number': '3302',
-                        'title': 'Advanced Writing in the Technical Professions',
+                        code: 'ENGW',
+                        number: '3302',
+                        title: 'Advanced Writing in the Technical Professions',
                         'ongoing': true
                     },
                     {
-                        'code': 'PHIL',
-                        'number': '1145',
-                        'title': 'Technology & Human Values'
+                        code: 'PHIL',
+                        number: '1145',
+                        title: 'Technology & Human Values'
                     },
                     {
-                        'code': 'ENGW',
-                        'number': '1111',
-                        'title': 'First Year Writing'
+                        code: 'ENGW',
+                        number: '1111',
+                        title: 'First Year Writing'
                     }
                 ]
             },
