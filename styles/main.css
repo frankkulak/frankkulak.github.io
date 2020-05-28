@@ -247,15 +247,16 @@ div.btn.selected {
   margin-top: 0;
 }
 #education .details {
+  margin-left: 15px;
+  margin-right: 15px;
   width: 100%;
   text-align: left;
 }
 #education .details-enter-active, #education .details-leave-active {
-  transition: all 0.5s;
+  transition: opacity 0.5s;
 }
 #education .details-enter, #education .details-leave-to {
   opacity: 0;
-  height: 0;
 }
 #education table tr.title-row td {
   padding-bottom: 0;

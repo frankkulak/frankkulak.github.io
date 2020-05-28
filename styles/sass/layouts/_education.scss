@@ -28,17 +28,17 @@
   }
 
   .details {
+    @include mx(15px); // consistency with BS columns
     width: 100%;
     text-align: left;
   }
 
   .details-enter-active, .details-leave-active {
-    transition: all .5s;
+    transition: opacity .5s;
   }
 
   .details-enter, .details-leave-to {
     opacity: 0;
-    height: 0;
   }
 
   table {
