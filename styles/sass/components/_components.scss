@@ -9,34 +9,38 @@
   }
 }
 
-// fixme refactor all of the hovering nonsense. it works but it's ugly
-
 .btn, .btn:focus, .btn:hover {
-  border-radius: $button-radius;
   min-height: $min-button-height;
   min-width: $min-button-width;
+  border-radius: $button-radius;
+  background-color: transparent;
+  border-color: var(--button);
+  color: var(--button);
 }
 
 .mouse-mode .btn:hover {
+  @extend %default-gradient;
+  color: var(--button-hover-text);
+  border-color: var(--bg);
   cursor: pointer;
 }
 
-div.btn, div.btn:focus, div.btn:hover {
-  color: var(--button);
-  border-color: var(--button);
-}
+a {
+  &.btn, &.btn:focus, &.btn:hover {
+    font-size: 14px;
+    min-height: $min-button-height * 0.8;
+    min-width: $min-button-width * 0.8;
+    border-radius: $button-radius * 0.8;
+    background-color: transparent;
+    border-color: var(--link);
+    color: var(--link);
+  }
 
-.mouse-mode div.btn:hover, div.btn.selected {
-  @extend %default-gradient;
-  color: var(--button-hover-text);
-  border-style: hidden;
-}
-
-div.btn.selected {
-  pointer-events: none;
-
-  .touch-mode & {
+  .mouse-mode &.btn:hover {
+    @include gradient($bottom: var(--link), $top: var(--link-hover), $fallback: var(--link));
     color: var(--button-hover-text);
+    border-color: var(--bg);
+    cursor: pointer;
   }
 }
 

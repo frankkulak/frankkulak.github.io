@@ -15,10 +15,8 @@ html {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --project-button: #004e90;
-  --project-card-bg: white;
-  --link: #004e90;
-  --link-hover: #8636e6;
+  --link: #7e35e6;
+  --link-hover: #ffbef1;
   --toggle-bg: #004e90;
 }
 
@@ -37,16 +35,14 @@ html[data-theme=dark] {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --project-button: #5ab6fc;
-  --project-card-bg: #1d242e;
-  --link: #5ab6fc;
+  --link: #9885e6;
   --link-hover: #ff81fa;
   --toggle-bg: #5ab6fc;
 }
 
-#projects .project-card-outline, #home, .mouse-mode div.btn:hover, div.btn.selected {
+#projects .project-card-outline, #projects .project-buttons .btn.selected, #home, .mouse-mode .btn:hover {
   background-color: var(--bg);
-  background-image: linear-gradient(45deg, #8636e6 0%, #5ab6fc 100%);
+  background-image: linear-gradient(45deg, #7e35e6 0%, #5ab6fc 100%);
 }
 
 .navbar-default, section.head-foot {
@@ -96,6 +92,7 @@ h6 {
 body {
   background-color: var(--bg);
   position: relative;
+  text-align: center;
 }
 
 section {
@@ -135,30 +132,35 @@ a, a:focus, a:hover {
 }
 
 .btn, .btn:focus, .btn:hover {
-  border-radius: 10px;
   min-height: 40px;
   min-width: 128px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: var(--button);
+  color: var(--button);
 }
 
 .mouse-mode .btn:hover {
+  color: var(--button-hover-text);
+  border-color: var(--bg);
   cursor: pointer;
 }
 
-div.btn, div.btn:focus, div.btn:hover {
-  color: var(--button);
-  border-color: var(--button);
+a.btn, a.btn:focus, a.btn:hover {
+  font-size: 14px;
+  min-height: 32px;
+  min-width: 102.4px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-color: var(--link);
+  color: var(--link);
 }
-
-.mouse-mode div.btn:hover, div.btn.selected {
+.mouse-mode a.btn:hover {
+  background-color: var(--link);
+  background-image: linear-gradient(45deg, var(--link) 0%, var(--link-hover) 100%);
   color: var(--button-hover-text);
-  border-style: hidden;
-}
-
-div.btn.selected {
-  pointer-events: none;
-}
-.touch-mode div.btn.selected {
-  color: var(--button-hover-text);
+  border-color: var(--bg);
+  cursor: pointer;
 }
 
 .theme-selector {
@@ -397,36 +399,37 @@ div.btn.selected {
   height: 32px;
 }
 
+#projects .projects-content {
+  width: 100%;
+}
 #projects .project-buttons {
   margin-bottom: 50px;
 }
-#projects .project-cards a.btn {
-  margin-right: 0;
+#projects .project-buttons .btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 0;
 }
-#projects .project-cards a.btn, #projects .project-cards a.btn:focus, .touch-mode #projects .project-cards a.btn:hover {
-  color: var(--project-button);
-  border-color: var(--project-button);
+#projects .project-buttons .btn.selected {
+  color: var(--button-hover-text);
+  border-color: var(--bg);
+  pointer-events: none;
 }
-.mouse-mode #projects .project-cards a.btn:hover {
-  background-color: var(--project-button);
-  color: var(--project-card-bg);
+#projects .project-cards [class^=col] {
+  padding: 0;
 }
 #projects .project-card-outline {
+  margin: 10px;
   border-radius: 22px;
   padding: 2px;
-  margin: 10px;
 }
 #projects .project-card {
-  background-color: var(--project-card-bg);
+  background-color: var(--bg);
   border-radius: 20px;
   padding: 20px;
 }
 #projects .project-card .timespan {
   font-weight: normal;
-}
-#projects .btn {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 #skills .skills-content {

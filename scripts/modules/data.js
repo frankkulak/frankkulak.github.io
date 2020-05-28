@@ -318,6 +318,58 @@ const Data = (function () {
                     },
                 ]
             }
+        ],
+        projects: [
+            {
+                title: 'web',
+                projects: [
+                    {
+                        name: 'frankkulak.com',
+                        start: new Date(2019, month(10)), // Oct 2019
+                        end: null, // Present
+                        description: 'This is the website you are currently viewing! It provides a summary of my education, experience, and projects. I built it from the ground up with HTML, CSS, and JavaScript utilizing Bootstrap and jQuery. I actively maintain this website and update it often.',
+                        links: [
+                            {
+                                text: 'view on GitHub',
+                                url: 'https://github.com/frankkulak/frankkulak.github.io'
+                            },
+                            { // todo delete, just here for styling testing purposes
+                                text: 'view on Web',
+                                url: 'https://frankkulak.com'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                title: 'java',
+                projects: [
+                    {
+                        name: 'Block Dude',
+                        start: new Date(2019, month(4)), // Apr 2019
+                        end: new Date(2019, month(12)), // Dec 2019
+                        description: 'Block Dude is a game originally created for the TI-84 calculator. It involves a character that picks blocks up and puts them down in order to reach the exit door. This project is a simplistic re-creation of it in Java, and it was done for my own practive with the MVC design pattern.',
+                        links: [
+                            {
+                                text: 'view on GitHub',
+                                url: 'https://github.com/frankkulak/blockdude-java'
+                            }
+                        ]
+                    },
+                    {
+                        name: 'Blocky',
+                        start: new Date(2019, month(4)), // Apr 2019
+                        end: new Date(2019, month(5)), // May 2019
+                        description: 'Blocky is an original puzzle game in which the player swipes a block through obstacles to escape the board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
+                        links: [
+                            {
+                                text: 'view on GitHub',
+                                url: 'https://github.com/frankkulak/blocky-java'
+                            }
+                        ]
+                    }
+                ]
+            },
         ]
     };
 })();

@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="text-center" data-spy="scroll" data-target="#navbar" data-offset="40">
+<body data-spy="scroll" data-target="#navbar" data-offset="40">
 
 <section id="home">
     <h1>Hello, my name is <strong>Frank Kulak</strong>.<br>I'm a software developer.</h1>
@@ -88,93 +88,9 @@
         <section-content content="skills-content"></section-content>
     </section>
 
-    <!-- projects -->
     <section id="projects">
         <section-header title="projects"></section-header>
-        <!-- buttons -->
-        <div class="container-fluid project-buttons">
-            <div class="row justify-content-center">
-                <div id="projects-web-button" class="btn mr-3" onclick="onProjectButtonClicked('web');">web</div>
-                <div id="projects-java-button" class="btn" onclick="onProjectButtonClicked('java');">java</div>
-            </div>
-        </div>
-        <!-- project cards -->
-        <!-- web -->
-        <div id="web-projects" style="display: none;">
-            <div class="container-fluid project-cards">
-                <div class="row justify-content-center">
-                    <!-- website -->
-                    <div class="col-10 col-sm-8 col-md-6 col-lg-5">
-                        <div class="project-card-outline">
-                            <div class="project-card text-left">
-                                <div class="d-flex flex-row fill-width">
-                                    <h6 class="text-left text-nowrap mr-2">frankkulak.com</h6>
-                                    <h6 class="timespan text-right fill-width">Oct. 2019 - Present</h6>
-                                </div>
-                                <p>This is the website you are currently viewing! It provides a summary of my education,
-                                    experience, and projects. I built it from the ground up with HTML, CSS, and
-                                    JavaScript
-                                    utilizing Bootstrap and jQuery. I actively maintain this website and update it
-                                    often.</p>
-                                <div class="d-flex flex-row fill-width justify-content-end">
-                                    <a class="btn text-nowrap" href="https://github.com/frankkulak/frankkulak.github.io"
-                                       target="_blank">view on GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- java -->
-        <div id="java-projects" style="display: none;">
-            <div class="container-fluid project-cards">
-                <div class="row justify-content-center">
-                    <!-- block dude -->
-                    <div class="col-10 col-sm-8 col-md-6 col-lg-5">
-                        <div class="project-card-outline">
-                            <div class="project-card text-left">
-                                <div class="d-flex flex-row fill-width">
-                                    <h6 class="text-left text-nowrap mr-2">Block Dude</h6>
-                                    <h6 class="timespan text-right fill-width">Apr. - Dec. 2019</h6>
-                                </div>
-                                <p>Block Dude is a game originally created for the TI-84 calculator. It involves a
-                                    character
-                                    that picks blocks up and puts them down in order to reach the exit door. This
-                                    project is
-                                    a simplistic re-creation of it in Java, and it was done for my own practive with the
-                                    MVC
-                                    design pattern.</p>
-                                <div class="d-flex flex-row fill-width justify-content-end">
-                                    <a class="btn text-nowrap" href="https://github.com/frankkulak/blockdude-java"
-                                       target="_blank">view on GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blocky -->
-                    <div class="col-10 col-sm-8 col-md-6 col-lg-5">
-                        <div class="project-card-outline">
-                            <div class="project-card text-left">
-                                <div class="d-flex flex-row fill-width">
-                                    <h6 class="text-left text-nowrap mr-2">Blocky</h6>
-                                    <h6 class="timespan text-right fill-width">Apr. - May 2019</h6>
-                                </div>
-                                <p>Blocky is an original puzzle game in which the player swipes a block through
-                                    obstacles to
-                                    escape the board. This implementation is written in Java and utilizes the Swing
-                                    library
-                                    for an engaging user interface.</p>
-                                <div class="d-flex flex-row fill-width justify-content-end">
-                                    <a class="btn text-nowrap" href="https://github.com/frankkulak/blocky-java"
-                                       target="_blank">view on GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <section-content content="projects-content"></section-content>
     </section>
 
     <!-- contact -->
@@ -207,7 +123,6 @@
         </div>
     </section>
 
-
     <!-- theme toggle -->
     <div class="theme-selector">
         <input type="checkbox" id="theme-switch" name="theme"/>
@@ -225,30 +140,25 @@
         crossorigin="anonymous"></script>
 
 <!-- Local scripts -->
-<script src="./scripts/data.js"></script>
-
+<script src="scripts/modules/data.js"></script>
+<script src="scripts/modules/util.js"></script>
 <script src="./scripts/vue-components.js"></script>
 
-<script src="./scripts/experience.js"></script>
-
-<script src="./scripts/skills.js"></script>
 <script src="./scripts/education.js"></script>
-<script src="./scripts/scroll.js"></script>
-<script src="./scripts/hover.js"></script>
+<script src="./scripts/experience.js"></script>
+<script src="./scripts/skills.js"></script>
 <script src="./scripts/projects.js"></script>
 
 <script>
     const app = new Vue({
         el: '#app',
-        data: {
-            // todo
-        }
+        data: {}
     });
 </script>
 
 <script src="./scripts/theme.js"></script> <!-- must come after vue instance is created -->
-
-<!--<script type="module" src="./scripts/main.js"></script>-->
+<script src="./scripts/scroll.js"></script>
+<script src="./scripts/hover.js"></script>
 
 </body>
 

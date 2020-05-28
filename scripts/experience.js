@@ -1,30 +1,7 @@
 (function () {
-    // constants
-
     const showAllButtonText = {'show': 'show all jobs', 'hide': 'hide irrelevant jobs'};
-    const months = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
-
-    // functions
-
-    function dateSpanHTML({start, end}) {
-        const startMonth = months[start.getMonth()];
-        const startYear = start.getFullYear();
-
-        if (end == null) return `${startMonth} ${startYear}<span class="nowrap"> – Present</span>`;
-
-        const endMonth = months[end.getMonth()];
-        const endYear = end.getFullYear();
-
-        if (startYear === endYear) {
-            return `<span class="nowrap">${startMonth} – ${endMonth}</span> ${endYear}`;
-        } else {
-            return `${startMonth} ${startYear}<span class="nowrap"> – ${endMonth} ${endYear}</span>`;
-        }
-    }
 
     // components
-
-    // fixme - add transitions later
 
     Vue.component('experience-content', {
         data: function () {
@@ -53,7 +30,7 @@
     Vue.component('company-display', {
         props: ['company', 'showAll'],
         methods: {
-            dateSpanHTML: dateSpanHTML,
+            dateSpanHTML: Util.formatDateSpanHTML,
             show: function () {
                 return this.$props.showAll || this.$props.company.relevant;
             }

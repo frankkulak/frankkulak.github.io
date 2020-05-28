@@ -13,10 +13,8 @@ html {
   --button: #{$blue};
   --button-hover-text: #{white};
   --skill-bar: #{$blue};
-  --project-button: #{$dark-blue};
-  --project-card-bg: #{white};
-  --link: #{$dark-blue};
-  --link-hover: #{$purple};
+  --link: #{$purple};
+  --link-hover: #{$light-pink};
   --toggle-bg: #{$dark-blue};
 }
 
@@ -35,9 +33,7 @@ html[data-theme='dark'] {
   --button: #{$blue};
   --button-hover-text: #{white};
   --skill-bar: #{$blue};
-  --project-button: #{$blue};
-  --project-card-bg: #{$dark-navy};
-  --link: #{$blue};
+  --link: #{$light-purple};
   --link-hover: #{$pink};
   --toggle-bg: #{$blue};
 }
