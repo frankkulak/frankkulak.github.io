@@ -195,7 +195,7 @@ div.btn.selected {
 }
 
 #contact {
-  padding: 50px 50px 50px 20px;
+  padding: 50px 50px 20px 50px;
 }
 #contact hr {
   background-color: var(--head-foot-hover);
