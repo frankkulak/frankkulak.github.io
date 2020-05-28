@@ -2,10 +2,6 @@
   .school-header {
     text-align: left;
     margin-bottom: $padding-sm;
-    padding: {
-      left: 0;
-      right: 25px;
-    };
 
     span.location {
       font-weight: normal;
@@ -23,6 +19,19 @@
     margin-bottom: $padding-sm;
   }
 
+  .school-display {
+    margin-top: $padding-sm;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .details {
+    width: 100%;
+    text-align: left;
+  }
+
   .details-enter-active, .details-leave-active {
     transition: all .5s;
   }
@@ -32,36 +41,42 @@
     height: 0;
   }
 
-  .details {
-    width: 100%;
-    text-align: left;
-  }
+  table {
+    tr.title-row td {
+      padding-bottom: 0;
+    }
 
-  table td {
-    padding-bottom: 15px;
-    vertical-align: top;
-  }
+    td {
+      padding-bottom: 15px;
+      vertical-align: top;
 
-  table td.category {
-    font-style: italic;
-    padding-right: 10px;
-    min-width: 95px;
+      &.gpa {
+        white-space: nowrap;
+        text-align: right;
+      }
+
+      &.category {
+        font-style: italic;
+        padding-right: 10px;
+      }
+    }
   }
 
   ul.course-list {
-    display: inline;
+    padding: 0;
+    display: inline-block;
     list-style: none;
 
     li {
       display: inline;
-    }
 
-    li:after {
-      content: ", ";
-    }
+      &:after {
+        content: ", ";
+      }
 
-    li:last-child:after {
-      content: "";
+      &:last-child:after {
+        content: "";
+      }
     }
   }
 }

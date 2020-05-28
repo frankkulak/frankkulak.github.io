@@ -3,7 +3,7 @@
 
   h1 {
     font-weight: normal;
-    text-shadow: -2px 2px 3px rgb(32, 32, 32, 0.1); // FIXME hardcoded color
+    text-shadow: -2px 2px 3px var(--home-text-shadow);
     color: var(--home-text);
   }
 }

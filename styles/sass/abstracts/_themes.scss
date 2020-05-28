@@ -1,6 +1,7 @@
 html {
   --bg: #{white};
   --home-text: #{white};
+  --home-text-shadow: #{$gray-32-trans};
   --home-button: #{white};
   --head-foot-bg: #{$blue};
   --head-foot-text: #{white};
@@ -22,6 +23,7 @@ html {
 html[data-theme='dark'] {
   --bg: #{$dark-navy};
   --home-text: #{white};
+  --home-text-shadow: #{$gray-32-trans};
   --home-button: #{white};
   --head-foot-bg: #{$dark-blue};
   --head-foot-text: #{white};

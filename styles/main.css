@@ -3,6 +3,7 @@
 html {
   --bg: white;
   --home-text: white;
+  --home-text-shadow: rgba(32, 32, 32, 0.1);
   --home-button: white;
   --head-foot-bg: #5ab6fc;
   --head-foot-text: white;
@@ -24,6 +25,7 @@ html {
 html[data-theme=dark] {
   --bg: #1d242e;
   --home-text: white;
+  --home-text-shadow: rgba(32, 32, 32, 0.1);
   --home-button: white;
   --head-foot-bg: #004e90;
   --head-foot-text: white;
@@ -126,7 +128,7 @@ a, a:focus, a:hover {
 }
 .section-header hr {
   margin-top: 5px;
-  max-width: 50px;
+  width: 50px;
 }
 
 .btn, .btn:focus, .btn:hover {
@@ -225,8 +227,6 @@ div.btn.selected {
 #education .school-header {
   text-align: left;
   margin-bottom: 20px;
-  padding-left: 0;
-  padding-right: 25px;
 }
 #education .school-header span.location {
   font-weight: normal;
@@ -240,6 +240,16 @@ div.btn.selected {
   direction: rtl;
   margin-bottom: 20px;
 }
+#education .school-display {
+  margin-top: 20px;
+}
+#education .school-display:first-child {
+  margin-top: 0;
+}
+#education .details {
+  width: 100%;
+  text-align: left;
+}
 #education .details-enter-active, #education .details-leave-active {
   transition: all 0.5s;
 }
@@ -247,21 +257,24 @@ div.btn.selected {
   opacity: 0;
   height: 0;
 }
-#education .details {
-  width: 100%;
-  text-align: left;
+#education table tr.title-row td {
+  padding-bottom: 0;
 }
 #education table td {
   padding-bottom: 15px;
   vertical-align: top;
 }
+#education table td.gpa {
+  white-space: nowrap;
+  text-align: right;
+}
 #education table td.category {
   font-style: italic;
   padding-right: 10px;
-  min-width: 95px;
 }
 #education ul.course-list {
-  display: inline;
+  padding: 0;
+  display: inline-block;
   list-style: none;
 }
 #education ul.course-list li {
@@ -307,7 +320,7 @@ div.btn.selected {
 
 #home h1 {
   font-weight: normal;
-  text-shadow: -2px 2px 3px rgba(32, 32, 32, 0.1);
+  text-shadow: -2px 2px 3px var(--home-text-shadow);
   color: var(--home-text);
 }
 
