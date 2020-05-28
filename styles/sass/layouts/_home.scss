@@ -1,5 +1,6 @@
 #home {
   @extend %default-gradient;
+  @include py($padding: $padding-lg);
 
   h1 {
     @include mx($margin: $padding-sm);

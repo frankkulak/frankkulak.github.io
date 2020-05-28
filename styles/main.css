@@ -347,6 +347,10 @@ div.btn.selected {
   margin-top: 16px;
 }
 
+#home {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 #home h1 {
   margin-left: 20px;
   margin-right: 20px;
