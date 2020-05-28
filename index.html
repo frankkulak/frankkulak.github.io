@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!--    <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <!--    <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!-- fixme : get prod version -->
 
     <!-- styling -->
@@ -58,179 +58,186 @@
 </nav>
 
 <div id="app">
-<!-- about -->
-<section id="about">
-    <section-header title="about"></section-header>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-content-center">
-            <div class="col-10 col-md-5 col-lg-4">
-                <img class="mb-3" src="./images/profile-pic.png" alt="Profile Photo"/>
-                <h3>Frank Kulak</h3>
-            </div>
-            <div class="col-10 col-md-5 col-lg-4 my-auto py-3">
-                I'm currently studying computer science and linguistics at Northeastern University, and I'm expected to
-                graduate in May 2021. I'm mostly interested in app and web development, but I'm open to other
-                opportunities as well.
+    <!-- about -->
+    <section id="about">
+        <section-header title="about"></section-header>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-10 col-md-5 col-lg-4">
+                    <img class="mb-3" src="./images/profile-pic.png" alt="Profile Photo"/>
+                    <h3>Frank Kulak</h3>
+                </div>
+                <div class="col-10 col-md-5 col-lg-4 my-auto py-3">
+                    I'm currently studying computer science and linguistics at Northeastern University, and I'm expected
+                    to
+                    graduate in May 2021. I'm mostly interested in app and web development, but I'm open to other
+                    opportunities as well.
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- education -->
-<section id="education" class="banded">
-    <section-header title="education"></section-header>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 col-lg-8">
-                <education-content></education-content>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- experience -->
-<section id="experience">
-    <section-header title="experience"></section-header>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 col-lg-8">
-                <experience-content></experience-content>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- skills -->
-<section id="skills" class="banded">
-    <section-header title="skills"></section-header>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-10 col-lg-8">
-                <skills-content></skills-content>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- projects -->
-<section id="projects">
-    <section-header title="projects"></section-header>
-    <!-- buttons -->
-    <div class="container-fluid project-buttons">
-        <div class="row justify-content-center">
-            <div id="projects-web-button" class="btn mr-3" onclick="onProjectButtonClicked('web');">web</div>
-            <div id="projects-java-button" class="btn" onclick="onProjectButtonClicked('java');">java</div>
-        </div>
-    </div>
-    <!-- project cards -->
-    <!-- web -->
-    <div id="web-projects" style="display: none;">
-        <div class="container-fluid project-cards">
+    <!-- education -->
+    <section id="education" class="banded">
+        <section-header title="education"></section-header>
+        <div class="container-fluid">
             <div class="row justify-content-center">
-                <!-- website -->
-                <div class="col-10 col-sm-8 col-md-6 col-lg-5">
-                    <div class="project-card-outline">
-                        <div class="project-card text-left">
-                            <div class="d-flex flex-row fill-width">
-                                <h6 class="text-left text-nowrap mr-2">frankkulak.com</h6>
-                                <h6 class="timespan text-right fill-width">Oct. 2019 - Present</h6>
-                            </div>
-                            <p>This is the website you are currently viewing! It provides a summary of my education,
-                                experience, and projects. I built it from the ground up with HTML, CSS, and JavaScript
-                                utilizing Bootstrap and jQuery. I actively maintain this website and update it
-                                often.</p>
-                            <div class="d-flex flex-row fill-width justify-content-end">
-                                <a class="btn text-nowrap" href="https://github.com/frankkulak/frankkulak.github.io"
-                                   target="_blank">view on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-10 col-lg-8">
+                    <education-content></education-content>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- java -->
-    <div id="java-projects" style="display: none;">
-        <div class="container-fluid project-cards">
+    </section>
+
+    <!-- experience -->
+    <section id="experience">
+        <section-header title="experience"></section-header>
+        <div class="container-fluid">
             <div class="row justify-content-center">
-                <!-- block dude -->
-                <div class="col-10 col-sm-8 col-md-6 col-lg-5">
-                    <div class="project-card-outline">
-                        <div class="project-card text-left">
-                            <div class="d-flex flex-row fill-width">
-                                <h6 class="text-left text-nowrap mr-2">Block Dude</h6>
-                                <h6 class="timespan text-right fill-width">Apr. - Dec. 2019</h6>
-                            </div>
-                            <p>Block Dude is a game originally created for the TI-84 calculator. It involves a character
-                                that picks blocks up and puts them down in order to reach the exit door. This project is
-                                a simplistic re-creation of it in Java, and it was done for my own practive with the MVC
-                                design pattern.</p>
-                            <div class="d-flex flex-row fill-width justify-content-end">
-                                <a class="btn text-nowrap" href="https://github.com/frankkulak/blockdude-java"
-                                   target="_blank">view on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-10 col-lg-8">
+                    <experience-content></experience-content>
                 </div>
-                <!-- blocky -->
-                <div class="col-10 col-sm-8 col-md-6 col-lg-5">
-                    <div class="project-card-outline">
-                        <div class="project-card text-left">
-                            <div class="d-flex flex-row fill-width">
-                                <h6 class="text-left text-nowrap mr-2">Blocky</h6>
-                                <h6 class="timespan text-right fill-width">Apr. - May 2019</h6>
-                            </div>
-                            <p>Blocky is an original puzzle game in which the player swipes a block through obstacles to
-                                escape the board. This implementation is written in Java and utilizes the Swing library
-                                for an engaging user interface.</p>
-                            <div class="d-flex flex-row fill-width justify-content-end">
-                                <a class="btn text-nowrap" href="https://github.com/frankkulak/blocky-java"
-                                   target="_blank">view on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="banded">
+        <section-header title="skills"></section-header>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-8">
+                    <skills-content></skills-content>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+        <section-header title="projects"></section-header>
+        <!-- buttons -->
+        <div class="container-fluid project-buttons">
+            <div class="row justify-content-center">
+                <div id="projects-web-button" class="btn mr-3" onclick="onProjectButtonClicked('web');">web</div>
+                <div id="projects-java-button" class="btn" onclick="onProjectButtonClicked('java');">java</div>
+            </div>
+        </div>
+        <!-- project cards -->
+        <!-- web -->
+        <div id="web-projects" style="display: none;">
+            <div class="container-fluid project-cards">
+                <div class="row justify-content-center">
+                    <!-- website -->
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-5">
+                        <div class="project-card-outline">
+                            <div class="project-card text-left">
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-2">frankkulak.com</h6>
+                                    <h6 class="timespan text-right fill-width">Oct. 2019 - Present</h6>
+                                </div>
+                                <p>This is the website you are currently viewing! It provides a summary of my education,
+                                    experience, and projects. I built it from the ground up with HTML, CSS, and
+                                    JavaScript
+                                    utilizing Bootstrap and jQuery. I actively maintain this website and update it
+                                    often.</p>
+                                <div class="d-flex flex-row fill-width justify-content-end">
+                                    <a class="btn text-nowrap" href="https://github.com/frankkulak/frankkulak.github.io"
+                                       target="_blank">view on GitHub</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- java -->
+        <div id="java-projects" style="display: none;">
+            <div class="container-fluid project-cards">
+                <div class="row justify-content-center">
+                    <!-- block dude -->
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-5">
+                        <div class="project-card-outline">
+                            <div class="project-card text-left">
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-2">Block Dude</h6>
+                                    <h6 class="timespan text-right fill-width">Apr. - Dec. 2019</h6>
+                                </div>
+                                <p>Block Dude is a game originally created for the TI-84 calculator. It involves a
+                                    character
+                                    that picks blocks up and puts them down in order to reach the exit door. This
+                                    project is
+                                    a simplistic re-creation of it in Java, and it was done for my own practive with the
+                                    MVC
+                                    design pattern.</p>
+                                <div class="d-flex flex-row fill-width justify-content-end">
+                                    <a class="btn text-nowrap" href="https://github.com/frankkulak/blockdude-java"
+                                       target="_blank">view on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blocky -->
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-5">
+                        <div class="project-card-outline">
+                            <div class="project-card text-left">
+                                <div class="d-flex flex-row fill-width">
+                                    <h6 class="text-left text-nowrap mr-2">Blocky</h6>
+                                    <h6 class="timespan text-right fill-width">Apr. - May 2019</h6>
+                                </div>
+                                <p>Blocky is an original puzzle game in which the player swipes a block through
+                                    obstacles to
+                                    escape the board. This implementation is written in Java and utilizes the Swing
+                                    library
+                                    for an engaging user interface.</p>
+                                <div class="d-flex flex-row fill-width justify-content-end">
+                                    <a class="btn text-nowrap" href="https://github.com/frankkulak/blocky-java"
+                                       target="_blank">view on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="head-foot">
+        <section-header title="contact"></section-header>
+        <div class="mx-auto justify-content-center">
+            <p>Looking to chat? Want a copy of my resume? Feel free to email me!</p>
+            <table class="mx-auto">
+                <tr>
+                    <td class="icon"><img class="email-icon" src="./images/socials/email-icon.png" alt="email"/></td>
+                    <td><a href="mailto:me@frankkulak.com">me@frankkulak.com</a></td>
+                </tr>
+            </table>
+            <p class="socials">Connect with me on LinkedIn or follow me on GitHub.</p>
+            <table class="mx-auto">
+                <tr>
+                    <td class="icon">
+                        <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">
+                            <img class="social-icon" src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
+                        </a>
+                    </td>
+                    <td class="icon">
+                        <a href="https://github.com/frankkulak" target="_blank">
+                            <img class="social-icon" src="./images/socials/github-icon.png" alt="GitHub"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <p class="copyright">Frank Kulak &copy; 2020</p>
+        </div>
+    </section>
+
+
+    <!-- theme toggle -->
+    <div class="theme-selector">
+        <input type="checkbox" id="theme-switch" name="theme"/>
+        <label for="theme-switch"></label>
     </div>
-</section>
-
-<!-- contact -->
-<section id="contact" class="head-foot">
-    <section-header title="contact"></section-header>
-    <div class="mx-auto justify-content-center">
-        <p>Looking to chat? Want a copy of my resume? Feel free to email me!</p>
-        <table class="mx-auto">
-            <tr>
-                <td class="icon"><img class="email-icon" src="./images/socials/email-icon.png" alt="email"/></td>
-                <td><a href="mailto:me@frankkulak.com">me@frankkulak.com</a></td>
-            </tr>
-        </table>
-        <p class="socials">Connect with me on LinkedIn or follow me on GitHub.</p>
-        <table class="mx-auto">
-            <tr>
-                <td class="icon">
-                    <a href="https://www.linkedin.com/in/frank-kulak/" target="_blank">
-                        <img class="social-icon" src="./images/socials/linkedin-icon.png" alt="LinkedIn"/>
-                    </a>
-                </td>
-                <td class="icon">
-                    <a href="https://github.com/frankkulak" target="_blank">
-                        <img class="social-icon" src="./images/socials/github-icon.png" alt="GitHub"/>
-                    </a>
-                </td>
-            </tr>
-        </table>
-        <p class="copyright">Frank Kulak &copy; 2020</p>
-    </div>
-</section>
-
-
-<!-- theme toggle -->
-<div class="theme-selector">
-    <input type="checkbox" id="theme-switch" name="theme"/>
-    <label for="theme-switch"></label>
-</div>
 </div>
 
 <!-- External scripts (do not change order) -->
