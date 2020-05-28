@@ -264,7 +264,7 @@ const Data = (function () {
                     {
                         title: 'CSS',
                         description: 'CSS, Sass, Bootstrap',
-                        rating: 3
+                        rating: 4
                     },
                     {
                         title: 'JavaScript',

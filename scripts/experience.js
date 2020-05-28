@@ -63,21 +63,17 @@
                 <hr>
                 <div class="row">
                     <div class="col-12 col-md-6"><h5>{{ company.name }}</h5></div>
-                    <div class="col-12 col-md-6"><h5>{{ company.location }}</h5></div>
+                    <div class="col-12 col-md-6"><p>{{ company.location }}</p></div>
                 </div>
-                <table v-for="position in company.positions">
-                    <tr>
-                        <td class="title"><p>{{ position.title }}</p></td>
-                        <td class="date"><p v-html="dateSpanHTML(position)"></p></td>
-                    </tr>
-                    <tr v-show="position.description.length !== 0">
-                        <td colspan="2">
-                            <ul>
-                                <li v-for="bullet in position.description">{{bullet}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <div v-for="position in company.positions" v-bind:key="position.title">
+                    <div class="row">
+                        <div class="col-12 col-md-6"><h5 class="title">{{ position.title }}</h5></div>
+                        <div class="col-12 col-md-6"><p v-html="dateSpanHTML(position)"></p></div>
+                    </div>
+                    <ul v-show="position.description.length !== 0">
+                        <li v-for="bullet in position.description" v-bind:key="bullet">{{bullet}}</li>
+                    </ul>
+                </div>
             </div>`
     });
 })();

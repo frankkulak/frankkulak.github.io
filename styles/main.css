@@ -294,11 +294,23 @@ div.btn.selected {
 #experience .company-display {
   text-align: left;
 }
+#experience .company-display [class^=col] {
+  vertical-align: top;
+}
 #experience .company-display [class^=col]:last-child {
   text-align: right;
 }
-#experience .company-display [class^=col]:last-child h5 {
+#experience .company-display [class^=col]:last-child p {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+#experience .company-display [class^=col] h5 {
+  margin-bottom: 0;
+}
+#experience .company-display [class^=col] h5.title {
   font-weight: normal;
+  font-style: italic;
+  margin-top: 8px;
 }
 @media (max-width: 767px) {
   #experience .company-display [class^=col]:last-child {
@@ -306,10 +318,13 @@ div.btn.selected {
   }
 }
 #experience .company-display hr {
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 32px;
   width: 80%;
   opacity: 0.5;
+}
+#experience .company-display ul {
+  margin-top: 8px;
 }
 #experience .company-display:first-child {
   margin-top: 0;
@@ -317,30 +332,7 @@ div.btn.selected {
 #experience .company-display:first-child hr {
   display: none;
 }
-#experience .company-display table {
-  width: 100%;
-}
-#experience .company-display table td {
-  vertical-align: top;
-}
-#experience .company-display table td.company, #experience .company-display table td.title {
-  text-align: left;
-  padding-right: 20px;
-}
-#experience .company-display table td.title {
-  white-space: nowrap;
-}
-#experience .company-display table td.location, #experience .company-display table td.date {
-  white-space: initial;
-  width: auto;
-  max-width: 50%;
-  text-align: right;
-}
-#experience .company-display table td.location h5 {
-  font-weight: normal;
-  white-space: nowrap;
-}
-#experience .company-display table span.nowrap {
+#experience .company-display span.nowrap {
   white-space: nowrap;
 }
 #experience .btn {

@@ -3,26 +3,42 @@
     text-align: left;
 
     [class^="col"] {
+      vertical-align: top;
+
       &:last-child {
         text-align: right;
 
-        h5 {
-          font-weight: normal;
+        p {
+          margin-top: 8px;
+          margin-bottom: 0;
         }
+      }
+
+      h5 {
+        margin-bottom: 0;
+      }
+
+      h5.title {
+        font-weight: normal;
+        font-style: italic;
+        margin-top: 8px;
       }
     }
 
     @media (max-width: 767px) {
       [class^="col"]:last-child {
-          text-align: left;
+        text-align: left;
       }
     }
 
     hr {
-      margin-top: 16px;
-      margin-bottom: 32px;
+      @include my($margin: 32px);
       width: 80%;
       opacity: 0.5;
+    }
+
+    ul {
+      margin-top: 8px;
     }
 
     &:first-child {
@@ -33,39 +49,8 @@
       }
     }
 
-    table {
-      width: 100%;
-
-      td {
-        vertical-align: top;
-
-        &.company, &.title {
-          text-align: left;
-          padding-right: 20px;
-        }
-
-        &.title {
-          white-space: nowrap;
-        }
-
-        &.location, &.date {
-          white-space: initial;
-          width: auto;
-          max-width: 50%;
-          text-align: right;
-        }
-
-        &.location {
-          h5 {
-            font-weight: normal;
-            white-space: nowrap;
-          }
-        }
-      }
-
-      span.nowrap {
-        white-space: nowrap;
-      }
+    span.nowrap {
+      white-space: nowrap;
     }
   }
 
