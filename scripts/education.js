@@ -68,7 +68,7 @@
                                     <h6>courses</h6>
                                 </td>
                             </tr>
-                            <tr v-for="subject in school.subjects">
+                            <tr v-for="subject in school.subjects" v-bind:key="subject.name">
                                 <td class="category">
                                     {{ subject.name }}
                                 </td>
@@ -80,7 +80,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <p v-show="courseInProgress">* = in progress</p>
+                        <p v-if="courseInProgress">* = in progress</p>
                     </div>
                 </transition>
             </div>`
