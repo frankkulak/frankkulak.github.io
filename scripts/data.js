@@ -146,16 +146,16 @@ const Data = (function () {
         experience: [
             {
                 code: 'tjx',
-                company: 'The TJX Companies',
+                name: 'The TJX Companies',
                 location: 'Framingham, MA',
                 relevant: true,
                 positions: [
                     {
                         title: 'IT Engineer Co-op',
                         description: [
-                            'Developed front end for T.J.Maxx and HomeGoods mobile applications using Xamarin.Forms and HTML, CSS, and JavaScript',
+                            'Developed front end of T.J.Maxx and HomeGoods mobile applications with Xamarin.Forms, HTML, CSS, and JavaScript using Bootstrap and jQuery',
                             'Collaborated with other developers using Agile to deliver critical features and bug fixes',
-                            'Utilized release-branching strategy to manage project versions with Git, GitHub, and SourceTree',
+                            'Utilized release-branching strategy to manage project versions with Git',
                             'Maintained existing codebase built with MVVM architecture'
                         ],
                         start: new Date(2019, month(7)), // Jul 2019
@@ -166,27 +166,27 @@ const Data = (function () {
             },
             {
                 code: 'nu',
-                company: 'Northeastern University',
+                name: 'Northeastern University',
                 location: 'Boston, MA',
                 relevant: false,
                 positions: [
                     {
                         title: 'Peer Tutor',
                         description: [
-                            'placeholder',
-                            'placeholder'
-                            // todo
+                            'Tutor linguistics and psychology courses in one-on-one sessions',
+                            'Conduct review sessions of up to 50 students for exam preparation',
+                            'Provide guidance and advice for improving study habits'
                         ],
                         start: new Date(2019, month(1)), // Jan 2019
-                        end: new Date(), // Present
+                        end: null, // Present
                         seasonal: true
                     },
                     {
                         title: 'Office Assistant',
                         description: [
-                            'placeholder',
-                            'placeholder'
-                            // todo
+                            'Answered up to 15 calls per hour to assist students with financial aid questions',
+                            'Collaborated with financial aid counselors to resolve caller inquiries',
+                            'Performed data entry to achieve consistency between physical and digital documentation'
                         ],
                         start: new Date(2017, month(9)), // Sep 2017
                         end: new Date(2020, month(3)), // Mar 2020
@@ -196,15 +196,15 @@ const Data = (function () {
             },
             {
                 code: 'sherwood',
-                company: 'Sherwood Cleaners',
+                name: 'Sherwood Cleaners',
                 location: 'Plainville, CT',
                 relevant: false,
                 positions: [
                     {
                         title: 'Cashier',
                         description: [
-                            'placeholder',
-                            'placeholder'
+                            //'placeholder',
+                            //'placeholder'
                             // todo
                         ],
                         start: new Date(2018, month(6)), // Jun 2018
@@ -215,15 +215,15 @@ const Data = (function () {
             },
             {
                 code: 'barnes',
-                company: 'Associate Spring',
+                name: 'Associated Spring',
                 location: 'Bristol, CT',
                 relevant: false,
                 positions: [
                     {
                         title: 'Maintenance Worker',
                         description: [
-                            'placeholder',
-                            'placeholder'
+                            //'placeholder',
+                            //'placeholder'
                             // todo
                         ],
                         start: new Date(2017, month(6)), // Jun 2017
@@ -234,7 +234,7 @@ const Data = (function () {
             },
             {
                 code: 'mah',
-                company: 'Mobile Apps for Hartford',
+                name: 'Mobile Apps for Hartford',
                 location: 'Hartford, CT',
                 relevant: true,
                 positions: [
@@ -242,9 +242,8 @@ const Data = (function () {
                         title: 'Intern',
                         description: [
                             'Collaborated with other interns to develop Android application for CREC school system using MIT App Inventor 2',
-                            'Met with client from CREC schools on weekly basis to set expectations and ensure high quality of application',
-                            'Published mobile application on the Google Play store',
-                            'Attended weekly presentations on topics such as software development, cyber security, and robotics'
+                            'Met with client from CREC schools on weekly basis to set expectations and ensure high quality of product',
+                            'Published completed application on the Google Play store'
                         ],
                         start: new Date(2016, month(7)), // Jul 2016
                         end: new Date(2016, month(8)), // Aug 2016

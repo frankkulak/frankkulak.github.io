@@ -108,6 +108,7 @@ section.banded {
 hr {
   background-color: var(--hr);
   height: 1px;
+  border: 0;
 }
 
 a, a:focus, a:hover {
@@ -127,8 +128,10 @@ a, a:focus, a:hover {
   margin-bottom: 50px;
 }
 .section-header hr {
-  margin-top: 5px;
-  width: 50px;
+  margin-top: 6px;
+  width: 65px;
+  height: 3px;
+  border-radius: 2px;
 }
 
 .btn, .btn:focus, .btn:hover {
@@ -289,8 +292,30 @@ div.btn.selected {
 }
 
 #experience .company-display {
-  margin-top: 20px;
   text-align: left;
+}
+#experience .company-display [class^=col]:last-child {
+  text-align: right;
+}
+#experience .company-display [class^=col]:last-child h5 {
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  #experience .company-display [class^=col]:last-child {
+    text-align: left;
+  }
+}
+#experience .company-display hr {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 80%;
+  opacity: 0.5;
+}
+#experience .company-display:first-child {
+  margin-top: 0;
+}
+#experience .company-display:first-child hr {
+  display: none;
 }
 #experience .company-display table {
   width: 100%;
@@ -318,11 +343,19 @@ div.btn.selected {
 #experience .company-display table span.nowrap {
   white-space: nowrap;
 }
+#experience .btn {
+  margin-top: 16px;
+}
 
 #home h1 {
+  margin-left: 20px;
+  margin-right: 20px;
   font-weight: normal;
   text-shadow: -2px 2px 3px var(--home-text-shadow);
   color: var(--home-text);
+}
+#home h1 strong {
+  white-space: nowrap;
 }
 
 .navbar-default {

@@ -2,8 +2,13 @@
   @extend %default-gradient;
 
   h1 {
+    @include mx($margin: $padding-sm);
     font-weight: normal;
     text-shadow: -2px 2px 3px var(--home-text-shadow);
     color: var(--home-text);
+
+    strong {
+      white-space: nowrap;
+    }
   }
 }
