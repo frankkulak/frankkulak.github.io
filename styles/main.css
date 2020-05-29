@@ -163,15 +163,15 @@ a.btn, a.btn:focus, a.btn:hover {
   cursor: pointer;
 }
 
-.theme-selector {
+.theme-toggle {
   position: fixed;
   right: 20px;
   bottom: 20px;
 }
-.theme-selector input {
+.theme-toggle input {
   display: none;
 }
-.theme-selector label, .theme-selector label:focus, .touch-mode .theme-selector label:hover {
+.theme-toggle label, .theme-toggle label:focus, .touch-mode .theme-toggle label:hover {
   font-size: 24px;
   padding-left: 6px;
   padding-right: 6px;
@@ -179,19 +179,19 @@ a.btn, a.btn:focus, a.btn:hover {
   border: solid;
   border-width: thin;
   border-color: var(--toggle-bg);
-  border-radius: 20px;
+  border-radius: 100%;
   background: transparent;
   opacity: 0.65;
   cursor: pointer;
 }
-.mouse-mode .theme-selector label:hover {
+.mouse-mode .theme-toggle label:hover {
   background-color: var(--toggle-bg);
   opacity: 1;
 }
-.theme-selector label::before {
+.theme-toggle label::before {
   content: "🌙";
 }
-.theme-selector :checked + label::before {
+.theme-toggle :checked + label::before {
   content: "🌤";
 }
 

@@ -327,7 +327,7 @@ const Data = (function () {
                         name: 'frankkulak.com',
                         start: new Date(2019, month(10)), // Oct 2019
                         end: null, // Present
-                        description: 'This is the website you are currently viewing! It provides a summary of my education, experience, and projects. I built it from the ground up with HTML, CSS, and JavaScript utilizing Bootstrap and jQuery. I actively maintain this website and update it often.',
+                        description: 'This is the website you are currently viewing! It provides a summary of my education, experience, and projects. I built it with the help of Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
                         links: [
                             {
                                 text: 'view on GitHub',
@@ -344,7 +344,7 @@ const Data = (function () {
                         name: 'Block Dude',
                         start: new Date(2019, month(4)), // Apr 2019
                         end: new Date(2019, month(12)), // Dec 2019
-                        description: 'Block Dude is a game originally created for the TI-84 calculator. It involves a character that picks blocks up and puts them down in order to reach the exit door. This project is a simplistic re-creation of it in Java, and it was done for my own practive with the MVC design pattern.',
+                        description: 'Block Dude is a game originally created for the TI-84 calculator. It involves a character that picks blocks up and puts them down in order to reach the exit. This project is a simplistic re-creation of it in Java, and it was done for my own practice with the MVC design pattern.',
                         links: [
                             {
                                 text: 'view on GitHub',

@@ -44,7 +44,7 @@ a {
   }
 }
 
-.theme-selector {
+.theme-toggle {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -61,7 +61,7 @@ a {
     border: solid;
     border-width: thin;
     border-color: var(--toggle-bg);
-    border-radius: 20px;
+    border-radius: 100%;
     background: transparent;
     opacity: 0.65;
     cursor: pointer;
