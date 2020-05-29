@@ -1,7 +1,6 @@
 #contact {
-  padding: $padding-lg $padding-lg $padding-sm $padding-lg;
-
-  $social-icon-height: 28px;
+  @include px($padding: $padding-lg);
+  padding-bottom: $padding-sm;
 
   hr {
     background-color: var(--head-foot-hover);
@@ -11,16 +10,28 @@
     width: auto;
 
     td.icon {
-      @include px($padding: $padding-xs);
+
     }
   }
 
+  .row {
+    width: 100%;
+    justify-content: center;
+    vertical-align: center;
+    margin: 0;
+  }
+
+  $social-icon-height: 28px;
+
   .email-icon {
+    @include mx($margin: $padding-xs);
+    @include my($margin: auto);
     height: $social-icon-height / 2;
     width: auto;
   }
 
   .social-icon {
+    @include mx($margin: $padding-xs);
     height: $social-icon-height;
     width: auto;
   }

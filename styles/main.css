@@ -202,7 +202,9 @@ a.btn, a.btn:focus, a.btn:hover {
 }
 
 #contact {
-  padding: 50px 50px 20px 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
 #contact hr {
   background-color: var(--head-foot-hover);
@@ -210,15 +212,23 @@ a.btn, a.btn:focus, a.btn:hover {
 #contact table {
   width: auto;
 }
-#contact table td.icon {
-  padding-left: 16px;
-  padding-right: 16px;
+#contact .row {
+  width: 100%;
+  justify-content: center;
+  vertical-align: center;
+  margin: 0;
 }
 #contact .email-icon {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
   height: 14px;
   width: auto;
 }
 #contact .social-icon {
+  margin-left: 16px;
+  margin-right: 16px;
   height: 28px;
   width: auto;
 }
