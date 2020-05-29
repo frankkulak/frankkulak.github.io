@@ -18,12 +18,13 @@ nav {
   }
 
   ul > li {
-    margin-left: $padding-sm * 0.75;
+    margin-left: $padding-sm * 0.6;
     display: inline-block;
     vertical-align: center;
 
     a.nav-link {
       @include py($padding: 4px);
+      background-color: transparent;
     }
 
     a, a:focus, a:hover {

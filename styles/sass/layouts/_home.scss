@@ -5,6 +5,7 @@
   h1 {
     @extend %default-gradient;
     @include mx($margin: $padding-sm);
+    margin-bottom: 0;
     font-weight: normal;
     text-shadow: -2px 2px 3px var(--home-text-shadow);
     color: var(--home-text);

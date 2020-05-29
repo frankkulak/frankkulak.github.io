@@ -41,7 +41,7 @@ html[data-theme=dark] {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --link: #a688e6;
+  --link: #b69be6;
   --link-hover: #ff81fa;
   --toggle-bg: #5ab6fc;
 }
@@ -366,6 +366,7 @@ a.btn, a.btn:focus, a.btn:hover {
 #home h1 {
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 0;
   font-weight: normal;
   text-shadow: -2px 2px 3px var(--home-text-shadow);
   color: var(--home-text);
@@ -388,13 +389,14 @@ nav ul.navbar-nav {
   background-attachment: local, scroll;
 }
 nav ul > li {
-  margin-left: 15px;
+  margin-left: 12px;
   display: inline-block;
   vertical-align: center;
 }
 nav ul > li a.nav-link {
   padding-top: 4px;
   padding-bottom: 4px;
+  background-color: transparent;
 }
 nav ul > li a, nav ul > li a:focus, nav ul > li a:hover {
   color: var(--head-foot-text);
