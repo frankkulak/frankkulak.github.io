@@ -129,24 +129,27 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-<!-- Local scripts -->
-<script src="scripts/modules/data.js"></script>
-<script src="scripts/modules/util.js"></script>
-<script src="./scripts/vue-components.js"></script>
+<!-- modules -->
+<script src="./scripts/modules/data.js"></script>
+<script src="./scripts/modules/util.js"></script>
 
-<script src="./scripts/education.js"></script>
-<script src="./scripts/experience.js"></script>
-<script src="./scripts/skills.js"></script>
-<script src="./scripts/projects.js"></script>
+<!-- vue components -->
+<script src="./scripts/components/section-header.js"></script>
+<script src="./scripts/components/section-content.js"></script>
+<script src="./scripts/components/education.js"></script>
+<script src="./scripts/components/experience.js"></script>
+<script src="./scripts/components/skills.js"></script>
+<script src="./scripts/components/projects.js"></script>
 
+<!-- vue instance -->
 <script>
-    const app = new Vue({
-        el: '#app',
-        data: {}
+    new Vue({
+        el: '#app'
     });
 </script>
 
-<script src="./scripts/theme.js"></script> <!-- must come after vue instance is created -->
+<!-- other scripts -->
+<script src="./scripts/theme.js"></script>
 <script src="./scripts/scroll.js"></script>
 <script src="./scripts/hover.js"></script>
 

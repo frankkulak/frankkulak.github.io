@@ -1,4 +1,6 @@
 (function () {
+    // constants
+
     const showAllButtonText = {'show': 'show all jobs', 'hide': 'hide irrelevant jobs'};
 
     // components
