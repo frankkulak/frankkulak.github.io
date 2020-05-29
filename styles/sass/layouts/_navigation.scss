@@ -1,20 +1,15 @@
 nav {
   &.navbar-default {
     @extend %head-foot;
-    padding: 0;
+
+    .fas {
+      color: var(--head-foot-text);
+    }
   }
 
   ul.navbar-nav {
     overflow-y: hidden;
     white-space: nowrap;
-    padding: 8px;
-    width: 100%;
-
-    $shadow-color: var(--head-foot-hover);
-    background-image:
-            linear-gradient(to right, var(--head-foot-bg) 8%, var(--head-foot-bg-trans) 20%, var(--head-foot-bg-trans) 80%, var(--head-foot-bg) 92%),
-            linear-gradient(to right, var(--navbar-fade), var(--navbar-fade-trans) 15%, var(--navbar-fade-trans) 85%, var(--navbar-fade));
-    background-attachment: local, scroll;
   }
 
   ul > li {

@@ -216,28 +216,25 @@ a.btn, a.btn:focus, a.btn:hover {
 #contact hr {
   background-color: var(--head-foot-hover);
 }
-#contact table {
-  width: auto;
-}
 #contact .row {
   width: 100%;
   justify-content: center;
   vertical-align: center;
   margin: 0;
 }
-#contact .email-icon {
+#contact .fa-envelope {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: auto;
   margin-bottom: auto;
-  height: 14px;
-  width: auto;
+  font-size: 18px;
+  color: var(--head-foot-text);
 }
-#contact .social-icon {
+#contact .socials .fab {
   margin-left: 16px;
   margin-right: 16px;
-  height: 28px;
-  width: auto;
+  font-size: 36px;
+  color: var(--head-foot-text);
 }
 #contact .socials, #contact .copyright {
   margin-top: 50px;
@@ -377,16 +374,12 @@ a.btn, a.btn:focus, a.btn:hover {
   white-space: nowrap;
 }
 
-nav.navbar-default {
-  padding: 0;
+nav.navbar-default .fas {
+  color: var(--head-foot-text);
 }
 nav ul.navbar-nav {
   overflow-y: hidden;
   white-space: nowrap;
-  padding: 8px;
-  width: 100%;
-  background-image: linear-gradient(to right, var(--head-foot-bg) 8%, var(--head-foot-bg-trans) 20%, var(--head-foot-bg-trans) 80%, var(--head-foot-bg) 92%), linear-gradient(to right, var(--navbar-fade), var(--navbar-fade-trans) 15%, var(--navbar-fade-trans) 85%, var(--navbar-fade));
-  background-attachment: local, scroll;
 }
 nav ul > li {
   margin-left: 12px;

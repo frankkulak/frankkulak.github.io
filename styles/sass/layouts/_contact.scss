@@ -6,14 +6,6 @@
     background-color: var(--head-foot-hover);
   }
 
-  table {
-    width: auto;
-
-    td.icon {
-
-    }
-  }
-
   .row {
     width: 100%;
     justify-content: center;
@@ -21,19 +13,19 @@
     margin: 0;
   }
 
-  $social-icon-height: 28px;
+  $social-icon-size: 36px;
 
-  .email-icon {
+  .fa-envelope {
     @include mx($margin: $padding-xs);
     @include my($margin: auto);
-    height: $social-icon-height / 2;
-    width: auto;
+    font-size: $social-icon-size / 2;
+    color: var(--head-foot-text);
   }
 
-  .social-icon {
+  .socials .fab {
     @include mx($margin: $padding-xs);
-    height: $social-icon-height;
-    width: auto;
+    font-size: $social-icon-size;
+    color: var(--head-foot-text);
   }
 
   .socials, .copyright {
