@@ -1,11 +1,14 @@
 html {
   --bg: #{white};
   --home-text: #{white};
-  --home-text-shadow: #{$gray-32-trans};
+  --home-text-shadow: #{transparentize($gray-32, 0.9)};
   --home-button: #{white};
   --head-foot-bg: #{$blue};
+  --head-foot-bg-trans: #{transparentize($blue, 1)}; // for safari compatability...
   --head-foot-text: #{white};
   --head-foot-hover: #{$dark-blue};
+  --navbar-fade: #{transparentize($dark-blue, 0.5)};
+  --navbar-fade-trans: #{transparentize($dark-blue, 1)}; // for safari compatability...
   --header: #{$gray-60};
   --text: #{$gray-135};
   --hr: #{$blue};
@@ -21,11 +24,14 @@ html {
 html[data-theme='dark'] {
   --bg: #{$dark-navy};
   --home-text: #{white};
-  --home-text-shadow: #{$gray-32-trans};
+  --home-text-shadow: #{transparentize($gray-135, 0.9)};
   --home-button: #{white};
   --head-foot-bg: #{$dark-blue};
+  --head-foot-bg-trans: #{transparentize($dark-blue, 1)}; // for safari compatability...
   --head-foot-text: #{white};
   --head-foot-hover: #{$blue};
+  --navbar-fade: #{transparentize($blue, 0.5)};
+  --navbar-fade-trans: #{transparentize($blue, 1)}; // for safari compatability...
   --header: #{white};
   --text: #{$gray-200};
   --hr: #{$blue};

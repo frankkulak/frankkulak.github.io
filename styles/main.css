@@ -6,8 +6,11 @@ html {
   --home-text-shadow: rgba(32, 32, 32, 0.1);
   --home-button: white;
   --head-foot-bg: #5ab6fc;
+  --head-foot-bg-trans: rgba(90, 182, 252, 0);
   --head-foot-text: white;
   --head-foot-hover: #004e90;
+  --navbar-fade: rgba(0, 78, 144, 0.5);
+  --navbar-fade-trans: rgba(0, 78, 144, 0);
   --header: #3c3c3c;
   --text: #878787;
   --hr: #5ab6fc;
@@ -23,11 +26,14 @@ html {
 html[data-theme=dark] {
   --bg: #1d242e;
   --home-text: white;
-  --home-text-shadow: rgba(32, 32, 32, 0.1);
+  --home-text-shadow: rgba(135, 135, 135, 0.1);
   --home-button: white;
   --head-foot-bg: #004e90;
+  --head-foot-bg-trans: rgba(0, 78, 144, 0);
   --head-foot-text: white;
   --head-foot-hover: #5ab6fc;
+  --navbar-fade: rgba(90, 182, 252, 0.5);
+  --navbar-fade-trans: rgba(90, 182, 252, 0);
   --header: white;
   --text: #c8c8c8;
   --hr: #5ab6fc;
@@ -40,16 +46,17 @@ html[data-theme=dark] {
   --toggle-bg: #5ab6fc;
 }
 
-#projects .project-card-outline, #projects .project-buttons .btn.selected, #home, .mouse-mode .btn:hover {
+#projects .project-card-outline, #projects .project-buttons .btn.selected, #home h1, .mouse-mode .btn:hover {
   background-color: var(--bg);
   background-image: linear-gradient(45deg, #7e35e6 0%, #5ab6fc 100%);
 }
 
-.navbar-default, section.head-foot {
+nav.navbar-default, section.head-foot {
   background-color: var(--head-foot-bg);
   color: var(--head-foot-text);
+  opacity: 95%;
 }
-.navbar-default h1, section.head-foot h1 {
+nav.navbar-default h1, section.head-foot h1 {
   color: var(--head-foot-text);
 }
 
@@ -354,6 +361,7 @@ a.btn, a.btn:focus, a.btn:hover {
 #home {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: var(--bg);
 }
 #home h1 {
   margin-left: 20px;
@@ -361,52 +369,43 @@ a.btn, a.btn:focus, a.btn:hover {
   font-weight: normal;
   text-shadow: -2px 2px 3px var(--home-text-shadow);
   color: var(--home-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #home h1 strong {
   white-space: nowrap;
 }
 
-.navbar-default {
-  border-bottom: 1px solid var(--head-foot-hover);
+nav.navbar-default {
+  padding: 0;
 }
-.navbar-default .navbar-nav {
-  overflow-x: scroll;
+nav ul.navbar-nav {
   overflow-y: hidden;
   white-space: nowrap;
-  -ms-overflow-style: none;
+  padding: 8px;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--head-foot-bg) 8%, var(--head-foot-bg-trans) 20%, var(--head-foot-bg-trans) 80%, var(--head-foot-bg) 92%), linear-gradient(to right, var(--navbar-fade), var(--navbar-fade-trans) 15%, var(--navbar-fade-trans) 85%, var(--navbar-fade));
+  background-attachment: local, scroll;
 }
-.navbar-default .navbar-nav::-webkit-scrollbar {
-  display: none;
-}
-.navbar-default .navbar-nav > li {
-  margin-left: 20px;
+nav ul > li {
+  margin-left: 15px;
   display: inline-block;
+  vertical-align: center;
 }
-.navbar-default .navbar-nav > li .active, .touch-mode .navbar-default .navbar-nav > li > a:hover.active {
+nav ul > li a.nav-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+nav ul > li a, nav ul > li a:focus, nav ul > li a:hover {
+  color: var(--head-foot-text);
+}
+.mouse-mode nav ul > li a:hover {
+  color: var(--head-foot-hover);
+}
+nav ul > li > a.active {
   color: var(--head-foot-hover);
   font-weight: bold;
-}
-.navbar-default .navbar-nav > li > a {
-  color: var(--head-foot-text);
-}
-.mouse-mode .navbar-default .navbar-nav > li > a:hover {
-  color: var(--head-foot-hover);
-}
-.touch-mode .navbar-default .navbar-nav > li > a:hover {
-  color: var(--head-foot-text);
-}
-.navbar-default .navbar-nav > li .fade-spacer {
-  width: 60px;
-  height: 16px;
-}
-.navbar-default .navbar-fade {
-  z-index: 1;
-  position: absolute;
-  right: 0;
-  background: transparent;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--head-foot-bg) 100%);
-  width: 20%;
-  height: 32px;
+  left: 20px;
 }
 
 #projects .projects-content {

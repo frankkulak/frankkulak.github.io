@@ -1,12 +1,15 @@
 #home {
-  @extend %default-gradient;
   @include py($padding: $padding-lg);
+  background-color: var(--bg);
 
   h1 {
+    @extend %default-gradient;
     @include mx($margin: $padding-sm);
     font-weight: normal;
     text-shadow: -2px 2px 3px var(--home-text-shadow);
     color: var(--home-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     strong {
       white-space: nowrap;

@@ -4,7 +4,7 @@
         template: `
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8">
+                    <div class="col-11 col-lg-8">
                         <component :is="content"></component>
                     </div>
                 </div>
