@@ -332,10 +332,6 @@ const Data = (function () {
                             {
                                 text: 'view on GitHub',
                                 url: 'https://github.com/frankkulak/frankkulak.github.io'
-                            },
-                            { // todo delete, just here for styling testing purposes
-                                text: 'view on Web',
-                                url: 'https://frankkulak.com'
                             }
                         ]
                     }

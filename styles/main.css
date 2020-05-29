@@ -35,7 +35,7 @@ html[data-theme=dark] {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --link: #9885e6;
+  --link: #a688e6;
   --link-hover: #ff81fa;
   --toggle-bg: #5ab6fc;
 }
@@ -428,8 +428,31 @@ a.btn, a.btn:focus, a.btn:hover {
   border-radius: 20px;
   padding: 20px;
 }
-#projects .project-card .timespan {
+#projects .project-card table {
+  text-align: left;
+}
+#projects .project-card table td {
+  vertical-align: top;
+}
+#projects .project-card table td.title {
+  white-space: nowrap;
+  padding-right: 16px;
+}
+#projects .project-card table td.timespan {
+  text-align: right;
+  width: 100%;
+}
+#projects .project-card table td.timespan h6 {
   font-weight: normal;
+}
+#projects .project-card table .row {
+  text-align: right;
+  direction: rtl;
+}
+#projects .project-card table .row .btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
 }
 
 #skills .skills-content {

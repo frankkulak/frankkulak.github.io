@@ -42,15 +42,26 @@
         },
         template: `
             <div class="project-card-outline">
-                <div class="project-card text-left">
-                    <div class="d-flex flex-row fill-width">
-                        <h6 class="text-left text-nowrap mr-2">{{project.name}}</h6>
-                        <h6 class="timespan text-right fill-width" v-html="dateSpanHTML()"></h6>
-                    </div>
-                    <p>{{project.description}}</p>
-                    <div v-for="link in project.links" class="d-flex flex-row fill-width justify-content-end">
-                        <a class="btn text-nowrap" v-bind:href="link.url" target="_blank">{{link.text}}</a>
-                    </div>
+                <div class="project-card">
+                    <table>
+                        <tr>
+                            <td class="title"><h6>{{project.name}}</h6></td>
+                            <td class="timespan"><h6 v-html="dateSpanHTML()"></h6></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>{{project.description}}</p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="row">
+                                    <a class="btn"
+                                       v-for="link in project.links"
+                                       v-bind:href="link.url"
+                                       target="_blank">{{link.text}}</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>`
     });

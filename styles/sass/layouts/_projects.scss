@@ -20,25 +20,6 @@
   }
 
   .project-cards {
-    //a.btn {
-    //  font-size: 14px;
-    //  min-height: $min-button-height * 0.8;
-    //  min-width: $min-button-width * 0.8;
-    //  margin-right: 0;
-    //}
-    //
-    //a.btn, a.btn:focus, .touch-mode & a.btn:hover {
-    //  color: var(--link);
-    //  border-color: var(--link);
-    //}
-    //
-    //.mouse-mode & a.btn:hover {
-    //  color: var(--bg);
-    //  border-color: var(--bg);
-    //  @include gradient($bottom: var(--link), $top: var(--link-hover), $fallback: var(--link));
-    //  //background-color: var(--link);
-    //}
-
     [class^="col"] {
       padding: 0;
     }
@@ -56,8 +37,36 @@
     border-radius: $project-card-radius;
     padding: $padding-sm;
 
-    .timespan {
-      font-weight: normal;
+    table {
+      text-align: left;
+
+      td {
+        vertical-align: top;
+
+        &.title {
+          white-space: nowrap;
+          padding-right: $padding-xs;
+        }
+
+        &.timespan {
+          text-align: right;
+          width: 100%;
+
+          h6 {
+            font-weight: normal;
+          }
+        }
+      }
+
+      .row {
+        text-align: right;
+        direction: rtl;
+
+        .btn {
+          @include mx($margin: $padding-sm / 2);
+          margin-top: $padding-xs / 2;
+        }
+      }
     }
   }
 }
