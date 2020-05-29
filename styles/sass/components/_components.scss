@@ -25,25 +25,6 @@
   cursor: pointer;
 }
 
-//a {
-//  &.btn, &.btn:focus, &.btn:hover {
-//    font-size: 14px;
-//    min-height: $min-button-height * 0.8;
-//    min-width: $min-button-width * 0.8;
-//    border-radius: $button-radius * 0.8;
-//    background-color: transparent;
-//    border-color: var(--link);
-//    color: var(--link);
-//  }
-//
-//  .mouse-mode &.btn:hover {
-//    @include gradient($bottom: var(--link), $top: var(--link-hover), $fallback: var(--link));
-//    color: var(--button-hover-text);
-//    border-color: var(--bg);
-//    cursor: pointer;
-//  }
-//}
-
 .theme-toggle {
   position: fixed;
   right: 20px;

@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155317753-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -36,8 +36,13 @@
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7418b85f2e.js" crossorigin="anonymous"></script>
 
-    <!-- internal styles -->
+    <!-- styles -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- modules -->
+    <script src="./scripts/modules/theme.js"></script>
+    <script src="./scripts/modules/data.js"></script>
+    <script src="./scripts/modules/util.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
@@ -125,14 +130,10 @@
     </section>
 
     <div class="theme-toggle">
-        <input type="checkbox" id="theme-switch" name="theme"/>
+        <input id="theme-switch" type="checkbox" name="theme" @change="toggleTheme"/>
         <label for="theme-switch"></label>
     </div>
 </div>
-
-<!-- modules -->
-<script src="./scripts/modules/data.js"></script>
-<script src="./scripts/modules/util.js"></script>
 
 <!-- vue components -->
 <script src="./scripts/components/section-header.js"></script>
@@ -145,8 +146,13 @@
 <!-- vue instance -->
 <script>
     new Vue({
-        el: '#app'
+        el: '#app',
+        methods: {
+            toggleTheme: Theme.toggle
+        }
     });
+
+    $('input[name=theme]').prop("checked", Theme.get() === 'dark');
 </script>
 
 <!-- animations -->
@@ -154,7 +160,6 @@
 
 <!-- other scripts -->
 <script src="./scripts/hover.js"></script>
-<script src="./scripts/theme.js"></script>
 
 </body>
 
