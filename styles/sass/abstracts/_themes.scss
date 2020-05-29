@@ -16,8 +16,7 @@ html {
   --button: #{$blue};
   --button-hover-text: #{white};
   --skill-bar: #{$blue};
-  --link: #{$purple};
-  --link-hover: #{$light-pink};
+  --link-hover: #{$dark-blue};
   --toggle-bg: #{$dark-blue};
 }
 
@@ -39,7 +38,6 @@ html[data-theme='dark'] {
   --button: #{$blue};
   --button-hover-text: #{white};
   --skill-bar: #{$blue};
-  --link: #{$light-purple};
-  --link-hover: #{$pink};
+  --link-hover: #{$blue};
   --toggle-bg: #{$blue};
 }

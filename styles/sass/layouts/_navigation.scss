@@ -23,7 +23,8 @@ nav {
     }
 
     a, a:focus, a:hover {
-      color: var(--head-foot-text)
+      color: var(--head-foot-text);
+      text-decoration: none;
     }
 
     .mouse-mode & a:hover {

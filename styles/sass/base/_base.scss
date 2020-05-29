@@ -23,12 +23,12 @@ hr {
 }
 
 a, a:focus, a:hover {
-  color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .mouse-mode a:hover {
   color: var(--link-hover);
+  text-decoration: none;
 }
 
 .fill-width { // fixme get rid of this

@@ -18,8 +18,7 @@ html {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --link: #7e35e6;
-  --link-hover: #ffbef1;
+  --link-hover: #004e90;
   --toggle-bg: #004e90;
 }
 
@@ -41,8 +40,7 @@ html[data-theme=dark] {
   --button: #5ab6fc;
   --button-hover-text: white;
   --skill-bar: #5ab6fc;
-  --link: #b69be6;
-  --link-hover: #ff81fa;
+  --link-hover: #5ab6fc;
   --toggle-bg: #5ab6fc;
 }
 
@@ -116,12 +114,12 @@ hr {
 }
 
 a, a:focus, a:hover {
-  color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .mouse-mode a:hover {
   color: var(--link-hover);
+  text-decoration: none;
 }
 
 .fill-width {
@@ -148,23 +146,6 @@ a, a:focus, a:hover {
 }
 
 .mouse-mode .btn:hover {
-  color: var(--button-hover-text);
-  border-color: var(--bg);
-  cursor: pointer;
-}
-
-a.btn, a.btn:focus, a.btn:hover {
-  font-size: 14px;
-  min-height: 32px;
-  min-width: 102.4px;
-  border-radius: 8px;
-  background-color: transparent;
-  border-color: var(--link);
-  color: var(--link);
-}
-.mouse-mode a.btn:hover {
-  background-color: var(--link);
-  background-image: linear-gradient(45deg, var(--link) 0%, var(--link-hover) 100%);
   color: var(--button-hover-text);
   border-color: var(--bg);
   cursor: pointer;
@@ -222,6 +203,12 @@ a.btn, a.btn:focus, a.btn:hover {
   vertical-align: center;
   margin: 0;
 }
+#contact a {
+  color: var(--head-foot-text);
+}
+.mouse-mode #contact a:hover {
+  color: var(--link-hover);
+}
 #contact .fa-envelope {
   margin-left: 16px;
   margin-right: 16px;
@@ -235,6 +222,9 @@ a.btn, a.btn:focus, a.btn:hover {
   margin-right: 16px;
   font-size: 36px;
   color: var(--head-foot-text);
+}
+.mouse-mode #contact .socials .fab:hover {
+  color: var(--link-hover);
 }
 #contact .socials, #contact .copyright {
   margin-top: 50px;
@@ -393,6 +383,7 @@ nav ul > li a.nav-link {
 }
 nav ul > li a, nav ul > li a:focus, nav ul > li a:hover {
   color: var(--head-foot-text);
+  text-decoration: none;
 }
 .mouse-mode nav ul > li a:hover {
   color: var(--head-foot-hover);
@@ -452,11 +443,17 @@ nav ul > li > a.active {
 #projects .project-card table .row {
   text-align: right;
   direction: rtl;
+  padding-right: 5px;
 }
-#projects .project-card table .row .btn {
+#projects .project-card table .row i {
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 24px;
+  color: var(--text);
+}
+.mouse-mode #projects .project-card table .row i:hover {
+  color: var(--link-hover);
 }
 
 #skills .skills-content {

@@ -13,6 +13,14 @@
     margin: 0;
   }
 
+  a {
+    color: var(--head-foot-text);
+
+    .mouse-mode &:hover {
+      color: var(--link-hover);
+    }
+  }
+
   $social-icon-size: 36px;
 
   .fa-envelope {
@@ -26,6 +34,10 @@
     @include mx($margin: $padding-xs);
     font-size: $social-icon-size;
     color: var(--head-foot-text);
+
+    .mouse-mode &:hover {
+      color: var(--link-hover);
+    }
   }
 
   .socials, .copyright {

@@ -61,10 +61,17 @@
       .row {
         text-align: right;
         direction: rtl;
+        padding-right: 5px;
 
-        .btn {
+        i {
           @include mx($margin: $padding-sm / 2);
-          margin-top: $padding-xs / 2;
+          margin-bottom: 0;
+          font-size: 24px;
+          color: var(--text);
+
+          .mouse-mode &:hover {
+            color: var(--link-hover);
+          }
         }
       }
     }

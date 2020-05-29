@@ -330,7 +330,7 @@ const Data = (function () {
                         description: 'This is the website you are currently viewing! It provides a summary of my education, experience, and projects. I built it with the help of Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
                         links: [
                             {
-                                text: 'view on GitHub',
+                                icon: '<i class="fab fa-github"></i>',
                                 url: 'https://github.com/frankkulak/frankkulak.github.io'
                             }
                         ]
@@ -347,7 +347,7 @@ const Data = (function () {
                         description: 'Block Dude is a game originally created for the TI-84 calculator. It involves a character that picks blocks up and puts them down in order to reach the exit. This project is a simplistic re-creation of it in Java, and it was done for my own practice with the MVC design pattern.',
                         links: [
                             {
-                                text: 'view on GitHub',
+                                icon: '<i class="fab fa-github"></i>',
                                 url: 'https://github.com/frankkulak/blockdude-java'
                             }
                         ]
@@ -359,7 +359,7 @@ const Data = (function () {
                         description: 'Blocky is an original puzzle game in which the player swipes a block through obstacles to escape the board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
                         links: [
                             {
-                                text: 'view on GitHub',
+                                icon: '<i class="fab fa-github"></i>',
                                 url: 'https://github.com/frankkulak/blocky-java'
                             }
                         ]

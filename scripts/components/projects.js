@@ -54,10 +54,10 @@
                         <tr>
                             <td colspan="2">
                                 <div class="row">
-                                    <a class="btn"
-                                       v-for="link in project.links"
+                                    <a v-for="link in project.links"
                                        v-bind:href="link.url"
-                                       target="_blank">{{link.text}}</a>
+                                       target="_blank"
+                                       v-html="link.icon"></a>
                                 </div>
                             </td>
                         </tr>
