@@ -1,21 +1,28 @@
 (function () {
     const navbar = $("nav");
+    const collapseElement = $(".navbar-collapse");
     const offset = navbar.height();
-    const animationDuration = 300;
+    const animationDuration = 500;
+    const collapseDuration = 150; // from _navigation.scss
+    const maxSmallScreenSize = 767; // from bootstrap
+    const delay = (func, time) => setTimeout(func, time);
 
-    // smoothly scroll to section
     navbar.find("a").click(function (e) {
+        const isSmallScreen = $(window).width() <= maxSmallScreenSize;
+
         e.preventDefault();
         const section = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(section).offset().top - offset
-        }, animationDuration);
-    });
+        const scroll = () => {
+            $("html, body").animate({
+                scrollTop: $(section).offset().top - offset
+            }, animationDuration);
+        };
 
-    // close collapse menu after selecting item
-    $('.navbar-collapse a').click(function () {
-        setTimeout(function () {
-            $(".navbar-collapse").collapse('hide');
-        }, animationDuration);
+        if (isSmallScreen) {
+            collapseElement.collapse('hide');
+            delay(scroll, collapseDuration);
+        } else {
+            scroll();
+        }
     });
 })();

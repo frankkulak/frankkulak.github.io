@@ -364,6 +364,12 @@ a, a:focus, a:hover {
   white-space: nowrap;
 }
 
+nav .collapsing {
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
 nav.navbar-default .fas {
   color: var(--head-foot-text);
 }

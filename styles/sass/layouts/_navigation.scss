@@ -1,4 +1,11 @@
 nav {
+  .collapsing {
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+  }
+
   &.navbar-default {
     @extend %head-foot;
 
