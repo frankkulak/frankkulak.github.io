@@ -7,6 +7,9 @@
             }
         },
         methods: {
+            buttonTitle: function (category) {
+                return `view ${category} projects`;
+            },
             handleClick: function (category) {
                 this.selected = category;
             }
@@ -14,11 +17,12 @@
         template: `
             <div class="projects-content">
                 <div class="row justify-content-center project-buttons">
-                    <div class="btn"
-                         v-for="category in projects"
-                         v-bind:key="category.title"
-                         :class="selected === category.title && 'selected'"
-                         @click="handleClick(category.title)">{{category.title}}</div>
+                    <span class="btn"
+                          v-for="category in projects"
+                          v-bind:key="category.title"
+                          :class="selected === category.title && 'selected'"
+                          v-bind:title="buttonTitle(category.title)"
+                          @click="handleClick(category.title)">{{category.title}}</span>
                 </div>
                 <div class="project-cards row justify-content-center"
                      v-for="category in projects"
@@ -57,6 +61,7 @@
                                     <a v-for="link in project.links"
                                        v-bind:href="link.url"
                                        target="_blank"
+                                       v-bind:title="link.text"
                                        v-html="link.icon"></a>
                                 </div>
                             </td>

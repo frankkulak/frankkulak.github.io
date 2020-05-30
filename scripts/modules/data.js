@@ -258,12 +258,12 @@ const Data = (function () {
                 skills: [
                     {
                         title: 'HTML',
-                        description: 'HTML, WebStorm, Visual Studio Code',
+                        description: 'HTML5, WebStorm, Visual Studio Code',
                         rating: 3
                     },
                     {
                         title: 'CSS',
-                        description: 'CSS, Sass, Bootstrap',
+                        description: 'CSS3, Sass, Bootstrap',
                         rating: 3
                     },
                     {
@@ -331,6 +331,7 @@ const Data = (function () {
                         links: [
                             {
                                 icon: '<i class="fab fa-github"></i>',
+                                text: 'view on GitHub',
                                 url: 'https://github.com/frankkulak/frankkulak.github.io'
                             }
                         ]
@@ -348,6 +349,7 @@ const Data = (function () {
                         links: [
                             {
                                 icon: '<i class="fab fa-github"></i>',
+                                text: 'view on GitHub',
                                 url: 'https://github.com/frankkulak/blockdude-java'
                             }
                         ]
@@ -360,6 +362,7 @@ const Data = (function () {
                         links: [
                             {
                                 icon: '<i class="fab fa-github"></i>',
+                                text: 'view on GitHub',
                                 url: 'https://github.com/frankkulak/blocky-java'
                             }
                         ]
