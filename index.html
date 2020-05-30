@@ -39,37 +39,36 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles/main.css">
 
-    <!-- modules -->
+    <!-- important modules -->
     <script src="./scripts/modules/theme.js"></script>
-    <script src="./scripts/modules/data.js"></script>
-    <script src="./scripts/modules/util.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
 
-<section id="home">
-    <h1>Hi, I'm <strong>Frank Kulak</strong>.<br>I'm a software developer.</h1>
-</section>
-
-<nav id="navbar" class="navbar navbar-expand-md navbar-default sticky-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" onclick="this.blur();"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav">
-            <li><a class="nav-link" href="#home">home</a></li>
-            <li><a class="nav-link" href="#about">about</a></li>
-            <li><a class="nav-link" href="#education">education</a></li>
-            <li><a class="nav-link" href="#experience">experience</a></li>
-            <li><a class="nav-link" href="#skills">skills</a></li>
-            <li><a class="nav-link" href="#projects">projects</a></li>
-            <li><a class="nav-link" href="#contact">contact</a></li>
-        </ul>
-    </div>
-</nav>
-
 <div id="app">
+    <section id="home">
+        <home-content></home-content>
+    </section>
+
+    <nav id="navbar" class="navbar navbar-expand-md navbar-default sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                onclick="this.blur();"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="#home">home</a></li>
+                <li><a class="nav-link" href="#about">about</a></li>
+                <li><a class="nav-link" href="#education">education</a></li>
+                <li><a class="nav-link" href="#experience">experience</a></li>
+                <li><a class="nav-link" href="#skills">skills</a></li>
+                <li><a class="nav-link" href="#projects">projects</a></li>
+                <li><a class="nav-link" href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <section id="about">
         <section-header title="about"></section-header>
         <div class="container-fluid">
@@ -135,9 +134,15 @@
     </div>
 </div>
 
+<!-- remaining modules -->
+<script src="./scripts/modules/data.js"></script>
+<script src="./scripts/modules/util.js"></script>
+<script src="./scripts/modules/animate.js"></script>
+
 <!-- vue components -->
 <script src="./scripts/components/section-header.js"></script>
 <script src="./scripts/components/section-content.js"></script>
+<script src="./scripts/components/home.js"></script>
 <script src="./scripts/components/education.js"></script>
 <script src="./scripts/components/experience.js"></script>
 <script src="./scripts/components/skills.js"></script>
@@ -152,6 +157,7 @@
         }
     });
 
+    // fixme replace with Vue somehow
     $('input[name=theme]').prop("checked", Theme.get() === 'dark');
 </script>
 
