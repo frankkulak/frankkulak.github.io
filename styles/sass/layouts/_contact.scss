@@ -20,8 +20,10 @@
   a {
     color: var(--head-foot-text);
 
-    .mouse-mode &:hover {
-      color: var(--link-hover);
+    .mouse-mode &:hover  {
+      &, i, i *, i::before, i::after {
+        color: var(--link-hover);
+      }
     }
   }
 

@@ -232,7 +232,7 @@ a, a:focus, a:hover {
 #contact a {
   color: var(--head-foot-text);
 }
-.mouse-mode #contact a:hover {
+.mouse-mode #contact a:hover, .mouse-mode #contact a:hover i, .mouse-mode #contact a:hover i *, .mouse-mode #contact a:hover i::before, .mouse-mode #contact a:hover i::after {
   color: var(--link-hover);
 }
 #contact .fa-envelope {
