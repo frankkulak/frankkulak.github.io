@@ -344,12 +344,20 @@ a, a:focus, a:hover {
 }
 #experience .company-display [class^=col] h5.title {
   font-weight: normal;
-  font-style: italic;
   margin-top: 8px;
 }
 @media (max-width: 767px) {
-  #experience .company-display [class^=col]:last-child {
+  #experience .company-display .position-headline [class^=col]:last-child {
     text-align: left;
+  }
+  #experience .company-display .position-headline [class^=col]:last-child p {
+    margin-top: 4px;
+  }
+  #experience .company-display .company-headline {
+    margin-bottom: 8px;
+  }
+  #experience .company-display .company-headline [class^=col] {
+    text-align: center;
   }
 }
 #experience .company-display hr {

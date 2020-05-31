@@ -20,14 +20,26 @@
 
       h5.title {
         font-weight: normal;
-        font-style: italic;
+        //font-style: italic;
         margin-top: 8px;
       }
     }
 
     @media (max-width: 767px) {
-      [class^="col"]:last-child {
+      .position-headline [class^="col"]:last-child {
         text-align: left;
+
+        p {
+          margin-top: 4px;
+        }
+      }
+
+      .company-headline {
+        margin-bottom: 8px;
+
+        [class^="col"] {
+          text-align: center;
+        }
       }
     }
 
