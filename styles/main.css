@@ -492,7 +492,7 @@ nav ul > li > a.active {
   text-align: right;
   width: 100%;
 }
-#projects .project-card table td.timespan h6 {
+#projects .project-card table td.timespan h6, #projects .project-card table td.timespan h6 span {
   font-weight: normal;
 }
 #projects .project-card table .row {
