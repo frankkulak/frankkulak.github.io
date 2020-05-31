@@ -39,6 +39,10 @@
 
     ul {
       margin-top: 8px;
+
+      li {
+        color: var(--text);
+      }
     }
 
     &:first-child {

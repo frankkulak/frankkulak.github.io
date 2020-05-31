@@ -56,8 +56,11 @@
       }
 
       &.category {
-        font-style: italic;
         padding-right: 10px;
+
+        em {
+          color: var(--text);
+        }
       }
     }
   }
@@ -69,6 +72,7 @@
 
     li {
       display: inline;
+      color: var(--text);
 
       &:after {
         content: ", ";

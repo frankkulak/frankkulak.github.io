@@ -45,7 +45,7 @@
                     <p>{{school.degree}} <span class="grad-date">({{school.graduation}})</span></p>
                 </div>
                 <div class="col-md-2 btn-col">
-                    <div class="btn" @click="toggleDetails">{{ buttonText }}</div>
+                    <div class="btn" @click="toggleDetails">{{buttonText}}</div>
                 </div>
                 <transition name="details">
                     <div v-show="detailsShown" class="details">
@@ -55,7 +55,7 @@
                                     <h6>honors</h6>
                                 </td>
                                 <td class="gpa">
-                                    GPA: {{ school.gpa }}/4.0
+                                    <p>GPA: {{ school.gpa }}/4.0</p>
                                 </td>
                             </tr>
                             <tr>
@@ -70,7 +70,7 @@
                             </tr>
                             <tr v-for="subject in school.subjects" v-bind:key="subject.name">
                                 <td class="category">
-                                    {{ subject.name }}
+                                    <em>{{subject.name}}</em>
                                 </td>
                                 <td>
                                     <ul class="course-list">

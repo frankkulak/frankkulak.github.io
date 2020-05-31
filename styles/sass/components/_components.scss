@@ -4,10 +4,13 @@
 
   hr {
     margin-top: 6px;
-    //width: 70px;
     width: 80%;
     height: 2px;
     border-radius: 2px;
+  }
+
+  i, i *, i::before, i::after {
+    color: var(--header);
   }
 }
 
@@ -62,5 +65,12 @@
 
   :checked + label::before {
     content: '\1F324';
+  }
+
+  .theme-transition & label {
+    background-color: var(--toggle-bg);
+    opacity: 1;
+    cursor: none;
+    pointer-events: none;
   }
 }

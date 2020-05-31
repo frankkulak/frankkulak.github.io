@@ -63,7 +63,7 @@
         direction: rtl;
         padding-right: 5px;
 
-        i {
+        i, i *, i::before, i::after {
           @include mx($margin: $padding-sm / 2);
           margin-bottom: 0;
           font-size: 24px;

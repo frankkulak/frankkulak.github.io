@@ -41,3 +41,11 @@ html[data-theme='dark'] {
   --link-hover: #{$blue};
   --toggle-bg: #{$blue};
 }
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *:before,
+html.theme-transition *:after {
+  transition: all 1000ms !important; // make sure you keep this the same as js
+  transition-delay: 0ms !important;
+}

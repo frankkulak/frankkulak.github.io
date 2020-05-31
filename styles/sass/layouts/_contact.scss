@@ -2,6 +2,10 @@
   @include px($padding: $padding-lg);
   padding-bottom: $padding-sm;
 
+  h1, p, i, i *, i::before, i::after {
+    color: var(--head-foot-text);
+  }
+
   hr {
     background-color: var(--head-foot-hover);
   }

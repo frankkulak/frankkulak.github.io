@@ -6,8 +6,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: var(--header);
+  &, & span, & strong, & em {
+    font-weight: bold;
+    color: var(--header);
+  }
 }
 
 h1 {
@@ -32,4 +34,8 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+p, p em, p strong, p span {
+  color: var(--text);
 }

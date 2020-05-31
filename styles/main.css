@@ -44,6 +44,14 @@ html[data-theme=dark] {
   --toggle-bg: #5ab6fc;
 }
 
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *:before,
+html.theme-transition *:after {
+  transition: all 1000ms !important;
+  transition-delay: 0ms !important;
+}
+
 #projects .project-card-outline, #projects .project-buttons .btn.selected, #home h1, .mouse-mode .btn:hover {
   background-color: var(--bg);
   background-image: linear-gradient(45deg, #7e35e6 0%, #5ab6fc 100%);
@@ -65,7 +73,7 @@ body {
   color: var(--text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h1 span, h1 strong, h1 em, h2, h2 span, h2 strong, h2 em, h3, h3 span, h3 strong, h3 em, h4, h4 span, h4 strong, h4 em, h5, h5 span, h5 strong, h5 em, h6, h6 span, h6 strong, h6 em {
   font-weight: bold;
   color: var(--header);
 }
@@ -92,6 +100,10 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+p, p em, p strong, p span {
+  color: var(--text);
 }
 
 body {
@@ -135,6 +147,9 @@ a, a:focus, a:hover {
   width: 80%;
   height: 2px;
   border-radius: 2px;
+}
+.section-header i, .section-header i *, .section-header i::before, .section-header i::after {
+  color: var(--header);
 }
 
 .btn, .btn:focus, .btn:hover {
@@ -184,6 +199,12 @@ a, a:focus, a:hover {
 .theme-toggle :checked + label::before {
   content: "🌤";
 }
+.theme-transition .theme-toggle label {
+  background-color: var(--toggle-bg);
+  opacity: 1;
+  cursor: none;
+  pointer-events: none;
+}
 
 #about img {
   min-width: 45%;
@@ -195,6 +216,9 @@ a, a:focus, a:hover {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
+}
+#contact h1, #contact p, #contact i, #contact i *, #contact i::before, #contact i::after {
+  color: var(--head-foot-text);
 }
 #contact hr {
   background-color: var(--head-foot-hover);
@@ -281,8 +305,10 @@ a, a:focus, a:hover {
   text-align: right;
 }
 #education table td.category {
-  font-style: italic;
   padding-right: 10px;
+}
+#education table td.category em {
+  color: var(--text);
 }
 #education ul.course-list {
   padding: 0;
@@ -291,6 +317,7 @@ a, a:focus, a:hover {
 }
 #education ul.course-list li {
   display: inline;
+  color: var(--text);
 }
 #education ul.course-list li:after {
   content: ", ";
@@ -334,6 +361,9 @@ a, a:focus, a:hover {
 #experience .company-display ul {
   margin-top: 8px;
 }
+#experience .company-display ul li {
+  color: var(--text);
+}
 #experience .company-display:first-child {
   margin-top: 0;
 }
@@ -351,7 +381,6 @@ a, a:focus, a:hover {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--bg);
-  background-image: linear-gradient(45deg, var(--band-bg) 0%, var(--bg) 100%);
   height: 100vh;
   vertical-align: middle;
   display: table-cell;
@@ -463,14 +492,14 @@ nav ul > li > a.active {
   direction: rtl;
   padding-right: 5px;
 }
-#projects .project-card table .row i {
+#projects .project-card table .row i, #projects .project-card table .row i *, #projects .project-card table .row i::before, #projects .project-card table .row i::after {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 0;
   font-size: 24px;
   color: var(--text);
 }
-.mouse-mode #projects .project-card table .row i:hover {
+.mouse-mode #projects .project-card table .row i:hover, .mouse-mode #projects .project-card table .row i *:hover, .mouse-mode #projects .project-card table .row i::before:hover, .mouse-mode #projects .project-card table .row i::after:hover {
   color: var(--link-hover);
 }
 
