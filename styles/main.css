@@ -539,14 +539,17 @@ nav ul > li > a.active {
   direction: rtl;
   padding-right: 5px;
 }
-#projects .project-card table .row i, #projects .project-card table .row i *, #projects .project-card table .row i::before, #projects .project-card table .row i::after {
-  margin-left: 10px;
-  margin-right: 10px;
+#projects .project-card table .row a, #projects .project-card table .row i, #projects .project-card table .row i *, #projects .project-card table .row i::before, #projects .project-card table .row i::after {
+  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 0;
   font-size: 24px;
   color: var(--text);
 }
-.mouse-mode #projects .project-card table .row i:hover, .mouse-mode #projects .project-card table .row i *:hover, .mouse-mode #projects .project-card table .row i::before:hover, .mouse-mode #projects .project-card table .row i::after:hover {
+#projects .project-card table .row a {
+  color: var(--text);
+}
+.mouse-mode #projects .project-card table .row a:hover, .mouse-mode #projects .project-card table .row a:hover i, .mouse-mode #projects .project-card table .row a:hover i *, .mouse-mode #projects .project-card table .row a:hover i::before, .mouse-mode #projects .project-card table .row a:hover i::after {
   color: var(--link-hover);
 }
 

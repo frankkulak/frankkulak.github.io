@@ -63,14 +63,20 @@
         direction: rtl;
         padding-right: 5px;
 
-        i, i *, i::before, i::after {
-          @include mx($margin: $padding-sm / 2);
+        a, i, i *, i::before, i::after {
+          @include mx($margin: 5px);
           margin-bottom: 0;
           font-size: 24px;
           color: var(--text);
+        }
 
-          .mouse-mode &:hover {
-            color: var(--link-hover);
+        a {
+          color: var(--text);
+
+          .mouse-mode &:hover  {
+            &, i, i *, i::before, i::after {
+              color: var(--link-hover);
+            }
           }
         }
       }
