@@ -3,7 +3,8 @@ const Animate = (function () {
     const offset = navbar.height();
     const animationDuration = 500;
 
-    function scroll(id) {
+    function scroll(e, id) {
+        e.preventDefault();
         $("html, body").animate({
             scrollTop: $(id).offset().top - offset
         }, animationDuration);
