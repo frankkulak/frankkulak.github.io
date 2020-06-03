@@ -52,6 +52,38 @@ html.theme-transition *:after {
   transition-delay: 0ms !important;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #projects .project-card-outline, #projects .project-buttons .btn.selected, #home h1, .mouse-mode .btn:hover {
   background-color: var(--bg);
   background-image: linear-gradient(45deg, #7e35e6 0%, #5ab6fc 100%);
@@ -64,6 +96,13 @@ nav.navbar-default, section.head-foot {
 }
 nav.navbar-default h1, section.head-foot h1 {
   color: var(--head-foot-text);
+}
+
+#home .btn, #home h1, .theme-toggle {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 body {
@@ -396,9 +435,9 @@ a, a:focus, a:hover {
   text-align: center;
 }
 #home h1 {
-  background-color: var(--button);
   margin-left: 20px;
   margin-right: 20px;
+  background-color: var(--button);
   margin-bottom: 0;
   font-weight: normal;
   text-shadow: -2px 2px 3px var(--home-text-shadow);

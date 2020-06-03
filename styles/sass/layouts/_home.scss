@@ -8,9 +8,10 @@
   text-align: center;
 
   h1 {
-    background-color: var(--button);
+    @extend %fadein;
     @extend %default-gradient;
     @include mx($margin: $padding-sm);
+    background-color: var(--button);
     margin-bottom: 0;
     font-weight: normal;
     text-shadow: -2px 2px 3px var(--home-text-shadow);
@@ -24,6 +25,7 @@
   }
 
   .btn {
+    @extend %fadein;
     margin-top: $padding-lg;
   }
 }

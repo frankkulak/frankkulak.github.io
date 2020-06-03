@@ -1,4 +1,5 @@
 (function () {
+    // fixme try to move all this logic into animate.js
     const navbar = $("nav");
     const collapseElement = $(".navbar-collapse");
     const collapseDuration = 150; // from _navigation.scss
