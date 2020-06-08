@@ -1,10 +1,23 @@
+@mixin fadein-above($duration, $delay) {
+  animation: fadein-above $duration forwards $delay ease-out;
+}
+
+@keyframes fadein-above {
+  from {
+    transform: translateY(-12%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @mixin fadein($duration, $delay) {
   animation: fadein $duration forwards $delay ease-out;
 }
 
 @keyframes fadein {
   from {
-    transform: translateY(-12%);
     opacity: 0;
   }
   to {
