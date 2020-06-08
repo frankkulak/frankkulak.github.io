@@ -345,7 +345,6 @@ a, a:focus, a:hover {
   list-style-type: none;
 }
 #experience .company-display {
-  transition: all 0.5s;
   text-align: left;
 }
 #experience .company-display [class^=col] {
@@ -392,6 +391,20 @@ a, a:focus, a:hover {
 }
 #experience .company-display span.nowrap {
   white-space: nowrap;
+}
+#experience .companies-enter-active, #experience .companies-leave-active {
+  transition: all 1s;
+}
+#experience .companies-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+#experience .companies-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
+}
+#experience .companies-move {
+  transition: transform 1s;
 }
 #experience .btn {
   margin-top: 16px;

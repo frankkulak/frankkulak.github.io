@@ -1,28 +1,35 @@
 (function () {
     // constants
 
-    const showAllButtonText = {'show': 'show all jobs', 'hide': 'hide irrelevant jobs'};
+    const buttonText = {'show': 'show all jobs', 'hide': 'hide irrelevant jobs'};
 
     // components
 
     Vue.component('experience-content', {
         data: function () {
             return {
-                companies: Data.experience,
-                showAll: false,
-                buttonText: showAllButtonText.show
+                allCompanies: Data.experience,
+                relevantCompanies: Data.experience.filter(company => company.relevant),
+                showAll: false
+            }
+        },
+        computed: {
+            buttonText: function () {
+                return this.showAll ? buttonText.hide : buttonText.show;
+            },
+            companiesToShow: function () {
+                return this.showAll ? this.allCompanies : this.relevantCompanies;
             }
         },
         methods: {
             toggleShowAll: function () {
                 this.showAll = !this.showAll;
-                this.buttonText = this.showAll ? showAllButtonText.hide : showAllButtonText.show;
             }
         },
         template: `
             <div class="experience-content">
-                <transition-group name="company-display" tag="ul">
-                    <company-display v-for="company in companies"
+                <transition-group name="companies" tag="ul">
+                    <company-display v-for="company in companiesToShow"
                                      v-bind:company="company"
                                      v-bind:key="company.code"
                                      v-bind:showAll="showAll"></company-display>
@@ -34,13 +41,10 @@
     Vue.component('company-display', {
         props: ['company', 'showAll'],
         methods: {
-            dateSpanHTML: Util.formatDateSpanHTML,
-            show: function () {
-                return this.$props.showAll || this.$props.company.relevant;
-            }
+            dateSpanHTML: Util.formatDateSpanHTML
         },
         template: `
-            <li v-show="show()" class="company-display">
+            <li class="company-display">
                 <hr>
                 <div class="row company-headline">
                     <div class="col-12 col-md-6"><h5>{{company.name}}</h5></div>
