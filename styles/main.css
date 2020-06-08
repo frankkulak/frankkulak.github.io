@@ -335,7 +335,17 @@ a, a:focus, a:hover {
   content: "";
 }
 
+#experience h5, #experience p {
+  margin: 0;
+  padding: 0;
+}
+#experience .experience-content > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 #experience .company-display {
+  transition: all 0.5s;
   text-align: left;
 }
 #experience .company-display [class^=col] {
@@ -344,16 +354,11 @@ a, a:focus, a:hover {
 #experience .company-display [class^=col]:last-child {
   text-align: right;
 }
-#experience .company-display [class^=col]:last-child p {
-  margin-top: 8px;
-  margin-bottom: 0;
-}
-#experience .company-display [class^=col] h5 {
-  margin-bottom: 0;
-}
 #experience .company-display [class^=col] h5.title {
   font-weight: normal;
-  margin-top: 8px;
+}
+#experience .company-display .position-details {
+  margin-top: 16px;
 }
 @media (max-width: 767px) {
   #experience .company-display .position-headline [class^=col]:last-child {
@@ -362,10 +367,7 @@ a, a:focus, a:hover {
   #experience .company-display .position-headline [class^=col]:last-child p {
     margin-top: 4px;
   }
-  #experience .company-display .company-headline {
-    margin-bottom: 8px;
-  }
-  #experience .company-display .company-headline [class^=col] {
+  #experience .company-display .company-headline > [class^=col] {
     text-align: center;
   }
 }
@@ -375,10 +377,11 @@ a, a:focus, a:hover {
   width: 80%;
   opacity: 0.5;
 }
-#experience .company-display ul {
+#experience .company-display ul.bullets {
+  list-style-type: disc;
   margin-top: 8px;
 }
-#experience .company-display ul li {
+#experience .company-display ul.bullets li {
   color: var(--text);
 }
 #experience .company-display:first-child {

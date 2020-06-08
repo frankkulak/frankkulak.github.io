@@ -1,5 +1,17 @@
 #experience {
+  h5, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .experience-content > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
   .company-display {
+    transition: all 0.5s;
     text-align: left;
 
     [class^="col"] {
@@ -7,22 +19,15 @@
 
       &:last-child {
         text-align: right;
-
-        p {
-          margin-top: 8px;
-          margin-bottom: 0;
-        }
-      }
-
-      h5 {
-        margin-bottom: 0;
       }
 
       h5.title {
         font-weight: normal;
-        //font-style: italic;
-        margin-top: 8px;
       }
+    }
+
+    .position-details {
+      margin-top: 16px;
     }
 
     @media (max-width: 767px) {
@@ -34,12 +39,8 @@
         }
       }
 
-      .company-headline {
-        margin-bottom: 8px;
-
-        [class^="col"] {
-          text-align: center;
-        }
+      .company-headline > [class^="col"] {
+        text-align: center;
       }
     }
 
@@ -49,7 +50,8 @@
       opacity: 0.5;
     }
 
-    ul {
+    ul.bullets {
+      list-style-type: disc;
       margin-top: 8px;
 
       li {
@@ -69,6 +71,25 @@
       white-space: nowrap;
     }
   }
+
+  //.company-display-enter, .company-display-leave-to {
+  //  opacity: 0;
+  //  transform: scale(0);
+  //}
+  //
+  //.company-display-enter-to {
+  //  opacity: 1;
+  //  transform: scale(1);
+  //}
+  //
+  //.company-display-leave-active {
+  //  /*position: absolute;*/
+  //}
+  //
+  //.company-display-move {
+  //  opacity: 1;
+  //  transition: all 0.5s;
+  //}
 
   .btn {
     margin-top: 16px;

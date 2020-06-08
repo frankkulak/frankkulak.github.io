@@ -21,10 +21,12 @@
         },
         template: `
             <div class="experience-content">
-                <company-display v-for="company in companies"
-                                 v-bind:company="company"
-                                 v-bind:key="company.code"
-                                 v-bind:showAll="showAll"></company-display>
+                <transition-group name="company-display" tag="ul">
+                    <company-display v-for="company in companies"
+                                     v-bind:company="company"
+                                     v-bind:key="company.code"
+                                     v-bind:showAll="showAll"></company-display>
+                </transition-group>
                 <div class="btn" @click="toggleShowAll">{{buttonText}}</div>
             </div>`
     });
@@ -38,21 +40,21 @@
             }
         },
         template: `
-            <div v-show="show()" class="company-display">
+            <li v-show="show()" class="company-display">
                 <hr>
                 <div class="row company-headline">
                     <div class="col-12 col-md-6"><h5>{{company.name}}</h5></div>
                     <div class="col-12 col-md-6"><p>{{company.location}}</p></div>
                 </div>
-                <div v-for="position in company.positions" v-bind:key="position.title">
+                <div v-for="position in company.positions" v-bind:key="position.title" class="position-details">
                     <div class="row position-headline">
                         <div class="col-12 col-md-6"><h5 class="title">{{position.title}}</h5></div>
                         <div class="col-12 col-md-6"><p v-html="dateSpanHTML(position)"></p></div>
                     </div>
-                    <ul v-show="position.description.length !== 0">
+                    <ul v-show="position.description.length !== 0" class="bullets">
                         <li v-for="bullet in position.description" v-bind:key="bullet">{{bullet}}</li>
                     </ul>
                 </div>
-            </div>`
+            </li>`
     });
 })();
