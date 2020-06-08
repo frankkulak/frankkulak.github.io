@@ -54,37 +54,14 @@ html.theme-transition *:after {
 
 @keyframes fadein {
   from {
+    transform: translateY(-12%);
     opacity: 0;
   }
   to {
     opacity: 1;
   }
 }
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#projects .project-card-outline, #projects .project-buttons .btn.selected, #home .home-content h1, .mouse-mode .btn:hover {
+#projects .project-card-outline, #projects .project-buttons .btn.selected, #home .home-content .home-text h1, .mouse-mode .btn:hover {
   background-color: var(--bg);
   background-image: linear-gradient(45deg, #7e35e6 0%, #5ab6fc 100%);
 }
@@ -96,13 +73,6 @@ nav.navbar-default, section.head-foot {
 }
 nav.navbar-default h1, section.head-foot h1 {
   color: var(--head-foot-text);
-}
-
-#home .home-content, .theme-toggle {
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
 }
 
 body {
@@ -456,7 +426,11 @@ a, a:focus, a:hover {
   height: 15vh;
   width: auto;
 }
-#home .home-content h1 {
+#home .home-content .home-text {
+  animation: fadein 1s forwards 250ms ease-out;
+  opacity: 0;
+}
+#home .home-content .home-text h1 {
   margin-left: 20px;
   margin-right: 20px;
   background-color: var(--button);
@@ -466,11 +440,11 @@ a, a:focus, a:hover {
   -webkit-background-clip: text;
   font-size: 6vh;
 }
-#home .home-content h1 strong {
+#home .home-content .home-text h1 strong {
   white-space: nowrap;
   -webkit-text-fill-color: transparent;
 }
-#home .home-content .btn {
+#home .home-content .home-text .btn {
   margin-top: 50px;
 }
 

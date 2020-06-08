@@ -1,0 +1,13 @@
+@mixin fadein($duration, $delay) {
+  animation: fadein $duration forwards $delay ease-out;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-12%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

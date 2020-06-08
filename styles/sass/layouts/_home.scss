@@ -8,8 +8,6 @@
   text-align: center;
 
   .home-content {
-    @extend %fadein;
-
     img.decal {
       position: absolute;
       opacity: 0.08;
@@ -36,24 +34,29 @@
       }
     }
 
-    h1 {
-      @extend %default-gradient;
-      @include mx($margin: $padding-sm);
-      background-color: var(--button);
-      margin-bottom: 0;
-      font-weight: normal;
-      text-shadow: -2px 2px 3px var(--home-text-shadow);
-      -webkit-background-clip: text;
-      font-size: 6vh;
+    .home-text {
+      @include fadein($duration: 1s, $delay: 250ms);
+      opacity: 0;
 
-      strong {
-        white-space: nowrap;
-        -webkit-text-fill-color: transparent;
+      h1 {
+        @extend %default-gradient;
+        @include mx($margin: $padding-sm);
+        background-color: var(--button);
+        margin-bottom: 0;
+        font-weight: normal;
+        text-shadow: -2px 2px 3px var(--home-text-shadow);
+        -webkit-background-clip: text;
+        font-size: 6vh;
+
+        strong {
+          white-space: nowrap;
+          -webkit-text-fill-color: transparent;
+        }
       }
-    }
 
-    .btn {
-      margin-top: $padding-lg;
+      .btn {
+        margin-top: $padding-lg;
+      }
     }
   }
 }

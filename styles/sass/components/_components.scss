@@ -31,7 +31,6 @@
 }
 
 .theme-toggle {
-  @extend %fadein;
   z-index: 1020;
   position: fixed;
   right: 20px;
