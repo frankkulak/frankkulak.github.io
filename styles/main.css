@@ -541,6 +541,12 @@ nav ul > li > a.active {
   border-radius: 20px;
   padding: 20px;
 }
+#projects .project-card a {
+  color: var(--text);
+}
+.mouse-mode #projects .project-card a:hover {
+  color: var(--link-hover);
+}
 #projects .project-card table {
   text-align: left;
 }

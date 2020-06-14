@@ -53,7 +53,7 @@
                             <td class="timespan"><h6 v-html="dateSpanHTML()"></h6></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><p>{{project.description}}</p></td>
+                            <td colspan="2"><p v-html="project.description"></p></td>
                         </tr>
                         <tr>
                             <td colspan="2">

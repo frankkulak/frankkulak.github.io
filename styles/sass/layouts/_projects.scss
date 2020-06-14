@@ -37,6 +37,14 @@
     border-radius: $project-card-radius;
     padding: $padding-sm;
 
+    a {
+      color: var(--text);
+
+      .mouse-mode &:hover  {
+        color: var(--link-hover);
+      }
+    }
+
     table {
       text-align: left;
 

@@ -325,6 +325,7 @@ const Data = (function () {
                 projects: [
                     {
                         name: 'frankkulak.com',
+                        id: 'frankkulak.com',
                         start: new Date(2019, month(10)), // Oct 2019
                         end: null, // Present
                         description: 'This is the website you are currently viewing! It provides a summary of my education, experience, and projects. I built it with the help of Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
@@ -343,6 +344,7 @@ const Data = (function () {
                 projects: [
                     {
                         name: 'Block Dude',
+                        id: 'blockdude-java',
                         start: new Date(2019, month(4)), // Apr 2019
                         end: new Date(2019, month(12)), // Dec 2019
                         description: 'Block Dude is a game originally created for the TI-84 calculator. It involves a character that picks blocks up and puts them down in order to reach the exit. This project is a simplistic re-creation of it in Java, and it was done for my own practice with the MVC design pattern.',
@@ -356,6 +358,7 @@ const Data = (function () {
                     },
                     {
                         name: 'Blocky',
+                        id: 'blocky-java',
                         start: new Date(2019, month(4)), // Apr 2019
                         end: new Date(2019, month(5)), // May 2019
                         description: 'Blocky is an original puzzle game in which the player swipes a block through obstacles to escape the board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
@@ -369,6 +372,19 @@ const Data = (function () {
                     }
                 ]
             },
+            {
+                title: 'mods',
+                projects: [
+                    {
+                        name: '#JusticeForCowplants',
+                        id: 'jfcp-ts4',
+                        start: new Date(2020, month(6)), // June 2020
+                        end: null, // Present
+                        description: `This is a mod for The Sims 4 that allows you to give cowplants a custom name. It was inspired by Kayla Sims' videos on YouTube [<a href="https://youtu.be/SD8mn4pR2KE">video 1</a>] [<a href="https://youtu.be/Bpb0BhJ4Bng">video 2</a>].`,
+                        links: []
+                    },
+                ]
+            }
         ]
     };
 })();
