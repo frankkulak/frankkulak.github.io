@@ -380,8 +380,14 @@ const Data = (function () {
                         id: 'jfcp-ts4',
                         start: new Date(2020, month(6)), // June 2020
                         end: null, // Present
-                        description: `This is a mod for The Sims 4 that allows you to give cowplants a custom name. It was inspired by Kayla Sims' videos on YouTube [<a href="https://youtu.be/SD8mn4pR2KE">video 1</a>] [<a href="https://youtu.be/Bpb0BhJ4Bng">video 2</a>].`,
-                        links: []
+                        description: `This is a mod for The Sims 4 that allows you to give a custom name to a cowplant. It was inspired by Kayla Sims' videos on YouTube [<a href="https://youtu.be/SD8mn4pR2KE">video 1</a>] [<a href="https://youtu.be/Bpb0BhJ4Bng">video 2</a>].`,
+                        links: [
+                            {
+                                icon: '<i class="fas fa-globe"></i>',
+                                text: 'view on web',
+                                url: 'https://mods.frankkulak.com/ts4/justiceforcowplants'
+                            }
+                        ]
                     },
                 ]
             }
