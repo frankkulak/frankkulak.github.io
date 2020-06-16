@@ -1,5 +1,17 @@
 const Data = (function () {
+    const links = {
+        github: {
+            text: 'view on GitHub',
+            icon: '<i class="fab fa-github"></i>'
+        },
+        web: {
+            text: 'view on web',
+            icon: '<i class="fas fa-globe"></i>'
+        }
+    };
+
     const month = index => index - 1; // just to make month indices more readable
+
     return {
         education: [
             {
@@ -153,8 +165,9 @@ const Data = (function () {
                     {
                         title: 'IT Engineer Co-op',
                         description: [
-                            'Developed front end of T.J.Maxx and HomeGoods mobile applications with Xamarin.Forms, HTML, CSS, and JavaScript using Bootstrap and jQuery',
-                            'Collaborated with other developers using Agile to deliver critical features and bug fixes',
+                            'Developed front end of T.J.Maxx and HomeGoods mobile apps with C#, Xamarin.Forms, and .NET',
+                            'Constructed dynamic web pages with HTML, CSS, JavaScript, Bootstrap, and jQuery for use in mobile apps',
+                            'Collaborated with other developers using Agile to deliver critical bug fixes and features',
                             'Utilized release-branching strategy to manage project versions with Git',
                             'Maintained existing codebase built with MVVM architecture'
                         ],
@@ -283,7 +296,17 @@ const Data = (function () {
                     },
                     {
                         title: 'Native iOS',
-                        description: 'Swift, Xcode',
+                        description: 'Swift, UIKit, Xcode',
+                        rating: 2
+                    },
+                ]
+            },
+            {
+                title: 'game modding',
+                skills: [
+                    {
+                        title: 'The Sims 4',
+                        description: 'XML, Python, Sims 4 Studio, PyCharm',
                         rating: 2
                     },
                 ]
@@ -308,7 +331,7 @@ const Data = (function () {
                     },
                     {
                         title: 'C/C++',
-                        description: 'C, C++, CLion, Visual Studio Code',
+                        description: 'C, C++, CLion',
                         rating: 1
                     },
                     {
@@ -328,12 +351,31 @@ const Data = (function () {
                         id: 'frankkulak.com',
                         start: new Date(2019, month(10)), // Oct 2019
                         end: null, // Present
-                        description: 'This is the website you are currently viewing! It provides a summary of my education, experience, and projects. I built it with the help of Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
+                        description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. I built it with the help of Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
                         links: [
                             {
-                                icon: '<i class="fab fa-github"></i>',
-                                text: 'view on GitHub',
+                                icon: links.github.icon,
+                                text: links.github.text,
                                 url: 'https://github.com/frankkulak/frankkulak.github.io'
+                            }
+                        ]
+                    },
+                    {
+                        name: 'mods.frankkulak.com',
+                        id: 'mods.frankkulak.com',
+                        start: new Date(2020, month(6)), // June 2020
+                        end: null, // Present
+                        description: 'This website showcases the mods I create for The Sims 4, as well as links to download them. It is currently published, but still undergoing development.',
+                        links: [
+                            {
+                                icon: links.github.icon,
+                                text: links.github.text,
+                                url: 'https://github.com/frankkulak/mods-web'
+                            },
+                            {
+                                icon: links.web.icon,
+                                text: links.web.text,
+                                url: 'https://mods.frankkulak.com'
                             }
                         ]
                     }
@@ -350,8 +392,8 @@ const Data = (function () {
                         description: 'Block Dude is a game originally created for the TI-84 calculator. It involves a character that picks blocks up and puts them down in order to reach the exit. This project is a simplistic re-creation of it in Java, and it was done for my own practice with the MVC design pattern.',
                         links: [
                             {
-                                icon: '<i class="fab fa-github"></i>',
-                                text: 'view on GitHub',
+                                icon: links.github.icon,
+                                text: links.github.text,
                                 url: 'https://github.com/frankkulak/blockdude-java'
                             }
                         ]
@@ -364,8 +406,8 @@ const Data = (function () {
                         description: 'Blocky is an original puzzle game in which the player swipes a block through obstacles to escape the board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
                         links: [
                             {
-                                icon: '<i class="fab fa-github"></i>',
-                                text: 'view on GitHub',
+                                icon: links.github.icon,
+                                text: links.github.text,
                                 url: 'https://github.com/frankkulak/blocky-java'
                             }
                         ]
@@ -383,8 +425,8 @@ const Data = (function () {
                         description: `This is a mod for The Sims 4 that allows you to give a custom name to a cowplant. It was inspired by Kayla Sims' videos on YouTube [<a href="https://youtu.be/SD8mn4pR2KE">video 1</a>] [<a href="https://youtu.be/Bpb0BhJ4Bng">video 2</a>].`,
                         links: [
                             {
-                                icon: '<i class="fas fa-globe"></i>',
-                                text: 'view on web',
+                                icon: links.web.icon,
+                                text: links.web.text,
                                 url: 'https://mods.frankkulak.com/ts4/justiceforcowplants'
                             }
                         ]
