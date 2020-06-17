@@ -365,7 +365,7 @@ const Data = (function () {
                         id: 'mods.frankkulak.com',
                         start: new Date(2020, month(6)), // June 2020
                         end: null, // Present
-                        description: 'This website showcases the mods I create for The Sims 4, as well as links to download them. It is currently published, but still undergoing development.',
+                        description: 'This website showcases the mods I create for The Sims 4, as well as links to download them.',
                         links: [
                             {
                                 icon: links.github.icon,
@@ -427,7 +427,7 @@ const Data = (function () {
                             {
                                 icon: links.web.icon,
                                 text: links.web.text,
-                                url: 'https://mods.frankkulak.com/ts4/justiceforcowplants'
+                                url: 'https://mods.frankkulak.com/#/ts4/justiceforcowplants'
                             }
                         ]
                     },
