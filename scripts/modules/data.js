@@ -307,7 +307,7 @@ const Data = (function () {
                     {
                         title: 'The Sims 4',
                         description: 'XML, Python, Sims 4 Studio, PyCharm',
-                        rating: 2
+                        rating: 1
                     },
                 ]
             },
