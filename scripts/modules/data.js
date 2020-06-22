@@ -138,7 +138,7 @@ const Data = (function () {
                                 code: 'ENGW',
                                 number: '3302',
                                 title: 'Advanced Writing in the Technical Professions',
-                                'ongoing': true
+                                'ongoing': false
                             },
                             {
                                 code: 'PHIL',
