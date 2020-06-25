@@ -351,7 +351,7 @@ const Data = (function () {
                         id: 'frankkulak.com',
                         start: new Date(2019, month(10)), // Oct 2019
                         end: null, // Present
-                        description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. I built it with the help of Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
+                        description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. I built it with Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
                         links: [
                             {
                                 icon: links.github.icon,
@@ -365,7 +365,7 @@ const Data = (function () {
                         id: 'mods.frankkulak.com',
                         start: new Date(2020, month(6)), // June 2020
                         end: null, // Present
-                        description: 'This website showcases the mods I create for The Sims 4, as well as links to download them.',
+                        description: 'This website showcases the mods I create for The Sims 4, as well as links to download them. It is built with Vue.js, Bootstrap, and Sass.',
                         links: [
                             {
                                 icon: links.github.icon,
