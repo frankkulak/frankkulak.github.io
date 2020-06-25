@@ -351,7 +351,7 @@ const Data = (function () {
                         id: 'frankkulak.com',
                         start: new Date(2019, month(10)), // Oct 2019
                         end: null, // Present
-                        description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. I built it with Vue.js, jQuery, Bootstrap, and Sass. I actively maintain it and make updates often.',
+                        description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. I built it with Vue.js, jQuery, Bootstrap, and Sass.',
                         links: [
                             {
                                 icon: links.github.icon,
