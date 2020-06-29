@@ -78,6 +78,10 @@
 
                 a:hover {
                     color: var(--accent-color);
+
+                    i, i *, i::before, i::after {
+                        color: var(--accent-color);
+                    }
                 }
 
                 i, i *, i::before, i::after {
