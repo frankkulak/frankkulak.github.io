@@ -15,7 +15,7 @@ git add -A
 git commit -m 'Deploy.'
 
 # overwrite the gh-pages branch
-git push -f git@github.com:frankkulak/frankkulak.github.io.git stage:master
+git push -f git@github.com:frankkulak/frankkulak.github.io.git master
 
 # navigate back
 cd -
