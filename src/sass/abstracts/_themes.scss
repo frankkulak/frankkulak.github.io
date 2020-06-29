@@ -1,0 +1,31 @@
+html {
+  --bg-color: #{$off-white};
+  --bg-band-color: #{transparentize($dark-navy, 0.97)};
+  --h-color: #{$gray-60};
+  --h-shadow-color: #{transparentize($gray-32, 0.9)};
+  --text-color: #{$gray-135};
+  --primary-color: #{$blue};
+  --accent-color: #{$dark-blue};
+  --detail-color: #{$blue};
+  --detail-color-trans: #{transparentize($blue, 0.6)};
+}
+
+html[data-theme='dark'] {
+  --bg-color: #{$dark-navy};
+  --bg-band-color: #{transparentize($blue, 0.97)};
+  --h-color: #{$off-white};
+  --h-shadow-color: #{transparentize($gray-135, 0.9)};
+  --text-color: #{$gray-200};
+  --primary-color: #{$dark-blue};
+  --accent-color: #{$blue};
+  //--detail-color
+  //--detail-color-trans
+}
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *:before,
+html.theme-transition *:after {
+  transition: all 1000ms !important; // make sure to keep this same as js
+  transition-delay: 0ms !important;
+}

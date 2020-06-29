@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+// ----------------------------------------
+// variables
+
+// colors
+$light-gray: rgb(237, 237, 237);
+$light-cool-gray: rgb(240, 243, 250);
+$cool-gray: rgb(72, 83, 95);
+$dark-gray: rgb(47, 47, 47);
+$dark-cool-gray: rgb(57, 60, 67);
+$purple: rgb(100, 95, 215);
+$pink: rgb(255, 195, 255);
+$blue: rgb(145, 200, 225);
+
+// other
+$plain-font-size: 14px;
+$nav-bar-font-size: 16px;
+$card-corner-radius: 5px;
+
+// ----------------------------------------
+// themes
+
+html {
+  --bg: #{white};
+  --bg-nav: #{$dark-gray};
+  --bg-card: #{$light-cool-gray};
+  --bg-button: #{$dark-gray};
+  --color-text: #{$dark-gray};
+  --color-nav-text: #{white};
+  --color-hr: #{$light-gray};
+  --color-link: #{$purple};
+  --color-hover: #{$blue};
+  --color-button-text: #{$light-gray};
+}
+
+html[data-theme='dark'] {
+  --bg: #{$dark-gray};
+  --bg-nav: #{$dark-cool-gray};
+  --bg-card: #{$dark-cool-gray};
+  --bg-button: #{white};
+  --color-text: #{$light-cool-gray};
+  --color-nav-text: #{white};
+  --color-hr: #{$cool-gray};
+  --color-link: #{$pink};
+  --color-hover: #{$blue};
+  --color-button-text: #{$dark-gray};
+}
+
+// ----------------------------------------
+// styles
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: $plain-font-size;
+  background-color: var(--bg);
+  color: var(--color-text);
+}
+
+.nav-bg {
+  background-color: var(--bg-nav);
+}
+
+nav {
+  font-size: $nav-bar-font-size;
+
+  .logo {
+    height: 35px;
+    width: auto;
+  }
+
+  a {
+    color: var(--color-nav-text);
+  }
+
+  button {
+    background-color: var(--color-nav-text);
+  }
+
+  ul.socials {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+
+    img {
+      height: 22px;
+      width: auto;
+    }
+
+    li {
+      display: inline;
+    }
+  }
+}
+
+.side-card {
+  background-color: var(--bg-card);
+  text-align: center;
+  border-radius: $card-corner-radius;
+
+  img {
+    width: 128px;
+    height: auto;
+  }
+}
+
+.content-accordion {
+  margin: 50px auto;
+
+  .section-header {
+    font-weight: normal;
+  }
+
+  .card {
+    border: none;
+    background-color: var(--bg);
+    margin-bottom: 5px;
+  }
+
+  .card-header {
+    border: none;
+    background-color: var(--bg-card);
+    cursor: pointer;
+  }
+
+  .fa-stack {
+    font-size: 18px;
+  }
+
+  .accordion-btn, .accordion-btn:focus {
+    font-size: 18px;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .accordion-btn:hover {
+    text-decoration: none;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+
+  table td {
+    padding-bottom: 15px;
+    vertical-align: top;
+  }
+
+  table td.category {
+    font-style: italic;
+    padding-right: 10px;
+    min-width: 95px;
+  }
+}
+
+.projects-content {
+  .section-header {
+    font-weight: normal;
+  }
+
+  .project-card {
+    background-color: var(--bg-card);
+    border-radius: $card-corner-radius;
+    padding: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+    .status {
+      font-weight: normal;
+    }
+
+    a.btn, a.btn:focus, .touch-mode & a.btn:hover {
+      border-color: var(--bg-button);
+      color: var(--bg-button);
+    }
+
+    .mouse-mode & a.btn:hover {
+      background-color: var(--bg-button);
+      color: var(--color-button-text);
+    }
+  }
+}
+
+.theme-selector {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  input {
+    display: none;
+  }
+
+  label, label:focus, .touch-mode & label:hover {
+    font-size: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+    border: solid;
+    border-width: thin;
+    border-color: var(--bg-button);
+    border-radius: 20px;
+    background-color: var(--bg);
+    opacity: 0.65;
+    cursor: pointer;
+  }
+
+  .mouse-mode & label:hover {
+    background-color: var(--bg-button);
+    opacity: 1;
+  }
+
+  label::before {
+    content: '\1F319';
+  }
+
+  :checked + label::before {
+    content: '\1F324';
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+a, a:focus, .touch-mode a:hover {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.mouse-mode a:hover {
+  color: var(--color-hover);
+  text-decoration: none;
+}
+
+hr {
+  background-color: var(--color-hr);
+}
+
+// ----------------------------------------
+// helper classes
+
+.fill-width {
+  width: 100%;
+}
