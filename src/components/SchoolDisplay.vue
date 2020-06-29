@@ -5,7 +5,7 @@
             <p>{{ school.degree }} <span class="text-nowrap">({{ school.graduation }})</span></p>
         </b-col>
         <b-col cols="1" class="my-auto btn-col">
-            <div class="btn" @click="toggleDetails"><i :class="buttonIconClass"></i></div>
+            <div class="btn" @click="toggleDetails"><p><i :class="buttonIconClass"></i></p></div>
         </b-col>
         <transition name="details">
             <b-col cols="12" md="10" lg="8" v-show="detailsShown" class="details">
@@ -73,24 +73,28 @@
 
             .btn, .btn:focus, .btn:hover {
                 background-color: transparent;
-                color: $blue;
+                color: var(--detail-color);
                 border: none;
                 border-radius: 0;
                 padding: 0;
 
                 i, i *, i::before, i::after {
+                    color: var(--detail-color);
                     font-size: 1.25em;
                 }
             }
 
             .btn:hover {
-                @extend %default-gradient;
-                -webkit-background-clip: text;
+                // comments are for temp fix for safari
+                //@extend %default-gradient;
+                //-webkit-background-clip: text;
+                background-image: none; // fixme : delete this
+                background-color: transparent; // fixme : delete this
                 cursor: pointer;
 
                 i, i *, i::before, i::after {
                     white-space: nowrap;
-                    -webkit-text-fill-color: transparent;
+                    //-webkit-text-fill-color: transparent;
                 }
             }
         }
