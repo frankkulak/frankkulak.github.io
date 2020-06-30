@@ -29,6 +29,7 @@
         h4.category {
             color: var(--detail-color);
             margin-bottom: $padding-md;
+            text-shadow: -1px 1px 3px var(--h-shadow-color);
         }
     }
 </style>
