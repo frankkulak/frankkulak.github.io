@@ -182,9 +182,9 @@ export const ExperienceData = [
             {
                 title: 'Peer Tutor',
                 description: [
-                    'Tutor linguistics and psychology courses in one-on-one sessions',
-                    'Conduct review sessions of up to 50 students for exam preparation',
-                    'Provide guidance and advice for improving study habits'
+                    'Tutored linguistics and psychology courses in one-on-one sessions',
+                    'Conducted review sessions of up to 50 students for exam preparation',
+                    'Provided guidance and advice for improving study habits'
                 ],
                 dates: [
                     {
