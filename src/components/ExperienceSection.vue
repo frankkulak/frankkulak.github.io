@@ -7,14 +7,13 @@
                              :company="company"
                              :showAll="showAll"></company-display>
         </transition-group>
-        <!-- commented out for now, maybe just get rid of irrelevant jobs all together -->
-         <div class="btn" @click="toggleShowAll">{{ buttonText }}</div>
+        <div class="btn" @click="toggleShowAll">{{ buttonText }}</div>
     </section>
 </template>
 
 <script>
-    import SectionHeader from "@/components/SectionHeader";
-    import CompanyDisplay from "@/components/CompanyDisplay";
+    import SectionHeader from "./SectionHeader";
+    import CompanyDisplay from "./CompanyDisplay";
     import {ExperienceData} from "../modules/Data.js"
 
     const buttonText = {'show': 'show all jobs', 'hide': 'hide irrelevant jobs'};

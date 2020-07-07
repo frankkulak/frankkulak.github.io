@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import SectionHeader from "@/components/SectionHeader";
-    import SchoolDisplay from "@/components/SchoolDisplay";
+    import SectionHeader from "./SectionHeader";
+    import SchoolDisplay from "./SchoolDisplay";
     import {EducationData} from '../modules/Data.js'
 
     export default {
@@ -23,6 +23,6 @@
 
 <style lang="scss">
     section#education {
-        // todo
+        // intentionally blank
     }
 </style>

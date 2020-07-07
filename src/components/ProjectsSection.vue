@@ -19,8 +19,8 @@
 </template>
 
 <script>
-    import SectionHeader from "@/components/SectionHeader";
-    import ProjectCard from "@/components/ProjectCard";
+    import SectionHeader from "./SectionHeader";
+    import ProjectCard from "./ProjectCard";
     import {ProjectsData} from "../modules/Data.js";
 
     export default {

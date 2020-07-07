@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    import SkillRanking from "@/components/SkillRanking";
+    import SkillRanking from "./SkillRanking";
 
     export default {
         name: "SkillCategory",

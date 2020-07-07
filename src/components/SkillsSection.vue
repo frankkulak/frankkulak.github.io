@@ -8,8 +8,8 @@
 </template>
 
 <script>
-    import SectionHeader from "@/components/SectionHeader";
-    import SkillCategory from "@/components/SkillCategory";
+    import SectionHeader from "./SectionHeader";
+    import SkillCategory from "./SkillCategory";
     import {SkillsData} from "../modules/Data.js";
 
     export default {
@@ -25,6 +25,6 @@
 
 <style lang="scss">
     section#skills {
-        // todo
+        // intentionally blank
     }
 </style>

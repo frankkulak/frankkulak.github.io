@@ -164,10 +164,10 @@ export const ExperienceData = [
                         start: new Date(2019, month(7)), // Jul 2019
                         end: new Date(2019, month(12)) // Dec 2019
                     },
-                    // {
-                    //     start: new Date(2020, month(7)), // Jul 2020
-                    //     end: null // Present
-                    // }
+                    {
+                        start: new Date(2020, month(7)), // Jul 2020
+                        end: null // Present
+                    }
                 ],
                 seasonal: false
             }
@@ -316,7 +316,7 @@ export const SkillsData = [
             {
                 title: 'The Sims 4',
                 description: 'XML, Python, Sims 4 Studio',
-                rating: 2
+                rating: 1
             },
         ]
     },

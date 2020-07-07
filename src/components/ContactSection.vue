@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import SectionHeader from "@/components/SectionHeader";
+    import SectionHeader from "./SectionHeader";
 
     export default {
         name: "ContactSection",
