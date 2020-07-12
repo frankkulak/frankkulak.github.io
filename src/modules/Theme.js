@@ -12,7 +12,7 @@ export default (function () {
         window.setTimeout(() => {
             docElement.classList.remove('theme-transition');
             themeFrozen = false;
-        }, 1000); // make sure you keep this the same as css
+        }, 1000); // keep in sync with theme-transition class in _themes.scss
     };
 
     function getTheme() {

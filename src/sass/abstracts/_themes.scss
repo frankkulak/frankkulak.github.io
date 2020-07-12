@@ -26,6 +26,6 @@ html.theme-transition,
 html.theme-transition *,
 html.theme-transition *:before,
 html.theme-transition *:after {
-  transition: all 1000ms !important; // make sure to keep this same as js
+  transition: all 1000ms !important; // keep in sync with transition timeout in Theme.js
   transition-delay: 0ms !important;
 }
