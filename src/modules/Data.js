@@ -153,11 +153,11 @@ export const ExperienceData = [
             {
                 title: 'IT Engineer Co-op',
                 description: [
-                    'Developed front end of T.J.Maxx and HomeGoods mobile apps with C#, Xamarin.Forms, and .NET',
-                    'Constructed four dynamic web pages with HTML, CSS, JavaScript, Bootstrap, and jQuery for use in mobile apps',
-                    'Collaborated with other developers using Agile to deliver critical bug fixes and features',
-                    'Utilized release-branching strategy to manage project versions with Git',
-                    'Maintained existing codebase built with MVVM architecture'
+                    'Develop front end of T.J.Maxx and HomeGoods mobile apps with C#, Xamarin.Forms, and .NET',
+                    'Construct dynamic web pages with HTML, CSS, JavaScript, Bootstrap, and jQuery for use in mobile apps',
+                    'Collaborate with other developers using Agile to deliver critical bug fixes and features',
+                    'Utilize release-branching strategy to manage project versions with Git',
+                    'Maintain existing codebase built with MVVM architecture'
                 ],
                 dates: [
                     {
