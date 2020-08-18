@@ -153,11 +153,10 @@ export const ExperienceData = [
             {
                 title: 'IT Engineer Co-op',
                 description: [
-                    'Develop front end of T.J.Maxx and HomeGoods mobile apps with C#, Xamarin.Forms, and .NET',
-                    'Construct dynamic web pages with HTML, CSS, JavaScript, Bootstrap, and jQuery for use in mobile apps',
+                    'Develop front end of T.J.Maxx, HomeGoods, and Marshalls mobile apps with Xamarin.Forms',
+                    'Construct dynamic web pages with HTML, CSS, JavaScript, Bootstrap, and jQuery',
                     'Collaborate with other developers using Agile to deliver critical bug fixes and features',
-                    'Utilize release-branching strategy to manage project versions with Git',
-                    'Maintain existing codebase built with MVVM architecture'
+                    'Utilize release-branching strategy to manage project versions with Git'
                 ],
                 dates: [
                     {
@@ -279,20 +278,10 @@ export const SkillsData = [
         title: 'web development',
         skills: [
             {
-                title: 'HTML',
-                description: '',
+                title: 'HTML, CSS, & JavaScript',
+                description: 'Sass, Bootstrap, Vue.js, jQuery',
                 rating: 3
-            },
-            {
-                title: 'CSS',
-                description: 'Sass, Bootstrap',
-                rating: 3
-            },
-            {
-                title: 'JavaScript',
-                description: 'Vue.js, jQuery, Node.js',
-                rating: 3
-            },
+            }
         ]
     },
     {
@@ -305,7 +294,7 @@ export const SkillsData = [
             },
             {
                 title: 'iOS',
-                description: 'Swift',
+                description: 'Swift, SwiftUI',
                 rating: 2
             },
         ]
@@ -315,7 +304,7 @@ export const SkillsData = [
         skills: [
             {
                 title: 'The Sims 4',
-                description: 'XML, Python, Sims 4 Studio',
+                description: 'XML, Python',
                 rating: 2
             },
         ]
