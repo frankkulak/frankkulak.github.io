@@ -280,7 +280,7 @@ export const SkillsData = [
             {
                 title: 'HTML, CSS, & JavaScript',
                 description: 'Sass, Bootstrap, Vue.js, jQuery',
-                rating: 3
+                rating: 4
             }
         ]
     },
@@ -305,7 +305,7 @@ export const SkillsData = [
             {
                 title: 'The Sims 4',
                 description: 'XML, Python',
-                rating: 2
+                rating: 3
             },
         ]
     },
@@ -320,17 +320,12 @@ export const SkillsData = [
             {
                 title: 'Python',
                 description: 'Pandas, SpaCy, Scikit-Learn',
-                rating: 3
+                rating: 4
             },
             {
                 title: 'Racket',
                 description: '',
                 rating: 3
-            },
-            {
-                title: 'C/C++',
-                description: '',
-                rating: 1
             }
         ]
     }
@@ -357,7 +352,7 @@ export const ProjectsData = (function () {
                     id: 'frankkulak.com',
                     start: new Date(2019, month(10)), // Oct 2019
                     end: null, // Present
-                    description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. It is built with Vue.js, Bootstrap, and Sass.',
+                    description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. It is built with BootstrapVue and Sass.',
                     links: [
                         {
                             icon: links.github.icon,
@@ -371,7 +366,7 @@ export const ProjectsData = (function () {
                     id: 'mods.frankkulak.com',
                     start: new Date(2020, month(6)), // June 2020
                     end: null, // Present
-                    description: 'This website showcases the mods I create for The Sims 4, and provides links to download them. It is built with Vue.js, Bootstrap, and Sass.',
+                    description: 'This website showcases the mods I create for The Sims 4, and provides links to download them. It is built with BootstrapVue and Sass.',
                     links: [
                         {
                             icon: links.web.icon,
@@ -409,12 +404,31 @@ export const ProjectsData = (function () {
                     id: 'blocky-java',
                     start: new Date(2019, month(4)), // Apr 2019
                     end: new Date(2019, month(5)), // May 2019
-                    description: 'Blocky is an original puzzle game in which the player attempts to free their block from the board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
+                    description: 'Blocky is an original puzzle game in which the player attempts to free their block from the game board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
                     links: [
                         {
                             icon: links.github.icon,
                             text: links.github.text,
                             url: 'https://github.com/frankkulak/blocky-java'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'mods',
+            projects: [
+                {
+                    name: 'The Sims 4',
+                    id: 'ts4-mods',
+                    start: new Date(2020, month(6)), // June 2020
+                    end: null, // Present
+                    description: `This project is a collection of mods that I have created for The Sims 4, which can be found on my modding website.`,
+                    links: [
+                        {
+                            icon: links.web.icon,
+                            text: links.web.text,
+                            url: 'https://mods.frankkulak.com'
                         }
                     ]
                 }
