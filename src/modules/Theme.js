@@ -2,7 +2,7 @@ export default (function () {
     const docElement = document.documentElement;
     const themeKey = 'fk-theme';
     const themes = {light: 'light', dark: 'dark'};
-    const defaultTheme = themes.light;
+    const defaultTheme = themes.dark;
     let cachedTheme = undefined;
     let themeFrozen = false;
 

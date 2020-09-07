@@ -19,47 +19,56 @@ export const EducationData = [
                     {
                         code: 'CS',
                         number: '4500',
-                        title: 'Software Development'
+                        title: 'Software Development',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '4400',
-                        title: 'Programming Languages'
+                        title: 'Programming Languages',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '4120',
-                        title: 'Natural Language Processing'
+                        title: 'Natural Language Processing',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '3800',
-                        title: 'Theory of Computation'
+                        title: 'Theory of Computation',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '3500',
-                        title: 'Object-Oriented Design'
+                        title: 'Object-Oriented Design',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '3000',
-                        title: 'Algorithms & Data'
+                        title: 'Algorithms & Data',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '2510',
-                        title: 'Fundamentals of Computer Science II'
+                        title: 'Fundamentals of Computer Science II',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '2500',
-                        title: 'Fundamentals of Computer Science I'
+                        title: 'Fundamentals of Computer Science I',
+                        ongoing: false
                     },
                     {
                         code: 'CS',
                         number: '1800',
-                        title: 'Discrete Structures'
+                        title: 'Discrete Structures',
+                        ongoing: false
                     }
                 ]
             },
@@ -69,32 +78,38 @@ export const EducationData = [
                     {
                         code: 'LING',
                         number: '4654',
-                        title: 'Seminar: Evolutionary Linguistics'
+                        title: 'Seminar: Evolutionary Linguistics',
+                        ongoing: false
                     },
                     {
                         code: 'LING',
                         number: '3424',
-                        title: 'Morphology'
+                        title: 'Morphology',
+                        ongoing: false
                     },
                     {
                         code: 'LING',
                         number: '3422',
-                        title: 'Phonology'
+                        title: 'Phonology',
+                        ongoing: false
                     },
                     {
                         code: 'LING',
                         number: '3412',
-                        title: 'Language & Culture'
+                        title: 'Language & Culture',
+                        ongoing: false
                     },
                     {
                         code: 'LING',
                         number: '2350',
-                        title: 'Linguistic Analysis'
+                        title: 'Linguistic Analysis',
+                        ongoing: false
                     },
                     {
                         code: 'LING',
                         number: '1150',
-                        title: 'Introduction to Linguistics'
+                        title: 'Introduction to Linguistics',
+                        ongoing: false
                     }
                 ]
             },
@@ -104,17 +119,26 @@ export const EducationData = [
                     {
                         code: 'PSYC',
                         number: '3464',
-                        title: 'Psychology of Language'
+                        title: 'Psychology of Language',
+                        ongoing: false
+                    },
+                    {
+                        code: 'PSYC',
+                        number: '3404',
+                        title: 'Developmental Psychology',
+                        ongoing: true
                     },
                     {
                         code: 'PSYC',
                         number: '3400',
-                        title: 'Personality'
+                        title: 'Personality',
+                        ongoing: false
                     },
                     {
                         code: 'PSYC',
                         number: '2320',
-                        title: 'Statistics for Psychological Research'
+                        title: 'Statistics for Psychological Research',
+                        ongoing: false
                     }
                 ]
             },
@@ -125,17 +149,19 @@ export const EducationData = [
                         code: 'ENGW',
                         number: '3302',
                         title: 'Advanced Writing in the Technical Professions',
-                        'ongoing': false
+                        ongoing: false
                     },
                     {
                         code: 'PHIL',
                         number: '1145',
-                        title: 'Technology & Human Values'
+                        title: 'Technology & Human Values',
+                        ongoing: false
                     },
                     {
                         code: 'ENGW',
                         number: '1111',
-                        title: 'First Year Writing'
+                        title: 'First Year Writing',
+                        ongoing: false
                     }
                 ]
             },
