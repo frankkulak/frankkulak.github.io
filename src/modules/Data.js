@@ -306,7 +306,7 @@ export const SkillsData = [
             {
                 title: 'HTML, CSS, & JavaScript',
                 description: 'Sass, Bootstrap, Vue.js, jQuery',
-                rating: 4
+                rating: 3
             }
         ]
     },
@@ -352,6 +352,11 @@ export const SkillsData = [
                 title: 'Racket',
                 description: '',
                 rating: 3
+            },
+            {
+                title: 'C/C++',
+                description: '',
+                rating: 1
             }
         ]
     }

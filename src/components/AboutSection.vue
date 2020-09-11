@@ -9,7 +9,7 @@
             <b-col cols="12" sm="10" md="5" lg="4" class="my-auto">
                 <p>I'm currently studying computer science and linguistics at Northeastern University, and also working
                     as a mobile app developer at TJX. I'm expected to graduate in May 2021, and my goal is to work in
-                    app or web development.</p>
+                    app, web, or game development.</p>
             </b-col>
         </b-row>
     </section>
