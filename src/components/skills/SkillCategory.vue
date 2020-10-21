@@ -23,12 +23,12 @@
 
 <style lang="scss">
     .skill-category {
-        @include mb-abl($padding-lg);
+        //@include mb-abl($padding-lg);
         text-align: left;
 
         h4.category {
             color: var(--detail-color);
-            margin-bottom: $padding-md;
+            //margin-bottom: $padding-md;
         }
     }
 </style>

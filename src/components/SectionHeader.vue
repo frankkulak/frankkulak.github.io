@@ -1,5 +1,5 @@
 <template>
-    <div class="section-header">
+    <div class="section-header mb-5">
         <h1>{{ title }} <i :class="faIcon"></i></h1>
         <hr>
     </div>
@@ -17,15 +17,19 @@
 
 <style lang="scss">
     .section-header {
-        margin-bottom: $padding-lg;
         display: inline-block;
 
         hr {
+            background-color: var(--accent-color);
+            height: 2px;
+            border: 0;
+            border-radius: 2px;
+            margin: auto;
             width: 80%;
         }
 
         i, i *, i::before, i::after {
-            color: var(--h-color);
+            color: var(--text-color);
         }
     }
 </style>

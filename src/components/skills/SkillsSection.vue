@@ -8,9 +8,9 @@
 </template>
 
 <script>
-    import SectionHeader from "./SectionHeader";
+    import SectionHeader from "../SectionHeader";
     import SkillCategory from "./SkillCategory";
-    import {SkillsData} from "../modules/Data.js";
+    import {SkillsData} from "../../modules/Data.js";
 
     export default {
         name: "SkillsSection",

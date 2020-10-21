@@ -1,12 +1,12 @@
 <template>
     <section id="home">
         <div class="decals">
-            <img class="top-left" src="../assets/home-decals/top-left.svg" alt="decal">
-            <img class="top-right" src="../assets/home-decals/top-right.svg" alt="decal">
-            <img class="bottom-left" src="../assets/home-decals/bottom-left.svg" alt="decal">
+            <img class="top-left" src="../../assets/home-decals/top-left.svg" alt="decal">
+            <img class="top-right" src="../../assets/home-decals/top-right.svg" alt="decal">
+            <img class="bottom-left" src="../../assets/home-decals/bottom-left.svg" alt="decal">
         </div>
         <div class="content">
-            <h1>Hi, I'm <strong>Frank Kulak</strong>.<br>I'm a software developer.</h1>
+            <h1 class="mb-5">Hi, I'm <span><strong>Frank Kulak</strong></span>.<br> I'm a software developer.</h1>
             <a class="btn" v-scroll-to="'#about'">learn more <i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
@@ -20,9 +20,8 @@
 
 <style lang="scss">
     section#home {
-        @include px($padding: $padding-md);
         height: 100vh;
-        width: 100vw;
+        width: 100vw !important;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
@@ -63,15 +62,17 @@
             opacity: 0;
 
             h1 {
-                @extend %default-gradient;
-                -webkit-background-clip: text;
-                margin-bottom: $padding-lg;
                 font-weight: normal;
                 font-size: 6vh;
 
-                strong {
-                    white-space: nowrap;
-                    -webkit-text-fill-color: transparent;
+                span {
+                    @extend %default-gradient;
+                    -webkit-background-clip: text;
+
+                    strong {
+                        white-space: nowrap;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
             }
         }

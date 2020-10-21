@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import SectionHeader from "./SectionHeader";
+    import SectionHeader from "../SectionHeader";
 
     export default {
         name: "ContactSection",
@@ -53,11 +53,11 @@
         }
 
         [class^="col"] > div {
-            padding-bottom: $padding-lg;
+            //padding-bottom: $padding-lg;
         }
 
         i.fab {
-            @include mx($padding-sm);
+            //@include mx($padding-sm);
             font-size: 2.25em;
         }
     }

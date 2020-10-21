@@ -14,7 +14,7 @@
 </template>
 
 <script>
-    import Util from "../modules/Util.js";
+    import Util from "../../modules/Util.js";
 
     export default {
         name: "ProjectCard",
@@ -37,8 +37,8 @@
         $border-thickness: 2px;
 
         .outline {
-            @extend %default-gradient;
-            margin: $padding-xs;
+            //@extend %default-gradient;
+            //margin: $padding-xs;
             padding: $border-thickness;
             border-radius: $card-radius + $border-thickness;
         }
@@ -47,10 +47,10 @@
             text-align: left;
             background-color: var(--bg-color);
             border-radius: $card-radius;
-            padding: $padding-md;
+            //padding: $padding-md;
 
             p {
-                @include my($padding-md);
+                //@include my($padding-md);
 
                 a, a:focus {
                     color: var(--text-color);
@@ -65,7 +65,7 @@
 
             .links {
                 a, a:focus, a:hover {
-                    margin-right: $padding-md;
+                    //margin-right: $padding-md;
 
                     &:last-child {
                         margin-right: 0;

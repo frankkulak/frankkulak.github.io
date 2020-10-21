@@ -1,25 +1,40 @@
 html {
-  --bg-color: #{$off-white};
-  --bg-band-color: #{transparentize($dark-navy, 0.97)};
-  --h-color: #{$gray-60};
-  --h-shadow-color: #{transparentize($gray-32, 0.85)};
-  --text-color: #{$gray-115};
-  --primary-color: #{$blue};
-  --accent-color: #{$dark-blue};
-  --detail-color: #{$blue};
-  --detail-color-trans: #{transparentize($blue, 0.6)};
+  // constants
+  --dark-color: #{$gray-30};
+  --light-color: #{$off-white};
+  --shadow-color: #{transparentize($gray-18, 0.85)};
+
+  // themed variables
+  --bg-color: #{white};
+  --bg-band-color: #{$off-white};
+  --card-bg-color: #{$gray-235};
+  --primary-color: #{$blue-lt};
+  --secondary-color: #{$purple-lt};
+  --accent-color: #{$blurple-lt};
+  --text-color: #{$gray-30};
+  --footer-bg-color: #{transparentize($blurple-lt, 0.25)};
+  --footer-text-color: #{$off-white};
+
+  %default-gradient {
+    @include gradient($bottom: $purple-lt, $top: $blue-lt, $fallback: $blurple-lt);
+  }
 }
 
 html[data-theme='dark'] {
-  --bg-color: #{$dark-navy};
-  --bg-band-color: #{transparentize($blue, 0.97)};
-  --h-color: #{$off-white};
-  --h-shadow-color: #{transparentize($gray-115, 0.85)};
-  --text-color: #{$gray-210};
-  --primary-color: #{$dark-blue};
-  --accent-color: #{$blue};
-  //--detail-color
-  //--detail-color-trans
+  // themed variables
+  --bg-color: #{$gray-30};
+  --bg-band-color: #{$gray-18};
+  --card-bg-color: #{$gray-45};
+  --primary-color: #{$purple-dt};
+  --secondary-color: #{$pink-dt};
+  --accent-color: #{$blue-dt};
+  --text-color: #{$off-white};
+  --footer-bg-color: #{transparentize($purple-dt, 0.25)};
+  --footer-text-color: #{$off-white};
+
+  %default-gradient {
+    @include gradient($bottom: $pink-dt, $top: $purple-dt, $fallback: $pink-dt);
+  }
 }
 
 html.theme-transition,

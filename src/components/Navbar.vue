@@ -19,7 +19,7 @@
 
 <style lang="scss">
     nav.navbar {
-        background-color: var(--primary-color);
+        background-color: var(--footer-bg-color);
         overflow-y: hidden;
         white-space: nowrap;
         opacity: 0.95;
@@ -37,26 +37,21 @@
         }
 
         li {
-            margin-left: $padding-md;
+            //margin-left: $padding-md;
             display: inline-block;
             vertical-align: center;
 
             a.nav-link {
-                @include py($padding-xs);
+                //@include py($padding-xs);
                 background-color: transparent;
             }
 
             a, a:focus {
-                color: $text-color !important;
+                color: var(--footer-text-color) !important;
                 text-decoration: none;
             }
 
-            a:hover {
-                color: var(--accent-color) !important;
-            }
-
-            & > a.active {
-                color: var(--accent-color) !important;
+            & > a.active, & > a:hover {
                 font-weight: bold;
                 left: 20px;
             }

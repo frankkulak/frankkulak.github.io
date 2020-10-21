@@ -9,10 +9,6 @@ section {
   width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  @include mb-abl($padding-sm);
-}
-
 a, a:focus {
   text-decoration: none;
 }
@@ -22,19 +18,15 @@ a:hover {
   text-decoration: none;
 }
 
-hr {
-  background-color: var(--detail-color);
-  height: 2px;
-  border: 0;
-  border-radius: 2px;
-  margin: auto;
-}
-
 .btn, .btn:focus, a.btn, a.btn:focus {
   border-radius: 10px;
   background-color: transparent;
-  border-color: var(--detail-color);
-  color: var(--detail-color);
+  border-color: var(--text-color);
+  color: var(--text-color);
+
+  i, i *, i::before, i::after {
+    color: var(--text-color);
+  }
 }
 
 .btn:hover, a.btn:hover {

@@ -6,7 +6,7 @@
             </td>
             <td class="rating">
                 <b-row class="skill-bar mx-auto" :title="ratingTitle(skill.rating)">
-                    <span v-for="n in 5" :key="n" class="skill-cell" :class="ratingClass(n)"></span>
+                    <span v-for="n in 10" :key="n" class="skill-cell" :class="ratingClass(n)"></span>
                 </b-row>
             </td>
         </tr>
@@ -61,7 +61,7 @@
 
 <style lang="scss">
     .skill-ranking {
-        @include mb-abl($padding-md);
+        //@include mb-abl($padding-md);
         width: 100%;
 
         td.rating {
@@ -73,7 +73,7 @@
             width: 100%;
 
             .skill-cell {
-                width: 15%;
+                width: 8%;
                 min-height: 16px * 1.5;
                 background-color: var(--detail-color-trans);
                 margin-right: 2px;

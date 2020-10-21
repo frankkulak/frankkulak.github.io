@@ -1,3 +1,4 @@
-%default-gradient {
-  @include gradient($purple, $blue, var(--bg-color));
+%cropped-box {
+  border-radius: 0 24px;
+  box-shadow: 0 4px 8px var(--shadow-color);
 }

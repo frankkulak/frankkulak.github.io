@@ -10,17 +10,17 @@ p, p span, p em, li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--h-color);
+  color: var(--text-color);
   font-weight: bold;
 
   span {
     // required for smooth theme transition
-    color: var(--h-color);
+    color: var(--text-color);
   }
 }
 
 h1 {
-  text-shadow: -2px 2px 3px var(--h-shadow-color);
+  text-shadow: -2px 2px 3px var(--shadow-color);
   font-size: 2em;
 }
 

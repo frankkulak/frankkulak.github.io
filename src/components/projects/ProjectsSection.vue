@@ -19,9 +19,9 @@
 </template>
 
 <script>
-    import SectionHeader from "./SectionHeader";
+    import SectionHeader from "../SectionHeader";
     import ProjectCard from "./ProjectCard";
-    import {ProjectsData} from "../modules/Data.js";
+    import {ProjectsData} from "../../modules/Data.js";
 
     export default {
         name: "ProjectsSection",
@@ -51,13 +51,13 @@
 <style lang="scss">
     section#projects {
         .buttons {
-            margin-bottom: $padding-lg;
+            //margin-bottom: $padding-lg;
 
             .btn {
-                @include mx($margin: $padding-sm);
+                //@include mx($margin: $padding-sm);
 
                 &.selected {
-                    @extend %default-gradient;
+                    //@extend %default-gradient;
                     color: white;
                     border-color: var(--bg-color);
                     pointer-events: none;
