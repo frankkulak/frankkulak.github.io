@@ -1,11 +1,11 @@
 <template>
-    <b-row align-h="center" class="skill-category">
-        <b-col cols="12" md="10" lg="8">
-            <h4 class="category">{{ category.title }}</h4>
-            <skill-ranking v-for="(skill, index) in category.skills"
-                           :key="`${category.title}:${index}`"
-                           :skill="skill"/>
+    <b-row class="skill-category mb-4">
+        <b-col cols="12">
+            <h2>{{ category.title }}</h2>
         </b-col>
+        <skill-ranking v-for="(skill, index) in category.skills"
+                       :key="`${category.title}:${index}`"
+                       :skill="skill"/>
     </b-row>
 </template>
 
@@ -23,12 +23,10 @@
 
 <style lang="scss">
     .skill-category {
-        //@include mb-abl($padding-lg);
         text-align: left;
 
-        h4.category {
-            color: var(--detail-color);
-            //margin-bottom: $padding-md;
+        &:last-child {
+            margin-bottom: 0 !important;
         }
     }
 </style>

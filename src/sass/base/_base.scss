@@ -34,4 +34,8 @@ a:hover {
   border-color: var(--bg-color);
   color: white;
   cursor: pointer;
+
+  i, i *, i::before, i::after {
+    color: white;
+  }
 }

@@ -5,7 +5,7 @@
         <about-section/>
         <education-section class="banded"/>
         <experience-section/>
-<!--        <skills-section class="banded"/>-->
+        <skills-section class="banded"/>
 <!--        <projects-section/>-->
 <!--        <contact-section/>-->
         <theme-toggle/>
@@ -17,7 +17,7 @@
     import AboutSection from "@/components/about/AboutSection";
     import EducationSection from "@/components/education/EducationSection";
     import ExperienceSection from "@/components/experience/ExperienceSection";
-    //import SkillsSection from "@/components/skills/SkillsSection";
+    import SkillsSection from "@/components/skills/SkillsSection";
     //import ProjectsSection from "@/components/projects/ProjectsSection";
     //import ContactSection from "@/components/contact/ContactSection";
     import Navbar from "@/components/Navbar";
@@ -30,7 +30,7 @@
             Navbar,
             //ContactSection,
             //ProjectsSection,
-            // SkillsSection,
+            SkillsSection,
             ExperienceSection,
             EducationSection,
             AboutSection,

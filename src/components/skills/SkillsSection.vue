@@ -1,9 +1,11 @@
 <template>
-    <section id="skills">
-        <section-header title="skills" fa-icon="fas fa-cogs"></section-header>
-        <skill-category v-for="category in categories"
-                        :key="category.title"
-                        :category="category"></skill-category>
+    <section id="skills" class="py-5">
+        <b-container fluid>
+            <section-header title="skills" fa-icon="fas fa-cogs"></section-header>
+            <skill-category v-for="category in categories"
+                            :key="category.title"
+                            :category="category"></skill-category>
+        </b-container>
     </section>
 </template>
 

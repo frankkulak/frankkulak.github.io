@@ -66,6 +66,10 @@
             p:last-child {
                 margin-bottom: 0;
             }
+
+            ul {
+                padding-left: 12px;
+            }
         }
     }
 </style>
