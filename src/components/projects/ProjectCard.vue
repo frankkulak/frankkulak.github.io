@@ -1,12 +1,26 @@
 <template>
-    <b-col cols="12" sm="8" md="6" class="project-card">
-        <div class="outline">
-            <div class="content">
-                <h4>{{ project.name }}</h4>
-                <p v-html="project.description"></p>
-                <b-row align-h="end" class="links">
-                    <a v-for="(link, index) in project.links" :key="`${project.name}:${index}`" :href="link.url"
-                       target="_blank" :title="link.text"><i :class="link.icon"></i></a>
+    <b-col cols="12" md="6" class="project-card-container mb-5">
+        <div class="project-card">
+            <div class="project-header-container px-4 py-3">
+                <b-row>
+                    <b-col cols="12" md="6">
+                        <h2 class="text-nowrap">{{ project.name }}</h2>
+                    </b-col>
+                    <b-col cols="12" md="6" class="position">
+                        <p>{{ project.category }}</p>
+                    </b-col>
+                </b-row>
+            </div>
+            <div class="project-content-container p-4">
+                <h4>purpose</h4>
+                <p v-html="project.purpose"></p>
+                <h4>technology</h4>
+                <p v-html="project.technology"></p>
+                <b-row class="project-links justify-content-around">
+                    <b-button size="small" v-for="(link, n) in project.links" :key="`${project.id}_link:${n}`"
+                              :href="link.url" target="_blank">
+                        <i :class="link.icon" class="mr-2"/>{{ link.text }}
+                    </b-button>
                 </b-row>
             </div>
         </div>
@@ -14,82 +28,49 @@
 </template>
 
 <script>
-    import Util from "../../modules/Util.js";
-
     export default {
         name: "ProjectCard",
         props: {
             project: Object
-        },
-        computed: {
-            dateSpanHTML: function () {
-                return Util.formatDateSpanHTML(this.project);
-            }
         }
     }
 </script>
 
 <style lang="scss">
-    .project-card {
-        padding: 0;
-
-        $card-radius: 15px;
-        $border-thickness: 2px;
-
-        .outline {
-            //@extend %default-gradient;
-            //margin: $padding-xs;
-            padding: $border-thickness;
-            border-radius: $card-radius + $border-thickness;
+    .project-card-container {
+        &:last-child {
+            margin-bottom: 0 !important;
         }
+    }
 
-        .content {
-            text-align: left;
-            background-color: var(--bg-color);
-            border-radius: $card-radius;
-            //padding: $padding-md;
+    .project-card {
+        text-align: left;
+        background-color: var(--card-bg-color);
+        @extend %cropped-box;
 
-            p {
-                //@include my($padding-md);
+        .project-header-container {
+            @extend %default-gradient;
+            @extend %cropped-box;
 
-                a, a:focus {
-                    color: var(--text-color);
-                    text-decoration: underline;
-                }
-
-                a:hover {
-                    color: var(--accent-color);
-                    text-decoration: none;
-                }
+            h2, p {
+                color: var(--light-color);
+                margin-bottom: 0;
             }
 
-            .links {
-                a, a:focus, a:hover {
-                    //margin-right: $padding-md;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
+            @media (min-width: 768px) {
+                .col-12.position {
+                    text-align: right;
                 }
+            }
+        }
 
-                a, a:focus {
-                    color: var(--text-color);
-                }
+        .project-content-container {
+            p:last-child {
+                margin-bottom: 0;
+            }
 
-                a:hover {
-                    color: var(--accent-color);
-
-                    i, i *, i::before, i::after {
-                        color: var(--accent-color);
-                    }
-                }
-
-                i, i *, i::before, i::after {
-                    font-size: 1.25em;
-
-                    // required for smooth theme transition
-                    color: var(--text-color);
-                }
+            .project-links {
+                width: 100%;
             }
         }
     }

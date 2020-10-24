@@ -98,103 +98,66 @@ export const SkillsData = [
 export const ProjectsData = (function () {
     const links = {
         github: {
-            text: 'view on GitHub',
+            text: 'GitHub',
             icon: 'fab fa-github'
         },
         web: {
-            text: 'view on web',
+            text: 'Webpage',
             icon: 'fas fa-globe'
         }
     };
 
     return [
         {
-            title: 'web',
-            projects: [
+            name: 'frankkulak.com',
+            id: 'site-main',
+            start: new Date(2019, month(10)), // Oct 2019
+            end: null, // Present
+            category: `Website`,
+            purpose: `A website to provide an interactive and comprehensive summary of my academic, professional, and personal achievements.`,
+            technology: `BootstrapVue, Sass, WebStorm, GitHub Pages, Google Analytics`,
+            links: [
                 {
-                    name: 'frankkulak.com',
-                    id: 'frankkulak.com',
-                    start: new Date(2019, month(10)), // Oct 2019
-                    end: null, // Present
-                    description: 'This is the website you are currently viewing. It provides a summary of my education, experience, and projects. It is built with BootstrapVue and Sass.',
-                    links: [
-                        {
-                            icon: links.github.icon,
-                            text: links.github.text,
-                            url: 'https://github.com/frankkulak/frankkulak.github.io'
-                        }
-                    ]
-                },
-                {
-                    name: 'mods.frankkulak.com',
-                    id: 'mods.frankkulak.com',
-                    start: new Date(2020, month(6)), // June 2020
-                    end: null, // Present
-                    description: 'This website showcases the mods I create for The Sims 4, and provides links to download them. It is built with BootstrapVue and Sass.',
-                    links: [
-                        {
-                            icon: links.web.icon,
-                            text: links.web.text,
-                            url: 'https://mods.frankkulak.com'
-                        },
-                        {
-                            icon: links.github.icon,
-                            text: links.github.text,
-                            url: 'https://github.com/frankkulak/mods-web'
-                        }
-                    ]
+                    icon: links.github.icon,
+                    text: links.github.text,
+                    url: 'https://github.com/frankkulak/frankkulak.github.io'
                 }
             ]
         },
         {
-            title: 'java',
-            projects: [
+            name: 'mods.frankkulak.com',
+            id: 'site-mods',
+            start: new Date(2020, month(6)), // June 2020
+            end: null, // Present
+            category: `Website`,
+            purpose: `A website to showcase my mods for The Sims 4 and serve as a hub to download them.`,
+            technology: `BootstrapVue, Sass, WebStorm, GitHub Pages, Google Analytics, Google Tag Manager`,
+            links: [
                 {
-                    name: 'Block Dude',
-                    id: 'blockdude-java',
-                    start: new Date(2019, month(4)), // Apr 2019
-                    end: new Date(2019, month(12)), // Dec 2019
-                    description: 'Block Dude is a puzzle game created by Brandon Sterner for the TI-84 calculator. This project is a simplistic re-creation of it in Java, and it was done for my own practice with the MVC design pattern.',
-                    links: [
-                        {
-                            icon: links.github.icon,
-                            text: links.github.text,
-                            url: 'https://github.com/frankkulak/blockdude-java'
-                        }
-                    ]
+                    icon: links.web.icon,
+                    text: links.web.text,
+                    url: 'https://mods.frankkulak.com'
                 },
                 {
-                    name: 'Blocky',
-                    id: 'blocky-java',
-                    start: new Date(2019, month(4)), // Apr 2019
-                    end: new Date(2019, month(5)), // May 2019
-                    description: 'Blocky is an original puzzle game in which the player attempts to free their block from the game board. This implementation is written in Java and utilizes the Swing library for an engaging user interface.',
-                    links: [
-                        {
-                            icon: links.github.icon,
-                            text: links.github.text,
-                            url: 'https://github.com/frankkulak/blocky-java'
-                        }
-                    ]
+                    icon: links.github.icon,
+                    text: links.github.text,
+                    url: 'https://github.com/frankkulak/mods-web'
                 }
             ]
         },
         {
-            title: 'mods',
-            projects: [
+            name: 'Language Barriers',
+            id: 'ts4mod-languagebarriers',
+            start: new Date(2020, month(6)), // June 2020
+            end: null, // Present
+            category: `Sims 4 Mod`,
+            purpose: `Enrich the player's experience by adding regional languages to the Sims universe, which makes the game more interesting and challenging.`,
+            technology: `Python, XML, Sims 4 Studio, PyCharm`,
+            links: [
                 {
-                    name: 'The Sims 4',
-                    id: 'ts4-mods',
-                    start: new Date(2020, month(6)), // June 2020
-                    end: null, // Present
-                    description: `This project is a collection of mods that I have created for The Sims 4, which can be found on my modding website.`,
-                    links: [
-                        {
-                            icon: links.web.icon,
-                            text: links.web.text,
-                            url: 'https://mods.frankkulak.com'
-                        }
-                    ]
+                    icon: links.web.icon,
+                    text: links.web.text,
+                    url: 'https://mods.frankkulak.com'
                 }
             ]
         }
