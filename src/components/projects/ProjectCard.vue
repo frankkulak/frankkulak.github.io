@@ -1,6 +1,6 @@
 <template>
     <b-col cols="12" md="6" class="project-card-container mb-5">
-        <div class="project-card">
+        <div class="project-card h-100">
             <div class="project-header-container px-4 py-3">
                 <b-row>
                     <b-col cols="12" md="6">
@@ -13,10 +13,10 @@
             </div>
             <div class="project-content-container p-4">
                 <h4>purpose</h4>
-                <p v-html="project.purpose"></p>
+                <p v-html="project.purpose" class="pb-3"></p>
                 <h4>technology</h4>
                 <p v-html="project.technology"></p>
-                <b-row class="project-links justify-content-around">
+                <b-row class="project-links justify-content-around py-3">
                     <b-button size="small" v-for="(link, n) in project.links" :key="`${project.id}_link:${n}`"
                               :href="link.url" target="_blank">
                         <i :class="link.icon" class="mr-2"/>{{ link.text }}

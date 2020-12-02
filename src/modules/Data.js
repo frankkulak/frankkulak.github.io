@@ -17,8 +17,9 @@ export const ExperienceData = [
         location: 'Framingham, MA',
         title: 'IT Engineer Co-op',
         description: [
-            'Develop front end of T.J.Maxx, HomeGoods, and Marshalls mobile and web apps using Xamarin.Forms and Blazor',
+            'Develop front end for T.J.Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms',
             'Construct dynamic web pages with Bootstrap and jQuery for use in mobile and web apps',
+            'Contribute to back-end projects created with C#/.NET to support mobile and web apps',
             'Collaborate with other developers using Agile to deliver critical bug fixes and features',
             'Utilize release-branching strategy to manage project versions with Git',
         ],
@@ -41,7 +42,7 @@ export const ExperienceData = [
         description: [
             'Collaborated with other interns to develop Android application for CREC school system using MIT App Inventor 2',
             'Met with client from CREC schools on weekly basis to set expectations and ensure high quality of product',
-            'Published completed application on the Google Play store'
+            'Published completed application on Google Play store'
         ],
         dates: [
             {
@@ -57,7 +58,7 @@ export const SkillsData = [
         title: 'web development',
         skills: [
             {
-                title: 'HTML, CSS, & JavaScript',
+                title: 'HTML, CSS, JavaScript',
                 description: 'Sass, Bootstrap, Vue.js, jQuery',
                 rating: 7
             },
@@ -74,7 +75,7 @@ export const SkillsData = [
             {
                 title: 'iOS',
                 description: 'Swift, SwiftUI',
-                rating: 5
+                rating: 6
             }
         ]
     },
@@ -93,17 +94,17 @@ export const SkillsData = [
         skills: [
             {
                 title: 'Java',
-                description: 'Swing, JUnit',
+                description: 'Swing',
                 rating: 8
             },
             {
                 title: 'Python',
-                description: 'Pandas, SpaCy, Scikit-Learn, The Sims 4 Modding',
+                description: 'Pandas, SpaCy, Scikit-Learn',
                 rating: 9
             },
             {
                 title: 'Git',
-                description: 'GitHub, GitHub Desktop',
+                description: 'GitHub, GitHub Pages',
                 rating: 9
             },
         ]
@@ -129,8 +130,8 @@ export const ProjectsData = (function () {
             start: new Date(2019, month(10)), // Oct 2019
             end: null, // Present
             category: `Website`,
-            purpose: `A website to provide an interactive and comprehensive summary of my academic, professional, and personal achievements.`,
-            technology: `BootstrapVue, Sass, WebStorm, GitHub Pages, Google Analytics`,
+            purpose: `Provides an interactive and comprehensive summary of my academic, professional, and personal achievements.`,
+            technology: `BootstrapVue, Sass, GitHub Pages, Google Analytics`,
             links: [
                 {
                     icon: links.github.icon,
@@ -145,8 +146,8 @@ export const ProjectsData = (function () {
             start: new Date(2020, month(6)), // June 2020
             end: null, // Present
             category: `Website`,
-            purpose: `A website to showcase my mods for The Sims 4 and serve as a hub to download them.`,
-            technology: `BootstrapVue, Sass, WebStorm, GitHub Pages, Google Analytics, Google Tag Manager`,
+            purpose: `Showcases the mods I have created for The Sims 4, and serves as a hub from which to download them.`,
+            technology: `BootstrapVue, Sass, GitHub Pages, Google Analytics`,
             links: [
                 {
                     icon: links.web.icon,
@@ -166,13 +167,13 @@ export const ProjectsData = (function () {
             start: new Date(2020, month(6)), // June 2020
             end: null, // Present
             category: `Sims 4 Mod`,
-            purpose: `Enrich the player's experience by adding regional languages to the Sims universe, which makes the game more interesting and challenging.`,
-            technology: `Python, XML, Sims 4 Studio, PyCharm`,
+            purpose: `Enriches the player's experience by introducing different languages to the Sims universe, which makes the game more realistic and challenging.`,
+            technology: `XML, Python, Sims 4 Studio`,
             links: [
                 {
                     icon: links.web.icon,
                     text: links.web.text,
-                    url: 'https://mods.frankkulak.com'
+                    url: 'https://mods.frankkulak.com/#/ts4/languagebarriers'
                 }
             ]
         }
