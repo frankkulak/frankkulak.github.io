@@ -59,7 +59,7 @@ export const SkillsData = [
             {
                 title: 'HTML, CSS, & JavaScript',
                 description: 'Sass, Bootstrap, Vue.js, jQuery',
-                rating: 8
+                rating: 7
             },
         ]
     },
@@ -69,7 +69,22 @@ export const SkillsData = [
             {
                 title: 'Xamarin.Forms',
                 description: 'C#, .NET',
-                rating: 7
+                rating: 8
+            },
+            {
+                title: 'iOS',
+                description: 'Swift, SwiftUI',
+                rating: 5
+            }
+        ]
+    },
+    {
+        title: 'game development',
+        skills: [
+            {
+                title: 'Sims 4 Modding',
+                description: 'XML, Python',
+                rating: 8
             },
         ]
     },
@@ -79,16 +94,16 @@ export const SkillsData = [
             {
                 title: 'Java',
                 description: 'Swing, JUnit',
-                rating: 9
+                rating: 8
             },
             {
                 title: 'Python',
                 description: 'Pandas, SpaCy, Scikit-Learn, The Sims 4 Modding',
-                rating: 8
+                rating: 9
             },
             {
                 title: 'Git',
-                description: 'GitHub, GitHub Desktop, SourceTree',
+                description: 'GitHub, GitHub Desktop',
                 rating: 9
             },
         ]

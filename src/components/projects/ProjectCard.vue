@@ -71,6 +71,7 @@
 
             .project-links {
                 width: 100%;
+                margin: 0 !important;
             }
         }
     }
