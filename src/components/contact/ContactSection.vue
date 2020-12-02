@@ -10,7 +10,7 @@
                             me@frankkulak.com</a></p>
                     </div>
 
-                    <div>
+                    <div class="socials">
                         <p>Connect with me on LinkedIn or follow me on GitHub.</p>
                         <p>
                             <a title="go to LinkedIn" href="https://www.linkedin.com/in/frank-kulak/" target="_blank"
@@ -51,14 +51,18 @@
             color: white;
         }
 
-        a:hover {
-            &, i, i *, i::before, i::after {
-                color: var(--accent-color);
-            }
-        }
-
         i.fab {
             font-size: 2.25em;
+        }
+
+        .socials a {
+            position: relative;
+            transition: all ease 300ms;
+            top: 0;
+
+            &:hover {
+                top: -3px;
+            }
         }
     }
 </style>

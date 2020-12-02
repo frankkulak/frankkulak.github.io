@@ -10,11 +10,10 @@ section {
 }
 
 a, a:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -23,6 +22,7 @@ a:hover {
   background-color: transparent;
   border-color: var(--text-color);
   color: var(--text-color);
+  text-decoration: none;
 
   i, i *, i::before, i::after {
     color: var(--text-color);
