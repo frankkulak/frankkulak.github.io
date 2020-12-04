@@ -11,7 +11,7 @@
                     </div>
 
                     <div class="socials">
-                        <p>You may also connect with me on LinkedIn or GitHub.</p>
+                        <p>Connect with me on LinkedIn or GitHub.</p>
                         <p>
                             <a title="go to LinkedIn" href="https://www.linkedin.com/in/frank-kulak/" target="_blank"
                                class="mr-3">

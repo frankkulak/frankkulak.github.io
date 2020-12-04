@@ -12,7 +12,7 @@ html {
   --secondary-color: #{$dark-blue-lt};
   --accent-color: #{$blue-lt};
   --text-color: #{$gray-30};
-  --footer-bg-color: #{transparentize($blue-lt, 0.05)};
+  --footer-bg-color: #{transparentize($dark-blue-lt, 0.05)};
   --footer-text-color: #{$off-white};
 
   %default-gradient {

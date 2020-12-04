@@ -60,7 +60,7 @@ export const SkillsData = [
             {
                 title: 'HTML, CSS, JavaScript',
                 description: 'Sass, Bootstrap, Vue.js, jQuery',
-                rating: 7
+                rating: 8
             },
         ]
     },
@@ -75,18 +75,8 @@ export const SkillsData = [
             {
                 title: 'iOS',
                 description: 'Swift, SwiftUI',
-                rating: 6
+                rating: 5
             }
-        ]
-    },
-    {
-        title: 'game development',
-        skills: [
-            {
-                title: 'Sims 4 Modding',
-                description: 'XML, Python',
-                rating: 8
-            },
         ]
     },
     {
@@ -94,13 +84,13 @@ export const SkillsData = [
         skills: [
             {
                 title: 'Java',
-                description: 'Swing',
-                rating: 8
+                description: 'Swing, JUnit',
+                rating: 7
             },
             {
                 title: 'Python',
-                description: 'Pandas, SpaCy, Scikit-Learn',
-                rating: 9
+                description: 'NumPy, Pandas, SpaCy, Scikit-Learn',
+                rating: 8
             },
             {
                 title: 'Git',
@@ -130,7 +120,7 @@ export const ProjectsData = (function () {
             start: new Date(2019, month(10)), // Oct 2019
             end: null, // Present
             category: `Website`,
-            purpose: `Provides an interactive and comprehensive summary of my academic, professional, and personal achievements.`,
+            purpose: `Provides an interactive summary of my academic, professional, and personal achievements.`,
             technology: `BootstrapVue, Sass, GitHub Pages, Google Analytics`,
             links: [
                 {
