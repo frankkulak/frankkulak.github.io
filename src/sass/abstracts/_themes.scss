@@ -8,15 +8,15 @@ html {
   --bg-color: #{white};
   --bg-band-color: #{$off-white};
   --card-bg-color: #{$gray-235};
-  --primary-color: #{$blue-lt};
-  --secondary-color: #{$purple-lt};
-  --accent-color: #{$blurple-lt};
+  --primary-color: #{$light-blue-lt};
+  --secondary-color: #{$dark-blue-lt};
+  --accent-color: #{$blue-lt};
   --text-color: #{$gray-30};
-  --footer-bg-color: #{transparentize($blurple-lt, 0.25)};
+  --footer-bg-color: #{transparentize($blue-lt, 0.05)};
   --footer-text-color: #{$off-white};
 
   %default-gradient {
-    @include gradient($bottom: $purple-lt, $top: $blue-lt, $fallback: $blurple-lt);
+    @include gradient($bottom: $light-blue-lt, $top: $dark-blue-lt, $fallback: $blue-lt);
   }
 }
 
@@ -25,15 +25,15 @@ html[data-theme='dark'] {
   --bg-color: #{$gray-30};
   --bg-band-color: #{$gray-18};
   --card-bg-color: #{$gray-45};
-  --primary-color: #{$purple-dt};
-  --secondary-color: #{$pink-dt};
-  --accent-color: #{$blue-dt};
+  --primary-color: #{$blue-dt};
+  --secondary-color: #{$green-dt};
+  --accent-color: #{$light-blue-dt};
   --text-color: #{$off-white};
-  --footer-bg-color: #{transparentize($purple-dt, 0.25)};
+  --footer-bg-color: #{transparentize($blue-dt, 0.05)};
   --footer-text-color: #{$off-white};
 
   %default-gradient {
-    @include gradient($bottom: $pink-dt, $top: $purple-dt, $fallback: $pink-dt);
+    @include gradient($bottom: $blue-dt, $top: $green-dt, $fallback: $blue-dt);
   }
 }
 
