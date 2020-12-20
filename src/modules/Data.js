@@ -30,7 +30,7 @@ export const ExperienceData = [
             },
             {
                 start: new Date(2020, month(7)), // Jul 2020
-                end: null // Present
+                end: new Date(2020, month(12)) // Dec 2019
             }
         ],
     },
