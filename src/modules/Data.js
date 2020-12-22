@@ -17,11 +17,11 @@ export const ExperienceData = [
         location: 'Framingham, MA',
         title: 'IT Engineer Co-op',
         description: [
-            'Develop front end for T.J.Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms',
-            'Construct dynamic web pages with Bootstrap and jQuery for use in mobile and web apps',
-            'Contribute to back-end projects created with C#/.NET to support mobile and web apps',
-            'Collaborate with other developers using Agile to deliver critical bug fixes and features',
-            'Utilize release-branching strategy to manage project versions with Git',
+            'Developed front end for T.J.Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms',
+            'Constructed dynamic web pages with Bootstrap and jQuery for use in mobile and web apps',
+            'Contributed to back-end projects created with C#/.NET to support mobile and web apps',
+            'Collaborated with other developers using Agile to deliver critical bug fixes and features',
+            'Utilized release-branching strategy to manage project versions with Git',
         ],
         dates: [
             {
@@ -31,6 +31,40 @@ export const ExperienceData = [
             {
                 start: new Date(2020, month(7)), // Jul 2020
                 end: new Date(2020, month(12)) // Dec 2019
+            }
+        ],
+    },
+    {
+        code: 'tutor',
+        company: 'Northeastern University',
+        location: 'Boston, MA',
+        title: 'Peer Tutor',
+        description: [
+            'Tutor linguistics and psychology courses in one-on-one sessions',
+            'Conduct review sessions of up to 50 students for exam preparation',
+            'Provide guidance for improving study habits and academic success'
+        ],
+        dates: [
+            {
+                start: new Date(2019, month(1)), // Jan 2019
+                end: null, // Present
+            }
+        ],
+    },
+    {
+        code: 'sfs',
+        company: 'Northeastern University',
+        location: 'Boston, MA',
+        title: 'Office Assistant',
+        description: [
+            'Answered up to 15 calls per hour to assist students with financial aid questions',
+            'Collaborated with financial aid counselors to resolve caller inquiries',
+            'Performed data entry to achieve consistency between physical and digital documentation'
+        ],
+        dates: [
+            {
+                start: new Date(2017, month(9)), // Sep 2017
+                end: new Date(2020, month(3)), // Mar 2020
             }
         ],
     },
@@ -89,12 +123,12 @@ export const SkillsData = [
             },
             {
                 title: 'Python',
-                description: 'NumPy, Pandas, SpaCy, Scikit-Learn',
+                description: 'Pandas, SpaCy',
                 rating: 8
             },
             {
                 title: 'Git',
-                description: 'GitHub, GitHub Pages',
+                description: 'GitHub',
                 rating: 9
             },
         ]
