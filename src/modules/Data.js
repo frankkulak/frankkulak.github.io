@@ -17,10 +17,9 @@ export const ExperienceData = [
         location: 'Framingham, MA',
         title: 'IT Engineer Co-op',
         description: [
-            'Developed front end for T.J.Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms',
-            'Constructed dynamic web pages with Bootstrap and jQuery for use in mobile and web apps',
-            'Contributed to back-end projects created with C#/.NET to support mobile and web apps',
-            'Collaborated with other developers using Agile to deliver critical bug fixes and features',
+            'Contributed to front and back end of T.J. Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms and .NET',
+            'Developed dynamic web pages for use in mobile and web apps using HTML, CSS, JavaScript, jQuery, Bootstrap, and Blazor',
+            'Collaborated with other developers using Agile to deliver critical bug fixes and features to increase customer satisfaction',
             'Utilized release-branching strategy to manage project versions with Git',
         ],
         dates: [
@@ -92,8 +91,18 @@ export const SkillsData = [
         title: 'web development',
         skills: [
             {
-                title: 'HTML, CSS, JavaScript',
-                description: 'Sass, Bootstrap, Vue.js, jQuery',
+                title: 'HTML',
+                description: null,
+                rating: 9
+            },
+            {
+                title: 'CSS',
+                description: 'Sass, Bootstrap',
+                rating: 8
+            },
+            {
+                title: 'JavaScript',
+                description: 'Vue.js, jQuery',
                 rating: 8
             },
         ]
@@ -106,11 +115,6 @@ export const SkillsData = [
                 description: 'C#, .NET',
                 rating: 8
             },
-            {
-                title: 'iOS',
-                description: 'Swift, SwiftUI',
-                rating: 5
-            }
         ]
     },
     {

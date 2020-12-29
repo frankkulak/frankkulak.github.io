@@ -3,10 +3,10 @@
         <div class="position-name-container px-4 py-3">
             <b-row>
                 <b-col cols="12" md="6">
-                    <h2>{{ position.company }}</h2>
+                    <h2>{{ position.title }}</h2>
                 </b-col>
-                <b-col cols="12" md="6" class="position">
-                    <p>{{ position.title }}</p>
+                <b-col cols="12" md="6" class="company">
+                    <p>{{ position.company }}</p>
                 </b-col>
             </b-row>
         </div>
@@ -56,7 +56,7 @@
             }
 
             @media (min-width: 768px) {
-                .col-12.position {
+                .col-12.company {
                     text-align: right;
                 }
             }
