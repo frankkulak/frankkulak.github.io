@@ -121,14 +121,29 @@ export const SkillsData = [
         title: 'other',
         skills: [
             {
+                title: 'Python',
+                description: 'Pandas, SpaCy',
+                rating: 8
+            },
+            {
                 title: 'Java',
                 description: 'Swing, JUnit',
                 rating: 7
             },
             {
-                title: 'Python',
-                description: 'Pandas, SpaCy',
-                rating: 8
+                title: 'Swift',
+                description: null,
+                rating: 6
+            },
+            {
+                title: 'Racket',
+                description: null,
+                rating: 6
+            },
+            {
+                title: 'C/C++',
+                description: null,
+                rating: 5
             },
             {
                 title: 'Git',
