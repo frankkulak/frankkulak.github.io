@@ -8,8 +8,8 @@
                     <h3 class="my-4">Frank Kulak</h3>
                 </b-col>
                 <b-col cols="12" sm="10" md="7" class="my-auto">
-                    <p>I am a student at Northeastern University, and am expected to graduate with a B.S. in Computer
-                        Science and Linguistics in May 2021. My goal is to work in app, web, or game development.</p>
+                    <p>I am a recent graduate of Northeastern University, where I earned a B.S. in Computer
+                        Science and Linguistics. My goal is to work in app, web, or game development.</p>
                 </b-col>
             </b-row>
         </b-container>

@@ -6,7 +6,7 @@ export const EducationData = [
         name: 'Northeastern University',
         location: 'Boston, MA',
         degree: 'B.S. in Computer Science and Linguistics, minor in Psychology',
-        graduation: 'exp. May 2021',
+        graduation: 'May 2021',
     }
 ];
 
@@ -98,12 +98,12 @@ export const SkillsData = [
             {
                 title: 'CSS',
                 description: 'Sass, Bootstrap',
-                rating: 8
+                rating: 7
             },
             {
                 title: 'JavaScript',
                 description: 'Vue.js, jQuery',
-                rating: 8
+                rating: 7
             },
         ]
     },
@@ -128,7 +128,7 @@ export const SkillsData = [
             {
                 title: 'Java',
                 description: 'Swing, JUnit',
-                rating: 7
+                rating: 6
             },
             {
                 title: 'Swift',
@@ -138,12 +138,12 @@ export const SkillsData = [
             {
                 title: 'Racket',
                 description: null,
-                rating: 6
+                rating: 5
             },
             {
                 title: 'C/C++',
                 description: null,
-                rating: 5
+                rating: 4
             },
             {
                 title: 'Git',

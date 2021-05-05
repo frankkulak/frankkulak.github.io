@@ -23,7 +23,7 @@
                         </p>
                     </div>
 
-                    <h5 class="font-weight-normal">Frank Kulak &copy; 2020</h5>
+                    <h5 class="font-weight-normal">Frank Kulak &copy; 2020-2021</h5>
                 </b-col>
             </b-row>
         </b-container>
