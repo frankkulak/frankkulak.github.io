@@ -4,8 +4,9 @@
             <h2>{{ school.name }}</h2>
         </div>
         <div class="school-details-container p-4">
-            <p>{{ school.degree }}</p>
-            <p>{{ school.graduation }} • {{ school.location }}</p>
+            <p class="mb-0">{{ school.degree }}</p>
+            <p>Honors: {{ school.honors }} (GPA {{ school.gpa }})</p>
+            <p>{{ school.dates }} • {{ school.location }}</p>
         </div>
     </div>
 </template>

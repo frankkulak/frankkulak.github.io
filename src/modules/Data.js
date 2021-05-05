@@ -5,14 +5,31 @@ export const EducationData = [
         code: 'nu',
         name: 'Northeastern University',
         location: 'Boston, MA',
-        degree: 'B.S. in Computer Science and Linguistics, minor in Psychology',
-        graduation: 'May 2021',
+        degree: "Bachelor of Science in Computer Science and Linguistics, minor in Psychology",
+        gpa: '3.83',
+        honors: 'magna cum laude',
+        dates: 'Sept. 2017 – May 2021',
     }
 ];
 
 export const ExperienceData = [
+    // {
+    //     code: 'tjx',
+    //     company: 'The TJX Companies',
+    //     location: 'Framingham, MA',
+    //     title: 'Engineer I',
+    //     description: [
+    //         'TODO',
+    //     ],
+    //     dates: [
+    //         {
+    //             start: new Date(2021, month(6)), // June 2021
+    //             end: null // Present
+    //         },
+    //     ],
+    // },
     {
-        code: 'tjx',
+        code: 'tjx-coop',
         company: 'The TJX Companies',
         location: 'Framingham, MA',
         title: 'IT Engineer Co-op',
@@ -46,7 +63,7 @@ export const ExperienceData = [
         dates: [
             {
                 start: new Date(2019, month(1)), // Jan 2019
-                end: null, // Present
+                end: new Date(2021, month(4)), // Apr 2021
             }
         ],
     },
