@@ -13,26 +13,28 @@ export const EducationData = [
 ];
 
 export const ExperienceData = [
-    // {
-    //     code: 'tjx',
-    //     company: 'The TJX Companies',
-    //     location: 'Framingham, MA',
-    //     title: 'Engineer I',
-    //     description: [
-    //         'TODO',
-    //     ],
-    //     dates: [
-    //         {
-    //             start: new Date(2021, month(6)), // June 2021
-    //             end: null // Present
-    //         },
-    //     ],
-    // },
+    {
+        code: 'tjx',
+        company: 'The TJX Companies',
+        location: 'Framingham, MA',
+        title: 'Engineer I',
+        hide: false,
+        description: [
+            'Contribute to front and back end of T.J. Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms and .NET'
+        ],
+        dates: [
+            {
+                start: new Date(2021, month(6)), // June 2021
+                end: null // Present
+            },
+        ],
+    },
     {
         code: 'tjx-coop',
         company: 'The TJX Companies',
         location: 'Framingham, MA',
         title: 'IT Engineer Co-op',
+        hide: true,
         description: [
             'Contributed to front and back end of T.J. Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms and .NET',
             'Developed dynamic web pages for use in mobile and web apps using HTML, CSS, JavaScript, jQuery, Bootstrap, and Blazor',
@@ -55,6 +57,7 @@ export const ExperienceData = [
         company: 'Northeastern University',
         location: 'Boston, MA',
         title: 'Peer Tutor',
+        hide: true,
         description: [
             'Tutor linguistics and psychology courses in one-on-one sessions',
             'Conduct review sessions of up to 50 students for exam preparation',
@@ -72,6 +75,7 @@ export const ExperienceData = [
         company: 'Northeastern University',
         location: 'Boston, MA',
         title: 'Office Assistant',
+        hide: true,
         description: [
             'Answered up to 15 calls per hour to assist students with financial aid questions',
             'Collaborated with financial aid counselors to resolve caller inquiries',
@@ -88,6 +92,7 @@ export const ExperienceData = [
         code: 'mah',
         company: 'Mobile Apps for Hartford',
         location: 'Hartford, CT',
+        hide: true,
         title: 'Intern',
         description: [
             'Collaborated with other interns to develop Android application for CREC school system using MIT App Inventor 2',
@@ -201,7 +206,7 @@ export const ProjectsData = (function () {
             ]
         },
         {
-            name: 'mods.frankkulak.com',
+            name: 'frankkmods.com',
             id: 'site-mods',
             start: new Date(2020, month(6)), // June 2020
             end: null, // Present
@@ -212,7 +217,7 @@ export const ProjectsData = (function () {
                 {
                     icon: links.web.icon,
                     text: links.web.text,
-                    url: 'https://mods.frankkulak.com'
+                    url: 'https://frankkmods.com'
                 },
                 {
                     icon: links.github.icon,

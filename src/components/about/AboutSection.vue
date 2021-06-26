@@ -9,7 +9,7 @@
                 </b-col>
                 <b-col cols="12" sm="10" md="7" class="my-auto">
                     <p>I am a recent graduate of Northeastern University, where I earned a Bachelor of Science in
-                        Computer Science and Linguistics. My goal is to work in app, web, or game development.</p>
+                        Computer Science and Linguistics, and am currently working as a mobile app developer at TJX.</p>
                 </b-col>
             </b-row>
         </b-container>
