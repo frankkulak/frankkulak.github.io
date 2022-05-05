@@ -194,29 +194,13 @@ export const ProjectsData = (function () {
 
     return [
         {
-            name: 'frankkulak.com',
-            id: 'site-main',
-            start: new Date(2019, month(10)), // Oct 2019
-            end: null, // Present
-            category: `Website`,
-            purpose: `Provides an interactive summary of my academic, professional, and personal achievements.`,
-            technology: `BootstrapVue, Sass, GitHub Pages, Google Analytics`,
-            links: [
-                {
-                    icon: links.github.icon,
-                    text: links.github.text,
-                    url: 'https://github.com/frankkulak/frankkulak.github.io'
-                }
-            ]
-        },
-        {
             name: 'frankkmods.com',
             id: 'site-mods',
             start: new Date(2020, month(6)), // June 2020
             end: null, // Present
             category: `Website`,
             purpose: `Showcases the mods I have created for The Sims 4, and serves as a hub from which to download them.`,
-            technology: `BootstrapVue, Sass, GitHub Pages, Google Analytics`,
+            technology: `BootstrapVue, SCSS`,
             links: [
                 {
                     icon: links.web.icon,
@@ -237,7 +221,7 @@ export const ProjectsData = (function () {
             end: null, // Present
             category: `Sims 4 Mod`,
             purpose: `Enriches the player's experience by introducing different languages to the Sims universe, which makes the game more realistic and challenging.`,
-            technology: `XML, Python, Sims 4 Studio`,
+            technology: `XML, Python`,
             links: [
                 {
                     icon: links.web.icon,
@@ -245,6 +229,48 @@ export const ProjectsData = (function () {
                     url: 'https://mods.frankkulak.com/#/ts4/languagebarriers'
                 }
             ]
-        }
+        },
+        {
+            name: 'Sims 4 Toolkit',
+            id: 'node-s4tk',
+            start: new Date(2021, month(11)), // June 2020
+            end: null, // Present
+            category: `Node.js Library`,
+            purpose: `Open-source library that powers web-based tools for modding The Sims 4. A dedicated desktop app made with Electron is in development.`,
+            technology: `TypeScript, Node.js`,
+            links: [
+                {
+                    icon: links.web.icon,
+                    text: links.web.text,
+                    url: 'https://sims4toolkit.com'
+                },
+                {
+                    icon: links.github.icon,
+                    text: links.github.text,
+                    url: 'https://github.com/sims4toolkit'
+                }
+            ]
+        },
+        {
+            name: 'sims4toolkit.com',
+            id: 'web-s4tk',
+            start: new Date(2021, month(11)), // June 2020
+            end: null, // Present
+            category: `Website`,
+            purpose: `Dynamic website that presents all documentation for Sims 4 Toolkit.`,
+            technology: `Svelte, TypeScript, SCSS`,
+            links: [
+                {
+                    icon: links.web.icon,
+                    text: links.web.text,
+                    url: 'https://sims4toolkit.com'
+                },
+                {
+                    icon: links.github.icon,
+                    text: links.github.text,
+                    url: 'https://github.com/sims4toolkit/sims4toolkit.github.io'
+                }
+            ]
+        },
     ];
 })();

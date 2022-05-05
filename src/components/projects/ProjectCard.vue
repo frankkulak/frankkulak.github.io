@@ -37,11 +37,11 @@
 </script>
 
 <style lang="scss">
-    .project-card-container {
-        &:last-child {
-            margin-bottom: 0 !important;
-        }
-    }
+    //.project-card-container {
+    //    &:last-child {
+    //        margin-bottom: 0 !important;
+    //    }
+    //}
 
     .project-card {
         text-align: left;
