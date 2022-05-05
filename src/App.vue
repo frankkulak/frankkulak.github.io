@@ -3,8 +3,8 @@
         <home-section/>
         <navbar/>
         <about-section/>
-        <education-section class="banded"/>
-        <experience-section/>
+        <experience-section class="banded"/>
+        <education-section/>
         <skills-section class="banded"/>
         <projects-section/>
         <contact-section/>

@@ -7,7 +7,7 @@ export const EducationData = [
         location: 'Boston, MA',
         degree: "Bachelor of Science in Computer Science and Linguistics, minor in Psychology",
         gpa: '3.83',
-        honors: 'magna cum laude',
+        honors: 'Magna cum laude',
         dates: 'Sept. 2017 – May 2021',
     }
 ];
