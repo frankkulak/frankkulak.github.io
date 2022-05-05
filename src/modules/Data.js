@@ -21,9 +21,9 @@ export const ExperienceData = [
         hide: false,
         description: [
             'Contribute to front end of T.J. Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms',
-            'Develop dynamic web pages for use in mobile and web apps using Svelte, Sass, and TypeScript',
-            'Implement back end APIs using clean architecture in a ASP.NET', // TODO: back end stuff
-            'Collaborate with other developers using Agile to deliver critical bug fixes and features to increase customer satisfaction',
+            'Develop internal web apps using Svelte, Sass, and TypeScript',
+            'Implement back end APIs using clean architecture in a ASP.NET project',
+            'Collaborate with other developers using Agile to deliver bug fixes and new features',
             'Utilize release-branching strategy to manage project versions with Git',
         ],
         dates: [
