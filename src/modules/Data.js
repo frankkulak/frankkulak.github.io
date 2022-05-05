@@ -20,7 +20,11 @@ export const ExperienceData = [
         title: 'Engineer I',
         hide: false,
         description: [
-            'Contribute to front and back end of T.J. Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms and .NET'
+            'Contribute to front end of T.J. Maxx, HomeGoods, and Marshalls mobile apps using Xamarin.Forms',
+            'Develop dynamic web pages for use in mobile and web apps using Svelte, Sass, and TypeScript',
+            'Implement back end APIs using clean architecture in a ASP.NET', // TODO: back end stuff
+            'Collaborate with other developers using Agile to deliver critical bug fixes and features to increase customer satisfaction',
+            'Utilize release-branching strategy to manage project versions with Git',
         ],
         dates: [
             {
@@ -113,29 +117,29 @@ export const SkillsData = [
         title: 'web development',
         skills: [
             {
-                title: 'HTML',
-                description: null,
-                rating: 9
+                title: 'Front End',
+                description: 'Svelte, Vue.js, Sass/SCSS',
+                rating: 8
             },
             {
-                title: 'CSS',
-                description: 'Sass, Bootstrap',
-                rating: 7
-            },
-            {
-                title: 'JavaScript',
-                description: 'Vue.js, jQuery',
-                rating: 7
+                title: 'Back End',
+                description: 'Node.js, .NET, Azure',
+                rating: 6
             },
         ]
     },
     {
-        title: 'app development',
+        title: 'mobile app development',
         skills: [
             {
                 title: 'Xamarin.Forms',
                 description: 'C#, .NET',
                 rating: 8
+            },
+            {
+                title: 'Flutter',
+                description: 'Dart',
+                rating: 5
             },
         ]
     },
@@ -143,37 +147,37 @@ export const SkillsData = [
         title: 'other',
         skills: [
             {
+                title: 'Git/GitHub',
+                description: null,
+                rating: 9
+            },
+            {
+                title: 'JavaScript/TypeScript',
+                description: null,
+                rating: 9
+            },
+            {
                 title: 'Python',
-                description: 'Pandas, SpaCy',
+                description: null,
                 rating: 8
             },
             {
+                title: 'C#',
+                description: null,
+                rating: 7
+            },
+            {
                 title: 'Java',
-                description: 'Swing, JUnit',
-                rating: 6
-            },
-            {
-                title: 'Swift',
                 description: null,
                 rating: 6
-            },
-            {
-                title: 'Racket',
-                description: null,
-                rating: 5
             },
             {
                 title: 'C/C++',
                 description: null,
                 rating: 4
             },
-            {
-                title: 'Git',
-                description: 'GitHub',
-                rating: 9
-            },
         ]
-    }
+    },
 ];
 
 export const ProjectsData = (function () {

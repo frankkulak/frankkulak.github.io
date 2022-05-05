@@ -1,5 +1,5 @@
 <template>
-    <b-row class="skill-category mb-4">
+    <b-row class="skill-category mb-5">
         <b-col cols="12">
             <h2>{{ category.title }}</h2>
         </b-col>
