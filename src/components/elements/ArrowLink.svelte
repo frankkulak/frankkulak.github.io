@@ -8,7 +8,11 @@
   $: target = useNewTab ? "_blank" : "_self";
 </script>
 
-<a {href} {target} class="flex items-center gap-2 no-underline">
+<a
+  {href}
+  {target}
+  class="flex items-center gap-2 no-underline max-w-fit whitespace-nowrap"
+>
   {#if !isForward}
     <img src="./assets/icons/arrow-back.svg" alt="←" class="back svg h-4" />
   {/if}

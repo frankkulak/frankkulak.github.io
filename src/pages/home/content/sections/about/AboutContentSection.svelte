@@ -23,8 +23,8 @@
     </p>
     <p>
       In my off-hours, you'll find me working on pet projects, such as my <InlineLink
-        href="https:/frankkmods.com/#/mods">Sims 4 mods</InlineLink
-      > and <InlineLink href="https:/frankkmods.com/#/tools"
+        href="https://frankkmods.com/#/mods">Sims 4 mods</InlineLink
+      > and <InlineLink href="https://frankkmods.com/#/tools"
         >modding tools</InlineLink
       > or toying around with game development. When not glued to a screen, I enjoy
       walks on nature trails or in the city.
