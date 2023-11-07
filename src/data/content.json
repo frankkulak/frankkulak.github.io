@@ -1,0 +1,137 @@
+{
+  "$schema": "../../schemas/content.schema.json",
+  "sections": {
+    "experience": [
+      {
+        "timespan": "JUL 2019 - PRESENT",
+        "company": "The TJX Companies",
+        "title": "Engineer II",
+        "previousTitles": [
+          "Engineer I",
+          "IT Engineer Co-op"
+        ],
+        "description": "Develop the front-end of four cross-platform retail mobile apps using Flutter and Xamarin.Forms. Contribute to back-end projects, such as the Digital Wallet API and an in-house QA testing tool. Engage in collaborative efforts through code reviews, pair programming, and onboarding new team members.",
+        "skills": [
+          "Flutter",
+          "Dart",
+          "Xamarin.Forms",
+          "C#",
+          ".NET",
+          "HTML",
+          "JavaScript",
+          "CSS"
+        ],
+        "projects": [
+          {
+            "name": "T.J.Maxx iOS",
+            "link": "https://apps.apple.com/us/app/t-j-maxx/id1231524763"
+          },
+          {
+            "name": "T.J.Maxx Android",
+            "link": "https://play.google.com/store/apps/details?id=com.tjx.tjmaxx&hl=en_US&gl=US"
+          },
+          {
+            "name": "Marshalls iOS",
+            "link": "https://apps.apple.com/us/app/marshalls-official/id1454639999"
+          },
+          {
+            "name": "Marshalls Android",
+            "link": "https://play.google.com/store/apps/details?id=com.tjx.marshalls&hl=en_US&gl=US"
+          },
+          {
+            "name": "HomeGoods iOS",
+            "link": "https://apps.apple.com/us/app/homegoods/id854624810"
+          },
+          {
+            "name": "HomeGoods Android",
+            "link": "https://play.google.com/store/apps/details?id=com.tjx.thegoods&hl=en_US&gl=US&pli=1"
+          },
+          {
+            "name": "Sierra iOS",
+            "link": "https://apps.apple.com/us/app/sierra-official/id646121874"
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "category": "Project Domains",
+        "skills": [
+          "Mobile Apps",
+          "Front-End Web",
+          "Back-End APIs",
+          "Node.js Packages",
+          "VS Code Extensions",
+          "Sims 4 Modding",
+          "Discord Bots"
+        ]
+      },
+      {
+        "category": "Programming Languages",
+        "skills": [
+          "Dart",
+          "C#",
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "HTML",
+          "CSS",
+          "SCSS"
+        ]
+      },
+      {
+        "category": "Libraries & Frameworks",
+        "skills": [
+          "Flutter",
+          "Xamarin.Forms",
+          ".NET",
+          "Node.js",
+          "Svelte",
+          "Vue.js",
+          "TailwindCSS",
+          "BootstrapCSS",
+          "MonoGame / XNA"
+        ]
+      },
+      {
+        "category": "Tools & Services",
+        "skills": [
+          "Git",
+          "GitHub",
+          "Firebase",
+          "Docker"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "frankkulak.com",
+        "description": "You're looking at it! My portfolio website, where you can read about my education, experience, projects, and skills in the technology world.",
+        "skills": [
+          "Svelte",
+          "TypeScript",
+          "SCSS",
+          "TailwindCSS"
+        ],
+        "repository": "https://github.com/frankkulak/frankkulak.github.io"
+      },
+      {
+        "name": "Sims 4 Mods & Tools",
+        "description": "Over a dozen individual mods for The Sims 4, and a whole suite of Node.js packages, web-based tools, and a VS Code extension for modders.",
+        "skills": [
+          "Python",
+          "XML",
+          "Node.js",
+          "TypeScript",
+          "Svelte",
+          "SCSS",
+          "TailwindCSS"
+        ],
+        "webpage": "https://frankkmods.com"
+      }
+    ]
+  },
+  "archives": {
+    "projects": []
+  }
+}

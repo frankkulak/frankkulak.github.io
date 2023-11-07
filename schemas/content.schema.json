@@ -1,0 +1,172 @@
+{
+  "type": "object",
+  "required": [
+    "sections",
+    "archives"
+  ],
+  "properties": {
+    "sections": {
+      "type": "object",
+      "required": [
+        "experience",
+        "skills",
+        "projects"
+      ],
+      "properties": {
+        "experience": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "company",
+              "title",
+              "timespan",
+              "description"
+            ],
+            "properties": {
+              "company": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "timespan": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "previousTitles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "projects": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "link": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "category",
+              "skills"
+            ],
+            "properties": {
+              "category": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "description"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "repository": {
+                "type": "string"
+              },
+              "webpage": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "archives": {
+      "type": "object",
+      "required": [
+        "projects"
+      ],
+      "properties": {
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "status",
+              "type"
+            ],
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "Ongoing",
+                  "Maintaining",
+                  "Complete"
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "type": {
+                "type": "string"
+              },
+              "repository": {
+                "type": "string"
+              },
+              "webpage": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
