@@ -38,7 +38,4 @@
 <div class="md:flex md:justify-between gap-4">
   <Header {activeSectionId} />
   <MainContent />
-  <div class="w-full block md:hidden bg-gray-200 dark:bg-gray-900">
-    <Footer />
-  </div>
 </div>

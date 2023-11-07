@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Footer from "src/components/Footer.svelte";
   import SectionTitle from "./SectionTitle.svelte";
   import AboutContentSection from "./sections/about/AboutContentSection.svelte";
   import ExperienceContentSection from "./sections/experience/ExperienceContentSection.svelte";
@@ -26,4 +27,6 @@
     <SectionTitle title="Skills" />
     <SkillsContentSection />
   </section>
+
+  <Footer />
 </main>
