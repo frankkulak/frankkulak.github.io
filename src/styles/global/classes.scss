@@ -1,0 +1,110 @@
+//#region SVG
+
+.svg {
+  filter: var(--filter-svg);
+}
+
+.svg-invert {
+  filter: var(--filter-svg-invert);
+}
+
+.svg-dark {
+  filter: var(--filter-dark);
+}
+
+.svg-light {
+  filter: var(--filter-light);
+}
+
+//#endregion SVG
+
+//#region Blurred Background
+
+.blurred-bg {
+  background-color: var(--color-bg-blur);
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .blurred-bg {
+    backdrop-filter: var(--filter-bg-blur);
+    -webkit-backdrop-filter: var(--filter-bg-blur);
+  }
+}
+
+//#endregion Blurred Background
+
+//#region Utilities
+
+.bottom-shadow {
+  -webkit-box-shadow: 0px 2px 4px var(--color-shadow);
+  box-shadow: 0px 2px 4px var(--color-shadow);
+}
+
+.tint-on-hover:hover {
+  opacity: 0.65;
+}
+
+.zoom-on-hover {
+  transition: transform 200ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.zoom-on-hover-sm {
+  transition: transform 200ms;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+//#endregion Utilities
+
+//#region Colors
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-accent-secondary {
+  color: var(--color-accent-secondary);
+}
+
+.text-subtle,
+.hover\:text-subtle:hover {
+  color: var(--color-text-subtle);
+}
+
+.text-gradient {
+  color: var(--color-accent); // fallback
+  background-image: linear-gradient(45deg, var(--color-accent-secondary) 0%, var(--color-accent) 100%);
+  display: inline-block;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background-color: var(--color-accent); // fallback
+
+  background-image: linear-gradient(
+    45deg,
+    var(--color-accent-secondary) 0%,
+    var(--color-accent) 100%
+  );
+}
+
+.bg-gradient-invert {
+  background-color: var(--color-accent-invert); // fallback
+
+  background-image: linear-gradient(
+    45deg,
+    var(--color-accent-secondary-invert) 0%,
+    var(--color-accent-invert) 100%
+  );
+}
+
+//#endregion Colors
