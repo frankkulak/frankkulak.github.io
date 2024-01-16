@@ -10,5 +10,5 @@
     design inspired by
     <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>.
   </p>
-  <p class="text-subtle text-sm">2023 © Frank Kulak</p>
+  <p class="text-subtle text-sm">2023-2024 © Frank Kulak</p>
 </footer>
